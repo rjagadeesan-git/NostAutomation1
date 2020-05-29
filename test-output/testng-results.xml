@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="63703" started-at="2020-05-28T15:37:27 IST" finished-at="2020-05-28T15:38:31 IST">
+    <groups>
+    </groups>
+    <test name="Transfer Case" duration-ms="63703" started-at="2020-05-28T15:37:27 IST" finished-at="2020-05-28T15:38:31 IST">
+      <class name="NostGroup.NostArtifact.TestCases.TransferCase">
+        <test-method status="PASS" signature="browserLaunch()[pri:0, instance:NostGroup.NostArtifact.TestCases.TransferCase@74650e52]" name="browserLaunch" is-config="true" duration-ms="10545" started-at="2020-05-28T15:37:17 IST" finished-at="2020-05-28T15:37:27 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserLaunch -->
+        <test-method status="PASS" signature="nostlogin()[pri:1, instance:NostGroup.NostArtifact.TestCases.TransferCase@74650e52]" name="nostlogin" duration-ms="11603" started-at="2020-05-28T15:37:27 IST" finished-at="2020-05-28T15:37:39 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- nostlogin -->
+        <test-method status="PASS" signature="transferGen()[pri:3, instance:NostGroup.NostArtifact.TestCases.TransferCase@74650e52]" name="transferGen" duration-ms="52015" started-at="2020-05-28T15:37:39 IST" finished-at="2020-05-28T15:38:31 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- transferGen -->
+      </class> <!-- NostGroup.NostArtifact.TestCases.TransferCase -->
+    </test> <!-- Transfer Case -->
+  </suite> <!-- Suite -->
+</testng-results>
