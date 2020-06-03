@@ -1,6 +1,7 @@
 package NostGroup.NostArtifact.Manage;
 
 import java.io.IOException;
+import java.util.Hashtable;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -15,7 +16,7 @@ import NostGroup.NostArtifact.Base.CommonMethods;
 
 public class Catalog extends CommonMethods{
 	
-	public void addDrug() throws InterruptedException, IOException
+	public void addDrug(Hashtable<String,String> data) throws InterruptedException, IOException
 	{
 //		Driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
 //	   Actions action=new Actions(Driver);
@@ -30,23 +31,23 @@ public class Catalog extends CommonMethods{
 
 		//Add Drug 
 		click("add-drug","csssele");
-		type("drug-name","xpath",readExcel("NostData",13,1));
-		selectText("track-by","xpath",readExcel("NostData",13,2));
-		type("strength-concentration","xpath",readExcel("NostData",13,3));
-		selectText("unit-of-measure","xpath",readExcel("NostData",13,4));
-		selectText("formulation","xpath",readExcel("NostData",13,5));
-		type("drug-label-name","xpath",readExcel("NostData",13,6));
-		type("drug-id","xpath",readExcel("NostData",13,7));
-		type("drug-nsc","xpath",readExcel("NostData",13,8));
-		type("alternative-drug-name","xpath",readExcel("NostData",13,9));
-		selectText("compound-med-label","xpath",readExcel("NostData",13,10));
+		type("drug-name","xpath",data.get("Drug_Name"));
+		selectText("track-by","xpath",data.get("Track_By"));
+		type("strength-concentration","xpath",data.get("Strength/Concentration"));
+		selectText("unit-of-measure","xpath",data.get("Unit_of_Measure"));
+		selectText("formulation","xpath",data.get("Formulation"));
+		type("drug-label-name","xpath",data.get("Drug_Label_Name"));
+		type("drug-id","xpath",data.get("Drug_ID_#"));
+		type("drug-nsc","xpath",data.get("NSC_#"));
+		type("alternative-drug-name","xpath",data.get("Alternative_Drug_Name"));
+		selectText("compound-med-label","xpath",data.get("Compounded_Med_Label"));
 		
 		// Set Defaults
 		click("set-defaults","csssele");
-		check("patient-specific-drug","xpath",readExcel("NostData",13,11));
-		check("ivrs","xpath",readExcel("NostData",13,12));
-		selectText("to-be-linked","xpath",readExcel("NostData",13,13));
-		selectText("level-of-accountability","xpath",readExcel("NostData",13,14));
+		check("patient-specific-drug","xpath",data.get("Patient_Specific_Drug"));
+		check("ivrs","xpath",data.get("IVRS"));
+		selectText("to-be-linked","xpath",data.get("To_Be_Linked"));
+		selectText("level-of-accountability","xpath",data.get("Level_of_Accountability"));
 		WebElement cat_loa=find_element("level-of-accountability","xpath");
 		Select select0=new Select(cat_loa);
 		WebElement loa_selected=select0.getFirstSelectedOption();
@@ -55,61 +56,61 @@ public class Catalog extends CommonMethods{
 			System.out.println("Vial get selected by Default");
 		}
 		else {
-			selectText("unit-type","xpath",readExcel("NostData",13,15));
-			type("qty-per-unit","xpath",readExcel("NostData",13,16));
+			selectText("unit-type","xpath",data.get("Unit_Type"));
+			type("qty-per-unit","xpath",data.get("Qty_per_Unit"));
 		}
 		
-		type("catalog-supplier-name","xpath",readExcel("NostData",13,17));
-		selectText("storage-condition","xpath",readExcel("NostData",13,18));
-		selectText("pharmacy","xpath",readExcel("NostData",13,19));
-		selectText("storage-location","xpath",readExcel("NostData",13,20));
-//		selectText("route","xpath",readExcel("NostData",3,21));
-		selectText("frequency","xpath",readExcel("NostData",13,22));
-		type("dose-on-label","xpath",readExcel("NostData",13,23));
-		selectText("label-template","xpath",readExcel("NostData",13,24));
-		type("day-supply","xpath",readExcel("NostData",13,25));
-		selectText("aux-label1","xpath",readExcel("NostData",13,26));
-		selectText("aux-label2","xpath",readExcel("NostData",13,27));
-		selectText("aux-label3","xpath",readExcel("NostData",13,28));
-		selectText("aux-label4","xpath",readExcel("NostData",13,29));
-//		selectText("aux-label5","xpath",readExcel("NostData",13,30));
-//		selectText("aux-label6","xpath",readExcel("NostData",13,31));
+		type("catalog-supplier-name","xpath",data.get("Supplier_Name"));
+		selectText("storage-condition","xpath",data.get("Storage_Condition"));
+		selectText("pharmacy","xpath",data.get("Pharmacy_Drug"));
+		selectText("storage-location","xpath",data.get("Storage_Location"));
+//		selectText("route","xpath",data.get("Route"));
+		selectText("frequency","xpath",data.get("Frequency"));
+		type("dose-on-label","xpath",data.get("Dose_on_Label"));
+		selectText("label-template","xpath",data.get("Label_Template"));
+		type("day-supply","xpath",data.get("Day_Supply"));
+		selectText("aux-label1","xpath",data.get("Aux_Label_1"));
+		selectText("aux-label2","xpath",data.get("Aux_Label_2"));
+		selectText("aux-label3","xpath",data.get("Aux_Label_3"));
+		selectText("aux-label4","xpath",data.get("Aux_Label_4"));
+//		selectText("aux-label5","xpath",data.get("Aux_Label_5"));
+//		selectText("aux-label6","xpath",data.get("Aux_Label_6"));
 		
 		//Set Par levels
 //		click("set-par-levels","xpath");
 //		click("add-new-par-level","xpath");
-//		selectText("set-par-protocol-id","xpath",readExcel("NostData",13,32));
-//		selectText("set-par-pharmacy","xpath",readExcel("NostData",13,33));
-//		type("set-par-min","xpath",readExcel("NostData",13,34));
-//		type("set-par-reorder-point","xpath",readExcel("NostData",13,35));
-//		type("set-par-max","xpath",readExcel("NostData",13,36));
-//		selectText("set-par-status","xpath",readExcel("NostData",13,37));
+//		selectText("set-par-protocol-id","xpath",data.get("NostData",13,32));
+//		selectText("set-par-pharmacy","xpath",data.get("NostData",13,33));
+//		type("set-par-min","xpath",data.get("NostData",13,34));
+//		type("set-par-reorder-point","xpath",data.get("NostData",13,35));
+//		type("set-par-max","xpath",data.get("NostData",13,36));
+//		selectText("set-par-status","xpath",data.get("NostData",13,37));
 //		click("set-par-row-delete-button","xpath");
 
 		// Add Label Criteria 
 		click("add-lab-criteria","csssele");
-		type("anc","xpath",readExcel("NostData",13,38));
-		type("plt","xpath",readExcel("NostData",13,39));
-		type("hemoglobin","xpath",readExcel("NostData",13,40));
-		type("dipstick","xpath",readExcel("NostData",13,41));
-		type("24-hour-collection","xpath",readExcel("NostData",13,42));
-		type("upc-ratio","xpath",readExcel("NostData",13,43));
-		type("other1","xpath",readExcel("NostData",13,44));
-		type("other2","xpath",readExcel("NostData",13,45));
-		type("other3","xpath",readExcel("NostData",13,46));
-		type("serum-creatinine","xpath",readExcel("NostData",13,47));
-		type("bili-rubin-t-bili","xpath",readExcel("NostData",13,48));
-		type("asg-sgot","xpath",readExcel("NostData",13,49));
-		type("alt-sgpt","xpath",readExcel("NostData",13,50));
+		type("anc","xpath",data.get("ANC"));
+		type("plt","xpath",data.get("PLT's"));
+		type("hemoglobin","xpath",data.get("Hemoglobin"));
+		type("dipstick","xpath",data.get("Dipstick"));
+		type("24-hour-collection","xpath",data.get("24-hour_Collection"));
+		type("upc-ratio","xpath",data.get("UPC_Ratio"));
+		type("other1","xpath",data.get("Other1"));
+		type("other2","xpath",data.get("Other2"));
+		type("other3","xpath",data.get("Other3"));
+		type("serum-creatinine","xpath",data.get("Serum_Creatinine"));
+		type("bili-rubin-t-bili","xpath",data.get("Bilirubin:_T-Bili"));
+		type("asg-sgot","xpath",data.get("AST/SGOT"));
+		type("alt-sgpt","xpath",data.get("ALT/SGPT"));
 
 		//Protocol association
 		click("add-drug","csssele");
-		type("cat-prot-sear","csssele",readExcel("NostData",13,32));
-        Driver.findElement(By.className(readExcel("NostData",13,33))).click();
+		type("cat-prot-sear","csssele",data.get("Drug_Protocol"));
+        Driver.findElement(By.className(data.get("Drug_Proto_SPID"))).click();
         click("cat-prot-sear-ok","csssele");
 		
 		//Catalog submission
-		type("catalog-esign","xpath",readExcel("NostData",3,3));
+		type("catalog-esign","xpath",data.get("esignature"));
 		click("catalog-submit","xpath");
 		//click("catalog-cancel","xpath");
 
@@ -125,27 +126,27 @@ public class Catalog extends CommonMethods{
 	
 	public void cat_Pharm_Def() throws IOException {
 	
-		Driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
-		Actions action=new Actions(Driver);
-		action.moveToElement(find_element("manage-menu","xpath")).perform();
-		((JavascriptExecutor)Driver).executeScript("menuActionMethod('Manage','catalogDrug.action');");
-		type("catalog-supplier-name","xpath",readExcel("NostData",13,17));
-		selectText("storage-condition","xpath",readExcel("NostData",13,18));
-		selectText("pharmacy","xpath",readExcel("NostData",13,19));
-		selectText("storage-location","xpath",readExcel("NostData",13,20));
+//		Driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
+//		Actions action=new Actions(Driver);
+//		action.moveToElement(find_element("manage-menu","xpath")).perform();
+//		((JavascriptExecutor)Driver).executeScript("menuActionMethod('Manage','catalogDrug.action');");
+//		type("catalog-supplier-name","xpath",data.get("NostData",13,17));
+//		selectText("storage-condition","xpath",data.get("NostData",13,18));
+//		selectText("pharmacy","xpath",data.get("NostData",13,19));
+//		selectText("storage-location","xpath",data.get("NostData",13,20));
 	}
 	
 	public void cat_Supp_Def() {}
 	
 	public void cat_Set_Parlevel() {
 	
-		Driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
-		Actions action=new Actions(Driver);
-		action.moveToElement(find_element("manage-menu","xpath")).perform();
-		((JavascriptExecutor)Driver).executeScript("menuActionMethod('Manage','catalogDrug.action');");
-		
-		// Add the code to select and edit the Drug
-		click("set-defaults","xpath");
+//		Driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
+//		Actions action=new Actions(Driver);
+//		action.moveToElement(find_element("manage-menu","xpath")).perform();
+//		((JavascriptExecutor)Driver).executeScript("menuActionMethod('Manage','catalogDrug.action');");
+//		
+//		// Add the code to select and edit the Drug
+//		click("set-defaults","xpath");
 	}
 
 }

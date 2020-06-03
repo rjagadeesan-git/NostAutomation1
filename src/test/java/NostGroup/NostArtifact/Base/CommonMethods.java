@@ -6,6 +6,7 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.time.Duration;
+import java.util.Hashtable;
 import java.util.NoSuchElementException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
@@ -540,6 +541,12 @@ public static String readExcel(String sheetName,int rownum,int colnum) throws IO
 //excel.close();
 return excelout;
 
+}
+
+public String getSign(Hashtable<String,String> data) {
+
+	return null;
+	
 }
 
 }

@@ -1,7 +1,6 @@
-package NostGroup.NostArtifact.Manage;
+package BackUps;
 
 import java.io.IOException;
-import java.util.Hashtable;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -16,7 +15,7 @@ import NostGroup.NostArtifact.Base.CommonMethods;
 
 public class Supplier extends CommonMethods{
 	
-	public void addSupplier(Hashtable<String,String> data) throws IOException, InterruptedException {
+	public void addSupplier() throws IOException, InterruptedException {
 		
 //		Actions action=new Actions(Driver);
 //		WebDriverWait ex_wait= new WebDriverWait(Driver,20);
@@ -27,18 +26,18 @@ public class Supplier extends CommonMethods{
 		click("organization","csssele");
 		System.out.println("Page loaded");
 		Thread.sleep(2000);
-		selectText("organization-selection","id",data.get("Organization"));
+		selectText("organization-selection","id",readExcel("NostData",19,1));
 		Thread.sleep(3000);
 		System.out.println("Organization selected");
 		Thread.sleep(2000);
 		((JavascriptExecutor)Driver).executeScript("arguments[0].scrollIntoView();", find_element("supplier-add","csssele"));
 		click("supplier-add","csssele");
-		type("supplier-name","csssele",data.get("Supplier_Name_1"));
+		type("supplier-name","csssele",readExcel("NostData",21,1));
 		click("add-more-supplier1","csssele");
-		type("supplier-name-1","csssele",data.get("Supplier_Name_2"));
+		type("supplier-name-1","csssele",readExcel("NostData",21,2));
 		click("add-more-supplier2","csssele");
-		type("supplier-name-2","csssele",data.get("Supplier_Name_3"));
-		type("supplier-esign","id",data.get("esignature"));
+		type("supplier-name-2","csssele",readExcel("NostData",21,3));
+		type("supplier-esign","id",readExcel("NostData",3,3));
 		click("supplier-submit","id");
 //		click("supplier-cancel","csssele");
 
@@ -51,16 +50,4 @@ public class Supplier extends CommonMethods{
 		Thread.sleep(4000);
 	}
 
-	public void supplierEdit() {}
-	
-	public void supplierDelete() {}
-	
-	public void supplierVerifyTable() {}
-	
-	public void supplierEditVerify() {}
-	
-	public void supplierDeleteVerify() {}
-	
-	
-	
 }

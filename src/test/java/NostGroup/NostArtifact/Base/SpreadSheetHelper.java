@@ -7,8 +7,10 @@ import java.util.Calendar;
 import org.apache.poi.common.usermodel.HyperlinkType;
 import org.apache.poi.hssf.usermodel.HSSFDateUtil;
 import org.apache.poi.hssf.util.HSSFColor;
+import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.CellStyle;
 import org.apache.poi.ss.usermodel.CellType;
+import org.apache.poi.ss.usermodel.DataFormatter;
 import org.apache.poi.ss.usermodel.FillPatternType;
 import org.apache.poi.ss.usermodel.IndexedColors;
 import org.apache.poi.xssf.usermodel.XSSFCell;
@@ -21,12 +23,11 @@ import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class SpreadSheetHelper {
-
 		
 	public  String path;
 	public  FileInputStream fis = null;
 	public  FileOutputStream fileOut =null;
-	private XSSFWorkbook workbook = null;
+	public XSSFWorkbook workbook = null;
 	private XSSFSheet sheet = null;
 	private XSSFRow row   =null;
 	private XSSFCell cell = null;
@@ -63,7 +64,7 @@ public class SpreadSheetHelper {
 	
 	
 	// returns the data from a cell
-	public String getCellData(String sheetName,String colName,int rowNum){
+	public String getCellData(String sheetName,int rowNum,String colName){
 		try{
 			if(rowNum <=0)
 				return "";
@@ -109,12 +110,8 @@ public class SpreadSheetHelper {
 		                      cal.get(Calendar.MONTH)+1 + "/" + 
 		                      cellText;
 		           
-		          
-
 		         }
 
-			  
-			  
 			  return cellText;
 		  }else if(cell.getCellType()==CellType.BLANK)
 		      return ""; 
@@ -130,9 +127,27 @@ public class SpreadSheetHelper {
 	}
 	
 	
+public String retrieveData(String sheetName,int rownum,int colnum) {
 	
+    DataFormatter formatter=new DataFormatter();
+	
+	//CellType cell_type=sheet1.getRow(rownum).getCell(colnum).getCellType();
+	
+XSSFCell cell=sheet.getRow(rownum).getCell(colnum);
+
+//    System.out.println((sheet1.getRow(rownum).getCell(colnum).getCellType()) +" "+);
+	String data=formatter.formatCellValue(cell);
+	
+	System.out.println((sheet.getRow(rownum).getCell(colnum).getCellType()) +" "+data);
+	
+//	System.out.println("Cell 1" +cell1+" Cell 2" +cell2);
+//excel.close();
+return data;
+
+}
+
 	// returns the data from a cell
-	public String getCellData(String sheetName,int colNum,int rowNum){
+	public String getCellData(String sheetName,int rowNum,int colNum){
 		try{
 			if(rowNum <=0)
 				return "";
@@ -476,7 +491,7 @@ public class SpreadSheetHelper {
 	    sheet = workbook.getSheet(sheetName);
 	    
 	    for(int i=2;i<=getRowCount(sheetName);i++){
-	    	if(getCellData(sheetName, 0, i).equalsIgnoreCase(testCaseName)){
+	    	if(getCellData(sheetName,i,0).equalsIgnoreCase(testCaseName)){
 	    		
 	    		setCellData(sheetName, screenShotColName, i+index, message,url);
 	    		break;
@@ -489,7 +504,7 @@ public class SpreadSheetHelper {
 	public int getCellRowNum(String sheetName,String colName,String cellValue){
 		
 		for(int i=2;i<=getRowCount(sheetName);i++){
-	    	if(getCellData(sheetName,colName , i).equalsIgnoreCase(cellValue)){
+	    	if(getCellData(sheetName,i,colName).equalsIgnoreCase(cellValue)){
 	    		return i;
 	    	}
 	    }

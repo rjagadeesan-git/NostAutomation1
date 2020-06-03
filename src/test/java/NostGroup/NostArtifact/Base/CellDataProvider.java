@@ -1,21 +1,35 @@
 package NostGroup.NostArtifact.Base;
 
+import java.lang.reflect.Method;
 import java.util.Hashtable;
 
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Parameters;
 
 public class CellDataProvider {
 	
-	public static SpreadSheetHelper helper=null; 
+	public static SpreadSheetHelper helper=null;
 	
 	@DataProvider
-public static Object[][] getData(){
+public static Object[][] getData(Method m){
+		
+		String sheetName=null;
 		
 		if(helper == null){
-			helper = new SpreadSheetHelper("c:\\selenium\\testngdata.xlsx");
+			helper = new SpreadSheetHelper("D:\\Jagan\\Nost_Data_Driven_DP.xlsx");
 		}
 		
-		String sheetName="loginTest";
+		//helper = new SpreadSheetHelper("D:\\Jagan\\Nost_Data_Driven_DP.xlsx");
+		
+		for(int a=0;a<helper.workbook.getNumberOfSheets();a++) {
+			
+		if(m.getName().contains(helper.workbook.getSheetName(a))) {	
+			sheetName=helper.workbook.getSheetName(a);
+			System.out.println(sheetName);
+		} 
+	}
+		
+		//String sheetName="NostLogin";
 		int rows = helper.getRowCount(sheetName);
 		int cols = helper.getColumnCount(sheetName);
 		
@@ -31,7 +45,7 @@ public static Object[][] getData(){
 				
 		//	data[rowNum-2][colNum]=	excel.getCellData(sheetName, colNum, rowNum);
 		
-			table.put(helper.getCellData(sheetName, colNum, 1), helper.getCellData(sheetName, colNum, rowNum));	
+			table.put(helper.getCellData(sheetName,1,colNum), helper.getCellData(sheetName,rowNum,colNum));	
 			data[rowNum-2][0]=table;	
 				
 			}
@@ -41,5 +55,6 @@ public static Object[][] getData(){
 		return data;
 			
 	}
+	
 
 }

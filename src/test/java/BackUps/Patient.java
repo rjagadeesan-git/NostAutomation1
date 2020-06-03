@@ -1,10 +1,9 @@
-package NostGroup.NostArtifact.Manage;
+package BackUps;
 
 import java.awt.AWTException;
 import java.awt.Robot;
 import java.awt.event.KeyEvent;
 import java.io.IOException;
-import java.util.Hashtable;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
@@ -21,7 +20,7 @@ import NostGroup.NostArtifact.Base.CommonMethods;
 
 public class Patient extends CommonMethods{
 	
-	public void addPatient(Hashtable<String,String> data) throws IOException, InterruptedException, AWTException {
+	public void addPatient() throws IOException, InterruptedException, AWTException {
 		
 //		WebDriverWait ex_wait= new WebDriverWait(Driver,20);
 //		Driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
@@ -40,24 +39,24 @@ public class Patient extends CommonMethods{
 	//click("add-patient","csssele");
 	ex_wait.until(ExpectedConditions.presenceOfElementLocated(By.id("mrn")));
 	Thread.sleep(2000);
-	type("patient-mrn","id",data.get("Patient_MRN"));
+	type("patient-mrn","id",readExcel("NostData",28,1));
 	Thread.sleep(2000);
-	type("patient-first-name","id",data.get("Patient_First_Name"));
-	type("patient-last-name","id",data.get("Patient_Last_Name"));
-	selectText("patient-gender","id",data.get("Gender"));
-	type("patient-dob","id",data.get("Patient_DOB"));
-	selectText("patient-status","id",data.get("Patient_Status"));
+	type("patient-first-name","id",readExcel("NostData",28,2));
+	type("patient-last-name","id",readExcel("NostData",28,3));
+	selectText("patient-gender","id",readExcel("NostData",28,4));
+	type("patient-dob","id",readExcel("NostData",28,5));
+	selectText("patient-status","id",readExcel("NostData",28,6));
 	
 	//Selecting Protocol
-	type("patient-protocol-id","id",data.get("Protocol_ID"));
+	type("patient-protocol-id","id",readExcel("NostData",28,7));
 	Thread.sleep(2000);
 	Robot robo=new Robot();
 	robo.keyPress(KeyEvent.VK_ENTER);
 	Thread.sleep(3000);
-	 type("patient-study-id","id",data.get("Patient_Study_ID"));
-	 String drug_com=String.join(" ",data.get("Drug_Name"),data.get("Strength/Concentration"),data.get("Unit_of_Measure"));
+	 type("patient-study-id","id",readExcel("NostData",28,8));
+	 String drug_com=String.join(" ",readExcel("NostData",13,1),readExcel("NostData",13,3),readExcel("NostData",13,4));
      System.out.println(" The Drug combination text in Receive to be selected is  "+ drug_com);
-     String pat_drg_val=data.get("Drug_Name");
+     String pat_drg_val=readExcel("NostData",13,1);
      List<WebElement> pat_drg_opt=Driver.findElements(By.tagName("Option"));
    for(WebElement element:pat_drg_opt)
 	    if(element.getText().contains(pat_drg_val)) {
@@ -66,23 +65,23 @@ public class Patient extends CommonMethods{
 	
 	//Selecting Drug
 //	click("assigned-drug-plus","csssele");
-//	type("patient-start-date","id",data.get("NostData",28,10));
-//	type("patient-stop-date","id",data.get("NostData",28,11));
-	type("cohort-dose-level","id",data.get("Cohort/Dose_Level"));
+//	type("patient-start-date","id",readExcel("NostData",28,10));
+//	type("patient-stop-date","id",readExcel("NostData",28,11));
+	type("cohort-dose-level","id",readExcel("NostData",28,12));
 	
 	//Add Contact info
 	click("add-contact-info","csssele");
-	type("address-1","id",data.get("Address_1"));
-	type("address-2","id",data.get("Address_2"));
-	type("city","id",data.get("City"));
-	type("state","id",data.get("State"));
-	type("zip-postal-code","id",data.get("Zip/Postal_Code"));
-	type("country","id",data.get("Country"));
-	type("home-phone","id",data.get("Home_Phone(s)"));
-	type("work-phone","id",data.get("Work_Phone(s)"));
-	type("email","id",data.get("Email"));
-	type("pid","id",data.get("PID"));
-	type("patient-esgin","id",data.get("esignature"));
+	type("address-1","id",readExcel("NostData",28,13));
+	type("address-2","id",readExcel("NostData",28,14));
+	type("city","id",readExcel("NostData",28,15));
+	type("state","id",readExcel("NostData",28,16));
+	type("zip-postal-code","id",readExcel("NostData",28,17));
+	type("country","id",readExcel("NostData",28,18));
+	type("home-phone","id",readExcel("NostData",28,19));
+	type("work-phone","id",readExcel("NostData",28,20));
+	type("email","id",readExcel("NostData",28,21));
+	type("pid","id",readExcel("NostData",28,22));
+	type("patient-esgin","id",readExcel("NostData",3,3));
 	click("patient-submit","id");
 	
 	Thread.sleep(4000);
@@ -90,16 +89,10 @@ public class Patient extends CommonMethods{
 	Thread.sleep(4000);
 	}
 	
-	public void patientEdit() {}
+	public void editPatient() {}
 	
-	public void patientDispense() {}
+	public void dispenseToPatient() {}
 	
-	public void patientProtocolDisassociation() {}
-	
-	public void patientVerifyTable() {}
-	
-	public void patientVerifyEdit()  {}
-	
-	public void patientVerifyProtocolDisassociation() {}
+	public void pat_Prot_Disso() {}
 	
 }

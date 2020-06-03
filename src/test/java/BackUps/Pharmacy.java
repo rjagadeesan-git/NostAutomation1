@@ -1,7 +1,6 @@
-package NostGroup.NostArtifact.Manage;
+package BackUps;
 
 import java.io.IOException;
-import java.util.Hashtable;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -16,7 +15,7 @@ import NostGroup.NostArtifact.Base.CommonMethods;
 
 public class Pharmacy extends CommonMethods{
 	
-	public void addPharmacy(Hashtable<String,String> data) throws IOException, InterruptedException {
+	public void addPharmacy() throws IOException, InterruptedException {
 		
 //		Actions action=new Actions(Driver);
 //		WebDriverWait ex_wait= new WebDriverWait(Driver,20);
@@ -28,7 +27,7 @@ public class Pharmacy extends CommonMethods{
 		
 		click("organization","csssele");
 		
-		selectText("organization-selection","id",data.get("Organization"));
+		selectText("organization-selection","id",readExcel("NostData",16,1));
 		
 		((JavascriptExecutor)Driver).executeScript("arguments[0].scrollIntoView();", find_element("add-new-pharmacy","csssele"));
 		
@@ -37,33 +36,34 @@ public class Pharmacy extends CommonMethods{
 		// Add Pharmacy
 		click("add-new-pharmacy","csssele");
 		
-		type("pharmacy-name","csssele",data.get("Pharmacy_Name"));
-		check("grant-control-rights","id",data.get("Grant_Control_Rights?"));
-		selectText("nci-record","id",data.get("NCI_Record"));
-		selectText("storage-condition1","id",data.get("Storage_Condition_1"));
+		type("pharmacy-name","csssele",readExcel("NostData",18,1));
+		check("grant-control-rights","id",readExcel("NostData",18,2));
+		selectText("nci-record","id",readExcel("NostData",18,3));
+		
+		selectText("storage-condition1","id",readExcel("NostData",18,4));
 		find_element("storage-location1","id").clear();
-		type("storage-location1","id",data.get("Storage_Location_1"));
-		check("disable-dispense-par-level1","id",data.get("Disable_Dispensing/Par_Level_1"));
+		type("storage-location1","id",readExcel("NostData",18,5));
+		check("disable-dispense-par-level1","id",readExcel("NostData",18,6));
 	//	click("storage-cancel1","csssele");
 		
-		selectText("storage-condition2","id",data.get("Storage_Condition_2"));
+		selectText("storage-condition2","id",readExcel("NostData",18,7));
 		find_element("storage-location2","id").clear();
-		type("storage-location2","id",data.get("Storage_Location_2"));
-		check("disable-dispense-par-level2","id",data.get("Disable_Dispensing/Par_Level_2"));
+		type("storage-location2","id",readExcel("NostData",18,8));
+		check("disable-dispense-par-level2","id",readExcel("NostData",18,9));
 //		click("storage-cancel2","csssele");
 		
-		selectText("storage-condition3","id",data.get("Storage_Condition_3"));
+		selectText("storage-condition3","id",readExcel("NostData",18,10));
 		find_element("storage-location3","id").clear();
-		type("storage-location3","id",data.get("Storage_Location_3"));
-		check("disable-dispense-par-level3","id",data.get("Disable_Dispensing/Par_Level_3"));
+		type("storage-location3","id",readExcel("NostData",18,11));
+		check("disable-dispense-par-level3","id",readExcel("NostData",18,12));
 //		click("storage-cancel3","csssele");
 		
 		((JavascriptExecutor)Driver).executeScript("arguments[0].scrollIntoView();",find_element("add-more1","csssele"));
 		
-		selectText("storage-condition4","id",data.get("Storage_Condition_4"));
+		selectText("storage-condition4","id",readExcel("NostData",18,13));
 		find_element("storage-location4","id").clear();
-		type("storage-location4","id",data.get("Storage_Location_4"));
-		check("disable-dispense-par-level4","id",data.get("Disable_Dispensing/Par_Level_4"));	
+		type("storage-location4","id",readExcel("NostData",18,14));
+		check("disable-dispense-par-level4","id",readExcel("NostData",18,15));
 //		click("storage-cancel4","csssele");
 
 		//click("add-more1","csssele");
@@ -73,19 +73,20 @@ public class Pharmacy extends CommonMethods{
 		//Pharmacy Address
 		
 		click("pharmacy-address","csssele");
-		type("pharmacy-address-1","id",data.get("Address_1"));
-		type("pharmacy-address-2","id",data.get("Address_2"));
-		type("pharmacy-city","id",data.get("City"));
-		type("pharmacy-state","id",data.get("State"	));
-		type("pharmacy-zip-postalcode","id",data.get("Zip/PostalCode"));
-		type("pharmacy-phone","id",data.get("Phone"));
-		type("pharmacy-name-label-name","id",data.get("Pharmacy's_Name_for_Patient_Label"));
-		type("pharmacy-dea","id",data.get("DEA"));
+		
+		type("pharmacy-address-1","id",readExcel("NostData",18,16));
+		type("pharmacy-address-2","id",readExcel("NostData",18,17));
+		type("pharmacy-city","id",readExcel("NostData",18,18));
+		type("pharmacy-state","id",readExcel("NostData",18,19));
+		type("pharmacy-zip-postalcode","id",readExcel("NostData",18,20));
+		type("pharmacy-phone","id",readExcel("NostData",18,21));
+		type("pharmacy-name-label-name","id",readExcel("NostData",18,22));
+		type("pharmacy-dea","id",readExcel("NostData",18,23));
 		
 		//Pharmacy submission
 		
 		//((JavascriptExecutor)Driver).executeScript("arguments[0].scrollIntoView();",find_element("pharmacy-esign","id"));
-		type("pharmacy-esign","id",data.get("esignature"));
+		type("pharmacy-esign","id",readExcel("NostData",3,3));
 		click("pharmacy-submit","csssele");
 		//click("pharmacy-cancel","csssele");
 
@@ -94,14 +95,4 @@ public class Pharmacy extends CommonMethods{
 //		Thread.sleep(4000);
 	}
 
-	public void pharmacyEdit() {}
-	
-	public void pharmacyDelete() {}
-	
-	public void pharmacyVerifyTable() {}
-	
-	public void pharmacyEditVerify() {}
-	
-	public void pharmacyDeleteVerify() {}
-	
 }
