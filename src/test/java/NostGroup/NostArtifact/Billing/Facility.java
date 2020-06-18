@@ -1,5 +1,7 @@
-package NostGroup.NostArtifact.UBAR;
+package NostGroup.NostArtifact.Billing;
 
 public class Facility {
-
+	
+	public void facilityVerify() {}
+	
 }

@@ -19,6 +19,7 @@ public class Protocol extends CommonMethods{
 	//@Test(dataProvider="getData")
 	public void addProtocol(Hashtable<String,String> data) throws IOException, InterruptedException
 	{	
+		System.out.println("Starting Adding protocol.....");
 //		Actions action=new Actions(Driver);
 //		WebDriverWait ex_wait= new WebDriverWait(Driver,20);
 	ex_wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id='Manage']")));

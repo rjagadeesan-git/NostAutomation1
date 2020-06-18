@@ -11,15 +11,19 @@ import NostGroup.NostArtifact.Base.BrowserAct;
 import NostGroup.NostArtifact.Base.CellDataProvider;
 import NostGroup.NostArtifact.Base.NostLogin;
 import NostGroup.NostArtifact.Base.SpreadSheetHelper;
+import NostGroup.NostArtifact.Manage.Catalog;
+import NostGroup.NostArtifact.Manage.Patient;
+import NostGroup.NostArtifact.Manage.Pharmacy;
+import NostGroup.NostArtifact.Manage.Protocol;
+import NostGroup.NostArtifact.Manage.Supplier;
 
 public class NostloginCase extends BrowserAct{
-	
-public static SpreadSheetHelper helper=null;
 	
 @Test(dataProvider="getData",dataProviderClass = CellDataProvider.class,priority=1)
 public void nostLogin(Hashtable<String,String> data) throws IOException, InterruptedException, AWTException {
 	NostLogin login=new NostLogin();
 	login.nost_Login(data);
 }
+
 	}
 

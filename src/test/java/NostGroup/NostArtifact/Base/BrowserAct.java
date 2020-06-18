@@ -7,6 +7,8 @@ import java.util.NoSuchElementException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -29,9 +31,10 @@ public class BrowserAct{
 		CommonMethods.Driver=new FirefoxDriver();
 		CommonMethods.Driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
 		
-		FileInputStream propin= new FileInputStream("D:\\Jagan\\NostAuto\\NostCore\\NostArtifact\\src\\test\\java\\Otherfiles\\locators.properties");
+		FileInputStream propin= new FileInputStream("D:\\Jagan\\NostAuto\\NostCore\\NostArtifact\\src\\test\\java\\Supplies\\locators.properties");
 		CommonMethods.prop.load(propin);
-		
+		CommonMethods.log=Logger.getLogger(BrowserAct.class.getName());
+		PropertyConfigurator.configure("D:\\Jagan\\NostAuto\\NostCore\\NostArtifact\\src\\test\\java\\Supplies\\log4j.properties");
 		CommonMethods.action=new Actions(CommonMethods.Driver);
 		CommonMethods.ex_wait= new WebDriverWait(CommonMethods.Driver,20);
 		CommonMethods.flu_wait= new FluentWait<WebDriver>(CommonMethods.Driver)

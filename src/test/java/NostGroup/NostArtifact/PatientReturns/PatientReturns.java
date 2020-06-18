@@ -1,5 +1,9 @@
 package NostGroup.NostArtifact.PatientReturns;
 
-public class CreatePatientReturns {
+public class PatientReturns {
+	
+	public void patReturnsAdd() {}
+	
+	public void patReturnsVerify() {}
 
 }

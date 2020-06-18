@@ -2,44 +2,26 @@ package NostGroup.NostArtifact.Reports;
 
 public class DrugAccReport {
 	
-	public void verifyReceiveTrans_Lot() {}
+	public void verifyTrans() {}
 	
-	public void verifyReceiveAdjustTrans_Lot() {}
+	public void verifyReceiveTrans() {}
 	
-	public void verifyTransfertoPharmTrans_Lot() {}
+	public void verifyReceiveAdjustTrans() {}
 	
-	public void verifyTransfertoPharmAdjustTrans_Lot() {}
+	public void verifyTransfertoPharmTrans() {}
 	
-	public void verifyDispenseTrans_Lot() {}
+	public void verifyTransfertoPharmAdjustTrans() {}
 	
-	public void verifyDispenseTransAdjust_Lot() {}
+	public void verifyDispenseTrans() {}
 	
-	public void verifyDestroyTrans_Lot() {}
+	public void verifyDispenseTransAdjust() {}
 	
-	public void verifyDestroyAdjustTrans_Lot() {}
+	public void verifyDestroyTrans() {}
 	
-	public void verifyReturntoSuppTrans_Lot() {}
+	public void verifyDestroyAdjustTrans() {}
 	
-	public void verifyReturntoSuppAdjustTrans_Lot() {}
+	public void verifyReturntoSuppTrans() {}
 	
-	public void verifyReceiveTrans_Unit() {}
+	public void verifyReturntoSuppAdjustTrans() {}
 	
-	public void verifyReceiveAdjustTrans_Unit() {}
-	
-	public void verifyTransfertoPharmTrans_Unit() {}
-	
-	public void verifyTransfertoPharmAdjustTrans_Unit() {}
-	
-	public void verifyDispenseTrans_Unit() {}
-	
-	public void verifyDispenseTransAdjust_Unit() {}
-	
-	public void verifyDestroyTrans_Unit() {}
-	
-	public void verifyDestroyAdjustTrans_Unit() {}
-	
-	public void verifyReturntoSuppTrans_Unit() {}
-	
-	public void verifyReturntoSuppAdjustTrans_Unit() {}
-
 }

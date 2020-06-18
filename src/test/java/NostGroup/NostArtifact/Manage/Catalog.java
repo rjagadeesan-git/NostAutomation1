@@ -40,7 +40,7 @@ public class Catalog extends CommonMethods{
 		type("drug-id","xpath",data.get("Drug_ID_#"));
 		type("drug-nsc","xpath",data.get("NSC_#"));
 		type("alternative-drug-name","xpath",data.get("Alternative_Drug_Name"));
-		selectText("compound-med-label","xpath",data.get("Compounded_Med_Label"));
+		//selectText("compound-med-label","xpath",data.get("Compounded_Med_Label"));
 		
 		// Set Defaults
 		click("set-defaults","csssele");
@@ -114,7 +114,7 @@ public class Catalog extends CommonMethods{
 		click("catalog-submit","xpath");
 		//click("catalog-cancel","xpath");
 
-		Thread.sleep(20000);
+		Thread.sleep(2000);
 		
 	}
 	

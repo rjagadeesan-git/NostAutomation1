@@ -6,9 +6,7 @@ public class Dispense {
 	
 	public void dispSaveQueue() {}
 	
-	public void dispLotSubmit() {}
-	
-	public void dispUnitSubmit() {}
+	public void dispSubmit() {}
 	
 	public void dispGenLabel() {}
 	

@@ -3,38 +3,41 @@ package NostGroup.NostArtifact.Base;
 import java.awt.AWTException;
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.time.Duration;
+import java.util.Date;
 import java.util.Hashtable;
-import java.util.NoSuchElementException;
+import java.util.List;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
-
+import javax.imageio.ImageIO;
+import org.apache.commons.io.FileUtils;
+import org.apache.log4j.Logger;
 import org.apache.poi.ss.usermodel.Cell;
-import org.apache.poi.ss.usermodel.CellType;
-import org.apache.poi.ss.usermodel.DataFormat;
 import org.apache.poi.ss.usermodel.DataFormatter;
-import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.Point;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.Test;
-import NostGroup.NostArtifact.Receive.Receive;
-import NostGroup.NostArtifact.Transfer.TransferToPharmacy;
+import org.testng.Assert;
+import org.testng.Reporter;
+
+import com.relevantcodes.extentreports.DisplayOrder;
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.LogStatus;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
+import ru.yandex.qatools.ashot.AShot;
+import ru.yandex.qatools.ashot.Screenshot;
+import ru.yandex.qatools.ashot.shooting.ShootingStrategies;
 
 public class CommonMethods {
 	
@@ -42,6 +45,8 @@ public class CommonMethods {
 	public static Actions action;
 	public static WebDriverWait ex_wait;
 	public static Wait<WebDriver> flu_wait;
+	public static Logger log;
+	public static Reporter RepLog;
 //    public Actions action=new Actions(Driver);
 //	public WebDriverWait ex_wait= new WebDriverWait(Driver,20);
 //	public Wait<WebDriver> flu_wait= new FluentWait<WebDriver>(Driver)
@@ -51,357 +56,143 @@ public class CommonMethods {
 //		.ignoring(NoSuchElementException.class);
 
 	public static Properties prop=new Properties();
+	public static String imagename;
+	public static String imagename_a;
+	public static String imagename_ele;
+	public static String exreportname;
+	private static ExtentReports extent;
+	//public ExtentReports exreport=ExtentedReports.getObj();
+	public ExtentReports exreport=getExtentReportsObj();
+	public static ExtentTest extest;
 	
-	public CommonMethods() {
-		if(Driver==null) {
-			WebDriverManager.firefoxdriver().setup();
-			Driver=new FirefoxDriver();
-			Driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-		}
+//	public CommonMethods() {
+//		if(Driver==null) {
+//			WebDriverManager.firefoxdriver().setup();
+//			Driver=new FirefoxDriver();
+//			Driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+//		}
+//		
+//	}	
+	public static void main(String[] args) throws IOException, InterruptedException, AWTException {	}
+	
+	public static void click(String locator,String locatortype) {
 		
-	}
-	
-	public static void main(String[] args) throws IOException, InterruptedException, AWTException {
-	
-//	WebDriverManager.firefoxdriver().setup();
-//	Driver=new FirefoxDriver();
-		
-//	TuleapLogin loginobj= new TuleapLogin();
-//		loginobj.login();
-//	NostBug bugobj= new NostBug();
-//		bugobj.bugCreation();
-		
-//	NostLogin loginobj=new NostLogin();
-//	loginobj.login();
-	
-//	AddProtocol obj2=new AddProtocol();
-//	obj2.addProtocol();
-//
-//	AddPharmacy obj4=new AddPharmacy();
-//	obj4.addPharmacy();
-//	
-//	AddSupplier obj5=new AddSupplier();
-//	obj5.addSupplier();
-//
-//	AddCatalog obj1=new AddCatalog();
-// 	obj1.addDrug();
-//	
-//	AddPatient obj3=new AddPatient();
-//	obj3.addPatient();
-		
-//	Receive recobj=new Receive();
-//	recobj.receiveLot();
-	
-//	Receive recobj1=new Receive();
-//	recobj1.receiveUnit();
-//	
-//	Receive recobj2=new Receive();
-//	recobj2.rec_SubmitQueue();
-	
-//	TransferToPharmacy transobj1=new TransferToPharmacy();
-//	transobj1.transferLot();
-	
-//	TransferToPharmacy transobj2=new TransferToPharmacy();
-//	transobj2.transferUnit();
+		WebElement clickelement=find_element(locator, locatortype);
+		clickelement.click();
+		extest.log(LogStatus.INFO,"Clicked the item: "+locator);
+		log.info("Clicked the item: "+locator);
+		Reporter.log("Clicked the item: "+locator);
 	
 	}
-
-		public static void click(String locator,String locatortype) {
-			
-			if(locatortype=="xpath") {
-				
-				Driver.findElement(By.xpath(prop.getProperty(locator))).click();
-				
-			}else if(locatortype=="id") {
-				
-				Driver.findElement(By.id(prop.getProperty(locator))).click();
-				
-			}else if(locatortype=="name") {
-				
-				Driver.findElement(By.name(prop.getProperty(locator))).click();
-				
-			}else if(locatortype=="class") {
-				
-				Driver.findElement(By.className(prop.getProperty(locator))).click();
-				
-			}else if(locatortype=="csssele") {
-				
-				Driver.findElement(By.cssSelector(prop.getProperty(locator))).click();
-				
-			}else if(locatortype=="linktext") {
-				
-				Driver.findElement(By.linkText(prop.getProperty(locator))).click();
-				
-			} else if(locatortype=="partialtext") {
-				
-				Driver.findElement(By.partialLinkText(prop.getProperty(locator))).click();
-				
-			}
-				
-		}
 		
-	public static void type(String locator,String locatortype,String value) {
+		public static void type(String locator,String locatortype,String value) {
 			
-			if(locatortype=="xpath") {
-				
-				Driver.findElement(By.xpath(prop.getProperty(locator))).sendKeys(value);
-				
-			}else if(locatortype=="id") {
-				
-				Driver.findElement(By.id(prop.getProperty(locator))).sendKeys(value);
-				
-			}else if(locatortype=="name") {
-				
-				Driver.findElement(By.name(prop.getProperty(locator))).sendKeys(value);
-				
-			}else if(locatortype=="class") {
-				
-				Driver.findElement(By.className(prop.getProperty(locator))).sendKeys(value);
-				
-			}else if(locatortype=="csssele") {
-				
-				Driver.findElement(By.cssSelector(prop.getProperty(locator))).sendKeys(value);
-				
-			}else if(locatortype=="linktext") {
-				
-				Driver.findElement(By.linkText(prop.getProperty(locator))).sendKeys(value);
-				
-			} else if(locatortype=="partialtext") {
-				
-				Driver.findElement(By.partialLinkText(prop.getProperty(locator))).sendKeys(value);
-				
-			}
-				
+			WebElement typeelement=find_element(locator, locatortype);
+			typeelement.sendKeys(value);
+			extest.log(LogStatus.INFO,"Entered the value '"+value+"' in field '"+locator+"'");
+			log.info("Entered the value '"+value+"' in field '"+locator+"'");
+			Reporter.log("Entered the value '"+value+"' in field '"+locator+"'");		
 		}
 	
-
 	public static void check(String locator,String locatortype, String condition) {
 		
-		if(locatortype=="xpath") {
+		WebElement checkelement=find_element(locator, locatortype);
+		log.info(locator+" selection is "+checkelement.isSelected());
+		if((condition.equalsIgnoreCase("Yes")) && (checkelement.isSelected()==false)) {
 			
-			WebElement c_xpath=Driver.findElement(By.xpath(prop.getProperty(locator)));
-			
-			System.out.println(c_xpath.isSelected());
-			
-			if((condition.equalsIgnoreCase("Yes")) && (c_xpath.isSelected()==false)) {
-				
-				System.out.println(" Condition is YES");
-				
-				System.out.println("Checkbox is not selected on Load");
-				
-				c_xpath.click();
-				
-			}
-			else if((condition.equalsIgnoreCase("No")) && (c_xpath.isSelected()==true))
-			{
-				
-			System.out.println(" Condition is NO");
-				
-			System.out.println(" Checkbox is selected on load");
-
-				c_xpath.click();
-				
-				System.out.println(locator + "  is clicked");
-			}
-			
-			else { System.out.println("\n" + locator + "  is checked by default"); }
-			
-		}else if(locatortype=="id") {
-			
-			WebElement c_id=Driver.findElement(By.id(prop.getProperty(locator)));
-			
-			System.out.println(c_id.isSelected());
-			
-			System.out.println(" Condition is  "+ condition);
-			
-			if((condition.equalsIgnoreCase("Yes")) && (c_id.isSelected()==false)){
-					
-				System.out.println(" Condition is YES");
-				
-					System.out.println("Checkbox is not selected on Load");
-					
-				c_id.click();
-				
-				System.out.println(locator + "  is clicked");
-			}
-			
-			else if((condition.equalsIgnoreCase("No")) && (c_id.isSelected()==true))
-			{
-				System.out.println(" Condition is NO");
-				
-				System.out.println(" Checkbox is selected on load");
-				
-				c_id.click();
-				
-				System.out.println(locator + "  is clicked");
-			}
-			
-			else { System.out.println(locator + "  is checked by default"); }
-			
-			
-		}else if(locatortype=="name") {
-			
-			WebElement c_name=Driver.findElement(By.name(prop.getProperty(locator)));
-			
-			System.out.println(c_name.isSelected());
-			
-			if((condition.equalsIgnoreCase("Yes")) && (c_name.isSelected()==false)) {
-				
-				System.out.println(" Condition is YES");
-				
-				System.out.println("Checkbox is not selected on Load");
-				
-				c_name.click();
-				
-				System.out.println(locator + "  is clicked");
-			
-			}
-			else if((condition.equalsIgnoreCase("No")) && (c_name.isSelected()==true))
-			{
-				System.out.println(" Condition is NO");
-				
-				System.out.println(" Checkbox is selected on load");
-				
-				c_name.click();
-				
-				System.out.println(locator + "  is clicked");
-			}
-			
-			else { System.out.println(locator + "is checked by default"); }
-			
-			
-		}else if(locatortype=="class") {
-			
-			WebElement c_class=Driver.findElement(By.className(prop.getProperty(locator)));
-			
-			System.out.println(c_class.isSelected());
-			
-			if((condition.equalsIgnoreCase("Yes")) && (c_class.isSelected()==false)) {
-				
-				System.out.println(" Condition is YES");
-				
-				System.out.println("Checkbox is not selected on Load");
-				
-				c_class.click();
-				
-				System.out.println(locator + "  is clicked");
-				
-			}
-			else if((condition.equalsIgnoreCase("No")) && (c_class.isSelected()==true))
-			{
-				System.out.println(" Condition is NO");
-				
-				System.out.println(" Checkbox is selected on load");
-				
-				c_class.click();
-				
-				System.out.println(locator + "  is clicked");
-			}
-			
-			else { System.out.println(locator + "  is checked by default"); }
-			
-			
-		}else if(locatortype=="csssele") {
-			
-			WebElement c_csssele=Driver.findElement(By.cssSelector(prop.getProperty(locator)));
-			
-			System.out.println(c_csssele.isSelected());
-			
-			if((condition.equalsIgnoreCase("Yes")) && (c_csssele.isSelected()==false)) {
-				
-				System.out.println(" Condition is YES");
-				
-				System.out.println("Checkbox is not selected on Load");
-				
-				c_csssele.click();
-				
-				System.out.println(locator + "  is clicked");
-			}
-			else if((condition.equalsIgnoreCase("No")) && (c_csssele.isSelected()==true))
-			{
-				
-System.out.println(" Condition is NO");
-
-				System.out.println(" Checkbox is selected on load");
-				c_csssele.click();
-				
-				System.out.println(locator + "  is clicked");
-			}
-			
-			else { System.out.println(locator + "is checked by default"); }
-			
-			
-		}else if(locatortype=="linktext") {
-			
-			WebElement c_linktext=Driver.findElement(By.linkText(prop.getProperty(locator)));
-			
-			System.out.println(c_linktext.isSelected());
-			
-			if((condition.equalsIgnoreCase("Yes")) && (c_linktext.isSelected()==false)) {
-				
-				System.out.println(" Condition is YES");
-				
-				System.out.println("Checkbox is not selected on Load");
-				
-				c_linktext.click();
-				
-				System.out.println(locator + "   is checked by default");
-			}
-			else if((condition.equalsIgnoreCase("No")) && (c_linktext.isSelected()==true))
-			{
-				
-				System.out.println(" Condition is NO");
-				
-				System.out.println(" Checkbox is selected on load");
-				
-				c_linktext.click();
-				
-				System.out.println(locator + "  is clicked");
-			}
-			
-			else { System.out.println(locator + "is checked by default"); }
-			
-			
-		} else if(locatortype=="partialtext") {
-			
-			WebElement c_partialtext=Driver.findElement(By.partialLinkText(prop.getProperty(locator)));
-			
-			System.out.println(c_partialtext.isSelected());
-			
-			if((condition.equalsIgnoreCase("Yes")) && (c_partialtext.isSelected()==false)) {
-				
-				System.out.println(" Condition is YES");
-				
-				System.out.println("Checkbox is not selected on Load");
-				
-				c_partialtext.click();
-				
-				System.out.println(locator + "is checked by default");
-			}
-			else if((condition.equalsIgnoreCase("No")) && (c_partialtext.isSelected()==true))
-			{	
-				System.out.println(" Condition is NO");
-				
-				System.out.println(" Checkbox is selected on load");
-				
-				c_partialtext.click();
-				
-				System.out.println(locator + "  is clicked");
-			}
-			
-			else { System.out.println(locator + "is checked by default"); }
+			checkelement.click();
+			log.info(" Input is Yes for the field '"+locator+"' and Checkbox is unchecked by default, now checked/ticked successfully");
+			extest.log(LogStatus.INFO,"Input is Yes for the field '"+locator+"' and unchecked by default, now checked/ticked successfully");
+			Reporter.log(" Input is Yes for the field '"+locator+"' and Checkbox is unchecked by default, now checked/ticked successfully");
 			
 		}
+		else if((condition.equalsIgnoreCase("No")) && (checkelement.isSelected()==true))
+		{
+			checkelement.click();
+		log.info("Input is No for the field '"+locator+"' and checked by default, now unchecked/unticked successfully");
+		extest.log(LogStatus.INFO,"Input is No for the field '"+locator+"' and checked by default, now unchecked/unticked successfully");
+		Reporter.log("Input is No for the field '"+locator+"' and checked by default, now unchecked/unticked successfully");	
+		
+		}
+		
+		else { 
+			log.info("'"+locator+"' is checked/ticked by default");
+			Reporter.log("'"+locator+"' is checked/ticked by default");
+			extest.log(LogStatus.INFO,"'"+locator+"' is checked/ticked by default");
+			
+		}
+		
+	}
+
+	public static void selectText(String locator,String locatortype,String text) {
+		
+		WebElement selecttext=find_element(locator, locatortype);
+		
+		Select select =new Select(selecttext);
+		select.selectByVisibleText(text);
+		extest.log(LogStatus.INFO,"Selected the value '"+text+"' in field '"+locator+"'");
+		log.info("Selected the value '"+text+"' in field '"+locator+"'");
+		Reporter.log("Selected the value '"+text+" in field '"+locator+"'");		
+	}
+	
+	public static void selectValue(String locator,String locatortype,String value) {
+		
+		WebElement selectvalue=find_element(locator, locatortype);		 
+		
+		Select select =new Select(selectvalue);
+		select.selectByValue(value);
+		extest.log(LogStatus.INFO,"Selected the value(key) "+value+" in "+locator);
+		log.info("Selected the value(key) "+value+" in "+locator);
+		Reporter.log("Selected the value(key) "+value+" in "+locator);
+		
+	}
+	
+	public static void screenshotReg() throws IOException  {
+		
+		String DateString=new Date().toString().replace(":","_").replace(" ", "_");
+		imagename=("Screenshot_"+DateString+".jpg");
+		File screenshot=((TakesScreenshot) Driver).getScreenshotAs(OutputType.FILE);
+		FileUtils.copyFile(screenshot, new File(".//Screenshots//"+imagename));
+	}
+
+	public static void snapShot() throws IOException {
+		
+		String DateString=new Date().toString().replace(":","_").replace(" ", "_");
+		imagename_a=("Screenshot_A_"+DateString+".jpg");
+		Screenshot screenshot=new AShot().shootingStrategy(ShootingStrategies.viewportPasting(1000)).takeScreenshot(Driver);
+		ImageIO.write(screenshot.getImage(),"jpg",new File(".//Screenshots-A//"+imagename_a));
+		
+	}
+
+	public static void snapShotElement(WebElement element) throws IOException {
+		
+		String DateString=new Date().toString().replace(":","_").replace(" ", "_");
+		imagename_ele=("Screenshot_Ele_"+DateString+".jpg");
+		Screenshot screenshot=new AShot().shootingStrategy(ShootingStrategies.viewportPasting(1000)).takeScreenshot(Driver,element);
+		ImageIO.write(screenshot.getImage(),"jpg", new File(".//Screenshot-Element//"+imagename_ele));
+		
+	}
+
+	public static ExtentReports getExtentReportsObj() {
+		
+		if(extent==null) {
+			
+			String DateString=new Date().toString().replace(":","_").replace(" ", "_");
+			exreportname=("Extent_"+DateString+".html");
+			extent=new ExtentReports(System.getProperty("user.dir")+"\\ExtentReports\\"+exreportname,true,DisplayOrder.OLDEST_FIRST);
+			 extent.loadConfig(new File(System.getProperty("user.dir")+"\\ExtentReports\\ExtentConfig.xml"));
+		}
+		return extent;
 	}
 
 	public static WebElement find_element(String locator,String locatortype) {
 		
-		System.out.println(" calling find element method...");
-		
 		WebElement findelement_out=null;
 		
-		System.out.println(prop.getProperty(locator));
+		System.out.println("Finding element: "+locator);
 		
+		log.info("Finding Element: "+prop.getProperty(locator));
+			
 		if(locatortype=="xpath") {
 			
 			WebElement xpath_in=Driver.findElement(By.xpath(prop.getProperty(locator)));
@@ -437,80 +228,91 @@ System.out.println(" Condition is NO");
 			WebElement partialtext_in=Driver.findElement(By.partialLinkText(prop.getProperty(locator)));
 			findelement_out=partialtext_in;
 			
+		} 
+		
+		log.info("Found Element: "+prop.getProperty(locator));
+		return findelement_out;
+	}
+	
+	public List<WebElement> find_elements(String locator,String locatortype) {
+		
+		System.out.println(" calling find element method...");
+		
+		List<WebElement> findelement_out=null;
+		
+		System.out.println(locator);
+		
+		if(locatortype=="xpath") {
+			
+			List<WebElement> xpath_in=Driver.findElements(By.xpath(locator));
+			findelement_out=xpath_in;
+			
+		} else if(locatortype=="id") {
+			
+			List<WebElement> id_in=Driver.findElements(By.id(locator));
+			findelement_out=id_in;
+			
+		}else if(locatortype=="name") {
+			
+			List<WebElement> name_in=Driver.findElements(By.name(locator));
+			findelement_out=name_in;
+			
+		}else if(locatortype=="class") {
+			
+			List<WebElement> class_in=Driver.findElements(By.className(locator));
+			findelement_out=class_in;
+			
+		} else if(locatortype=="csssele") {
+			
+			List<WebElement> csssele_in=Driver.findElements(By.cssSelector(locator));
+			findelement_out=csssele_in;
+			
+		} else if(locatortype=="linktext") {
+			
+			List<WebElement> link_in=Driver.findElements(By.linkText(locator));
+			findelement_out=link_in;
+			
+		} else if(locatortype=="partiallink") {
+			
+			List<WebElement> partialtext_in=Driver.findElements(By.partialLinkText(locator));
+			findelement_out=partialtext_in;
+			
 		}
 		
 		System.out.println(findelement_out);
 		return findelement_out;
 	}	
 
-	//public List find_elements(String locator,String locatortype) {
-	//	
-//		System.out.println(" calling find element method...");
-	//	
-//		List findelement_out=null;
-	//	
-//		System.out.println(locator);
-	//	
-//		if(locatortype=="xpath") {
-//			
-//			List<WebElement> xpath_in=Driver.findElements(By.xpath(locator));
-//			findelement_out=xpath_in;
-//			
-//		} else if(locatortype=="id") {
-//			
-//			List<WebElement> id_in=Driver.findElements(By.id(locator));
-//			findelement_out=id_in;
-//			
-//		}else if(locatortype=="name") {
-//			
-//			List<WebElement> name_in=Driver.findElements(By.name(locator));
-//			findelement_out=name_in;
-//			
-//		}else if(locatortype=="class") {
-//			
-//			List<WebElement> class_in=Driver.findElements(By.className(locator));
-//			findelement_out=class_in;
-//			
-//		} else if(locatortype=="csssele") {
-//			
-//			List<WebElement> csssele_in=Driver.findElements(By.cssSelector(locator));
-//			findelement_out=csssele_in;
-//			
-//		} else if(locatortype=="linktext") {
-//			
-//			List<WebElement> link_in=Driver.findElements(By.linkText(locator));
-//			findelement_out=link_in;
-//			
-//		} else if(locatortype=="partiallink") {
-//			
-//			List<WebElement> partialtext_in=Driver.findElements(By.partialLinkText(locator));
-//			findelement_out=partialtext_in;
-//			
-//		}
-	//	
-//		System.out.println(findelement_out);
-//		return findelement_out;
-	//}	
+	
+	public String getSign(Hashtable<String,String> data) {
 
-public static void selectText(String locator,String locatorType,String text) {
-	
-	WebElement selecttext=find_element(locator, locatorType);
-	
-	Select select =new Select(selecttext);
-	select.selectByVisibleText(text);
-	
-}
+		return null;
+		
+	}
 
-public static void selectValue(String locator,String locatorType,String value) {
-	
-	WebElement selectvalue=find_element(locator, locatorType);	
-	
-	//((JavascriptExecutor)Driver).executeScript("arguments[0].scrollIntoView();", selectvalue);	 
-	
-	Select select =new Select(selectvalue);
-	select.selectByValue(value);
-	
-}
+	public static boolean isExecuteTest(String testname,SpreadSheetHelper spreadsheet) {
+		
+		String sheetname="TestExecutor";
+		int rows=spreadsheet.getRowCount(sheetname);
+		
+		for(int rNum=2;rNum<=rows;rNum++) {
+			
+			String testCase=spreadsheet.getCellData(sheetname, rNum, "TestCaseID");
+			
+			if(testCase.equalsIgnoreCase(testname)) {
+				
+				String runmode=spreadsheet.getCellData(sheetname, rNum, "runtest");
+			if(runmode.equalsIgnoreCase("Y"))
+				return true;
+			else
+				return false;
+			}
+		}
+			
+		return false;
+		
+	}
+
 
 public static String readExcel(String sheetName,int rownum,int colnum) throws IOException {
 	
@@ -541,12 +343,6 @@ public static String readExcel(String sheetName,int rownum,int colnum) throws IO
 //excel.close();
 return excelout;
 
-}
-
-public String getSign(Hashtable<String,String> data) {
-
-	return null;
-	
 }
 
 }

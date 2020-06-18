@@ -34,63 +34,63 @@ public class IDSFlow_M_R_PR extends BrowserAct{
 		Protocol prot=new Protocol();
 		prot.addProtocol(data);
 	}
-//	
-//	@Test(priority=3)
-//	public void addPharmacy() throws IOException, InterruptedException, AWTException {
-//		Pharmacy pharm=new Pharmacy();
-//		pharm.addPharmacy();
-//	}
-//	
-//	@Test(priority=4)
-//	public void addSupplier() throws IOException, InterruptedException {
-//		Supplier supp=new Supplier();
-//		supp.addSupplier();
-//	}
-//	
-//	@Test(priority=5)
-//	public void addCatalog() throws InterruptedException, IOException {
-//		Catalog drug=new Catalog();
-//		drug.addDrug();
-//	}
-//	
-//	@Test(priority=6)
-//	public void addPatient() throws IOException, InterruptedException, AWTException {
-//		Patient patient=new Patient();
-//		patient.addPatient();
-//	}
-//	
-//	@Test(priority=7)
-//	public void receive() throws IOException, InterruptedException, AWTException {
-//		
-//		Receive rec=new Receive();
-//		rec.receiveCommon();
-//		rec.rec_SubmitQueue();
-//	}
-//	
-//	@Test(priority=8)
-//	public void verifyReceive() {}
-//	
-//	@Test(priority=9)
-//	public void transfertoPharm() throws IOException, InterruptedException, AWTException {
-//		
-//		TransferToPharmacy transGen=new TransferToPharmacy();
-//		transGen.transferCommon();
-//	}
-//	
-//	@Test(priority=10)
-//	public void verifyTranstoPharm() {}
-//	
-//	@Test(priority=11)
-//	public void dispense() {}
-//	
-//	@Test(priority=12)
-//	public void verifyDispense() {}
-//	
-//	@Test(priority=13)
-//	public void patReturn() {}
-//	
-//	@Test(priority=14)
-//	public void verifyPatReturn() {}
+	
+	@Test(dataProvider="getData",dataProviderClass = CellDataProvider.class,priority=3)
+	public void addPharmacy(Hashtable<String,String> data) throws IOException, InterruptedException, AWTException {
+		Pharmacy pharm=new Pharmacy();
+		pharm.addPharmacy(data);
+	}
+	
+	@Test(dataProvider="getData",dataProviderClass = CellDataProvider.class,priority=4)
+	public void addSupplier(Hashtable<String,String> data) throws IOException, InterruptedException {
+		Supplier supp=new Supplier();
+		supp.addSupplier(data);
+	}
+	
+	@Test(dataProvider="getData",dataProviderClass = CellDataProvider.class,priority=5)
+	public void addCatalog(Hashtable<String,String> data) throws InterruptedException, IOException {
+		Catalog drug=new Catalog();
+		drug.addDrug(data);
+	}
+	
+	@Test(dataProvider="getData",dataProviderClass = CellDataProvider.class,priority=6)
+	public void addPatient(Hashtable<String,String> data) throws IOException, InterruptedException, AWTException {
+		Patient patient=new Patient();
+		patient.addPatient(data);
+	}
+	
+	@Test(dataProvider="getData",dataProviderClass = CellDataProvider.class,priority=7)
+	public void receive(Hashtable<String,String> data) throws IOException, InterruptedException, AWTException {
+		
+		Receive rec=new Receive();
+		rec.receiveCommon(data);
+		rec.receiveSubmitQueue(data);
+	}
+	
+	@Test(dataProvider="getData",dataProviderClass = CellDataProvider.class,priority=8)
+	public void verifyReceive() {}
+	
+	@Test(dataProvider="getData",dataProviderClass = CellDataProvider.class,priority=9)
+	public void transfertoPharm(Hashtable<String,String> data) throws IOException, InterruptedException, AWTException {
+		
+		TransferToPharmacy transGen=new TransferToPharmacy();
+		transGen.transferCommon(data);
+	}
+	
+	@Test(dataProvider="getData",dataProviderClass = CellDataProvider.class,priority=10)
+	public void verifyTranstoPharm() {}
+	
+	@Test(dataProvider="getData",dataProviderClass = CellDataProvider.class,priority=11)
+	public void dispense() {}
+	
+	@Test(dataProvider="getData",dataProviderClass = CellDataProvider.class,priority=12)
+	public void verifyDispense() {}
+	
+	@Test(dataProvider="getData",dataProviderClass = CellDataProvider.class,priority=13)
+	public void patReturn() {}
+	
+	@Test(dataProvider="getData",dataProviderClass = CellDataProvider.class,priority=14)
+	public void verifyPatReturn() {}
 
 //
 //	@DataProvider

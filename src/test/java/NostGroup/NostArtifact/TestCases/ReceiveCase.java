@@ -15,6 +15,7 @@ import NostGroup.NostArtifact.Manage.Pharmacy;
 import NostGroup.NostArtifact.Manage.Protocol;
 import NostGroup.NostArtifact.Manage.Supplier;
 import NostGroup.NostArtifact.Receive.Receive;
+import NostGroup.NostArtifact.Transfer.TransferToPharmacy;
 
 public class ReceiveCase extends BrowserAct{
 	
@@ -31,4 +32,5 @@ public class ReceiveCase extends BrowserAct{
 		rec.receiveSubmitQueue(data);
 //		rec.rec_SubmitQueueAlone();
 	}
+
 }

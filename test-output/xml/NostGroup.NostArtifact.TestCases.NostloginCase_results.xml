@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Nost-Login Test"
+           tests="6"
+           failures="1"
+           errors="0"
+           skipped="0"
+           time="125.137">
+  <properties />
+            <testcase name="addPatient" time="11.688" classname="NostGroup.NostArtifact.TestCases.NostloginCase">
+                <failure type="org.openqa.selenium.UnhandledAlertException"
+                  message="Dismissed user prompt dialog: Please input the Patient MRN first.: 
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;CSEKARAITHENT&apos;, ip: &apos;192.168.195.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_112&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 77.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200602222727, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 17756, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 8573ff57-c257-46e4-a94b-94761d7c6323"
+              >
+<![CDATA[org.openqa.selenium.UnhandledAlertException: Dismissed user prompt dialog: Please input the Patient MRN first.: 
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'CSEKARAITHENT', ip: '192.168.195.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_112'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 77.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200602222727, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 17756, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 8573ff57-c257-46e4-a94b-94761d7c6323
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+  org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+  org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
+  NostGroup.NostArtifact.Base.CommonMethods.screenshotReg(CommonMethods.java:154)
+  NostGroup.NostArtifact.Base.Listeners.onTestFailure(Listeners.java:43)
+  org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:66)
+  org.testng.internal.TestInvoker.runTestResultListener(TestInvoker.java:219)
+  org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:651)
+  org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+  org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+  org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+  org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+  java.util.ArrayList.forEach(ArrayList.java:1249)
+  org.testng.TestRunner.privateRun(TestRunner.java:766)
+  org.testng.TestRunner.run(TestRunner.java:587)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+  org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+  org.testng.SuiteRunner.run(SuiteRunner.java:286)
+  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+  org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+  org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+  org.testng.TestNG.runSuites(TestNG.java:1039)
+  org.testng.TestNG.run(TestNG.java:1007)
+  org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+  org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+  org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+      </failure>
+
+          </testcase>
+  
+  
+            <testcase name="addProtocol" time="24.108" classname="NostGroup.NostArtifact.TestCases.NostloginCase" />
+                <testcase name="addPharmacy" time="19.387" classname="NostGroup.NostArtifact.TestCases.NostloginCase" />
+                <testcase name="addCatalog" time="23.844" classname="NostGroup.NostArtifact.TestCases.NostloginCase" />
+                <testcase name="addSupplier" time="22.449" classname="NostGroup.NostArtifact.TestCases.NostloginCase" />
+                <testcase name="nostLogin" time="23.661" classname="NostGroup.NostArtifact.TestCases.NostloginCase" />
+      
+</testsuite>

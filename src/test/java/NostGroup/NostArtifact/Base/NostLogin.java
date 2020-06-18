@@ -1,15 +1,23 @@
 package NostGroup.NostArtifact.Base;
 
+import static org.testng.Assert.fail;
+
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.lang.reflect.Method;
 import java.util.Hashtable;
 import java.util.Properties;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.Assert;
+import org.testng.Reporter;
+import org.testng.SkipException;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+
+import com.relevantcodes.extentreports.LogStatus;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -29,47 +37,31 @@ public class NostLogin extends CommonMethods{
 //		FileInputStream propin= new FileInputStream("D:\\Jagan\\NostAuto\\NostCore\\NostArtifact\\src\\test\\java\\Otherfiles\\locators.properties");
 //		prop.load(propin);
 		
-	System.out.println(prop.getProperty("url"));
-	Driver.get(prop.getProperty("url"));
-    System.out.println(Driver.getTitle());
+		System.out.println(prop.getProperty("url"));
+		log.info(prop.getProperty("url"));
+		Driver.get(prop.getProperty("url"));
+	    System.out.println(Driver.getTitle());
+	    
+		if(!data.get("rundata").equalsIgnoreCase("Y")) {
+			
+			extest.log(LogStatus.SKIP, "Skipping this Row Data since 'rundata' marked as 'No'");
+			//Reporter.log("Skipping the Data since marked rundata as 'No'");
+			throw new SkipException("Skipping this Row Data since 'rundata' marked as 'No'");
+		
+		}
+		
     System.out.println("Starting to Login...");
-
+    log.info("Starting to Login...");
+    Reporter.log("Starting to Login....");
     type("username","xpath",data.get("UserName"));
+    System.out.println("Entering Password....");
     type("password","xpath",data.get("PassWord"));
     click("login-button","xpath");
-	
-	}
+log.info("logged in successfully...");
+System.out.println("logged in successfully...");
 
-//	public static Object[][] getData(){
-//			
-//			if(helper == null){
-//				helper = new SpreadSheetHelper("D:\\Jagan\\Nost_Data_Driven_DP.xlsx");
-//			}
-//			
-//			String sheetName="NostLogin";
-//			int rows = helper.getRowCount(sheetName);
-//			int cols = helper.getColumnCount(sheetName);
-//			
-//			Object[][] data = new Object[rows-1][1];
-//			
-//			Hashtable<String,String> table = null;
-//			
-//			for(int rowNum=2; rowNum<=rows; rowNum++){
-//				
-//				table = new Hashtable<String,String>();
-//				
-//				for(int colNum=0; colNum<cols; colNum++){
-//					
-//			//	data[rowNum-2][colNum]=	excel.getCellData(sheetName, colNum, rowNum);
-//			
-//				table.put(helper.getCellData(sheetName,1,colNum), helper.getCellData(sheetName,rowNum,colNum));	
-//				data[rowNum-2][0]=table;	
-//					
-//				}
-//				
-//			}
-//			
-//			return data;
-//				
-//		}
+//    Reporter.log("logged in successfully...");
+    //Assert.fail("Failing for Sake");
+    
+	}
 }

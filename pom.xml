@@ -14,9 +14,11 @@
   <url>http://www.example.com</url>
 
   <properties>
+  <testngpath>D:/Jagan/NostAuto/NostCore/NostArtifact</testngpath>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.7</maven.compiler.source>
     <maven.compiler.target>1.7</maven.compiler.target>
+    
   </properties>
 
   <dependencies>
@@ -25,6 +27,21 @@
       <artifactId>junit</artifactId>
       <version>3.8.1</version>
     </dependency>
+    
+    <!-- https://mvnrepository.com/artifact/log4j/log4j -->
+<dependency>
+    <groupId>log4j</groupId>
+    <artifactId>log4j</artifactId>
+    <version>1.2.17</version>
+</dependency>
+    
+    <!-- https://mvnrepository.com/artifact/org.uncommons/reportng -->
+<dependency>
+    <groupId>org.uncommons</groupId>
+    <artifactId>reportng</artifactId>
+    <version>1.1.4</version>
+    <scope>test</scope>
+</dependency>
     
     <!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml -->
 <dependency>
@@ -56,6 +73,31 @@
     <scope>test</scope>
 </dependency>
 
+<!-- https://mvnrepository.com/artifact/com.relevantcodes/extentreports -->
+<dependency>
+    <groupId>com.relevantcodes</groupId>
+    <artifactId>extentreports</artifactId>
+    <version>2.41.2</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/ru.yandex.qatools.ashot/ashot -->
+<dependency>
+    <groupId>ru.yandex.qatools.ashot</groupId>
+    <artifactId>ashot</artifactId>
+    <version>1.5.4</version>
+</dependency>
+
+
+
+ <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-surefire-plugin -->
+  <!-- 
+<dependency>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-surefire-plugin</artifactId>
+    <version>2.22.2</version>
+</dependency> -->
+
+
   </dependencies>
 
   <build>
@@ -82,10 +124,10 @@
           <artifactId>maven-compiler-plugin</artifactId>
           <version>3.8.0</version>
         </plugin>
-        <plugin>
+        <!-- <plugin>
           <artifactId>maven-surefire-plugin</artifactId>
           <version>2.22.1</version>
-        </plugin>
+        </plugin> -->
         <plugin>
           <artifactId>maven-jar-plugin</artifactId>
           <version>3.0.2</version>
@@ -98,6 +140,21 @@
           <artifactId>maven-deploy-plugin</artifactId>
           <version>2.8.2</version>
         </plugin>
+        
+        <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-surefire-plugin -->
+ <plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-surefire-plugin</artifactId>
+    <version>2.22.2</version>
+    <configuration>
+    	<!-- <testFailureIgnore>false</testFailureIgnore> -->
+    	<suiteXmlFiles>
+    	<!-- <suiteXmlFile>src/test/java/Initiator/testng.xml</suiteXmlFile> -->
+    	<suiteXmlFile>TestNG-xmls/testng.xml</suiteXmlFile>
+    	</suiteXmlFiles>
+    </configuration>
+    </plugin>    
+ 
       </plugins>
     </pluginManagement>
   </build>

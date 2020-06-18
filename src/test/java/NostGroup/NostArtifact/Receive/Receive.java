@@ -142,13 +142,11 @@ public class Receive extends CommonMethods{
 				}	
 		}
 	}
-		
 		((JavascriptExecutor)Driver).executeScript("arguments[0].scrollIntoView();", find_element("receive-submit","id"));
 		
 		//String rec_esign=data.get("esignature").replace(".0","");
 		type("receive-edit","id",data.get("esignature"));
 		click("receive-submit","id");
-		
 	}
 	
 public void receiveSubmitQueueAlone(Hashtable<String,String> data) throws InterruptedException, IOException, AWTException {

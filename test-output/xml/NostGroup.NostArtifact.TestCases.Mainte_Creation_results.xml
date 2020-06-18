@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Maintenance Creation"
+           tests="6"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="120.916">
+  <properties />
+  
+  
+            <testcase name="addProtocol" time="25.037" classname="NostGroup.NostArtifact.TestCases.Mainte_Creation" />
+                <testcase name="addPharmacy" time="15.625" classname="NostGroup.NostArtifact.TestCases.Mainte_Creation" />
+                <testcase name="addCatalog" time="22.748" classname="NostGroup.NostArtifact.TestCases.Mainte_Creation" />
+                <testcase name="addPatient" time="30.383" classname="NostGroup.NostArtifact.TestCases.Mainte_Creation" />
+                <testcase name="addSupplier" time="21.371" classname="NostGroup.NostArtifact.TestCases.Mainte_Creation" />
+                <testcase name="nostLogin" time="5.752" classname="NostGroup.NostArtifact.TestCases.Mainte_Creation" />
+      
+</testsuite>
