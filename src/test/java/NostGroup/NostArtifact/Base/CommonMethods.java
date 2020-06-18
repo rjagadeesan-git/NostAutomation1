@@ -178,7 +178,8 @@ public class CommonMethods {
 		if(extent==null) {
 			
 			String DateString=new Date().toString().replace(":","_").replace(" ", "_");
-			exreportname=("Extent_"+DateString+".html");
+//			exreportname=("Extent_"+DateString+".html");
+			exreportname=("Extent.html");
 			extent=new ExtentReports(System.getProperty("user.dir")+"\\ExtentReports\\"+exreportname,true,DisplayOrder.OLDEST_FIRST);
 			 extent.loadConfig(new File(System.getProperty("user.dir")+"\\ExtentReports\\ExtentConfig.xml"));
 		}

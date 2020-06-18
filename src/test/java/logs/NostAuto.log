@@ -2743,3 +2743,31 @@
 18:37:29,534  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:41 - Test failed  addPatient
 18:37:29,651  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:33 - 'On Test Failure' invoked for addPatient
 18:37:32,652  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:41 - Test failed  addPatient
+19:38:37,862  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:17 - Testing started for Nostradamus  nostLogin
+19:38:37,872  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:41 - http://192.168.194.121:8888/Nostradamus
+19:38:59,105  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:33 - 'On Test Failure' invoked for nostLogin
+19:39:02,105  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:41 - Test failed  nostLogin
+19:39:02,267 DEBUG freemarker.cache<strong>{1}</strong>:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+19:39:02,269 DEBUG freemarker.cache<strong>{1}</strong>:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+19:39:02,271 DEBUG freemarker.cache<strong>{1}</strong>:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+19:39:02,273 DEBUG freemarker.cache<strong>{1}</strong>:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+19:39:02,273 DEBUG freemarker.cache<strong>{1}</strong>:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/D:/Jagan/NostAuto/Resources/Maven-Repo/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+19:40:51,772  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:17 - Testing started for Nostradamus  nostLogin
+19:40:51,789  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:41 - http://192.168.194.121:8888/Nostradamus
+19:40:59,582  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:54 - Starting to Login...
+19:40:59,584  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:194 - Finding Element: //*[@id='username']
+19:40:59,635  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:233 - Found Element: //*[@id='username']
+19:40:59,734  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:93 - Entered the value 'admin' in field 'username'
+19:40:59,735  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:194 - Finding Element: //*[@id='password']
+19:40:59,766  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:233 - Found Element: //*[@id='password']
+19:40:59,879  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:93 - Entered the value 'ncoup' in field 'password'
+19:40:59,879  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:194 - Finding Element: /html/body/div/section[2]/div/section/div/div/div/div/form/div[1]/div[4]/input
+19:40:59,948  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:233 - Found Element: /html/body/div/section[2]/div/section/div/div/div/div/form/div[1]/div[4]/input
+19:41:01,072  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:83 - Clicked the item: login-button
+19:41:01,073  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:60 - logged in successfully...
+19:41:01,078  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:24 - 'On Test Success' invoked for nostLogin
+19:41:01,118 DEBUG freemarker.cache<strong>{1}</strong>:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+19:41:01,120 DEBUG freemarker.cache<strong>{1}</strong>:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+19:41:01,126 DEBUG freemarker.cache<strong>{1}</strong>:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+19:41:01,128 DEBUG freemarker.cache<strong>{1}</strong>:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+19:41:01,128 DEBUG freemarker.cache<strong>{1}</strong>:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/D:/Jagan/NostAuto/Resources/Maven-Repo/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
