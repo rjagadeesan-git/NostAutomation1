@@ -16,7 +16,7 @@ public static Object[][] getData(Method m){
 		String sheetName=null;
 		
 		if(helper == null){
-			helper = new SpreadSheetHelper("D:\\Jagan\\Nost_Data_Driven_DP.xlsx");
+			helper = new SpreadSheetHelper(".\\DataProvider\\Nost_Data_Driven_DP.xlsx");
 		}
 		
 		//helper = new SpreadSheetHelper("D:\\Jagan\\Nost_Data_Driven_DP.xlsx");
