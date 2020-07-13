@@ -76,7 +76,7 @@ public class Protocol extends CommonMethods{
 	type("not-dispense","csssele",data.get("Noti_Dispense"));
 	type("not-destroy","csssele",data.get("Noti_Destroy"));
 	type("not-return","csssele",data.get("Noti_Return"));
-//
+//	type("not-pat-ret","csssele",data.get("Noti_Pat_Return"));
 //	//Documents
 //	click("documents","csssele");
 //	//ex_wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#addDoc")));

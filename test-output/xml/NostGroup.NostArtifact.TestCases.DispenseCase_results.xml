@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dispense Creation"
+           tests="2"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="19.397">
+  <properties />
+  
+  
+            <testcase name="addDispense" time="12.608" classname="NostGroup.NostArtifact.TestCases.DispenseCase" />
+                <testcase name="nostLogin" time="6.789" classname="NostGroup.NostArtifact.TestCases.DispenseCase" />
+      
+</testsuite>

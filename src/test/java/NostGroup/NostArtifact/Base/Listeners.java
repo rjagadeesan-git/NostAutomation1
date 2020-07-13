@@ -62,6 +62,7 @@ public class Listeners extends CommonMethods implements ITestListener{
 	public void onTestSkipped(ITestResult result) {
 		// TODO Auto-generated method stub
 		log.info("'On Test Skipped' invoked for "+result.getName());
+		extest.log(LogStatus.SKIP,"'On Test Skipped' invoked for "+result.getName());
 		exreport.endTest(extest);
 		exreport.flush();
 	}

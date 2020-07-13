@@ -16,6 +16,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 import NostGroup.NostArtifact.Base.CommonMethods;
 
@@ -59,10 +60,10 @@ public class Patient extends CommonMethods{
      System.out.println(" The Drug combination text in Receive to be selected is  "+ drug_com);
      String pat_drg_val=data.get("Drug_Name");
      List<WebElement> pat_drg_opt=Driver.findElements(By.tagName("Option"));
-   for(WebElement element:pat_drg_opt)
-	    if(element.getText().contains(pat_drg_val)) {
-	    	element.click();
-	    }
+   for(WebElement element1:pat_drg_opt)
+	    if(element1.getText().contains(pat_drg_val)) {
+	    	element1.click();
+	    //}
 	
 	//Selecting Drug
 //	click("assigned-drug-plus","csssele");
@@ -84,10 +85,17 @@ public class Patient extends CommonMethods{
 	type("pid","id",data.get("PID"));
 	type("patient-esgin","id",data.get("esignature"));
 	click("patient-submit","id");
-	
+	break;
+	//Thread.sleep(15000);
+//	     else {
+//			
+//			Assert.fail("No Drug named '"+pat_drg_val+"'  populated in the list to be selected");
+//		}
+   }
 	Thread.sleep(4000);
-	((JavascriptExecutor)Driver).executeScript("arguments[0].scrollIntoView();",find_element("manage-menu","xpath"));
-	Thread.sleep(4000);
+//	((JavascriptExecutor)Driver).executeScript("arguments[0].scrollIntoView();",find_element("manage-menu","xpath"));
+//	Thread.sleep(4000);
+   
 	}
 	
 	public void patientEdit() {}

@@ -6,14 +6,18 @@
     <listener class-name="org.uncommons.reportng.HTMLReporter"/>
     <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
   </listeners>
-  <test thread-count="5" name="Nost-Login Test(failed)">
+  <test thread-count="5" name="dispense Creation(failed)">
     <classes>
-      <class name="NostGroup.NostArtifact.TestCases.NostloginCase">
+      <class name="NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR">
         <methods>
+          <include name="addDispense" invocation-numbers="0"/>
+          <include name="commonReceive"/>
           <include name="browserLaunch"/>
-          <include name="addPatient" invocation-numbers="0"/>
+          <include name="nostLogin"/>
+          <include name="addProtocol"/>
+          <include name="commonTransferToPharmacy"/>
         </methods>
-      </class> <!-- NostGroup.NostArtifact.TestCases.NostloginCase -->
+      </class> <!-- NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR -->
     </classes>
-  </test> <!-- Nost-Login Test(failed) -->
+  </test> <!-- dispense Creation(failed) -->
 </suite> <!-- Failed suite [Suite] -->

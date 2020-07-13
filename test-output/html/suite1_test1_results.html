@@ -3,44 +3,608 @@
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="" lang="">
 <head>
-  <title>Test Results Report - Nost-Login Test</title>
+  <title>Test Results Report - IDS UBAR Integration</title>
   <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
   <meta name="description" content="TestNG unit test results." />
   <link href="reportng.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="reportng.js"></script>
 </head>
 <body>
-<h1>Nost-Login Test</h1>
+<h1>IDS UBAR Integration</h1>
 <p>
-  Test duration: 13.175s
+  Test duration: 168.566s
 </p>
 
 
 
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header failed">Failed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">NostGroup.NostArtifact.TestCases.UbarloginCase</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  commonReceive
+      </td>
+  <td class="duration">
+    0.069s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">{Receive_Protocol_ID=11-JUL-10-20-PROT, Receive_Drug_name=wewdw, Lot_#=QWERT-U-02, Formulation=, Range_End=25.0, Unit_Type=, esignature=a1234, Level_of_Accountability=, Receive_Storage_Location=, Drug_Name=11-JUL-10-20-Drg-Unit, Expiration_Date=05-05-2021, Receive_Pharmacy=, Range_Start=10.0, IVRS=, Comment=Receving Drug, Unit_of_Measure=mEq, Total_Qty=209.0, Strength/Concentration=22.22, Patient_Specific_Drug=, Receive_Storage_Condition=, Supplier_Name=, Qty_per_Unit=, Static_ID=ZAP-U1-}</span><br />
+    
+            <div class="testOutput">
+                        <br>commonReceive: Failed
+                                <br>
+                                <a target="_blank" href="D:\Jagan\NostAuto\NostCore\NostArtifact\Screenshots\Screenshot_Sat_Jul_11_17_09_53_IST_2020.jpg">ScreenShot</a>
+                                <br>
+                  </div>
+    
 
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.UnhandledAlertException: Dismissed user prompt dialog: Error : <br/>
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;<br/>
+System info: host: &apos;CSEKARAITHENT&apos;, ip: &apos;192.168.195.10&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_112&apos;<br/>
+Driver info: org.openqa.selenium.firefox.FirefoxDriver<br/>
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 78.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200630195452, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 29472, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}<br/>
+Session ID: 63d03fb5-8fd5-4cb1-a40a-5fa5c2df1120<br/>
+*** Element info: {Using=css selector, value=#Receive}</b></a><br />
+    <div class="stackTrace" id="exception-0">
+              org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)<br />
+              org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)<br />
+              org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)<br />
+              org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)<br />
+              org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)<br />
+              org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)<br />
+              org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)<br />
+              org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)<br />
+              NostGroup.NostArtifact.Receive.Receive.receiveCommon(Receive.java:29)<br />
+              NostGroup.NostArtifact.TestCases.UbarloginCase.commonReceive(UbarloginCase.java:75)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:498)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)<br />
+              org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)<br />
+              org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)<br />
+              org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)<br />
+              org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)<br />
+              org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)<br />
+              java.util.ArrayList.forEach(ArrayList.java:1249)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:766)<br />
+              org.testng.TestRunner.run(TestRunner.java:587)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:384)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:286)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1109)<br />
+              org.testng.TestNG.runSuites(TestNG.java:1039)<br />
+              org.testng.TestNG.run(TestNG.java:1007)<br />
+              org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)<br />
+              org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br />
+              org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)<br />
+                </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  verifyCPP
+      </td>
+  <td class="duration">
+    32.843s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">{cpp-cdm-price-eff-to=07302020, cpp-cdm-plan-search=, cpp-cdm-service-name=11-JUL-10-20-Drg-Unit, cpp-payer-email=test@ncoup.com, cpp-cdm-service-price=230.0, cpp-cdm-service-results-search-bar=, cpp-cdm-service-frequency=, cpp-cdm-service-frequency-interval=, cpp-cdm-charge-basis=, cpp-attach-payer-search=Class, cpp-account-name=12345Name, cpp-same-payerid=, cpp-account-no=Class88765, cpp-payer-level=Primary, cpp-plan-search=11-JUL-10-20-PROT, cpp-type-code=Study Team, cpp-cdm-price-eff-from=06302020, cpp-payer-id=, cpp-cdm-payer-search=, cpp-cdm-pharmacy=}</span><br />
+    
+            <div class="testOutput">
+                        Clicked the item: maintenance-billing-menu
+                                Clicked the item: cpp-menu
+                                Entered the value '11-JUL-10-20-PROT' in field 'cpp-plan-search'
+                                Clicked the item: cpp-search
+                                Plan '11-JUL-10-20-PROT' integrated to CPP successfully
+                                Clicked the item: cpp-payer-search-icon
+                                Entered the value 'Class' in field 'cpp-attach-payer-search'
+                                Clicked the item: cpp-add-new-payer-search
+                                Payer 'Class' selected from existing Payer's list successfully
+                                Clicked the item: cpp-attach-payer
+                                Service '11-JUL-10-20-Drg-Unit' not listed in CPP CDM
+                                Service '11-JUL-10-20-Drg-Unit' found in CPP Services table
+                                <br>verifyCPP: Failed
+                                <br>
+                                <a target="_blank" href="D:\Jagan\NostAuto\NostCore\NostArtifact\Screenshots\Screenshot_Sat_Jul_11_17_10_50_IST_2020.jpg">ScreenShot</a>
+                                <br>
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-1', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.ElementNotInteractableException: Element &lt;input id=&quot;parentPType&quot; name=&quot;optradioN&quot; type=&quot;radio&quot;&gt; could not be scrolled into view<br/>
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;<br/>
+System info: host: &apos;CSEKARAITHENT&apos;, ip: &apos;192.168.195.10&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_112&apos;<br/>
+Driver info: org.openqa.selenium.firefox.FirefoxDriver<br/>
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 78.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200630195452, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 29472, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}<br/>
+Session ID: 63d03fb5-8fd5-4cb1-a40a-5fa5c2df1120</b></a><br />
+    <div class="stackTrace" id="exception-1">
+              sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
+              sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br />
+              java.lang.reflect.Constructor.newInstance(Constructor.java:423)<br />
+              org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)<br />
+              org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)<br />
+              org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)<br />
+              org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)<br />
+              org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)<br />
+              org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)<br />
+              org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)<br />
+              NostGroup.NostArtifact.Base.CommonMethods.click(CommonMethods.java:81)<br />
+              NostGroup.NostArtifact.Billing.CPP.cppAdd(CPP.java:478)<br />
+              NostGroup.NostArtifact.TestCases.UbarloginCase.verifyCPP(UbarloginCase.java:116)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:498)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)<br />
+              org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)<br />
+              org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)<br />
+              org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)<br />
+              org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)<br />
+              org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)<br />
+              java.util.ArrayList.forEach(ArrayList.java:1249)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:766)<br />
+              org.testng.TestRunner.run(TestRunner.java:587)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:384)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:286)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1109)<br />
+              org.testng.TestNG.runSuites(TestNG.java:1039)<br />
+              org.testng.TestNG.run(TestNG.java:1007)<br />
+              org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)<br />
+              org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br />
+              org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)<br />
+                </div>
+      </td>
+</tr>
+      </table>
+
+  <table class="resultsTable" width="100%">
+    <tr><th colspan="3" class="header skipped">Skipped Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">NostGroup.NostArtifact.TestCases.UbarloginCase</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  addDispense
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                             <i>Depends on method(s): </i>
+        <span class="dependency">NostGroup.NostArtifact.TestCases.UbarloginCase.verifyCPP</span>
+                
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  commonTransferToPharmacy
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                             <i>Depends on method(s): </i>
+        <span class="dependency">NostGroup.NostArtifact.TestCases.UbarloginCase.commonReceive</span>
+                
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  nostLogin2
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                             <i>Depends on method(s): </i>
+        <span class="dependency">NostGroup.NostArtifact.TestCases.UbarloginCase.verifyCPP</span>
+                
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  submitqueueReceive
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                             <i>Depends on method(s): </i>
+        <span class="dependency">NostGroup.NostArtifact.TestCases.UbarloginCase.commonReceive</span>
+                
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  ubarLogin2
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                             <i>Depends on method(s): </i>
+        <span class="dependency">NostGroup.NostArtifact.TestCases.UbarloginCase.addDispense</span>
+                
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  verifyReviewCharges
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                             <i>Depends on method(s): </i>
+        <span class="dependency">NostGroup.NostArtifact.TestCases.UbarloginCase.addDispense</span>
+                
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  verifyServicedEntity
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                             <i>Depends on method(s): </i>
+        <span class="dependency">NostGroup.NostArtifact.TestCases.UbarloginCase.addDispense</span>
+                
+    
+        
+
+      </td>
+</tr>
+      </table>
 
   <table class="resultsTable">
     <tr><th colspan="3" class="header passed">Passed Tests</th></tr>
           <tr>
-        <td colspan="3" class="group">NostGroup.NostArtifact.TestCases.NostloginCase</td>
+        <td colspan="3" class="group">NostGroup.NostArtifact.TestCases.UbarloginCase</td>
       </tr>
             
+<tr>
+  <td class="method">
+                  addCatalog
+      </td>
+  <td class="duration">
+    19.632s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">{Aux_Label_6=, Aux_Label_5=, Aux_Label_4=Chemotherapy Drug, Drug_ID_#=11-JUL-10-20-Drg-id1, Aux_Label_3=Refrigerate, Status=, Aux_Label_2=Shake Well, Aux_Label_1=Take With Food, Storage_Location=Location 1, Max=, UPC_Ratio=7.0, Hemoglobin=4.0, Strength/Concentration=22.22, Reorder_Point=, Formulation=Enema, Other3=Other 3, Other2=Other 2, Other1=Other 1, ANC=2.0, Pharmacy_Drug=11-JUL-10-20-Pharm1-C, Bilirubin:_T-Bili=12.0, IVRS=Yes, Level_of_Accountability=Unit, Qty_per_Unit=48.0, Frequency=twice daily, Patient_Specific_Drug=No, Drug_Proto_SPID=11-JUL-10-20-PROT-SPID, Day_Supply=10.0, esignature=a1234, Drug_Name=11-JUL-10-20-Drg-Unit, Compounded_Med_Label=Sterile Compounded Medication, NSC_#=11-JUL-10-20-Drg-nsc1, ALT/SGPT=14.0, PLT's=3.0, Drug_Label_Name=11-JUL-10-20-Drg-dl1, Min=, Route=, 24-hour_Collection=6.0, Serum_Creatinine=11.0, Dose_on_Label=Take with water of 8oz, before food, Storage_Condition=Refrigerator, Unit_Type=Tube, Label_Template=Standard (w/ Lab), Drug_Protocol=11-JUL-10-20-PROT, Supplier_Name=11-JUL-10-Supplier-1, Unit_of_Measure=mEq, Track_By=Strength, Dipstick=5.0, Alternative_Drug_Name=11-JUL-10-20-Drg-adn1, To_Be_Linked=Yes, AST/SGOT=13.0}</span><br />
+    
+            <div class="testOutput">
+                        Clicked the item: add-drug
+                                Entered the value '11-JUL-10-20-Drg-Unit' in field 'drug-name'
+                                Selected the value 'Strength in field 'track-by'
+                                Entered the value '22.22' in field 'strength-concentration'
+                                Selected the value 'mEq in field 'unit-of-measure'
+                                Selected the value 'Enema in field 'formulation'
+                                Entered the value '11-JUL-10-20-Drg-dl1' in field 'drug-label-name'
+                                Entered the value '11-JUL-10-20-Drg-id1' in field 'drug-id'
+                                Entered the value '11-JUL-10-20-Drg-nsc1' in field 'drug-nsc'
+                                Entered the value '11-JUL-10-20-Drg-adn1' in field 'alternative-drug-name'
+                                Clicked the item: set-defaults
+                                'patient-specific-drug' is checked/ticked by default
+                                 Input is Yes for the field 'ivrs' and Checkbox is unchecked by default, now checked/ticked successfully
+                                Selected the value 'Yes in field 'to-be-linked'
+                                Selected the value 'Unit in field 'level-of-accountability'
+                                Selected the value 'Tube in field 'unit-type'
+                                Entered the value '48.0' in field 'qty-per-unit'
+                                Entered the value '11-JUL-10-Supplier-1' in field 'catalog-supplier-name'
+                                Selected the value 'Refrigerator in field 'storage-condition'
+                                Selected the value '11-JUL-10-20-Pharm1-C in field 'pharmacy'
+                                Selected the value 'Location 1 in field 'storage-location'
+                                Selected the value 'twice daily in field 'frequency'
+                                Entered the value 'Take with water of 8oz, before food' in field 'dose-on-label'
+                                Selected the value 'Standard (w/ Lab) in field 'label-template'
+                                Entered the value '10.0' in field 'day-supply'
+                                Selected the value 'Take With Food in field 'aux-label1'
+                                Selected the value 'Shake Well in field 'aux-label2'
+                                Selected the value 'Refrigerate in field 'aux-label3'
+                                Selected the value 'Chemotherapy Drug in field 'aux-label4'
+                                Clicked the item: add-lab-criteria
+                                Entered the value '2.0' in field 'anc'
+                                Entered the value '3.0' in field 'plt'
+                                Entered the value '4.0' in field 'hemoglobin'
+                                Entered the value '5.0' in field 'dipstick'
+                                Entered the value '6.0' in field '24-hour-collection'
+                                Entered the value '7.0' in field 'upc-ratio'
+                                Entered the value 'Other 1' in field 'other1'
+                                Entered the value 'Other 2' in field 'other2'
+                                Entered the value 'Other 3' in field 'other3'
+                                Entered the value '11.0' in field 'serum-creatinine'
+                                Entered the value '12.0' in field 'bili-rubin-t-bili'
+                                Entered the value '13.0' in field 'asg-sgot'
+                                Entered the value '14.0' in field 'alt-sgpt'
+                                Clicked the item: add-drug
+                                Entered the value '11-JUL-10-20-PROT' in field 'cat-prot-sear'
+                                Clicked the item: cat-prot-sear-ok
+                                Entered the value 'a1234' in field 'catalog-esign'
+                                Clicked the item: catalog-submit
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  addPatient
+      </td>
+  <td class="duration">
+    22.589s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">{Patient_Study_ID=11-JUL-10-20-PAT1-STY, Gender=Female, Protocol_ID=11-JUL-10-20-PROT, Patient_Status=Active, Patient_Stop_Date=, Country=India, Patient_Start_Date=, Zip/Postal_Code=123456.0, Assigned_Drug=, esignature=a1234, Home_Phone(s)=098-098-978765, State=Tamil Nadu, Drug_Name=11-JUL-10-20-Drg, Patient_MRN=11-JUL-10-20-PAT1-1, Address_2=2nd Street, Address_1=11.0, PID=PID-002, Unit_of_Measure=mEq, Strength/Concentration=22.22, Patient_First_Name=11-JUL-10-20-FN, Patient_Last_Name=11-JUL-10-20-LN, Patient_DOB=11-10-1999, Cohort/Dose_Level=39.87, Email=ncoup@ncoup.com, Work_Phone(s)=7297932-899, City=Chennai}</span><br />
+    
+            <div class="testOutput">
+                        Clicked the item: patient-menu
+                                Clicked the item: add-patient-to-protocol
+                                Entered the value '11-JUL-10-20-PAT1-1' in field 'patient-mrn'
+                                Entered the value '11-JUL-10-20-FN' in field 'patient-first-name'
+                                Entered the value '11-JUL-10-20-LN' in field 'patient-last-name'
+                                Selected the value 'Female in field 'patient-gender'
+                                Entered the value '11-10-1999' in field 'patient-dob'
+                                Selected the value 'Active in field 'patient-status'
+                                Entered the value '11-JUL-10-20-PROT' in field 'patient-protocol-id'
+                                Entered the value '11-JUL-10-20-PAT1-STY' in field 'patient-study-id'
+                                Entered the value '39.87' in field 'cohort-dose-level'
+                                Clicked the item: add-contact-info
+                                Entered the value '11.0' in field 'address-1'
+                                Entered the value '2nd Street' in field 'address-2'
+                                Entered the value 'Chennai' in field 'city'
+                                Entered the value 'Tamil Nadu' in field 'state'
+                                Entered the value '123456.0' in field 'zip-postal-code'
+                                Entered the value 'India' in field 'country'
+                                Entered the value '098-098-978765' in field 'home-phone'
+                                Entered the value '7297932-899' in field 'work-phone'
+                                Entered the value 'ncoup@ncoup.com' in field 'email'
+                                Entered the value 'PID-002' in field 'pid'
+                                Entered the value 'a1234' in field 'patient-esgin'
+                                Clicked the item: patient-submit
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  addPharmacy
+      </td>
+  <td class="duration">
+    14.281s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">{NCI_Record=Control, Grant_Control_Rights?=Yes, Disable_Dispensing/Par_Level_4=Yes, Disable_Dispensing/Par_Level_3=No, Disable_Dispensing/Par_Level_2=No, Disable_Dispensing/Par_Level_1=No, esignature=a1234, Zip/PostalCode=1234567.0, State=nCoup State, Phone=098-098-0987, Address_2=nCoup Street, Storage_Location_4=Location 4, Address_1=11.0, Storage_Location_3=Location 3, Storage_Location_2=Location 2, Pharmacy_Name=11-JUL-10-20-Pharm1-C, Storage_Location_1=Location 1, Organization=Pharmacy, Storage_Condition_4=Freezer -20, Storage_Condition_3=Refrigerated, Storage_Condition_2=Room Temperature, DEA=DEA234, Storage_Condition_1=Refrigerator, Pharmacy's_Name_for_Patient_Label=nCoup Control pharmacy QA, City=nCoup City}</span><br />
+    
+            <div class="testOutput">
+                        Clicked the item: organization
+                                Selected the value 'Pharmacy in field 'organization-selection'
+                                Clicked the item: add-new-pharmacy
+                                Entered the value '11-JUL-10-20-Pharm1-C' in field 'pharmacy-name'
+                                 Input is Yes for the field 'grant-control-rights' and Checkbox is unchecked by default, now checked/ticked successfully
+                                Selected the value 'Control in field 'nci-record'
+                                Selected the value 'Refrigerator in field 'storage-condition1'
+                                Entered the value 'Location 1' in field 'storage-location1'
+                                'disable-dispense-par-level1' is checked/ticked by default
+                                Selected the value 'Room Temperature in field 'storage-condition2'
+                                Entered the value 'Location 2' in field 'storage-location2'
+                                'disable-dispense-par-level2' is checked/ticked by default
+                                Selected the value 'Refrigerated in field 'storage-condition3'
+                                Entered the value 'Location 3' in field 'storage-location3'
+                                'disable-dispense-par-level3' is checked/ticked by default
+                                Selected the value 'Freezer -20 in field 'storage-condition4'
+                                Entered the value 'Location 4' in field 'storage-location4'
+                                 Input is Yes for the field 'disable-dispense-par-level4' and Checkbox is unchecked by default, now checked/ticked successfully
+                                Clicked the item: pharmacy-address
+                                Entered the value '11.0' in field 'pharmacy-address-1'
+                                Entered the value 'nCoup Street' in field 'pharmacy-address-2'
+                                Entered the value 'nCoup City' in field 'pharmacy-city'
+                                Entered the value 'nCoup State' in field 'pharmacy-state'
+                                Entered the value '1234567.0' in field 'pharmacy-zip-postalcode'
+                                Entered the value '098-098-0987' in field 'pharmacy-phone'
+                                Entered the value 'nCoup Control pharmacy QA' in field 'pharmacy-name-label-name'
+                                Entered the value 'DEA234' in field 'pharmacy-dea'
+                                Entered the value 'a1234' in field 'pharmacy-esign'
+                                Clicked the item: pharmacy-submit
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  addProtocol
+      </td>
+  <td class="duration">
+    21.582s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">{Service=Both, OP_Investigator_ID=Op-Inv-ID-02, Protocol_Phase_Start_Date=04-01-2020, Site_Number=STN002, Investigator_ID=Inv-ID-01, ID_Expiration=10-10-2020, OP_PI_Last_Name=OP-Ins-LN, Closed_to_New_Patients=05-01-2020, Description=TestLink-1, Protocol_Title=11-JUL-10-20-PROT-Title, Protocol_Category=Genetics, Optional_PI_Institution=Opt-Ins-nCoup, Sponsor_Protocol_ID=11-JUL-10-20-PROT-SPID, Protocol_Completion_Date=06-10-2020, Noti_Return=Return Notifications, External_IRB#=EIRB-Z100, PI_First_Name=nCoup-PI-FN, Protocol_Sponsor=11-JUL-10-20-PROT-SP, Protocol_Status=CNPE, esignature=a1234, Noti_Transfer=Transfer Notifications, Noti_Destroy=Destroy Notifications, Drug(s)_and_Kit(s)=, OP_PI_First_Name=Op-Ins-FN, Category=Protocol Data Sheet, Noti_Pat_Return=Patient Returns Notifications, Protocol_Closure_Date=06-01-2020, Noti_Receive=Receive Notifications, Study_Contact=Study contact comments, Protocol_ID=11-JUL-10-20-PROT, Version=v1.1, Internal_IRB#=IRB-Z001, Noti_Dispense=Dispense Notifications, Reason_for_Closure=Protocol Study completed, Disease_Program=Leukemia, Type=Link, Study_Source=Industry, Protocol_Phase=Phase 2, Pharmacy_Status=Active, Protocol_Type=Open label, PI_Last_Name=nCoup-PI-LN}</span><br />
+    
+            <div class="testOutput">
+                        Clicked the item: protocol
+                                Clicked the item: add-protocol
+                                Entered the value '11-JUL-10-20-PROT' in field 'protocol-id'
+                                Entered the value '11-JUL-10-20-PROT-Title' in field 'protocol-title'
+                                Selected the value 'CNPE in field 'protocol-status'
+                                Selected the value 'Active in field 'pharmacy-status'
+                                Entered the value '11-JUL-10-20-PROT-SPID' in field 'sponsor-protocol-id'
+                                Entered the value '11-JUL-10-20-PROT-SP' in field 'protocol-sponsor'
+                                Entered the value 'STN002' in field 'site-number'
+                                Selected the value 'Phase 2 in field 'protocol-phase'
+                                Selected the value 'Leukemia in field 'disease-program'
+                                Selected the value 'Both in field 'service'
+                                Selected the value 'Industry in field 'study-source'
+                                Selected the value 'Open label in field 'protocol-type'
+                                Entered the value 'IRB-Z001' in field 'internal-irb'
+                                Entered the value 'EIRB-Z100' in field 'external-irb'
+                                Selected the value 'Genetics in field 'protocol-category'
+                                Clicked the item: staff
+                                Entered the value 'nCoup-PI-FN' in field 'pi-first-name'
+                                Entered the value 'nCoup-PI-LN' in field 'pi-last-name'
+                                Entered the value 'Inv-ID-01' in field 'investigator-id'
+                                Entered the value '10-10-2020' in field 'id-expiration'
+                                Entered the value 'Opt-Ins-nCoup' in field 'opt-pi-institution'
+                                Entered the value 'Op-Ins-FN' in field 'opt-pi-first-name'
+                                Entered the value 'OP-Ins-LN' in field 'opt-pi-last-name'
+                                Entered the value 'Op-Inv-ID-02' in field 'opt-investigator-id'
+                                Entered the value '10-10-2020' in field 'opt-id-expiration'
+                                Entered the value 'Study contact comments' in field 'study-contact'
+                                Clicked the item: key-dates
+                                Entered the value '04-01-2020' in field 'protocol-phase-start-date'
+                                Entered the value '05-01-2020' in field 'closed-to-new-patients'
+                                Entered the value '06-01-2020' in field 'protocol-closure-date'
+                                Entered the value 'Protocol Study completed' in field 'reason-for-closure'
+                                Entered the value '06-10-2020' in field 'protocol-completion-date'
+                                Clicked the item: notifications
+                                Entered the value 'Receive Notifications' in field 'not-receive'
+                                Entered the value 'Transfer Notifications' in field 'not-transfer'
+                                Entered the value 'Dispense Notifications' in field 'not-dispense'
+                                Entered the value 'Destroy Notifications' in field 'not-destroy'
+                                Entered the value 'Return Notifications' in field 'not-return'
+                                Entered the value 'a1234' in field 'protocol-esign'
+                                Clicked the item: protocol-submit
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  addSupplier
+      </td>
+  <td class="duration">
+    20.801s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">{Supplier_Name_3=11-JUL-10-Supplier-3, Supplier_Name_2=11-JUL-10-Supplier-2, Organization=Supplier, Supplier_Name_1=11-JUL-10-Supplier-1, esignature=a1234}</span><br />
+    
+            <div class="testOutput">
+                        Clicked the item: organization
+                                Selected the value 'Supplier in field 'organization-selection'
+                                Clicked the item: supplier-add
+                                Entered the value '11-JUL-10-Supplier-1' in field 'supplier-name'
+                                Clicked the item: add-more-supplier1
+                                Entered the value '11-JUL-10-Supplier-2' in field 'supplier-name-1'
+                                Clicked the item: add-more-supplier2
+                                Entered the value '11-JUL-10-Supplier-3' in field 'supplier-name-2'
+                                Entered the value 'a1234' in field 'supplier-esign'
+                                Clicked the item: supplier-submit
+                  </div>
+    
+
+      </td>
+</tr>
 <tr>
   <td class="method">
                   nostLogin
       </td>
   <td class="duration">
-    5.622s
+    7.217s
   </td>
   <td class="result">
         
-          <i>Method arguments: </i><span class="arguments">{PassWord=ncoup, rundata=Y, UserName=admin, e-Signature=a1234}</span><br />
+          <i>Method arguments: </i><span class="arguments">{PassWord=Velos321, rundata=Y, UserName=admin, e-Signature=a1234}</span><br />
     
             <div class="testOutput">
-                        Starting to Login....<br />
-                                Entered the value &apos;admin&apos; in field &apos;username&apos;<br />
-                                Entered the value &apos;ncoup&apos; in field &apos;password&apos;<br />
-                                Clicked the item: login-button<br />
+                        Starting to Login....
+                                Entered the value 'admin' in field 'username'
+                                Entered the value 'Velos321' in field 'password'
+                                Clicked the item: login-button
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  ubarLogin
+      </td>
+  <td class="duration">
+    4.973s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">{PassWord=Velos321, rundata=Y, UserName=admin, e-Signature=a1234}</span><br />
+    
+            <div class="testOutput">
+                        Login Billing starts....
+                                Entered the value 'admin' in field 'username-billing'
+                                Entered the value 'Velos321' in field 'password-billing'
+                                Clicked the item: login-button-billing
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  verifyServiceMaster
+      </td>
+  <td class="duration">
+    15.050s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">{service-plan-search=11-JUL-10-20-PROT, service-name-search=11-JUL-10-20-Drg-Unit}</span><br />
+    
+            <div class="testOutput">
+                        Clicked the item: maintenance-billing-menu
+                                Clicked the item: service-master-menu
+                                Entered the value '11-JUL-10-20-PROT' in field 'service-plan-search'
+                                Entered the value '11-JUL-10-20-Drg-Unit' in field 'service-name-search'
+                                Clicked the item: service-search
+                                Drug '11-JUL-10-20-Drg-Unit' integrated in Service Master successfully
                   </div>
     
 

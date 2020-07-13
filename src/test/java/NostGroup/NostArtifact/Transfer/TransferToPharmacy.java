@@ -21,11 +21,16 @@ public class TransferToPharmacy extends CommonMethods{
 	public void transferCommon(Hashtable<String,String> data) throws IOException, InterruptedException, AWTException {
 		
 		ex_wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#Transfer")));
-		action.moveToElement(find_element("transfer-menu","csssele")).perform(); //MouseOver Transfer menu
+		action.moveToElement(find_element("transfer-menu","id")).perform(); //MouseOver Transfer menu
 				//click("transfer-menu","csssele");		
 		ex_wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#MegaMenu > div:nth-child(4) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > th:nth-child(1) > table:nth-child(2) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(1) > ul:nth-child(1) > li:nth-child(1) > a:nth-child(1)")));
 		Thread.sleep(2000);
 		click("trans-to-pharm","csssele");//Click Transfer to Pharmacy module menu
+//		WebElement rec_proceed=find_element("receive-proceed","csssele");
+//		if(rec_proceed.isDisplayed()) {
+//		ex_wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("button.ui-button:nth-child(1) > span:nth-child(1)")));
+//		find_element("receive-proceed","csssele").click(); 
+//		}
 		ex_wait.until(ExpectedConditions.presenceOfElementLocated(By.id("searchprotvalue")));
 		Thread.sleep(4000);
 		type("trans-protocol-id","id",data.get("Transfer_Protocol_ID"));
@@ -85,13 +90,14 @@ public class TransferToPharmacy extends CommonMethods{
         		for(int col=1;col<=trans_unit_tab_col.size();col++)
         		{
         			System.out.println("Row count  " +row);
-        			String trans_unit_id=Driver.findElement(By.xpath("//table[@id='unittab']/tbody/tr["+row+"]/td["+col+"]")).getText();
-        			System.out.println("Row count  " +row+"  Col count  "+col+ "   Value  "+trans_unit_id);
+        			String trans_unit_id=Driver.findElement(By.xpath("//table[@id='unittab']/tbody/tr["+row+"]/td[1]")).getText();
+        			System.out.println("Row count  " +row+"  Col count  "+col+ "   Value  "+trans_unit_id+ " Unit_ID "+unit_id);
         			if(trans_unit_id.equalsIgnoreCase(unit_id)) {
         				System.out.println("Inside IF "+unit_id);
         				Thread.sleep(2000);
         				WebElement match_unit=Driver.findElement(By.xpath("//table[@id='unittab']/tbody/tr["+row+"]/td[3]/input[1]"));
         				match_unit.click();
+        				break;
         			}
         	}
         		
@@ -113,7 +119,7 @@ public class TransferToPharmacy extends CommonMethods{
         		for(int col=1;col<=trans_unit_tab_col.size();col++)
         		{
         			System.out.println("Row count  " +row);
-        			String trans_unit_id=Driver.findElement(By.xpath("//table[@id='unittab']/tbody/tr["+row+"]/td["+col+"]")).getText();
+        			String trans_unit_id=Driver.findElement(By.xpath("//table[@id='unittab']/tbody/tr["+row+"]/td[1]")).getText();
         			System.out.println("Row count  " +row+"  Col count  "+col+ "   Value  "+trans_unit_id);
         			if(trans_unit_id.equalsIgnoreCase(unit_id)) {
         				System.out.println("Inside IF "+unit_id);

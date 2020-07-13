@@ -25,16 +25,22 @@ public class Receive extends CommonMethods{
 	
 	public void receiveCommon(Hashtable<String,String> data) throws IOException, InterruptedException, AWTException {
 		
+		System.out.println("Receive start");
 		ex_wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#Receive")));
+		System.out.println("Receive start1");
 		action.moveToElement(find_element("receive","csssele")).perform(); //MouseOver Receive menu
 				//click("receive","csssele");		
+		System.out.println("Receive start2");
 		ex_wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#MegaMenu > div:nth-child(4) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > th:nth-child(1) > table:nth-child(2) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(1) > ul:nth-child(1) > li:nth-child(1) > a:nth-child(1)")));
 		//Thread.sleep(2000);
-		((JavascriptExecutor)Driver).executeScript("arguments[0].scrollIntoView();", find_element("receive-menu","csssele"));
-		click("receive-menu","csssele");								//Click Receive module menu
-				//((JavascriptExecutor)Driver).executeScript("menuMethod('Receive','pages/jsp/Receive_Drug.jsp');");
-		ex_wait.until(ExpectedConditions.presenceOfElementLocated(By.id("plusDrugRc")));
-		Thread.sleep(2000);
+		System.out.println("Receive start4");
+		//((JavascriptExecutor)Driver).executeScript("arguments[0].scrollIntoView();", find_element("receive-menu","csssele"));
+		System.out.println("Receive start5");
+		//click("receive-menu","csssele");	
+		System.out.println("Receive start6");//Click Receive module menu
+		((JavascriptExecutor)Driver).executeScript("menuMethod('Receive','pages/jsp/Receive_Drug.jsp');");
+		Thread.sleep(4000);
+		//ex_wait.until(ExpectedConditions.presenceOfElementLocated(By.id("plusDrugRc")));
 		click("receive-add","id");		//Click Add
 		Thread.sleep(3000);
 		type("receive-protocol-id","id",data.get("Receive_Protocol_ID")); 	//Enter the Protocol ID
@@ -114,7 +120,7 @@ public class Receive extends CommonMethods{
 		if(rec_proceed.isDisplayed()) {
 		ex_wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("button.ui-button:nth-child(1) > span:nth-child(1)")));
 		find_element("receive-proceed","csssele").click(); 
-		//robo1.keyPress(KeyEvent.VK_ENTER);
+		robo1.keyPress(KeyEvent.VK_ENTER);
 		}
 		Thread.sleep(3000);
 		type("rec-tab-search","csssele", data.get("Receive_Protocol_ID"));
@@ -147,6 +153,11 @@ public class Receive extends CommonMethods{
 		//String rec_esign=data.get("esignature").replace(".0","");
 		type("receive-edit","id",data.get("esignature"));
 		click("receive-submit","id");
+//		WebElement rec_proceed1=find_element("receive-proceed","csssele");
+//		if(rec_proceed1.isDisplayed()) {
+//		ex_wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("button.ui-button:nth-child(1) > span:nth-child(1)")));
+//		find_element("receive-proceed","csssele").click();
+//		}
 	}
 	
 public void receiveSubmitQueueAlone(Hashtable<String,String> data) throws InterruptedException, IOException, AWTException {
