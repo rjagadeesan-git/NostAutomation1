@@ -44,7 +44,7 @@ public class IDSFlow_M_R_PR extends BrowserAct{
 		}
 
 		
-	@Test(dataProvider="getData",dataProviderClass = CellDataProvider.class,priority=4,dependsOnMethods="nostLogin")
+	@Test(dataProvider="getData",dataProviderClass = CellDataProvider.class,priority=4,dependsOnMethods="addProtocol")
 	public void addPharmacy(Hashtable<String,String> data) throws IOException, InterruptedException, AWTException {
 		Pharmacy pharm=new Pharmacy();
 		pharm.addPharmacy(data);
@@ -58,7 +58,7 @@ public class IDSFlow_M_R_PR extends BrowserAct{
 	
 		}
 	
-	@Test(dataProvider="getData",dataProviderClass = CellDataProvider.class,priority=6,dependsOnMethods="nostLogin")
+	@Test(dataProvider="getData",dataProviderClass = CellDataProvider.class,priority=6,dependsOnMethods="addProtocol")
 	public void addSupplier(Hashtable<String,String> data) throws IOException, InterruptedException {
 		Supplier supp=new Supplier();
 		supp.addSupplier(data);
