@@ -52,7 +52,7 @@ public class Listeners extends CommonMethods implements ITestListener{
 		Reporter.log("<br>");
 //		Reporter.log("<a target=\"_blank\" href=\"D:\\Jagan\\NostAuto\\NostCore\\NostArtifact\\Screenshots\\"+imagename+"\">ScreenShot</a>");
 		extest.log(LogStatus.FAIL,result.getName()+" "+"Failed with exception: "+result.getThrowable());
-		extest.log(LogStatus.FAIL, extest.addScreenCapture("D:\\Jagan\\NostAuto\\NostCore\\NostArtifact\\Screenshots\\"+imagename));
+		extest.log(LogStatus.FAIL, extest.addScreenCapture(System.getProperty("user.dir")+"\\Screenshots\\"+imagename));
 		exreport.endTest(extest);
 		exreport.flush();
 	}

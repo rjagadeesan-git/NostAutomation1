@@ -36,31 +36,68 @@ public class IDSFlow_M_R_PR extends BrowserAct{
 		prot.addProtocol(data);
 	}
 	
-	@Test(dataProvider="getData",dataProviderClass = CellDataProvider.class,priority=3,dependsOnMethods= {"addProtocol"})
+	@Test(dataProvider="getData",dataProviderClass = CellDataProvider.class,priority=3,dependsOnMethods="addProtocol")
+	public void verifyProtocol(Hashtable<String,String> data) throws InterruptedException, IOException, AWTException {
+		Protocol prot=new Protocol();
+		prot.protocolVerify(data);
+	
+		}
+
+		
+	@Test(dataProvider="getData",dataProviderClass = CellDataProvider.class,priority=4,dependsOnMethods="nostLogin")
 	public void addPharmacy(Hashtable<String,String> data) throws IOException, InterruptedException, AWTException {
 		Pharmacy pharm=new Pharmacy();
 		pharm.addPharmacy(data);
 	}
 	
-	@Test(dataProvider="getData",dataProviderClass = CellDataProvider.class,priority=4,dependsOnMethods= {"addProtocol"})
+	
+	@Test(dataProvider="getData",dataProviderClass = CellDataProvider.class,priority=5,dependsOnMethods="addPharmacy")
+	public void verifyPharmacy(Hashtable<String,String> data) throws InterruptedException, IOException, AWTException {
+		Pharmacy pharm=new Pharmacy();
+		pharm.pharmacyVerifyTable(data);
+	
+		}
+	
+	@Test(dataProvider="getData",dataProviderClass = CellDataProvider.class,priority=6,dependsOnMethods="nostLogin")
 	public void addSupplier(Hashtable<String,String> data) throws IOException, InterruptedException {
 		Supplier supp=new Supplier();
 		supp.addSupplier(data);
 	}
 	
-	@Test(dataProvider="getData",dataProviderClass = CellDataProvider.class,priority=5,dependsOnMethods= {"addProtocol"})
+	@Test(dataProvider="getData",dataProviderClass = CellDataProvider.class,priority=7,dependsOnMethods="addSupplier")
+	public void verifySupplier(Hashtable<String,String> data) throws InterruptedException, IOException, AWTException {
+		Supplier supp=new Supplier();
+		supp.supplierVerifyTable(data);
+
+		}
+	
+	@Test(dataProvider="getData",dataProviderClass = CellDataProvider.class,priority=8,dependsOnMethods= {"addProtocol"})
 	public void addCatalog(Hashtable<String,String> data) throws InterruptedException, IOException {
 		Catalog drug=new Catalog();
 		drug.addDrug(data);
 	}
 	
-	@Test(dataProvider="getData",dataProviderClass = CellDataProvider.class,priority=6,dependsOnMethods= {"addProtocol","addCatalog"})
+	@Test(dataProvider="getData",dataProviderClass = CellDataProvider.class,priority=9,dependsOnMethods= {"addCatalog"})
+	public void verifyCatalog(Hashtable<String,String> data) throws InterruptedException, IOException, AWTException {
+		Catalog drug=new Catalog();
+		drug.catalogVerify(data);
+	
+		}
+	
+	@Test(dataProvider="getData",dataProviderClass = CellDataProvider.class,priority=10,dependsOnMethods= {"addProtocol","addCatalog"})
 	public void addPatient(Hashtable<String,String> data) throws IOException, InterruptedException, AWTException {
 		Patient patient=new Patient();
 		patient.addPatient(data);
 	} 
 	
-	@Test(dataProvider="getData",dataProviderClass = CellDataProvider.class,priority=7,dependsOnMethods= {"addProtocol"})
+	@Test(dataProvider="getData",dataProviderClass = CellDataProvider.class,priority=11,dependsOnMethods= {"addPatient"})
+	public void verifyPatient(Hashtable<String,String> data) throws InterruptedException, IOException, AWTException {
+		Patient pat=new Patient();
+		pat.patientVerifyTable(data);
+	
+		}
+	
+	@Test(dataProvider="getData",dataProviderClass = CellDataProvider.class,priority=12,dependsOnMethods= {"addProtocol"})
 	public void commonReceive(Hashtable<String,String> data) throws IOException, InterruptedException, AWTException {
 		
 		Receive rec=new Receive();
@@ -68,7 +105,7 @@ public class IDSFlow_M_R_PR extends BrowserAct{
 		
 	}
 	
-	@Test(dataProvider="getData",dataProviderClass = CellDataProvider.class,priority=7,dependsOnMethods= {"commonReceive"})
+	@Test(dataProvider="getData",dataProviderClass = CellDataProvider.class,priority=13,dependsOnMethods= {"commonReceive"})
 	public void submitqueueReceive(Hashtable<String,String> data) throws IOException, InterruptedException, AWTException {
 		
 		Receive rec=new Receive();
@@ -77,7 +114,7 @@ public class IDSFlow_M_R_PR extends BrowserAct{
 //	@Test(dataProvider="getData",dataProviderClass = CellDataProvider.class,priority=8)
 //	public void verifyReceive() {}
 	
-	@Test(dataProvider="getData",dataProviderClass = CellDataProvider.class,priority=8,dependsOnMethods= {"commonReceive"})
+	@Test(dataProvider="getData",dataProviderClass = CellDataProvider.class,priority=14,dependsOnMethods= {"commonReceive"})
 	public void commonTransferToPharmacy(Hashtable<String,String> data) throws IOException, InterruptedException, AWTException {
 		
 		TransferToPharmacy transGen=new TransferToPharmacy();
@@ -87,7 +124,7 @@ public class IDSFlow_M_R_PR extends BrowserAct{
 //	@Test(dataProvider="getData",dataProviderClass = CellDataProvider.class,priority=10)
 //	public void verifyTranstoPharm() {}
 	
-	@Test(dataProvider="getData",dataProviderClass = CellDataProvider.class,priority=10,dependsOnMethods= {"commonTransferToPharmacy"})
+	@Test(dataProvider="getData",dataProviderClass = CellDataProvider.class,priority=15,dependsOnMethods= {"commonTransferToPharmacy"})
 	public void addDispense(Hashtable<String,String> data) throws IOException, InterruptedException, AWTException {
 		Dispense disp=new Dispense();
 		disp.dispPatientSearch(data);

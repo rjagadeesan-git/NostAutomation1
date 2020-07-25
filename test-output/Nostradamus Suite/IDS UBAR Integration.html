@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>IDS UBAR Integration</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>8/2/7</td>
+<td>Tests passed/Failed/Skipped:</td><td>12/1/5</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Jul 11 17:08:01 IST 2020</td>
+<td>Started on:</td><td>Sat Jul 25 08:04:41 IST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>169 seconds (169098 ms)</td>
+<tr><td>Total time:</td><td>256 seconds (256386 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,122 +75,31 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='NostGroup.NostArtifact.TestCases.UbarloginCase.commonReceive()'><b>commonReceive</b><br>Test class: NostGroup.NostArtifact.TestCases.UbarloginCase<br>Parameters: {Receive_Protocol_ID=11-JUL-10-20-PROT, Receive_Drug_name=wewdw, Lot_#=QWERT-U-02, Formulation=, Range_End=25.0, Unit_Type=, esignature=a1234, Level_of_Accountability=, Receive_Storage_Location=, Drug_Name=11-JUL-10-20-Drg-Unit, Expiration_Date=05-05-2021, Receive_Pharmacy=, Range_Start=10.0, IVRS=, Comment=Receving Drug, Unit_of_Measure=mEq, Total_Qty=209.0, Strength/Concentration=22.22, Patient_Specific_Drug=, Receive_Storage_Condition=, Supplier_Name=, Qty_per_Unit=, Static_ID=ZAP-U1-}<br/>
-<a href="#Output-798626015" onClick='toggleBox("Output-798626015", this, "Show output", "Hide output");'>Show output</a>
+<td title='NostGroup.NostArtifact.TestCases.UbarloginCase.verifyCPP()'><b>verifyCPP</b><br>Test class: NostGroup.NostArtifact.TestCases.UbarloginCase<br>Parameters: {cpp-cdm-price-eff-to=07302020, cpp-cdm-plan-search=, cpp-cdm-service-name=25-JUL-07-20-Drg-Unit, cpp-payer-email=test@ncoup.com, cpp-cdm-service-price=230.0, cpp-cdm-service-results-search-bar=, cpp-cdm-service-frequency=, cpp-cdm-service-frequency-interval=, cpp-cdm-charge-basis=, cpp-attach-payer-search=01-JUN-Payer-IDS, cpp-account-name=12345Name, cpp-same-payerid=, cpp-account-no=01-JUN-Payer-Name, cpp-payer-level=Primary, cpp-plan-search=25-JUL-07-20-PROT, cpp-type-code=Study Team, cpp-cdm-price-eff-from=06302020, cpp-payer-id=, cpp-cdm-payer-search=, cpp-cdm-pharmacy=}<br/>
+<a href="#Output-1898870910" onClick='toggleBox("Output-1898870910", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-798626015" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-798626015">
-<br>commonReceive: Failed<br/>
-<br><br/>
-<a target="_blank" href="D:\Jagan\NostAuto\NostCore\NostArtifact\Screenshots\Screenshot_Sat_Jul_11_17_09_53_IST_2020.jpg">ScreenShot</a><br/>
-<br><br/>
-</div>
-</td>
-<td><div><pre>org.openqa.selenium.UnhandledAlertException: Dismissed user prompt dialog: Error : 
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;CSEKARAITHENT&apos;, ip: &apos;192.168.195.10&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_112&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 78.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200630195452, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 29472, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 63d03fb5-8fd5-4cb1-a40a-5fa5c2df1120
-*** Element info: {Using=css selector, value=#Receive}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
-	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	at NostGroup.NostArtifact.Receive.Receive.receiveCommon(Receive.java:29)
-	at NostGroup.NostArtifact.TestCases.UbarloginCase.commonReceive(UbarloginCase.java:75)
-	at java.util.ArrayList.forEach(ArrayList.java:1249)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace798626015", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace798626015'><pre>org.openqa.selenium.UnhandledAlertException: Dismissed user prompt dialog: Error : 
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;CSEKARAITHENT&apos;, ip: &apos;192.168.195.10&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_112&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 78.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200630195452, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 29472, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 63d03fb5-8fd5-4cb1-a40a-5fa5c2df1120
-*** Element info: {Using=css selector, value=#Receive}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
-	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	at NostGroup.NostArtifact.Receive.Receive.receiveCommon(Receive.java:29)
-	at NostGroup.NostArtifact.TestCases.UbarloginCase.commonReceive(UbarloginCase.java:75)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(ArrayList.java:1249)
-	at org.testng.TestRunner.privateRun(TestRunner.java:766)
-	at org.testng.TestRunner.run(TestRunner.java:587)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-	at org.testng.TestNG.runSuites(TestNG.java:1039)
-	at org.testng.TestNG.run(TestNG.java:1007)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>NostGroup.NostArtifact.TestCases.UbarloginCase@17c386de</td></tr>
-<tr>
-<td title='NostGroup.NostArtifact.TestCases.UbarloginCase.verifyCPP()'><b>verifyCPP</b><br>Test class: NostGroup.NostArtifact.TestCases.UbarloginCase<br>Parameters: {cpp-cdm-price-eff-to=07302020, cpp-cdm-plan-search=, cpp-cdm-service-name=11-JUL-10-20-Drg-Unit, cpp-payer-email=test@ncoup.com, cpp-cdm-service-price=230.0, cpp-cdm-service-results-search-bar=, cpp-cdm-service-frequency=, cpp-cdm-service-frequency-interval=, cpp-cdm-charge-basis=, cpp-attach-payer-search=Class, cpp-account-name=12345Name, cpp-same-payerid=, cpp-account-no=Class88765, cpp-payer-level=Primary, cpp-plan-search=11-JUL-10-20-PROT, cpp-type-code=Study Team, cpp-cdm-price-eff-from=06302020, cpp-payer-id=, cpp-cdm-payer-search=, cpp-cdm-pharmacy=}<br/>
-<a href="#Output-1572066684" onClick='toggleBox("Output-1572066684", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1572066684" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1572066684">
+<a href="#Output-1898870910" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1898870910">
 Clicked the item: maintenance-billing-menu<br/>
 Clicked the item: cpp-menu<br/>
-Entered the value '11-JUL-10-20-PROT' in field 'cpp-plan-search'<br/>
+Entered the value '25-JUL-07-20-PROT' in field 'cpp-plan-search'<br/>
 Clicked the item: cpp-search<br/>
-Plan '11-JUL-10-20-PROT' integrated to CPP successfully<br/>
+Plan '25-JUL-07-20-PROT' integrated to CPP successfully<br/>
 Clicked the item: cpp-payer-search-icon<br/>
-Entered the value 'Class' in field 'cpp-attach-payer-search'<br/>
+Entered the value '01-JUN-Payer-IDS' in field 'cpp-attach-payer-search'<br/>
 Clicked the item: cpp-add-new-payer-search<br/>
-Payer 'Class' selected from existing Payer's list successfully<br/>
-Clicked the item: cpp-attach-payer<br/>
-Service '11-JUL-10-20-Drg-Unit' not listed in CPP CDM<br/>
-Service '11-JUL-10-20-Drg-Unit' found in CPP Services table<br/>
 <br>verifyCPP: Failed<br/>
 <br><br/>
-<a target="_blank" href="D:\Jagan\NostAuto\NostCore\NostArtifact\Screenshots\Screenshot_Sat_Jul_11_17_10_50_IST_2020.jpg">ScreenShot</a><br/>
+<a target="_blank" href="D:\Jagan\NostAuto\NostCore\NostArtifact\Screenshots\Screenshot_Sat_Jul_25_08_08_56_IST_2020.jpg">ScreenShot</a><br/>
 <br><br/>
 </div>
 </td>
-<td><div><pre>org.openqa.selenium.ElementNotInteractableException: Element &lt;input id=&quot;parentPType&quot; name=&quot;optradioN&quot; type=&quot;radio&quot;&gt; could not be scrolled into view
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: Element &lt;td&gt; could not be scrolled into view
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;CSEKARAITHENT&apos;, ip: &apos;192.168.195.10&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_112&apos;
+System info: host: &apos;CSEKARAITHENT&apos;, ip: &apos;192.168.195.4&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_112&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 78.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200630195452, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 29472, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 63d03fb5-8fd5-4cb1-a40a-5fa5c2df1120
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 78.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200708170202, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 16740, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 10900977-e2b0-40f1-a86f-32ebdb96f446
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -199,17 +108,16 @@ Session ID: 63d03fb5-8fd5-4cb1-a40a-5fa5c2df1120
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at NostGroup.NostArtifact.Base.CommonMethods.click(CommonMethods.java:81)
-	at NostGroup.NostArtifact.Billing.CPP.cppAdd(CPP.java:478)
-	at NostGroup.NostArtifact.TestCases.UbarloginCase.verifyCPP(UbarloginCase.java:116)
+	at NostGroup.NostArtifact.Billing.CPP.cppAdd(CPP.java:109)
+	at NostGroup.NostArtifact.TestCases.UbarloginCase.verifyCPP(UbarloginCase.java:124)
 	at java.util.ArrayList.forEach(ArrayList.java:1249)
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1572066684", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1572066684'><pre>org.openqa.selenium.ElementNotInteractableException: Element &lt;input id=&quot;parentPType&quot; name=&quot;optradioN&quot; type=&quot;radio&quot;&gt; could not be scrolled into view
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1898870910", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1898870910'><pre>org.openqa.selenium.ElementNotInteractableException: Element &lt;td&gt; could not be scrolled into view
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;CSEKARAITHENT&apos;, ip: &apos;192.168.195.10&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_112&apos;
+System info: host: &apos;CSEKARAITHENT&apos;, ip: &apos;192.168.195.4&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_112&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 78.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200630195452, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 29472, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 63d03fb5-8fd5-4cb1-a40a-5fa5c2df1120
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 78.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200708170202, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 16740, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 10900977-e2b0-40f1-a86f-32ebdb96f446
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -222,9 +130,8 @@ Session ID: 63d03fb5-8fd5-4cb1-a40a-5fa5c2df1120
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at NostGroup.NostArtifact.Base.CommonMethods.click(CommonMethods.java:81)
-	at NostGroup.NostArtifact.Billing.CPP.cppAdd(CPP.java:478)
-	at NostGroup.NostArtifact.TestCases.UbarloginCase.verifyCPP(UbarloginCase.java:116)
+	at NostGroup.NostArtifact.Billing.CPP.cppAdd(CPP.java:109)
+	at NostGroup.NostArtifact.TestCases.UbarloginCase.verifyCPP(UbarloginCase.java:124)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -254,7 +161,7 @@ Session ID: 63d03fb5-8fd5-4cb1-a40a-5fa5c2df1120
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>32</td>
+<td>20</td>
 <td>NostGroup.NostArtifact.TestCases.UbarloginCase@17c386de</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
@@ -265,31 +172,31 @@ Session ID: 63d03fb5-8fd5-4cb1-a40a-5fa5c2df1120
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='NostGroup.NostArtifact.TestCases.UbarloginCase.addCatalog()'><b>addCatalog</b><br>Test class: NostGroup.NostArtifact.TestCases.UbarloginCase<br>Parameters: {Aux_Label_6=, Aux_Label_5=, Aux_Label_4=Chemotherapy Drug, Drug_ID_#=11-JUL-10-20-Drg-id1, Aux_Label_3=Refrigerate, Status=, Aux_Label_2=Shake Well, Aux_Label_1=Take With Food, Storage_Location=Location 1, Max=, UPC_Ratio=7.0, Hemoglobin=4.0, Strength/Concentration=22.22, Reorder_Point=, Formulation=Enema, Other3=Other 3, Other2=Other 2, Other1=Other 1, ANC=2.0, Pharmacy_Drug=11-JUL-10-20-Pharm1-C, Bilirubin:_T-Bili=12.0, IVRS=Yes, Level_of_Accountability=Unit, Qty_per_Unit=48.0, Frequency=twice daily, Patient_Specific_Drug=No, Drug_Proto_SPID=11-JUL-10-20-PROT-SPID, Day_Supply=10.0, esignature=a1234, Drug_Name=11-JUL-10-20-Drg-Unit, Compounded_Med_Label=Sterile Compounded Medication, NSC_#=11-JUL-10-20-Drg-nsc1, ALT/SGPT=14.0, PLT's=3.0, Drug_Label_Name=11-JUL-10-20-Drg-dl1, Min=, Route=, 24-hour_Collection=6.0, Serum_Creatinine=11.0, Dose_on_Label=Take with water of 8oz, before food, Storage_Condition=Refrigerator, Unit_Type=Tube, Label_Template=Standard (w/ Lab), Drug_Protocol=11-JUL-10-20-PROT, Supplier_Name=11-JUL-10-Supplier-1, Unit_of_Measure=mEq, Track_By=Strength, Dipstick=5.0, Alternative_Drug_Name=11-JUL-10-20-Drg-adn1, To_Be_Linked=Yes, AST/SGOT=13.0}<br/>
-<a href="#Output-1476484694" onClick='toggleBox("Output-1476484694", this, "Show output", "Hide output");'>Show output</a>
+<td title='NostGroup.NostArtifact.TestCases.UbarloginCase.addCatalog()'><b>addCatalog</b><br>Test class: NostGroup.NostArtifact.TestCases.UbarloginCase<br>Parameters: {Aux_Label_6=, Aux_Label_5=, Aux_Label_4=Chemotherapy Drug, Drug_ID_#=25-JUL-07-20-Drg-id1, Aux_Label_3=Refrigerate, Status=, Aux_Label_2=Shake Well, Aux_Label_1=Take With Food, Storage_Location=Location 1, Max=, UPC_Ratio=7.0, Hemoglobin=4.0, Strength/Concentration=22.22, Reorder_Point=, Formulation=Enema, Other3=Other 3, Other2=Other 2, Other1=Other 1, ANC=2.0, Pharmacy_Drug=25-JUL-07-20-Pharm1-C, Bilirubin:_T-Bili=12.0, IVRS=Yes, Level_of_Accountability=Lot, Qty_per_Unit=48.0, Frequency=twice daily, Patient_Specific_Drug=No, Drug_Proto_SPID=25-JUL-07-20-PROT-SPID, Day_Supply=10.0, esignature=a1234, Drug_Name=25-JUL-07-20-Drg-Unit, Compounded_Med_Label=Sterile Compounded Medication, NSC_#=25-JUL-07-20-Drg-nsc1, ALT/SGPT=14.0, PLT's=3.0, Drug_Label_Name=25-JUL-07-20-Drg-dl1, Min=, Route=, 24-hour_Collection=6.0, Serum_Creatinine=11.0, Dose_on_Label=Take with water of 8oz, before food, Storage_Condition=Refrigerator, Unit_Type=Tube, Label_Template=Standard (w/ Lab), Drug_Protocol=25-JUL-07-20-PROT, Supplier_Name=25-JUL-07-Supplier-1, Unit_of_Measure=mEq, Track_By=Strength, Dipstick=5.0, Alternative_Drug_Name=25-JUL-07-20-Drg-adn1, To_Be_Linked=Yes, AST/SGOT=13.0}<br/>
+<a href="#Output-1927452108" onClick='toggleBox("Output-1927452108", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1476484694" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1476484694">
+<a href="#Output-1927452108" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1927452108">
 Clicked the item: add-drug<br/>
-Entered the value '11-JUL-10-20-Drg-Unit' in field 'drug-name'<br/>
+Entered the value '25-JUL-07-20-Drg-Unit' in field 'drug-name'<br/>
 Selected the value 'Strength in field 'track-by'<br/>
 Entered the value '22.22' in field 'strength-concentration'<br/>
 Selected the value 'mEq in field 'unit-of-measure'<br/>
 Selected the value 'Enema in field 'formulation'<br/>
-Entered the value '11-JUL-10-20-Drg-dl1' in field 'drug-label-name'<br/>
-Entered the value '11-JUL-10-20-Drg-id1' in field 'drug-id'<br/>
-Entered the value '11-JUL-10-20-Drg-nsc1' in field 'drug-nsc'<br/>
-Entered the value '11-JUL-10-20-Drg-adn1' in field 'alternative-drug-name'<br/>
+Entered the value '25-JUL-07-20-Drg-dl1' in field 'drug-label-name'<br/>
+Entered the value '25-JUL-07-20-Drg-id1' in field 'drug-id'<br/>
+Entered the value '25-JUL-07-20-Drg-nsc1' in field 'drug-nsc'<br/>
+Entered the value '25-JUL-07-20-Drg-adn1' in field 'alternative-drug-name'<br/>
 Clicked the item: set-defaults<br/>
 'patient-specific-drug' is checked/ticked by default<br/>
  Input is Yes for the field 'ivrs' and Checkbox is unchecked by default, now checked/ticked successfully<br/>
 Selected the value 'Yes in field 'to-be-linked'<br/>
-Selected the value 'Unit in field 'level-of-accountability'<br/>
+Selected the value 'Lot in field 'level-of-accountability'<br/>
 Selected the value 'Tube in field 'unit-type'<br/>
 Entered the value '48.0' in field 'qty-per-unit'<br/>
-Entered the value '11-JUL-10-Supplier-1' in field 'catalog-supplier-name'<br/>
+Entered the value '25-JUL-07-Supplier-1' in field 'catalog-supplier-name'<br/>
 Selected the value 'Refrigerator in field 'storage-condition'<br/>
-Selected the value '11-JUL-10-20-Pharm1-C in field 'pharmacy'<br/>
+Selected the value '25-JUL-07-20-Pharm1-C in field 'pharmacy'<br/>
 Selected the value 'Location 1 in field 'storage-location'<br/>
 Selected the value 'twice daily in field 'frequency'<br/>
 Entered the value 'Take with water of 8oz, before food' in field 'dose-on-label'<br/>
@@ -314,31 +221,31 @@ Entered the value '12.0' in field 'bili-rubin-t-bili'<br/>
 Entered the value '13.0' in field 'asg-sgot'<br/>
 Entered the value '14.0' in field 'alt-sgpt'<br/>
 Clicked the item: add-drug<br/>
-Entered the value '11-JUL-10-20-PROT' in field 'cat-prot-sear'<br/>
+Entered the value '25-JUL-07-20-PROT' in field 'cat-prot-sear'<br/>
 Clicked the item: cat-prot-sear-ok<br/>
 Entered the value 'a1234' in field 'catalog-esign'<br/>
 Clicked the item: catalog-submit<br/>
 </div>
 </td>
 <td></td>
-<td>19</td>
+<td>21</td>
 <td>NostGroup.NostArtifact.TestCases.UbarloginCase@17c386de</td></tr>
 <tr>
-<td title='NostGroup.NostArtifact.TestCases.UbarloginCase.addPatient()'><b>addPatient</b><br>Test class: NostGroup.NostArtifact.TestCases.UbarloginCase<br>Parameters: {Patient_Study_ID=11-JUL-10-20-PAT1-STY, Gender=Female, Protocol_ID=11-JUL-10-20-PROT, Patient_Status=Active, Patient_Stop_Date=, Country=India, Patient_Start_Date=, Zip/Postal_Code=123456.0, Assigned_Drug=, esignature=a1234, Home_Phone(s)=098-098-978765, State=Tamil Nadu, Drug_Name=11-JUL-10-20-Drg, Patient_MRN=11-JUL-10-20-PAT1-1, Address_2=2nd Street, Address_1=11.0, PID=PID-002, Unit_of_Measure=mEq, Strength/Concentration=22.22, Patient_First_Name=11-JUL-10-20-FN, Patient_Last_Name=11-JUL-10-20-LN, Patient_DOB=11-10-1999, Cohort/Dose_Level=39.87, Email=ncoup@ncoup.com, Work_Phone(s)=7297932-899, City=Chennai}<br/>
-<a href="#Output-700249373" onClick='toggleBox("Output-700249373", this, "Show output", "Hide output");'>Show output</a>
+<td title='NostGroup.NostArtifact.TestCases.UbarloginCase.addPatient()'><b>addPatient</b><br>Test class: NostGroup.NostArtifact.TestCases.UbarloginCase<br>Parameters: {Patient_Study_ID=25-JUL-07-20-PAT1-STY, Gender=Female, Protocol_ID=25-JUL-07-20-PROT, Patient_Status=Active, Patient_Stop_Date=, Country=India, Patient_Start_Date=, Zip/Postal_Code=123456.0, Assigned_Drug=, esignature=a1234, Home_Phone(s)=098-098-978765, State=Tamil Nadu, Drug_Name=25-JUL-07-20-Drg, Patient_MRN=25-JUL-07-20-PAT1-1, Address_2=2nd Street, Address_1=11.0, PID=PID-002, Unit_of_Measure=mEq, Strength/Concentration=22.22, Patient_First_Name=25-JUL-07-20-FN, Patient_Last_Name=25-JUL-07-20-LN, Patient_DOB=11-10-1999, Cohort/Dose_Level=39.87, Email=ncoup@ncoup.com, Work_Phone(s)=7297932-899, City=Chennai}<br/>
+<a href="#Output-2083951216" onClick='toggleBox("Output-2083951216", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-700249373" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-700249373">
+<a href="#Output-2083951216" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2083951216">
 Clicked the item: patient-menu<br/>
 Clicked the item: add-patient-to-protocol<br/>
-Entered the value '11-JUL-10-20-PAT1-1' in field 'patient-mrn'<br/>
-Entered the value '11-JUL-10-20-FN' in field 'patient-first-name'<br/>
-Entered the value '11-JUL-10-20-LN' in field 'patient-last-name'<br/>
+Entered the value '25-JUL-07-20-PAT1-1' in field 'patient-mrn'<br/>
+Entered the value '25-JUL-07-20-FN' in field 'patient-first-name'<br/>
+Entered the value '25-JUL-07-20-LN' in field 'patient-last-name'<br/>
 Selected the value 'Female in field 'patient-gender'<br/>
 Entered the value '11-10-1999' in field 'patient-dob'<br/>
 Selected the value 'Active in field 'patient-status'<br/>
-Entered the value '11-JUL-10-20-PROT' in field 'patient-protocol-id'<br/>
-Entered the value '11-JUL-10-20-PAT1-STY' in field 'patient-study-id'<br/>
+Entered the value '25-JUL-07-20-PROT' in field 'patient-protocol-id'<br/>
+Entered the value '25-JUL-07-20-PAT1-STY' in field 'patient-study-id'<br/>
 Entered the value '39.87' in field 'cohort-dose-level'<br/>
 Clicked the item: add-contact-info<br/>
 Entered the value '11.0' in field 'address-1'<br/>
@@ -356,18 +263,18 @@ Clicked the item: patient-submit<br/>
 </div>
 </td>
 <td></td>
-<td>22</td>
+<td>23</td>
 <td>NostGroup.NostArtifact.TestCases.UbarloginCase@17c386de</td></tr>
 <tr>
-<td title='NostGroup.NostArtifact.TestCases.UbarloginCase.addPharmacy()'><b>addPharmacy</b><br>Test class: NostGroup.NostArtifact.TestCases.UbarloginCase<br>Parameters: {NCI_Record=Control, Grant_Control_Rights?=Yes, Disable_Dispensing/Par_Level_4=Yes, Disable_Dispensing/Par_Level_3=No, Disable_Dispensing/Par_Level_2=No, Disable_Dispensing/Par_Level_1=No, esignature=a1234, Zip/PostalCode=1234567.0, State=nCoup State, Phone=098-098-0987, Address_2=nCoup Street, Storage_Location_4=Location 4, Address_1=11.0, Storage_Location_3=Location 3, Storage_Location_2=Location 2, Pharmacy_Name=11-JUL-10-20-Pharm1-C, Storage_Location_1=Location 1, Organization=Pharmacy, Storage_Condition_4=Freezer -20, Storage_Condition_3=Refrigerated, Storage_Condition_2=Room Temperature, DEA=DEA234, Storage_Condition_1=Refrigerator, Pharmacy's_Name_for_Patient_Label=nCoup Control pharmacy QA, City=nCoup City}<br/>
-<a href="#Output-730584984" onClick='toggleBox("Output-730584984", this, "Show output", "Hide output");'>Show output</a>
+<td title='NostGroup.NostArtifact.TestCases.UbarloginCase.addPharmacy()'><b>addPharmacy</b><br>Test class: NostGroup.NostArtifact.TestCases.UbarloginCase<br>Parameters: {NCI_Record=Control, Grant_Control_Rights?=Yes, Disable_Dispensing/Par_Level_4=Yes, Disable_Dispensing/Par_Level_3=No, Disable_Dispensing/Par_Level_2=No, Disable_Dispensing/Par_Level_1=No, esignature=a1234, Zip/PostalCode=1234567.0, State=nCoup State, Phone=098-098-0987, Address_2=nCoup Street, Storage_Location_4=Location 4, Address_1=11.0, Storage_Location_3=Location 3, Storage_Location_2=Location 2, Pharmacy_Name=25-JUL-07-20-Pharm1-C, Storage_Location_1=Location 1, Organization=Pharmacy, Storage_Condition_4=Freezer -20, Storage_Condition_3=Refrigerated, Storage_Condition_2=Room Temperature, DEA=DEA234, Storage_Condition_1=Refrigerator, Pharmacy's_Name_for_Patient_Label=nCoup Control pharmacy QA, City=nCoup City}<br/>
+<a href="#Output-468950278" onClick='toggleBox("Output-468950278", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-730584984" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-730584984">
+<a href="#Output-468950278" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-468950278">
 Clicked the item: organization<br/>
 Selected the value 'Pharmacy in field 'organization-selection'<br/>
 Clicked the item: add-new-pharmacy<br/>
-Entered the value '11-JUL-10-20-Pharm1-C' in field 'pharmacy-name'<br/>
+Entered the value '25-JUL-07-20-Pharm1-C' in field 'pharmacy-name'<br/>
  Input is Yes for the field 'grant-control-rights' and Checkbox is unchecked by default, now checked/ticked successfully<br/>
 Selected the value 'Control in field 'nci-record'<br/>
 Selected the value 'Refrigerator in field 'storage-condition1'<br/>
@@ -399,19 +306,19 @@ Clicked the item: pharmacy-submit<br/>
 <td>14</td>
 <td>NostGroup.NostArtifact.TestCases.UbarloginCase@17c386de</td></tr>
 <tr>
-<td title='NostGroup.NostArtifact.TestCases.UbarloginCase.addProtocol()'><b>addProtocol</b><br>Test class: NostGroup.NostArtifact.TestCases.UbarloginCase<br>Parameters: {Service=Both, OP_Investigator_ID=Op-Inv-ID-02, Protocol_Phase_Start_Date=04-01-2020, Site_Number=STN002, Investigator_ID=Inv-ID-01, ID_Expiration=10-10-2020, OP_PI_Last_Name=OP-Ins-LN, Closed_to_New_Patients=05-01-2020, Description=TestLink-1, Protocol_Title=11-JUL-10-20-PROT-Title, Protocol_Category=Genetics, Optional_PI_Institution=Opt-Ins-nCoup, Sponsor_Protocol_ID=11-JUL-10-20-PROT-SPID, Protocol_Completion_Date=06-10-2020, Noti_Return=Return Notifications, External_IRB#=EIRB-Z100, PI_First_Name=nCoup-PI-FN, Protocol_Sponsor=11-JUL-10-20-PROT-SP, Protocol_Status=CNPE, esignature=a1234, Noti_Transfer=Transfer Notifications, Noti_Destroy=Destroy Notifications, Drug(s)_and_Kit(s)=, OP_PI_First_Name=Op-Ins-FN, Category=Protocol Data Sheet, Noti_Pat_Return=Patient Returns Notifications, Protocol_Closure_Date=06-01-2020, Noti_Receive=Receive Notifications, Study_Contact=Study contact comments, Protocol_ID=11-JUL-10-20-PROT, Version=v1.1, Internal_IRB#=IRB-Z001, Noti_Dispense=Dispense Notifications, Reason_for_Closure=Protocol Study completed, Disease_Program=Leukemia, Type=Link, Study_Source=Industry, Protocol_Phase=Phase 2, Pharmacy_Status=Active, Protocol_Type=Open label, PI_Last_Name=nCoup-PI-LN}<br/>
-<a href="#Output-697145861" onClick='toggleBox("Output-697145861", this, "Show output", "Hide output");'>Show output</a>
+<td title='NostGroup.NostArtifact.TestCases.UbarloginCase.addProtocol()'><b>addProtocol</b><br>Test class: NostGroup.NostArtifact.TestCases.UbarloginCase<br>Parameters: {Service=Both, OP_Investigator_ID=Op-Inv-ID-02, Protocol_Phase_Start_Date=04-01-2020, Site_Number=STN002, Investigator_ID=Inv-ID-01, ID_Expiration=10-10-2020, OP_PI_Last_Name=OP-Ins-LN, Closed_to_New_Patients=05-01-2020, Description=TestLink-1, Protocol_Title=25-JUL-07-20-PROT-Title, Protocol_Category=Genetics, Optional_PI_Institution=Opt-Ins-nCoup, Sponsor_Protocol_ID=25-JUL-07-20-PROT-SPID, Protocol_Completion_Date=06-10-2020, Noti_Return=Return Notifications, External_IRB#=EIRB-Z100, PI_First_Name=nCoup-PI-FN, Protocol_Sponsor=25-JUL-07-20-PROT-SP, Protocol_Status=CNPE, esignature=a1234, Noti_Transfer=Transfer Notifications, Noti_Destroy=Destroy Notifications, Drug(s)_and_Kit(s)=, OP_PI_First_Name=Op-Ins-FN, Category=Protocol Data Sheet, Noti_Pat_Return=Patient Returns Notifications, Protocol_Closure_Date=06-01-2020, Noti_Receive=Receive Notifications, Study_Contact=Study contact comments, Protocol_ID=25-JUL-07-20-PROT, Version=v1.1, Internal_IRB#=IRB-Z001, Noti_Dispense=Dispense Notifications, Reason_for_Closure=Protocol Study completed, Disease_Program=Leukemia, Type=Link, Study_Source=Industry, Protocol_Phase=Phase 2, Pharmacy_Status=Active, Protocol_Type=Open label, PI_Last_Name=nCoup-PI-LN}<br/>
+<a href="#Output-657069980" onClick='toggleBox("Output-657069980", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-697145861" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-697145861">
+<a href="#Output-657069980" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-657069980">
 Clicked the item: protocol<br/>
 Clicked the item: add-protocol<br/>
-Entered the value '11-JUL-10-20-PROT' in field 'protocol-id'<br/>
-Entered the value '11-JUL-10-20-PROT-Title' in field 'protocol-title'<br/>
+Entered the value '25-JUL-07-20-PROT' in field 'protocol-id'<br/>
+Entered the value '25-JUL-07-20-PROT-Title' in field 'protocol-title'<br/>
 Selected the value 'CNPE in field 'protocol-status'<br/>
 Selected the value 'Active in field 'pharmacy-status'<br/>
-Entered the value '11-JUL-10-20-PROT-SPID' in field 'sponsor-protocol-id'<br/>
-Entered the value '11-JUL-10-20-PROT-SP' in field 'protocol-sponsor'<br/>
+Entered the value '25-JUL-07-20-PROT-SPID' in field 'sponsor-protocol-id'<br/>
+Entered the value '25-JUL-07-20-PROT-SP' in field 'protocol-sponsor'<br/>
 Entered the value 'STN002' in field 'site-number'<br/>
 Selected the value 'Phase 2 in field 'protocol-phase'<br/>
 Selected the value 'Leukemia in field 'disease-program'<br/>
@@ -452,32 +359,71 @@ Clicked the item: protocol-submit<br/>
 <td>21</td>
 <td>NostGroup.NostArtifact.TestCases.UbarloginCase@17c386de</td></tr>
 <tr>
-<td title='NostGroup.NostArtifact.TestCases.UbarloginCase.addSupplier()'><b>addSupplier</b><br>Test class: NostGroup.NostArtifact.TestCases.UbarloginCase<br>Parameters: {Supplier_Name_3=11-JUL-10-Supplier-3, Supplier_Name_2=11-JUL-10-Supplier-2, Organization=Supplier, Supplier_Name_1=11-JUL-10-Supplier-1, esignature=a1234}<br/>
-<a href="#Output-1088628578" onClick='toggleBox("Output-1088628578", this, "Show output", "Hide output");'>Show output</a>
+<td title='NostGroup.NostArtifact.TestCases.UbarloginCase.addSupplier()'><b>addSupplier</b><br>Test class: NostGroup.NostArtifact.TestCases.UbarloginCase<br>Parameters: {Supplier_Name_3=25-JUL-07-Supplier-3, Supplier_Name_2=25-JUL-07-Supplier-2, Organization=Supplier, Supplier_Name_1=25-JUL-07-Supplier-1, esignature=a1234}<br/>
+<a href="#Output-581364120" onClick='toggleBox("Output-581364120", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1088628578" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1088628578">
+<a href="#Output-581364120" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-581364120">
 Clicked the item: organization<br/>
 Selected the value 'Supplier in field 'organization-selection'<br/>
 Clicked the item: supplier-add<br/>
-Entered the value '11-JUL-10-Supplier-1' in field 'supplier-name'<br/>
+Entered the value '25-JUL-07-Supplier-1' in field 'supplier-name'<br/>
 Clicked the item: add-more-supplier1<br/>
-Entered the value '11-JUL-10-Supplier-2' in field 'supplier-name-1'<br/>
+Entered the value '25-JUL-07-Supplier-2' in field 'supplier-name-1'<br/>
 Clicked the item: add-more-supplier2<br/>
-Entered the value '11-JUL-10-Supplier-3' in field 'supplier-name-2'<br/>
+Entered the value '25-JUL-07-Supplier-3' in field 'supplier-name-2'<br/>
 Entered the value 'a1234' in field 'supplier-esign'<br/>
 Clicked the item: supplier-submit<br/>
 </div>
 </td>
 <td></td>
-<td>20</td>
+<td>21</td>
+<td>NostGroup.NostArtifact.TestCases.UbarloginCase@17c386de</td></tr>
+<tr>
+<td title='NostGroup.NostArtifact.TestCases.UbarloginCase.commonReceive()'><b>commonReceive</b><br>Test class: NostGroup.NostArtifact.TestCases.UbarloginCase<br>Parameters: {Receive_Protocol_ID=25-JUL-07-20-PROT, Receive_Drug_name=wewdw, Lot_#=QWERT-LT-01, Formulation=, Range_End=25.0, Unit_Type=, esignature=a1234, Level_of_Accountability=, Receive_Storage_Location=, Drug_Name=25-JUL-07-20-Drg-Unit, Expiration_Date=05-05-2021, Receive_Pharmacy=, Range_Start=10.0, IVRS=, Comment=Receving Drug, Unit_of_Measure=mEq, Total_Qty=209.0, Strength/Concentration=22.22, Patient_Specific_Drug=, Receive_Storage_Condition=, Supplier_Name=, Qty_per_Unit=25.0, Static_ID=ZAP-U1-}<br/>
+<a href="#Output-1970518510" onClick='toggleBox("Output-1970518510", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1970518510" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1970518510">
+Clicked the item: receive-add<br/>
+Entered the value '25-JUL-07-20-PROT' in field 'receive-protocol-id'<br/>
+Entered the value 'QWERT-LT-01' in field 'receive-lot'<br/>
+Entered the value '05-05-2021' in field 'receive-expiration-date'<br/>
+Entered the value '209.0' in field 'receive-total-qty'<br/>
+Entered the value 'Receving Drug' in field 'receive-comment'<br/>
+Clicked the item: receive-save<br/>
+</div>
+</td>
+<td></td>
+<td>22</td>
+<td>NostGroup.NostArtifact.TestCases.UbarloginCase@17c386de</td></tr>
+<tr>
+<td title='NostGroup.NostArtifact.TestCases.UbarloginCase.commonTransferToPharmacy()'><b>commonTransferToPharmacy</b><br>Test class: NostGroup.NostArtifact.TestCases.UbarloginCase<br>Parameters: {Total_Qty_to_Drug_Transfer-Lot=10.0, esignature=a1234, Trans_from_Pharmacy=25-JUL-07-20-Pharm1-C, Drug_Name=25-JUL-07-20-Drg-Unit, Trans_To_Pharmacy=11-JUL-10-20-Pharm1-C, Transfer_Lot_#=QWERT-LT-01, Unit_of_Measure=mEq, Strength/Concentration=22.22, Unit#4=, Unit#3=, From_Storage_location=Location 1, Transfer_Protocol_ID=25-JUL-07-20-PROT, Unit#2=, Unit#1=ZAP-U1-0018, Number_of_units_to_be_transferred=, To_Storage_Location=Location 1, Transfer_comment=Transfer comments, Transfer_Drug_ID=23232.0}<br/>
+<a href="#Output-348756982" onClick='toggleBox("Output-348756982", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-348756982" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-348756982">
+Clicked the item: trans-to-pharm<br/>
+Entered the value '25-JUL-07-20-PROT' in field 'trans-protocol-id'<br/>
+Selected the value '25-JUL-07-20-Pharm1-C in field 'trans-fro-pharmacy'<br/>
+Selected the value 'Location 1 in field 'trans-from-sto-location'<br/>
+Selected the value '11-JUL-10-20-Pharm1-C in field 'trans-to-pharmacy'<br/>
+Selected the value 'Location 1 in field 'trans-to-sto-location'<br/>
+Entered the value 'Transfer comments' in field 'trans-comment'<br/>
+Entered the value '10.0' in field 'trans-tot-qty-lot'<br/>
+Entered the value 'a1234' in field 'trans-esign'<br/>
+Clicked the item: trans-submit<br/>
+</div>
+</td>
+<td></td>
+<td>47</td>
 <td>NostGroup.NostArtifact.TestCases.UbarloginCase@17c386de</td></tr>
 <tr>
 <td title='NostGroup.NostArtifact.TestCases.UbarloginCase.nostLogin()'><b>nostLogin</b><br>Test class: NostGroup.NostArtifact.TestCases.UbarloginCase<br>Parameters: {PassWord=Velos321, rundata=Y, UserName=admin, e-Signature=a1234}<br/>
-<a href="#Output-550572371" onClick='toggleBox("Output-550572371", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1857910993" onClick='toggleBox("Output-1857910993", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-550572371" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-550572371">
+<a href="#Output-1857910993" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1857910993">
 Starting to Login....<br/>
 Entered the value 'admin' in field 'username'<br/>
 Entered the value 'Velos321' in field 'password'<br/>
@@ -485,14 +431,29 @@ Clicked the item: login-button<br/>
 </div>
 </td>
 <td></td>
-<td>7</td>
+<td>4</td>
+<td>NostGroup.NostArtifact.TestCases.UbarloginCase@17c386de</td></tr>
+<tr>
+<td title='NostGroup.NostArtifact.TestCases.UbarloginCase.submitqueueReceive()'><b>submitqueueReceive</b><br>Test class: NostGroup.NostArtifact.TestCases.UbarloginCase<br>Parameters: {Receive_Protocol_ID=25-JUL-07-20-PROT, Receive_Drug_name=wewdw, Lot_#=QWERT-LT-01, Formulation=, Range_End=25.0, Unit_Type=, esignature=a1234, Level_of_Accountability=, Receive_Storage_Location=, Drug_Name=25-JUL-07-20-Drg-Unit, Expiration_Date=05-05-2021, Receive_Pharmacy=, Range_Start=10.0, IVRS=, Comment=Receving Drug, Unit_of_Measure=mEq, Total_Qty=209.0, Strength/Concentration=22.22, Patient_Specific_Drug=, Receive_Storage_Condition=, Supplier_Name=, Qty_per_Unit=25.0, Static_ID=ZAP-U1-}<br/>
+<a href="#Output-1585101559" onClick='toggleBox("Output-1585101559", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1585101559" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1585101559">
+Clicked the item: receive-menu<br/>
+Entered the value '25-JUL-07-20-PROT' in field 'rec-tab-search'<br/>
+Entered the value 'a1234' in field 'receive-edit'<br/>
+Clicked the item: receive-submit<br/>
+</div>
+</td>
+<td></td>
+<td>16</td>
 <td>NostGroup.NostArtifact.TestCases.UbarloginCase@17c386de</td></tr>
 <tr>
 <td title='NostGroup.NostArtifact.TestCases.UbarloginCase.ubarLogin()'><b>ubarLogin</b><br>Test class: NostGroup.NostArtifact.TestCases.UbarloginCase<br>Parameters: {PassWord=Velos321, rundata=Y, UserName=admin, e-Signature=a1234}<br/>
-<a href="#Output-2325213" onClick='toggleBox("Output-2325213", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1506030945" onClick='toggleBox("Output-1506030945", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-2325213" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-2325213">
+<a href="#Output-1506030945" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1506030945">
 Login Billing starts....<br/>
 Entered the value 'admin' in field 'username-billing'<br/>
 Entered the value 'Velos321' in field 'password-billing'<br/>
@@ -500,24 +461,41 @@ Clicked the item: login-button-billing<br/>
 </div>
 </td>
 <td></td>
-<td>4</td>
+<td>5</td>
 <td>NostGroup.NostArtifact.TestCases.UbarloginCase@17c386de</td></tr>
 <tr>
-<td title='NostGroup.NostArtifact.TestCases.UbarloginCase.verifyServiceMaster()'><b>verifyServiceMaster</b><br>Test class: NostGroup.NostArtifact.TestCases.UbarloginCase<br>Parameters: {service-plan-search=11-JUL-10-20-PROT, service-name-search=11-JUL-10-20-Drg-Unit}<br/>
-<a href="#Output-2107393518" onClick='toggleBox("Output-2107393518", this, "Show output", "Hide output");'>Show output</a>
+<td title='NostGroup.NostArtifact.TestCases.UbarloginCase.verifyFacility()'><b>verifyFacility</b><br>Test class: NostGroup.NostArtifact.TestCases.UbarloginCase<br>Parameters: {facility-name=25-JUL-07-20-Pharm1-C, facility-result-search-bar=}<br/>
+<a href="#Output-383005108" onClick='toggleBox("Output-383005108", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-2107393518" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-2107393518">
+<a href="#Output-383005108" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-383005108">
 Clicked the item: maintenance-billing-menu<br/>
-Clicked the item: service-master-menu<br/>
-Entered the value '11-JUL-10-20-PROT' in field 'service-plan-search'<br/>
-Entered the value '11-JUL-10-20-Drg-Unit' in field 'service-name-search'<br/>
-Clicked the item: service-search<br/>
-Drug '11-JUL-10-20-Drg-Unit' integrated in Service Master successfully<br/>
+Clicked the item: facility-menu<br/>
+Entered the value '25-JUL-07-20-Pharm1-C' in field 'facility-name'<br/>
+Clicked the item: facility-search<br/>
+Entered the value '25-JUL-07-20-Pharm1-C' in field 'facility-result-search-bar'<br/>
+Facility '25-JUL-07-20-Pharm1-C' found in the Facility table<br/>
 </div>
 </td>
 <td></td>
 <td>15</td>
+<td>NostGroup.NostArtifact.TestCases.UbarloginCase@17c386de</td></tr>
+<tr>
+<td title='NostGroup.NostArtifact.TestCases.UbarloginCase.verifyServiceMaster()'><b>verifyServiceMaster</b><br>Test class: NostGroup.NostArtifact.TestCases.UbarloginCase<br>Parameters: {service-plan-search=25-JUL-07-20-PROT, service-name-search=25-JUL-07-20-Drg-Unit}<br/>
+<a href="#Output-1969752268" onClick='toggleBox("Output-1969752268", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1969752268" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1969752268">
+Clicked the item: maintenance-billing-menu<br/>
+Clicked the item: service-master-menu<br/>
+Entered the value '25-JUL-07-20-PROT' in field 'service-plan-search'<br/>
+Entered the value '25-JUL-07-20-Drg-Unit' in field 'service-name-search'<br/>
+Clicked the item: service-search<br/>
+Drug '25-JUL-07-20-Drg-Unit' integrated in Service Master successfully<br/>
+</div>
+</td>
+<td></td>
+<td>14</td>
 <td>NostGroup.NostArtifact.TestCases.UbarloginCase@17c386de</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
@@ -531,36 +509,8 @@ Drug '11-JUL-10-20-Drg-Unit' integrated in Service Master successfully<br/>
 <td title='NostGroup.NostArtifact.TestCases.UbarloginCase.addDispense()'><b>addDispense</b><br>Test class: NostGroup.NostArtifact.TestCases.UbarloginCase</td>
 <td><div><pre>java.lang.Throwable: Method UbarloginCase.addDispense(java.util.Hashtable)[pri:12, instance:NostGroup.NostArtifact.TestCases.UbarloginCase@17c386de] depends on not successfully finished methods
 	at java.util.ArrayList.forEach(ArrayList.java:1249)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2000793115", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2000793115'><pre>java.lang.Throwable: Method UbarloginCase.addDispense(java.util.Hashtable)[pri:12, instance:NostGroup.NostArtifact.TestCases.UbarloginCase@17c386de] depends on not successfully finished methods
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:101)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(ArrayList.java:1249)
-	at org.testng.TestRunner.privateRun(TestRunner.java:766)
-	at org.testng.TestRunner.run(TestRunner.java:587)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-	at org.testng.TestNG.runSuites(TestNG.java:1039)
-	at org.testng.TestNG.run(TestNG.java:1007)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>NostGroup.NostArtifact.TestCases.UbarloginCase@17c386de</td></tr>
-<tr>
-<td title='NostGroup.NostArtifact.TestCases.UbarloginCase.commonTransferToPharmacy()'><b>commonTransferToPharmacy</b><br>Test class: NostGroup.NostArtifact.TestCases.UbarloginCase</td>
-<td><div><pre>java.lang.Throwable: Method UbarloginCase.commonTransferToPharmacy(java.util.Hashtable)[pri:8, instance:NostGroup.NostArtifact.TestCases.UbarloginCase@17c386de] depends on not successfully finished methods
-	at java.util.ArrayList.forEach(ArrayList.java:1249)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace674840194", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace674840194'><pre>java.lang.Throwable: Method UbarloginCase.commonTransferToPharmacy(java.util.Hashtable)[pri:8, instance:NostGroup.NostArtifact.TestCases.UbarloginCase@17c386de] depends on not successfully finished methods
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace445170933", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace445170933'><pre>java.lang.Throwable: Method UbarloginCase.addDispense(java.util.Hashtable)[pri:12, instance:NostGroup.NostArtifact.TestCases.UbarloginCase@17c386de] depends on not successfully finished methods
 	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:101)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
@@ -587,36 +537,8 @@ Drug '11-JUL-10-20-Drg-Unit' integrated in Service Master successfully<br/>
 <td title='NostGroup.NostArtifact.TestCases.UbarloginCase.nostLogin2()'><b>nostLogin2</b><br>Test class: NostGroup.NostArtifact.TestCases.UbarloginCase</td>
 <td><div><pre>java.lang.Throwable: Method UbarloginCase.nostLogin2(java.util.Hashtable)[pri:11, instance:NostGroup.NostArtifact.TestCases.UbarloginCase@17c386de] depends on not successfully finished methods
 	at java.util.ArrayList.forEach(ArrayList.java:1249)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1605715776", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1605715776'><pre>java.lang.Throwable: Method UbarloginCase.nostLogin2(java.util.Hashtable)[pri:11, instance:NostGroup.NostArtifact.TestCases.UbarloginCase@17c386de] depends on not successfully finished methods
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:101)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(ArrayList.java:1249)
-	at org.testng.TestRunner.privateRun(TestRunner.java:766)
-	at org.testng.TestRunner.run(TestRunner.java:587)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-	at org.testng.TestNG.runSuites(TestNG.java:1039)
-	at org.testng.TestNG.run(TestNG.java:1007)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>NostGroup.NostArtifact.TestCases.UbarloginCase@17c386de</td></tr>
-<tr>
-<td title='NostGroup.NostArtifact.TestCases.UbarloginCase.submitqueueReceive()'><b>submitqueueReceive</b><br>Test class: NostGroup.NostArtifact.TestCases.UbarloginCase</td>
-<td><div><pre>java.lang.Throwable: Method UbarloginCase.submitqueueReceive(java.util.Hashtable)[pri:7, instance:NostGroup.NostArtifact.TestCases.UbarloginCase@17c386de] depends on not successfully finished methods
-	at java.util.ArrayList.forEach(ArrayList.java:1249)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace48042118", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace48042118'><pre>java.lang.Throwable: Method UbarloginCase.submitqueueReceive(java.util.Hashtable)[pri:7, instance:NostGroup.NostArtifact.TestCases.UbarloginCase@17c386de] depends on not successfully finished methods
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1505006316", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1505006316'><pre>java.lang.Throwable: Method UbarloginCase.nostLogin2(java.util.Hashtable)[pri:11, instance:NostGroup.NostArtifact.TestCases.UbarloginCase@17c386de] depends on not successfully finished methods
 	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:101)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
@@ -643,8 +565,8 @@ Drug '11-JUL-10-20-Drg-Unit' integrated in Service Master successfully<br/>
 <td title='NostGroup.NostArtifact.TestCases.UbarloginCase.ubarLogin2()'><b>ubarLogin2</b><br>Test class: NostGroup.NostArtifact.TestCases.UbarloginCase</td>
 <td><div><pre>java.lang.Throwable: Method UbarloginCase.ubarLogin2(java.util.Hashtable)[pri:13, instance:NostGroup.NostArtifact.TestCases.UbarloginCase@17c386de] depends on not successfully finished methods
 	at java.util.ArrayList.forEach(ArrayList.java:1249)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace759840275", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace759840275'><pre>java.lang.Throwable: Method UbarloginCase.ubarLogin2(java.util.Hashtable)[pri:13, instance:NostGroup.NostArtifact.TestCases.UbarloginCase@17c386de] depends on not successfully finished methods
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1901712897", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1901712897'><pre>java.lang.Throwable: Method UbarloginCase.ubarLogin2(java.util.Hashtable)[pri:13, instance:NostGroup.NostArtifact.TestCases.UbarloginCase@17c386de] depends on not successfully finished methods
 	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:101)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
@@ -671,8 +593,8 @@ Drug '11-JUL-10-20-Drg-Unit' integrated in Service Master successfully<br/>
 <td title='NostGroup.NostArtifact.TestCases.UbarloginCase.verifyReviewCharges()'><b>verifyReviewCharges</b><br>Test class: NostGroup.NostArtifact.TestCases.UbarloginCase</td>
 <td><div><pre>java.lang.Throwable: Method UbarloginCase.verifyReviewCharges(java.util.Hashtable)[pri:15, instance:NostGroup.NostArtifact.TestCases.UbarloginCase@17c386de] depends on not successfully finished methods
 	at java.util.ArrayList.forEach(ArrayList.java:1249)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2017574192", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2017574192'><pre>java.lang.Throwable: Method UbarloginCase.verifyReviewCharges(java.util.Hashtable)[pri:15, instance:NostGroup.NostArtifact.TestCases.UbarloginCase@17c386de] depends on not successfully finished methods
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace783402517", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace783402517'><pre>java.lang.Throwable: Method UbarloginCase.verifyReviewCharges(java.util.Hashtable)[pri:15, instance:NostGroup.NostArtifact.TestCases.UbarloginCase@17c386de] depends on not successfully finished methods
 	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:101)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
@@ -699,8 +621,8 @@ Drug '11-JUL-10-20-Drg-Unit' integrated in Service Master successfully<br/>
 <td title='NostGroup.NostArtifact.TestCases.UbarloginCase.verifyServicedEntity()'><b>verifyServicedEntity</b><br>Test class: NostGroup.NostArtifact.TestCases.UbarloginCase</td>
 <td><div><pre>java.lang.Throwable: Method UbarloginCase.verifyServicedEntity(java.util.Hashtable)[pri:14, instance:NostGroup.NostArtifact.TestCases.UbarloginCase@17c386de] depends on not successfully finished methods
 	at java.util.ArrayList.forEach(ArrayList.java:1249)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2073961917", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2073961917'><pre>java.lang.Throwable: Method UbarloginCase.verifyServicedEntity(java.util.Hashtable)[pri:14, instance:NostGroup.NostArtifact.TestCases.UbarloginCase@17c386de] depends on not successfully finished methods
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace700286427", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace700286427'><pre>java.lang.Throwable: Method UbarloginCase.verifyServicedEntity(java.util.Hashtable)[pri:14, instance:NostGroup.NostArtifact.TestCases.UbarloginCase@17c386de] depends on not successfully finished methods
 	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:101)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)

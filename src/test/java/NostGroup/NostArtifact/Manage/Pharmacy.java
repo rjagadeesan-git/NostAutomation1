@@ -98,7 +98,30 @@ public class Pharmacy extends CommonMethods{
 	
 	public void pharmacyDelete() {}
 	
-	public void pharmacyVerifyTable() {}
+	public void pharmacyVerifyTable(Hashtable<String,String> data) throws InterruptedException {
+		
+		 ex_wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id='Manage']")));
+			action.moveToElement(find_element("manage-menu","xpath")).perform();
+			Thread.sleep(3000);
+			click("organization","csssele");
+			selectText("organization-selection","id",data.get("Organization"));
+			Thread.sleep(2000);
+		
+//		Robot robo1=new Robot();
+		Thread.sleep(2000);
+		type("pharmacy-search-bar","id",data.get("Pharmacy_Name"));
+//		Thread.sleep(2000);
+//		robo1.keyPress(KeyEvent.VK_ENTER);
+//		robo1.keyRelease(KeyEvent.VK_ENTER);
+		Thread.sleep(2000);
+		
+		String pharmacy_name=data.get("Pharmacy_Name");
+		String pharmacy_tab_id=prop.getProperty("pharmacy-search-result-tabu");
+		//String tab_loc_ref,String table_id,String entity_type,String entity_value,int col_text,int col_click,String action
+		tableCommon("pharmacy-search-result-tabu",pharmacy_tab_id,"Pharmacy",pharmacy_name,3,3,"verify");
+		
+		
+	}
 	
 	public void pharmacyEditVerify() {}
 	

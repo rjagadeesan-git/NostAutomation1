@@ -8,6 +8,7 @@ import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.testng.Assert;
 import org.testng.Reporter;
 
 import com.relevantcodes.extentreports.LogStatus;
@@ -85,6 +86,7 @@ public class ServiceMaster extends CommonMethods{
 	extest.log(LogStatus.FAIL,"Drug '"+service_name+"' not integrated in Service Master");
 	log.info("Drug '"+service_name+"' not integrated in Service Master");
 	Reporter.log("Drug '"+service_name+"' not integrated in Service Master");
+	Assert.fail("Drug '"+service_name+"' not integrated in Service Master");
 }
 	
 	}else {
@@ -93,6 +95,7 @@ public class ServiceMaster extends CommonMethods{
 		extest.log(LogStatus.FAIL,"Drug '"+service_name+"' not integrated in Service Master");
 		log.info("Drug '"+service_name+"' not integrated in Service Master");
 		Reporter.log("Drug '"+service_name+"' not integrated in Service Master");
+		Assert.fail("Drug '"+service_name+"' not integrated in Service Master");
 	}
 	//type("service-plan-search","id",data.get("service-plan-search"));
 
@@ -138,11 +141,11 @@ public class ServiceMaster extends CommonMethods{
 		
 		if(servicemaster_tab_row.size()>=1)
 		{
-			System.out.println("Inside If");
+			System.out.println("Inside Service Master tabular search");
 		
 		for(int row=1;row<=servicemaster_tab_row.size();row++) {
 			
-				System.out.println("Inside row loop");
+				System.out.println("Inside Service Master table row check");
 				String servicemaster_tab_com=Driver.findElement(By.xpath("//table[@id='svcMasterTable']/tbody/tr["+row+"]/td[2]")).getText();
 				if(servicemaster_tab_com.equalsIgnoreCase(service_name)) {	
 					//Driver.findElement(By.xpath("//table[@id='service-name-search']/tbody/tr["+row+"]/td[1]")).click();

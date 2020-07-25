@@ -11,6 +11,7 @@ import NostGroup.NostArtifact.Base.CellDataProvider;
 import NostGroup.NostArtifact.Base.NostLogin;
 import NostGroup.NostArtifact.Base.UBARLogin;
 import NostGroup.NostArtifact.Billing.CPP;
+import NostGroup.NostArtifact.Billing.Facility;
 import NostGroup.NostArtifact.Billing.ReviewCharges;
 import NostGroup.NostArtifact.Billing.ServiceMaster;
 import NostGroup.NostArtifact.Billing.ServicedEntity;
@@ -99,6 +100,7 @@ public class UbarloginCase extends BrowserAct{
 		UBARLogin login=new UBARLogin();
 		login.ubarLogin(data);
 	}
+
 	
 	@Test(dataProvider="getData",dataProviderClass = CellDataProvider.class,priority=9,dependsOnMethods= {"addCatalog"})
 	public void verifyServiceMaster(Hashtable<String,String> data) throws IOException, InterruptedException, AWTException {
@@ -107,6 +109,12 @@ public class UbarloginCase extends BrowserAct{
 	}	
 	
 // Verify Facility
+	
+	@Test(dataProvider="getData",dataProviderClass = CellDataProvider.class,priority=9,dependsOnMethods={"ubarLogin","addPharmacy"})
+	public void verifyFacility(Hashtable<String,String> data) throws IOException, InterruptedException, AWTException {
+		Facility facility=new Facility();
+		facility.facilityVerify(data);
+	}
 	
 // Verify CPP, Add Payer, Add CDM
 	
@@ -140,7 +148,7 @@ public class UbarloginCase extends BrowserAct{
 		login.ubarLogin(data);
 	}
 	
-	@Test(dataProvider="getData",dataProviderClass = CellDataProvider.class,priority=14,dependsOnMethods= {"addDispense"})
+	@Test(dataProvider="getData",dataProviderClass = CellDataProvider.class,priority=14,dependsOnMethods= {"addPatient","addDispense"})
 	public void verifyServicedEntity(Hashtable<String,String> data) throws IOException, InterruptedException, AWTException {
 		ServicedEntity servicedent=new ServicedEntity();
 		servicedent.servicedEntityVerify(data);

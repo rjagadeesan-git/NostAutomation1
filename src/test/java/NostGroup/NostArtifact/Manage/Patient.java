@@ -100,11 +100,32 @@ public class Patient extends CommonMethods{
 	
 	public void patientEdit() {}
 	
+	public void patientVerifyTable(Hashtable<String,String> data) throws InterruptedException, AWTException {
+			
+		ex_wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id='Manage']")));
+		action.moveToElement(find_element("manage-menu","xpath")).perform();	
+		Thread.sleep(3000);
+		click("patient-menu","csssele");
+		Thread.sleep(2000);	
+		
+		Robot robo1=new Robot();
+		Thread.sleep(3000);
+		type("patient-search-bar","csssele",data.get("Patient_MRN"));
+		Thread.sleep(2000);
+		robo1.keyPress(KeyEvent.VK_ENTER);
+		robo1.keyRelease(KeyEvent.VK_ENTER);
+		Thread.sleep(2000);
+		
+		String patient_name=data.get("Patient_MRN");
+		String patient_tab_id=prop.getProperty("patient-search-result-tabu");
+		//String tab_loc_ref,String table_id,String entity_type,String entity_value,int col_text,int col_click,String action
+		tableCommon("patient-search-result-tabu",patient_tab_id,"Patient",patient_name,4,4,"verify");	
+		
+	}
+	
 	public void patientDispense() {}
 	
 	public void patientProtocolDisassociation() {}
-	
-	public void patientVerifyTable() {}
 	
 	public void patientVerifyEdit()  {}
 	

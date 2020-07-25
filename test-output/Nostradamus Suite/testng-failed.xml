@@ -10,18 +10,16 @@
     <classes>
       <class name="NostGroup.NostArtifact.TestCases.UbarloginCase">
         <methods>
+          <include name="addDispense"/>
           <include name="addProtocol"/>
-          <include name="commonReceive" invocation-numbers="0"/>
+          <include name="verifyReviewCharges"/>
+          <include name="addPatient"/>
           <include name="browserLaunch"/>
           <include name="addCatalog"/>
-          <include name="commonTransferToPharmacy"/>
-          <include name="nostLogin"/>
-          <include name="verifyServicedEntity"/>
-          <include name="addDispense"/>
-          <include name="submitqueueReceive"/>
-          <include name="verifyReviewCharges"/>
           <include name="verifyServiceMaster"/>
           <include name="nostLogin2"/>
+          <include name="nostLogin"/>
+          <include name="verifyServicedEntity"/>
           <include name="verifyCPP" invocation-numbers="0"/>
           <include name="ubarLogin2"/>
         </methods>

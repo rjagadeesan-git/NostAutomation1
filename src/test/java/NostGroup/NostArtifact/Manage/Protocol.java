@@ -1,5 +1,8 @@
 package NostGroup.NostArtifact.Manage;
 
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
 import java.io.IOException;
 import java.util.Hashtable;
 import java.util.concurrent.TimeUnit;
@@ -118,7 +121,31 @@ public class Protocol extends CommonMethods{
 	
 	public void protocolEdit() {}
 	
-	public void protocolVerify() {}
+	public void protocolVerify(Hashtable<String,String> data) throws AWTException, InterruptedException {
+		
+		
+		ex_wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id='Manage']")));
+		action.moveToElement(Driver.findElement(By.xpath("//*[@id='Manage']"))).perform();
+		
+		ex_wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("/html/body/div[1]/section[1]/div/div/table/tbody/tr/td/div[2]/div[3]/table/tbody/tr/th/table/tbody/tr[2]/td/ul/li/a")));
+		click("protocol","csssele");
+		Thread.sleep(2000);
+		
+		Robot robo1=new Robot();
+		Thread.sleep(3000);
+		type("protocol-tab-search","csssele",data.get("Protocol_ID"));
+		Thread.sleep(2000);
+		robo1.keyPress(KeyEvent.VK_ENTER);
+		robo1.keyRelease(KeyEvent.VK_ENTER);
+		Thread.sleep(2000);
+		
+		String protocol_id=data.get("Protocol_ID");
+		String protocol_tab_id=prop.getProperty("protocol-result-search-tabu");
+		//String tab_loc_ref,String table_id,String entity_type,String entity_value,int col_text,int col_click,String action
+		tableCommon("protocol-result-search-tabu",protocol_tab_id,"Protocol",protocol_id,2,2,"verify");
+	
+		
+	}
 	
 	public void protocolVerifyTable() {}
 

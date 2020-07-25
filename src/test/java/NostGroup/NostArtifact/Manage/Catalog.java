@@ -1,5 +1,8 @@
 package NostGroup.NostArtifact.Manage;
 
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
 import java.io.IOException;
 import java.util.Hashtable;
 import java.util.concurrent.TimeUnit;
@@ -87,21 +90,21 @@ public class Catalog extends CommonMethods{
 //		selectText("set-par-status","xpath",data.get("NostData",13,37));
 //		click("set-par-row-delete-button","xpath");
 
-		// Add Label Criteria 
-		click("add-lab-criteria","csssele");
-		type("anc","xpath",data.get("ANC"));
-		type("plt","xpath",data.get("PLT's"));
-		type("hemoglobin","xpath",data.get("Hemoglobin"));
-		type("dipstick","xpath",data.get("Dipstick"));
-		type("24-hour-collection","xpath",data.get("24-hour_Collection"));
-		type("upc-ratio","xpath",data.get("UPC_Ratio"));
-		type("other1","xpath",data.get("Other1"));
-		type("other2","xpath",data.get("Other2"));
-		type("other3","xpath",data.get("Other3"));
-		type("serum-creatinine","xpath",data.get("Serum_Creatinine"));
-		type("bili-rubin-t-bili","xpath",data.get("Bilirubin:_T-Bili"));
-		type("asg-sgot","xpath",data.get("AST/SGOT"));
-		type("alt-sgpt","xpath",data.get("ALT/SGPT"));
+//		// Add Label Criteria 
+//		click("add-lab-criteria","csssele");
+//		type("anc","xpath",data.get("ANC"));
+//		type("plt","xpath",data.get("PLT's"));
+//		type("hemoglobin","xpath",data.get("Hemoglobin"));
+//		type("dipstick","xpath",data.get("Dipstick"));
+//		type("24-hour-collection","xpath",data.get("24-hour_Collection"));
+//		type("upc-ratio","xpath",data.get("UPC_Ratio"));
+//		type("other1","xpath",data.get("Other1"));
+//		type("other2","xpath",data.get("Other2"));
+//		type("other3","xpath",data.get("Other3"));
+//		type("serum-creatinine","xpath",data.get("Serum_Creatinine"));
+//		type("bili-rubin-t-bili","xpath",data.get("Bilirubin:_T-Bili"));
+//		type("asg-sgot","xpath",data.get("AST/SGOT"));
+//		type("alt-sgpt","xpath",data.get("ALT/SGPT"));
 
 		//Protocol association
 		click("add-drug","csssele");
@@ -119,6 +122,29 @@ public class Catalog extends CommonMethods{
 	}
 	
 	public void editCatalog() {}
+	
+	public void catalogVerify(Hashtable<String,String> data) throws InterruptedException, AWTException {
+		
+		Robot robo1=new Robot();
+		Thread.sleep(3000);
+		ex_wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id='Manage']")));
+		action.moveToElement(find_element("manage-menu","xpath")).perform();
+		((JavascriptExecutor)Driver).executeScript("menuActionMethod('Manage','catalogDrug.action');");
+		//((JavascriptExecutor)Driver).executeScript("addDrugCodLists();");
+		
+		Thread.sleep(3000);
+		type("catalog-tab-search","csssele",data.get("Drug_Name"));
+		Thread.sleep(2000);
+		robo1.keyPress(KeyEvent.VK_ENTER);
+		robo1.keyRelease(KeyEvent.VK_ENTER);
+		Thread.sleep(2000);
+		
+		String drug_id=data.get("Drug_Name");
+		String drug_tab_id=prop.getProperty("drug-result-search-tabu");
+		//String tab_loc_ref,String table_id,String entity_type,String entity_value,int col_text,int col_click,String action
+		tableCommon("drug-result-search-tabu",drug_tab_id,"Catalog",drug_id,2,2,"verify");
+		
+	}
 	
 	public void cat_Prot_Asso() {}
 	

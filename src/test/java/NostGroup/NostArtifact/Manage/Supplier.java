@@ -1,5 +1,8 @@
 package NostGroup.NostArtifact.Manage;
 
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
 import java.io.IOException;
 import java.util.Hashtable;
 import java.util.concurrent.TimeUnit;
@@ -29,7 +32,7 @@ public class Supplier extends CommonMethods{
 		Thread.sleep(2000);
 		selectText("organization-selection","id",data.get("Organization"));
 		Thread.sleep(3000);
-		System.out.println("Organization selected");
+		System.out.println("Organization selected "+data.get("Organization"));
 		Thread.sleep(2000);
 		((JavascriptExecutor)Driver).executeScript("arguments[0].scrollIntoView();", find_element("supplier-add","csssele"));
 		click("supplier-add","csssele");
@@ -55,7 +58,32 @@ public class Supplier extends CommonMethods{
 	
 	public void supplierDelete() {}
 	
-	public void supplierVerifyTable() {}
+	public void supplierVerifyTable(Hashtable<String,String> data) throws InterruptedException, AWTException {
+		
+		ex_wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id='Manage']")));
+		action.moveToElement(find_element("manage-menu","xpath")).perform();
+		Thread.sleep(2000);
+		click("organization","csssele");
+		System.out.println("Page loaded");
+		Thread.sleep(2000);
+		selectText("organization-selection","id",data.get("Organization"));
+		Thread.sleep(3000);
+		System.out.println("Organization selected "+data.get("Organization"));
+		
+		Robot robo1=new Robot();
+		Thread.sleep(2000);
+		type("supplier-search-bar","csssele",data.get("Supplier_Name_1"));
+		Thread.sleep(2000);
+		robo1.keyPress(KeyEvent.VK_ENTER);
+		robo1.keyRelease(KeyEvent.VK_ENTER);
+		Thread.sleep(2000);
+		
+		String supplier_name=data.get("Supplier_Name_1");
+		String supplier_tab_id=prop.getProperty("supplier-search-result-tabu");
+		//String tab_loc_ref,String table_id,String entity_type,String entity_value,int col_text,int col_click,String action
+		tableCommon("supplier-search-result-tabu",supplier_tab_id,"Supplier",supplier_name,2,2,"verify");
+		
+	}
 	
 	public void supplierEditVerify() {}
 	

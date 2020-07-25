@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Nost-Login Test"
-           tests="1"
+<testsuite name="Nost Login Test"
+           tests="2"
            failures="0"
            errors="0"
            skipped="0"
-           time="5.622">
+           time="17.751">
   <properties />
   
   
-            <testcase name="nostLogin" time="5.622" classname="NostGroup.NostArtifact.TestCases.NostloginCase" />
+            <testcase name="nostLogin" time="3.209" classname="NostGroup.NostArtifact.TestCases.NostloginCase" />
+                <testcase name="verifySupplier" time="14.542" classname="NostGroup.NostArtifact.TestCases.NostloginCase" />
       
 </testsuite>

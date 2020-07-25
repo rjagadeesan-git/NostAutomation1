@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="7" failed="2" ignored="0" total="17" passed="8">
+<testng-results skipped="3" failed="4" ignored="0" total="15" passed="8">
   <reporter-output>
     <line>
       <![CDATA[Starting to Login....]]>
@@ -8,7 +8,7 @@
       <![CDATA[Entered the value 'admin' in field 'username']]>
     </line>
     <line>
-      <![CDATA[Entered the value 'Velos321' in field 'password']]>
+      <![CDATA[Entered the value 'ncoup123' in field 'password']]>
     </line>
     <line>
       <![CDATA[Clicked the item: login-button]]>
@@ -20,10 +20,10 @@
       <![CDATA[Clicked the item: add-protocol]]>
     </line>
     <line>
-      <![CDATA[Entered the value '11-JUL-10-20-PROT' in field 'protocol-id']]>
+      <![CDATA[Entered the value '25-JUL-11-20-PROT' in field 'protocol-id']]>
     </line>
     <line>
-      <![CDATA[Entered the value '11-JUL-10-20-PROT-Title' in field 'protocol-title']]>
+      <![CDATA[Entered the value '25-JUL-11-20-PROT-Title' in field 'protocol-title']]>
     </line>
     <line>
       <![CDATA[Selected the value 'CNPE in field 'protocol-status']]>
@@ -32,10 +32,10 @@
       <![CDATA[Selected the value 'Active in field 'pharmacy-status']]>
     </line>
     <line>
-      <![CDATA[Entered the value '11-JUL-10-20-PROT-SPID' in field 'sponsor-protocol-id']]>
+      <![CDATA[Entered the value '25-JUL-11-20-PROT-SPID' in field 'sponsor-protocol-id']]>
     </line>
     <line>
-      <![CDATA[Entered the value '11-JUL-10-20-PROT-SP' in field 'protocol-sponsor']]>
+      <![CDATA[Entered the value '25-JUL-11-20-PROT-SP' in field 'protocol-sponsor']]>
     </line>
     <line>
       <![CDATA[Entered the value 'STN002' in field 'site-number']]>
@@ -140,6 +140,18 @@
       <![CDATA[Clicked the item: protocol-submit]]>
     </line>
     <line>
+      <![CDATA[<br>verifyProtocol: Failed]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href="D:\Jagan\NostAuto\NostCore\NostArtifact\Screenshots\Screenshot_Sat_Jul_25_09_15_06_IST_2020.jpg">ScreenShot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
       <![CDATA[Clicked the item: organization]]>
     </line>
     <line>
@@ -149,7 +161,7 @@
       <![CDATA[Clicked the item: add-new-pharmacy]]>
     </line>
     <line>
-      <![CDATA[Entered the value '11-JUL-10-20-Pharm1-C' in field 'pharmacy-name']]>
+      <![CDATA[Entered the value '25-JUL-11-20-Pharm1-C' in field 'pharmacy-name']]>
     </line>
     <line>
       <![CDATA[ Input is Yes for the field 'grant-control-rights' and Checkbox is unchecked by default, now checked/ticked successfully]]>
@@ -191,7 +203,7 @@
       <![CDATA[Entered the value 'Location 4' in field 'storage-location4']]>
     </line>
     <line>
-      <![CDATA[ Input is Yes for the field 'disable-dispense-par-level4' and Checkbox is unchecked by default, now checked/ticked successfully]]>
+      <![CDATA['disable-dispense-par-level4' is checked/ticked by default]]>
     </line>
     <line>
       <![CDATA[Clicked the item: pharmacy-address]]>
@@ -230,37 +242,31 @@
       <![CDATA[Clicked the item: organization]]>
     </line>
     <line>
-      <![CDATA[Selected the value 'Supplier in field 'organization-selection']]>
+      <![CDATA[Selected the value 'Pharmacy in field 'organization-selection']]>
     </line>
     <line>
-      <![CDATA[Clicked the item: supplier-add]]>
+      <![CDATA[Entered the value '25-JUL-11-20-Pharm1-C' in field 'pharmacy-search-bar']]>
     </line>
     <line>
-      <![CDATA[Entered the value '11-JUL-10-Supplier-1' in field 'supplier-name']]>
+      <![CDATA[Pharmacy '25-JUL-11-20-Pharm1-C' found in the Pharmacy table]]>
     </line>
     <line>
-      <![CDATA[Clicked the item: add-more-supplier1]]>
+      <![CDATA[<br>addSupplier: Failed]]>
     </line>
     <line>
-      <![CDATA[Entered the value '11-JUL-10-Supplier-2' in field 'supplier-name-1']]>
+      <![CDATA[<br>]]>
     </line>
     <line>
-      <![CDATA[Clicked the item: add-more-supplier2]]>
+      <![CDATA[<a target="_blank" href="D:\Jagan\NostAuto\NostCore\NostArtifact\Screenshots\Screenshot_Sat_Jul_25_09_15_37_IST_2020.jpg">ScreenShot</a>]]>
     </line>
     <line>
-      <![CDATA[Entered the value '11-JUL-10-Supplier-3' in field 'supplier-name-2']]>
-    </line>
-    <line>
-      <![CDATA[Entered the value 'a1234' in field 'supplier-esign']]>
-    </line>
-    <line>
-      <![CDATA[Clicked the item: supplier-submit]]>
+      <![CDATA[<br>]]>
     </line>
     <line>
       <![CDATA[Clicked the item: add-drug]]>
     </line>
     <line>
-      <![CDATA[Entered the value '11-JUL-10-20-Drg-Unit' in field 'drug-name']]>
+      <![CDATA[Entered the value '25-JUL-11-20-Drg-Unit' in field 'drug-name']]>
     </line>
     <line>
       <![CDATA[Selected the value 'Strength in field 'track-by']]>
@@ -275,16 +281,16 @@
       <![CDATA[Selected the value 'Enema in field 'formulation']]>
     </line>
     <line>
-      <![CDATA[Entered the value '11-JUL-10-20-Drg-dl1' in field 'drug-label-name']]>
+      <![CDATA[Entered the value '25-JUL-11-20-Drg-dl1' in field 'drug-label-name']]>
     </line>
     <line>
-      <![CDATA[Entered the value '11-JUL-10-20-Drg-id1' in field 'drug-id']]>
+      <![CDATA[Entered the value '25-JUL-11-20-Drg-id1' in field 'drug-id']]>
     </line>
     <line>
-      <![CDATA[Entered the value '11-JUL-10-20-Drg-nsc1' in field 'drug-nsc']]>
+      <![CDATA[Entered the value '25-JUL-11-20-Drg-nsc1' in field 'drug-nsc']]>
     </line>
     <line>
-      <![CDATA[Entered the value '11-JUL-10-20-Drg-adn1' in field 'alternative-drug-name']]>
+      <![CDATA[Entered the value '25-JUL-11-20-Drg-adn1' in field 'alternative-drug-name']]>
     </line>
     <line>
       <![CDATA[Clicked the item: set-defaults]]>
@@ -299,7 +305,7 @@
       <![CDATA[Selected the value 'Yes in field 'to-be-linked']]>
     </line>
     <line>
-      <![CDATA[Selected the value 'Unit in field 'level-of-accountability']]>
+      <![CDATA[Selected the value 'Lot in field 'level-of-accountability']]>
     </line>
     <line>
       <![CDATA[Selected the value 'Tube in field 'unit-type']]>
@@ -308,13 +314,13 @@
       <![CDATA[Entered the value '48.0' in field 'qty-per-unit']]>
     </line>
     <line>
-      <![CDATA[Entered the value '11-JUL-10-Supplier-1' in field 'catalog-supplier-name']]>
+      <![CDATA[Entered the value '25-JUL-11-Supplier-1' in field 'catalog-supplier-name']]>
     </line>
     <line>
       <![CDATA[Selected the value 'Refrigerator in field 'storage-condition']]>
     </line>
     <line>
-      <![CDATA[Selected the value '11-JUL-10-20-Pharm1-C in field 'pharmacy']]>
+      <![CDATA[Selected the value '25-JUL-11-20-Pharm1-C in field 'pharmacy']]>
     </line>
     <line>
       <![CDATA[Selected the value 'Location 1 in field 'storage-location']]>
@@ -344,52 +350,10 @@
       <![CDATA[Selected the value 'Chemotherapy Drug in field 'aux-label4']]>
     </line>
     <line>
-      <![CDATA[Clicked the item: add-lab-criteria]]>
-    </line>
-    <line>
-      <![CDATA[Entered the value '2.0' in field 'anc']]>
-    </line>
-    <line>
-      <![CDATA[Entered the value '3.0' in field 'plt']]>
-    </line>
-    <line>
-      <![CDATA[Entered the value '4.0' in field 'hemoglobin']]>
-    </line>
-    <line>
-      <![CDATA[Entered the value '5.0' in field 'dipstick']]>
-    </line>
-    <line>
-      <![CDATA[Entered the value '6.0' in field '24-hour-collection']]>
-    </line>
-    <line>
-      <![CDATA[Entered the value '7.0' in field 'upc-ratio']]>
-    </line>
-    <line>
-      <![CDATA[Entered the value 'Other 1' in field 'other1']]>
-    </line>
-    <line>
-      <![CDATA[Entered the value 'Other 2' in field 'other2']]>
-    </line>
-    <line>
-      <![CDATA[Entered the value 'Other 3' in field 'other3']]>
-    </line>
-    <line>
-      <![CDATA[Entered the value '11.0' in field 'serum-creatinine']]>
-    </line>
-    <line>
-      <![CDATA[Entered the value '12.0' in field 'bili-rubin-t-bili']]>
-    </line>
-    <line>
-      <![CDATA[Entered the value '13.0' in field 'asg-sgot']]>
-    </line>
-    <line>
-      <![CDATA[Entered the value '14.0' in field 'alt-sgpt']]>
-    </line>
-    <line>
       <![CDATA[Clicked the item: add-drug]]>
     </line>
     <line>
-      <![CDATA[Entered the value '11-JUL-10-20-PROT' in field 'cat-prot-sear']]>
+      <![CDATA[Entered the value '25-JUL-11-20-PROT' in field 'cat-prot-sear']]>
     </line>
     <line>
       <![CDATA[Clicked the item: cat-prot-sear-ok]]>
@@ -401,182 +365,95 @@
       <![CDATA[Clicked the item: catalog-submit]]>
     </line>
     <line>
-      <![CDATA[Clicked the item: patient-menu]]>
+      <![CDATA[Entered the value '25-JUL-11-20-Drg-Unit' in field 'catalog-tab-search']]>
     </line>
     <line>
-      <![CDATA[Clicked the item: add-patient-to-protocol]]>
+      <![CDATA[Catalog '25-JUL-11-20-Drg-Unit' found in the Catalog table]]>
     </line>
     <line>
-      <![CDATA[Entered the value '11-JUL-10-20-PAT1-1' in field 'patient-mrn']]>
-    </line>
-    <line>
-      <![CDATA[Entered the value '11-JUL-10-20-FN' in field 'patient-first-name']]>
-    </line>
-    <line>
-      <![CDATA[Entered the value '11-JUL-10-20-LN' in field 'patient-last-name']]>
-    </line>
-    <line>
-      <![CDATA[Selected the value 'Female in field 'patient-gender']]>
-    </line>
-    <line>
-      <![CDATA[Entered the value '11-10-1999' in field 'patient-dob']]>
-    </line>
-    <line>
-      <![CDATA[Selected the value 'Active in field 'patient-status']]>
-    </line>
-    <line>
-      <![CDATA[Entered the value '11-JUL-10-20-PROT' in field 'patient-protocol-id']]>
-    </line>
-    <line>
-      <![CDATA[Entered the value '11-JUL-10-20-PAT1-STY' in field 'patient-study-id']]>
-    </line>
-    <line>
-      <![CDATA[Entered the value '39.87' in field 'cohort-dose-level']]>
-    </line>
-    <line>
-      <![CDATA[Clicked the item: add-contact-info]]>
-    </line>
-    <line>
-      <![CDATA[Entered the value '11.0' in field 'address-1']]>
-    </line>
-    <line>
-      <![CDATA[Entered the value '2nd Street' in field 'address-2']]>
-    </line>
-    <line>
-      <![CDATA[Entered the value 'Chennai' in field 'city']]>
-    </line>
-    <line>
-      <![CDATA[Entered the value 'Tamil Nadu' in field 'state']]>
-    </line>
-    <line>
-      <![CDATA[Entered the value '123456.0' in field 'zip-postal-code']]>
-    </line>
-    <line>
-      <![CDATA[Entered the value 'India' in field 'country']]>
-    </line>
-    <line>
-      <![CDATA[Entered the value '098-098-978765' in field 'home-phone']]>
-    </line>
-    <line>
-      <![CDATA[Entered the value '7297932-899' in field 'work-phone']]>
-    </line>
-    <line>
-      <![CDATA[Entered the value 'ncoup@ncoup.com' in field 'email']]>
-    </line>
-    <line>
-      <![CDATA[Entered the value 'PID-002' in field 'pid']]>
-    </line>
-    <line>
-      <![CDATA[Entered the value 'a1234' in field 'patient-esgin']]>
-    </line>
-    <line>
-      <![CDATA[Clicked the item: patient-submit]]>
-    </line>
-    <line>
-      <![CDATA[<br>commonReceive: Failed]]>
+      <![CDATA[<br>addPatient: Failed]]>
     </line>
     <line>
       <![CDATA[<br>]]>
     </line>
     <line>
-      <![CDATA[<a target="_blank" href="D:\Jagan\NostAuto\NostCore\NostArtifact\Screenshots\Screenshot_Sat_Jul_11_17_09_53_IST_2020.jpg">ScreenShot</a>]]>
+      <![CDATA[<a target="_blank" href="D:\Jagan\NostAuto\NostCore\NostArtifact\Screenshots\Screenshot_Sat_Jul_25_09_16_11_IST_2020.jpg">ScreenShot</a>]]>
     </line>
     <line>
       <![CDATA[<br>]]>
     </line>
     <line>
-      <![CDATA[Login Billing starts....]]>
+      <![CDATA[Clicked the item: receive-add]]>
     </line>
     <line>
-      <![CDATA[Entered the value 'admin' in field 'username-billing']]>
+      <![CDATA[Entered the value '25-JUL-11-20-PROT' in field 'receive-protocol-id']]>
     </line>
     <line>
-      <![CDATA[Entered the value 'Velos321' in field 'password-billing']]>
+      <![CDATA[Entered the value 'QWERT-LT-01' in field 'receive-lot']]>
     </line>
     <line>
-      <![CDATA[Clicked the item: login-button-billing]]>
+      <![CDATA[Entered the value '05-05-2021' in field 'receive-expiration-date']]>
     </line>
     <line>
-      <![CDATA[Clicked the item: maintenance-billing-menu]]>
+      <![CDATA[Entered the value '209.0' in field 'receive-total-qty']]>
     </line>
     <line>
-      <![CDATA[Clicked the item: service-master-menu]]>
+      <![CDATA[Entered the value 'Receving Drug' in field 'receive-comment']]>
     </line>
     <line>
-      <![CDATA[Entered the value '11-JUL-10-20-PROT' in field 'service-plan-search']]>
+      <![CDATA[Clicked the item: receive-save]]>
     </line>
     <line>
-      <![CDATA[Entered the value '11-JUL-10-20-Drg-Unit' in field 'service-name-search']]>
+      <![CDATA[Clicked the item: receive-menu]]>
     </line>
     <line>
-      <![CDATA[Clicked the item: service-search]]>
+      <![CDATA[Entered the value '25-JUL-11-20-PROT' in field 'rec-tab-search']]>
     </line>
     <line>
-      <![CDATA[Drug '11-JUL-10-20-Drg-Unit' integrated in Service Master successfully]]>
+      <![CDATA[Entered the value 'a1234' in field 'receive-edit']]>
     </line>
     <line>
-      <![CDATA[Clicked the item: maintenance-billing-menu]]>
+      <![CDATA[Clicked the item: receive-submit]]>
     </line>
     <line>
-      <![CDATA[Clicked the item: cpp-menu]]>
+      <![CDATA[Clicked the item: trans-to-pharm]]>
     </line>
     <line>
-      <![CDATA[Entered the value '11-JUL-10-20-PROT' in field 'cpp-plan-search']]>
+      <![CDATA[Entered the value '25-JUL-11-20-PROT' in field 'trans-protocol-id']]>
     </line>
     <line>
-      <![CDATA[Clicked the item: cpp-search]]>
+      <![CDATA[Selected the value '25-JUL-11-20-Pharm1-C in field 'trans-fro-pharmacy']]>
     </line>
     <line>
-      <![CDATA[Plan '11-JUL-10-20-PROT' integrated to CPP successfully]]>
+      <![CDATA[Selected the value 'Location 1 in field 'trans-from-sto-location']]>
     </line>
     <line>
-      <![CDATA[Clicked the item: cpp-payer-search-icon]]>
-    </line>
-    <line>
-      <![CDATA[Entered the value 'Class' in field 'cpp-attach-payer-search']]>
-    </line>
-    <line>
-      <![CDATA[Clicked the item: cpp-add-new-payer-search]]>
-    </line>
-    <line>
-      <![CDATA[Payer 'Class' selected from existing Payer's list successfully]]>
-    </line>
-    <line>
-      <![CDATA[Clicked the item: cpp-attach-payer]]>
-    </line>
-    <line>
-      <![CDATA[Service '11-JUL-10-20-Drg-Unit' not listed in CPP CDM]]>
-    </line>
-    <line>
-      <![CDATA[Service '11-JUL-10-20-Drg-Unit' found in CPP Services table]]>
-    </line>
-    <line>
-      <![CDATA[<br>verifyCPP: Failed]]>
+      <![CDATA[<br>commonTransferToPharmacy: Failed]]>
     </line>
     <line>
       <![CDATA[<br>]]>
     </line>
     <line>
-      <![CDATA[<a target="_blank" href="D:\Jagan\NostAuto\NostCore\NostArtifact\Screenshots\Screenshot_Sat_Jul_11_17_10_50_IST_2020.jpg">ScreenShot</a>]]>
+      <![CDATA[<a target="_blank" href="D:\Jagan\NostAuto\NostCore\NostArtifact\Screenshots\Screenshot_Sat_Jul_25_09_17_32_IST_2020.jpg">ScreenShot</a>]]>
     </line>
     <line>
       <![CDATA[<br>]]>
     </line>
   </reporter-output>
-  <suite name="Nostradamus Suite" duration-ms="169098" started-at="2020-07-11T17:08:01 IST" finished-at="2020-07-11T17:10:50 IST">
+  <suite name="Suite" duration-ms="182262" started-at="2020-07-25T09:14:30 IST" finished-at="2020-07-25T09:17:32 IST">
     <groups>
     </groups>
-    <test name="IDS UBAR Integration" duration-ms="169098" started-at="2020-07-11T17:08:01 IST" finished-at="2020-07-11T17:10:50 IST">
-      <class name="NostGroup.NostArtifact.TestCases.UbarloginCase">
-        <test-method status="PASS" signature="browserLaunch()[pri:0, instance:NostGroup.NostArtifact.TestCases.UbarloginCase@17c386de]" name="browserLaunch" is-config="true" duration-ms="9529" started-at="2020-07-11T17:07:52 IST" finished-at="2020-07-11T17:08:01 IST">
+    <test name="dispense Creation" duration-ms="182262" started-at="2020-07-25T09:14:30 IST" finished-at="2020-07-25T09:17:32 IST">
+      <class name="NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR">
+        <test-method status="PASS" signature="browserLaunch()[pri:0, instance:NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR@17c386de]" name="browserLaunch" is-config="true" duration-ms="10311" started-at="2020-07-25T09:14:20 IST" finished-at="2020-07-25T09:14:30 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserLaunch -->
-        <test-method status="PASS" signature="nostLogin(java.util.Hashtable)[pri:1, instance:NostGroup.NostArtifact.TestCases.UbarloginCase@17c386de]" name="nostLogin" duration-ms="7217" started-at="2020-07-11T17:08:03 IST" data-provider="getData" finished-at="2020-07-11T17:08:10 IST">
+        <test-method status="PASS" signature="nostLogin(java.util.Hashtable)[pri:1, instance:NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR@17c386de]" name="nostLogin" duration-ms="5563" started-at="2020-07-25T09:14:33 IST" data-provider="getData" finished-at="2020-07-25T09:14:38 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{PassWord=Velos321, rundata=Y, UserName=admin, e-Signature=a1234}]]>
+                <![CDATA[{PassWord=ncoup123, rundata=Y, UserName=admin, e-Signature=a1234}]]>
               </value>
             </param>
           </params>
@@ -588,18 +465,18 @@
               <![CDATA[Entered the value 'admin' in field 'username']]>
             </line>
             <line>
-              <![CDATA[Entered the value 'Velos321' in field 'password']]>
+              <![CDATA[Entered the value 'ncoup123' in field 'password']]>
             </line>
             <line>
               <![CDATA[Clicked the item: login-button]]>
             </line>
           </reporter-output>
         </test-method> <!-- nostLogin -->
-        <test-method status="PASS" signature="addProtocol(java.util.Hashtable)[pri:2, instance:NostGroup.NostArtifact.TestCases.UbarloginCase@17c386de]" name="addProtocol" duration-ms="21582" started-at="2020-07-11T17:08:11 IST" data-provider="getData" depends-on-methods="NostGroup.NostArtifact.TestCases.UbarloginCase.nostLogin" finished-at="2020-07-11T17:08:32 IST">
+        <test-method status="PASS" signature="addProtocol(java.util.Hashtable)[pri:2, instance:NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR@17c386de]" name="addProtocol" duration-ms="23461" started-at="2020-07-25T09:14:39 IST" data-provider="getData" depends-on-methods="NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR.nostLogin" finished-at="2020-07-25T09:15:02 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{Service=Both, OP_Investigator_ID=Op-Inv-ID-02, Protocol_Phase_Start_Date=04-01-2020, Site_Number=STN002, Investigator_ID=Inv-ID-01, ID_Expiration=10-10-2020, OP_PI_Last_Name=OP-Ins-LN, Closed_to_New_Patients=05-01-2020, Description=TestLink-1, Protocol_Title=11-JUL-10-20-PROT-Title, Protocol_Category=Genetics, Optional_PI_Institution=Opt-Ins-nCoup, Sponsor_Protocol_ID=11-JUL-10-20-PROT-SPID, Protocol_Completion_Date=06-10-2020, Noti_Return=Return Notifications, External_IRB#=EIRB-Z100, PI_First_Name=nCoup-PI-FN, Protocol_Sponsor=11-JUL-10-20-PROT-SP, Protocol_Status=CNPE, esignature=a1234, Noti_Transfer=Transfer Notifications, Noti_Destroy=Destroy Notifications, Drug(s)_and_Kit(s)=, OP_PI_First_Name=Op-Ins-FN, Category=Protocol Data Sheet, Noti_Pat_Return=Patient Returns Notifications, Protocol_Closure_Date=06-01-2020, Noti_Receive=Receive Notifications, Study_Contact=Study contact comments, Protocol_ID=11-JUL-10-20-PROT, Version=v1.1, Internal_IRB#=IRB-Z001, Noti_Dispense=Dispense Notifications, Reason_for_Closure=Protocol Study completed, Disease_Program=Leukemia, Type=Link, Study_Source=Industry, Protocol_Phase=Phase 2, Pharmacy_Status=Active, Protocol_Type=Open label, PI_Last_Name=nCoup-PI-LN}]]>
+                <![CDATA[{Service=Both, OP_Investigator_ID=Op-Inv-ID-02, Protocol_Phase_Start_Date=04-01-2020, Site_Number=STN002, Investigator_ID=Inv-ID-01, ID_Expiration=10-10-2020, OP_PI_Last_Name=OP-Ins-LN, Closed_to_New_Patients=05-01-2020, Description=TestLink-1, Protocol_Title=25-JUL-11-20-PROT-Title, Protocol_Category=Genetics, Optional_PI_Institution=Opt-Ins-nCoup, Sponsor_Protocol_ID=25-JUL-11-20-PROT-SPID, Protocol_Completion_Date=06-10-2020, Noti_Return=Return Notifications, External_IRB#=EIRB-Z100, PI_First_Name=nCoup-PI-FN, Protocol_Sponsor=25-JUL-11-20-PROT-SP, Protocol_Status=CNPE, esignature=a1234, Noti_Transfer=Transfer Notifications, Noti_Destroy=Destroy Notifications, Drug(s)_and_Kit(s)=, OP_PI_First_Name=Op-Ins-FN, Category=Protocol Data Sheet, Noti_Pat_Return=Patient Returns Notifications, Protocol_Closure_Date=06-01-2020, Noti_Receive=Receive Notifications, Study_Contact=Study contact comments, Protocol_ID=25-JUL-11-20-PROT, Version=v1.1, Internal_IRB#=IRB-Z001, Noti_Dispense=Dispense Notifications, Reason_for_Closure=Protocol Study completed, Disease_Program=Leukemia, Type=Link, Study_Source=Industry, Protocol_Phase=Phase 2, Pharmacy_Status=Active, Protocol_Type=Open label, PI_Last_Name=nCoup-PI-LN}]]>
               </value>
             </param>
           </params>
@@ -611,10 +488,10 @@
               <![CDATA[Clicked the item: add-protocol]]>
             </line>
             <line>
-              <![CDATA[Entered the value '11-JUL-10-20-PROT' in field 'protocol-id']]>
+              <![CDATA[Entered the value '25-JUL-11-20-PROT' in field 'protocol-id']]>
             </line>
             <line>
-              <![CDATA[Entered the value '11-JUL-10-20-PROT-Title' in field 'protocol-title']]>
+              <![CDATA[Entered the value '25-JUL-11-20-PROT-Title' in field 'protocol-title']]>
             </line>
             <line>
               <![CDATA[Selected the value 'CNPE in field 'protocol-status']]>
@@ -623,10 +500,10 @@
               <![CDATA[Selected the value 'Active in field 'pharmacy-status']]>
             </line>
             <line>
-              <![CDATA[Entered the value '11-JUL-10-20-PROT-SPID' in field 'sponsor-protocol-id']]>
+              <![CDATA[Entered the value '25-JUL-11-20-PROT-SPID' in field 'sponsor-protocol-id']]>
             </line>
             <line>
-              <![CDATA[Entered the value '11-JUL-10-20-PROT-SP' in field 'protocol-sponsor']]>
+              <![CDATA[Entered the value '25-JUL-11-20-PROT-SP' in field 'protocol-sponsor']]>
             </line>
             <line>
               <![CDATA[Entered the value 'STN002' in field 'site-number']]>
@@ -732,11 +609,96 @@
             </line>
           </reporter-output>
         </test-method> <!-- addProtocol -->
-        <test-method status="PASS" signature="addPharmacy(java.util.Hashtable)[pri:3, instance:NostGroup.NostArtifact.TestCases.UbarloginCase@17c386de]" name="addPharmacy" duration-ms="14281" started-at="2020-07-11T17:08:33 IST" data-provider="getData" depends-on-methods="NostGroup.NostArtifact.TestCases.UbarloginCase.nostLogin" finished-at="2020-07-11T17:08:47 IST">
+        <test-method status="FAIL" signature="verifyProtocol(java.util.Hashtable)[pri:3, instance:NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR@17c386de]" name="verifyProtocol" duration-ms="271" started-at="2020-07-25T09:15:03 IST" data-provider="getData" depends-on-methods="NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR.addProtocol" finished-at="2020-07-25T09:15:03 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{NCI_Record=Control, Grant_Control_Rights?=Yes, Disable_Dispensing/Par_Level_4=Yes, Disable_Dispensing/Par_Level_3=No, Disable_Dispensing/Par_Level_2=No, Disable_Dispensing/Par_Level_1=No, esignature=a1234, Zip/PostalCode=1234567.0, State=nCoup State, Phone=098-098-0987, Address_2=nCoup Street, Storage_Location_4=Location 4, Address_1=11.0, Storage_Location_3=Location 3, Storage_Location_2=Location 2, Pharmacy_Name=11-JUL-10-20-Pharm1-C, Storage_Location_1=Location 1, Organization=Pharmacy, Storage_Condition_4=Freezer -20, Storage_Condition_3=Refrigerated, Storage_Condition_2=Room Temperature, DEA=DEA234, Storage_Condition_1=Refrigerator, Pharmacy's_Name_for_Patient_Label=nCoup Control pharmacy QA, City=nCoup City}]]>
+                <![CDATA[{Service=Both, OP_Investigator_ID=Op-Inv-ID-02, Protocol_Phase_Start_Date=04-01-2020, Site_Number=STN002, Investigator_ID=Inv-ID-01, ID_Expiration=10-10-2020, OP_PI_Last_Name=OP-Ins-LN, Closed_to_New_Patients=05-01-2020, Description=TestLink-1, Protocol_Title=25-JUL-11-20-PROT-Title, Protocol_Category=Genetics, Optional_PI_Institution=Opt-Ins-nCoup, Sponsor_Protocol_ID=25-JUL-11-20-PROT-SPID, Protocol_Completion_Date=06-10-2020, Noti_Return=Return Notifications, External_IRB#=EIRB-Z100, PI_First_Name=nCoup-PI-FN, Protocol_Sponsor=25-JUL-11-20-PROT-SP, Protocol_Status=CNPE, esignature=a1234, Noti_Transfer=Transfer Notifications, Noti_Destroy=Destroy Notifications, Drug(s)_and_Kit(s)=, OP_PI_First_Name=Op-Ins-FN, Category=Protocol Data Sheet, Noti_Pat_Return=Patient Returns Notifications, Protocol_Closure_Date=06-01-2020, Noti_Receive=Receive Notifications, Study_Contact=Study contact comments, Protocol_ID=25-JUL-11-20-PROT, Version=v1.1, Internal_IRB#=IRB-Z001, Noti_Dispense=Dispense Notifications, Reason_for_Closure=Protocol Study completed, Disease_Program=Leukemia, Type=Link, Study_Source=Industry, Protocol_Phase=Phase 2, Pharmacy_Status=Active, Protocol_Type=Open label, PI_Last_Name=nCoup-PI-LN}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[Element <a href="javascript:menuMethod('Manage','pages/jsp/ManProtocol.jsp');"> could not be scrolled into view
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'CSEKARAITHENT', ip: '192.168.195.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_112'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 78.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200708170202, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 34620, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 112ed7d2-300c-4b5f-800a-75a09aff3766]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: Element <a href="javascript:menuMethod('Manage','pages/jsp/ManProtocol.jsp');"> could not be scrolled into view
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'CSEKARAITHENT', ip: '192.168.195.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_112'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 78.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200708170202, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 34620, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 112ed7d2-300c-4b5f-800a-75a09aff3766
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at NostGroup.NostArtifact.Base.CommonMethods.click(CommonMethods.java:81)
+at NostGroup.NostArtifact.Manage.Protocol.protocolVerify(Protocol.java:131)
+at NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR.verifyProtocol(IDSFlow_M_R_PR.java:42)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1249)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          <reporter-output>
+            <line>
+              <![CDATA[<br>verifyProtocol: Failed]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href="D:\Jagan\NostAuto\NostCore\NostArtifact\Screenshots\Screenshot_Sat_Jul_25_09_15_06_IST_2020.jpg">ScreenShot</a>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyProtocol -->
+        <test-method status="PASS" signature="addPharmacy(java.util.Hashtable)[pri:4, instance:NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR@17c386de]" name="addPharmacy" duration-ms="12650" started-at="2020-07-25T09:15:06 IST" data-provider="getData" depends-on-methods="NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR.nostLogin" finished-at="2020-07-25T09:15:19 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{NCI_Record=Control, Grant_Control_Rights?=Yes, Disable_Dispensing/Par_Level_4=No, Disable_Dispensing/Par_Level_3=No, Disable_Dispensing/Par_Level_2=No, Disable_Dispensing/Par_Level_1=No, esignature=a1234, Zip/PostalCode=1234567.0, State=nCoup State, Phone=098-098-0987, Address_2=nCoup Street, Storage_Location_4=Location 4, Address_1=11.0, Storage_Location_3=Location 3, Storage_Location_2=Location 2, Pharmacy_Name=25-JUL-11-20-Pharm1-C, Storage_Location_1=Location 1, Organization=Pharmacy, Storage_Condition_4=Freezer -20, Storage_Condition_3=Refrigerated, Storage_Condition_2=Room Temperature, DEA=DEA234, Storage_Condition_1=Refrigerator, Pharmacy's_Name_for_Patient_Label=nCoup Control pharmacy QA, City=nCoup City}]]>
               </value>
             </param>
           </params>
@@ -751,7 +713,7 @@
               <![CDATA[Clicked the item: add-new-pharmacy]]>
             </line>
             <line>
-              <![CDATA[Entered the value '11-JUL-10-20-Pharm1-C' in field 'pharmacy-name']]>
+              <![CDATA[Entered the value '25-JUL-11-20-Pharm1-C' in field 'pharmacy-name']]>
             </line>
             <line>
               <![CDATA[ Input is Yes for the field 'grant-control-rights' and Checkbox is unchecked by default, now checked/ticked successfully]]>
@@ -793,7 +755,7 @@
               <![CDATA[Entered the value 'Location 4' in field 'storage-location4']]>
             </line>
             <line>
-              <![CDATA[ Input is Yes for the field 'disable-dispense-par-level4' and Checkbox is unchecked by default, now checked/ticked successfully]]>
+              <![CDATA['disable-dispense-par-level4' is checked/ticked by default]]>
             </line>
             <line>
               <![CDATA[Clicked the item: pharmacy-address]]>
@@ -830,11 +792,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- addPharmacy -->
-        <test-method status="PASS" signature="addSupplier(java.util.Hashtable)[pri:4, instance:NostGroup.NostArtifact.TestCases.UbarloginCase@17c386de]" name="addSupplier" duration-ms="20801" started-at="2020-07-11T17:08:47 IST" data-provider="getData" depends-on-methods="NostGroup.NostArtifact.TestCases.UbarloginCase.nostLogin" finished-at="2020-07-11T17:09:08 IST">
+        <test-method status="PASS" signature="verifyPharmacy(java.util.Hashtable)[pri:5, instance:NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR@17c386de]" name="verifyPharmacy" duration-ms="12246" started-at="2020-07-25T09:15:19 IST" data-provider="getData" depends-on-methods="NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR.addPharmacy" finished-at="2020-07-25T09:15:31 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{Supplier_Name_3=11-JUL-10-Supplier-3, Supplier_Name_2=11-JUL-10-Supplier-2, Organization=Supplier, Supplier_Name_1=11-JUL-10-Supplier-1, esignature=a1234}]]>
+                <![CDATA[{NCI_Record=Control, Grant_Control_Rights?=Yes, Disable_Dispensing/Par_Level_4=No, Disable_Dispensing/Par_Level_3=No, Disable_Dispensing/Par_Level_2=No, Disable_Dispensing/Par_Level_1=No, esignature=a1234, Zip/PostalCode=1234567.0, State=nCoup State, Phone=098-098-0987, Address_2=nCoup Street, Storage_Location_4=Location 4, Address_1=11.0, Storage_Location_3=Location 3, Storage_Location_2=Location 2, Pharmacy_Name=25-JUL-11-20-Pharm1-C, Storage_Location_1=Location 1, Organization=Pharmacy, Storage_Condition_4=Freezer -20, Storage_Condition_3=Refrigerated, Storage_Condition_2=Room Temperature, DEA=DEA234, Storage_Condition_1=Refrigerator, Pharmacy's_Name_for_Patient_Label=nCoup Control pharmacy QA, City=nCoup City}]]>
               </value>
             </param>
           </params>
@@ -843,498 +805,40 @@
               <![CDATA[Clicked the item: organization]]>
             </line>
             <line>
-              <![CDATA[Selected the value 'Supplier in field 'organization-selection']]>
+              <![CDATA[Selected the value 'Pharmacy in field 'organization-selection']]>
             </line>
             <line>
-              <![CDATA[Clicked the item: supplier-add]]>
+              <![CDATA[Entered the value '25-JUL-11-20-Pharm1-C' in field 'pharmacy-search-bar']]>
             </line>
             <line>
-              <![CDATA[Entered the value '11-JUL-10-Supplier-1' in field 'supplier-name']]>
-            </line>
-            <line>
-              <![CDATA[Clicked the item: add-more-supplier1]]>
-            </line>
-            <line>
-              <![CDATA[Entered the value '11-JUL-10-Supplier-2' in field 'supplier-name-1']]>
-            </line>
-            <line>
-              <![CDATA[Clicked the item: add-more-supplier2]]>
-            </line>
-            <line>
-              <![CDATA[Entered the value '11-JUL-10-Supplier-3' in field 'supplier-name-2']]>
-            </line>
-            <line>
-              <![CDATA[Entered the value 'a1234' in field 'supplier-esign']]>
-            </line>
-            <line>
-              <![CDATA[Clicked the item: supplier-submit]]>
+              <![CDATA[Pharmacy '25-JUL-11-20-Pharm1-C' found in the Pharmacy table]]>
             </line>
           </reporter-output>
-        </test-method> <!-- addSupplier -->
-        <test-method status="PASS" signature="addCatalog(java.util.Hashtable)[pri:5, instance:NostGroup.NostArtifact.TestCases.UbarloginCase@17c386de]" name="addCatalog" duration-ms="19632" started-at="2020-07-11T17:09:08 IST" data-provider="getData" depends-on-methods="NostGroup.NostArtifact.TestCases.UbarloginCase.addProtocol" finished-at="2020-07-11T17:09:27 IST">
+        </test-method> <!-- verifyPharmacy -->
+        <test-method status="FAIL" signature="addSupplier(java.util.Hashtable)[pri:6, instance:NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR@17c386de]" name="addSupplier" duration-ms="2238" started-at="2020-07-25T09:15:31 IST" data-provider="getData" depends-on-methods="NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR.nostLogin" finished-at="2020-07-25T09:15:34 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{Aux_Label_6=, Aux_Label_5=, Aux_Label_4=Chemotherapy Drug, Drug_ID_#=11-JUL-10-20-Drg-id1, Aux_Label_3=Refrigerate, Status=, Aux_Label_2=Shake Well, Aux_Label_1=Take With Food, Storage_Location=Location 1, Max=, UPC_Ratio=7.0, Hemoglobin=4.0, Strength/Concentration=22.22, Reorder_Point=, Formulation=Enema, Other3=Other 3, Other2=Other 2, Other1=Other 1, ANC=2.0, Pharmacy_Drug=11-JUL-10-20-Pharm1-C, Bilirubin:_T-Bili=12.0, IVRS=Yes, Level_of_Accountability=Unit, Qty_per_Unit=48.0, Frequency=twice daily, Patient_Specific_Drug=No, Drug_Proto_SPID=11-JUL-10-20-PROT-SPID, Day_Supply=10.0, esignature=a1234, Drug_Name=11-JUL-10-20-Drg-Unit, Compounded_Med_Label=Sterile Compounded Medication, NSC_#=11-JUL-10-20-Drg-nsc1, ALT/SGPT=14.0, PLT's=3.0, Drug_Label_Name=11-JUL-10-20-Drg-dl1, Min=, Route=, 24-hour_Collection=6.0, Serum_Creatinine=11.0, Dose_on_Label=Take with water of 8oz, before food, Storage_Condition=Refrigerator, Unit_Type=Tube, Label_Template=Standard (w/ Lab), Drug_Protocol=11-JUL-10-20-PROT, Supplier_Name=11-JUL-10-Supplier-1, Unit_of_Measure=mEq, Track_By=Strength, Dipstick=5.0, Alternative_Drug_Name=11-JUL-10-20-Drg-adn1, To_Be_Linked=Yes, AST/SGOT=13.0}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Clicked the item: add-drug]]>
-            </line>
-            <line>
-              <![CDATA[Entered the value '11-JUL-10-20-Drg-Unit' in field 'drug-name']]>
-            </line>
-            <line>
-              <![CDATA[Selected the value 'Strength in field 'track-by']]>
-            </line>
-            <line>
-              <![CDATA[Entered the value '22.22' in field 'strength-concentration']]>
-            </line>
-            <line>
-              <![CDATA[Selected the value 'mEq in field 'unit-of-measure']]>
-            </line>
-            <line>
-              <![CDATA[Selected the value 'Enema in field 'formulation']]>
-            </line>
-            <line>
-              <![CDATA[Entered the value '11-JUL-10-20-Drg-dl1' in field 'drug-label-name']]>
-            </line>
-            <line>
-              <![CDATA[Entered the value '11-JUL-10-20-Drg-id1' in field 'drug-id']]>
-            </line>
-            <line>
-              <![CDATA[Entered the value '11-JUL-10-20-Drg-nsc1' in field 'drug-nsc']]>
-            </line>
-            <line>
-              <![CDATA[Entered the value '11-JUL-10-20-Drg-adn1' in field 'alternative-drug-name']]>
-            </line>
-            <line>
-              <![CDATA[Clicked the item: set-defaults]]>
-            </line>
-            <line>
-              <![CDATA['patient-specific-drug' is checked/ticked by default]]>
-            </line>
-            <line>
-              <![CDATA[ Input is Yes for the field 'ivrs' and Checkbox is unchecked by default, now checked/ticked successfully]]>
-            </line>
-            <line>
-              <![CDATA[Selected the value 'Yes in field 'to-be-linked']]>
-            </line>
-            <line>
-              <![CDATA[Selected the value 'Unit in field 'level-of-accountability']]>
-            </line>
-            <line>
-              <![CDATA[Selected the value 'Tube in field 'unit-type']]>
-            </line>
-            <line>
-              <![CDATA[Entered the value '48.0' in field 'qty-per-unit']]>
-            </line>
-            <line>
-              <![CDATA[Entered the value '11-JUL-10-Supplier-1' in field 'catalog-supplier-name']]>
-            </line>
-            <line>
-              <![CDATA[Selected the value 'Refrigerator in field 'storage-condition']]>
-            </line>
-            <line>
-              <![CDATA[Selected the value '11-JUL-10-20-Pharm1-C in field 'pharmacy']]>
-            </line>
-            <line>
-              <![CDATA[Selected the value 'Location 1 in field 'storage-location']]>
-            </line>
-            <line>
-              <![CDATA[Selected the value 'twice daily in field 'frequency']]>
-            </line>
-            <line>
-              <![CDATA[Entered the value 'Take with water of 8oz, before food' in field 'dose-on-label']]>
-            </line>
-            <line>
-              <![CDATA[Selected the value 'Standard (w/ Lab) in field 'label-template']]>
-            </line>
-            <line>
-              <![CDATA[Entered the value '10.0' in field 'day-supply']]>
-            </line>
-            <line>
-              <![CDATA[Selected the value 'Take With Food in field 'aux-label1']]>
-            </line>
-            <line>
-              <![CDATA[Selected the value 'Shake Well in field 'aux-label2']]>
-            </line>
-            <line>
-              <![CDATA[Selected the value 'Refrigerate in field 'aux-label3']]>
-            </line>
-            <line>
-              <![CDATA[Selected the value 'Chemotherapy Drug in field 'aux-label4']]>
-            </line>
-            <line>
-              <![CDATA[Clicked the item: add-lab-criteria]]>
-            </line>
-            <line>
-              <![CDATA[Entered the value '2.0' in field 'anc']]>
-            </line>
-            <line>
-              <![CDATA[Entered the value '3.0' in field 'plt']]>
-            </line>
-            <line>
-              <![CDATA[Entered the value '4.0' in field 'hemoglobin']]>
-            </line>
-            <line>
-              <![CDATA[Entered the value '5.0' in field 'dipstick']]>
-            </line>
-            <line>
-              <![CDATA[Entered the value '6.0' in field '24-hour-collection']]>
-            </line>
-            <line>
-              <![CDATA[Entered the value '7.0' in field 'upc-ratio']]>
-            </line>
-            <line>
-              <![CDATA[Entered the value 'Other 1' in field 'other1']]>
-            </line>
-            <line>
-              <![CDATA[Entered the value 'Other 2' in field 'other2']]>
-            </line>
-            <line>
-              <![CDATA[Entered the value 'Other 3' in field 'other3']]>
-            </line>
-            <line>
-              <![CDATA[Entered the value '11.0' in field 'serum-creatinine']]>
-            </line>
-            <line>
-              <![CDATA[Entered the value '12.0' in field 'bili-rubin-t-bili']]>
-            </line>
-            <line>
-              <![CDATA[Entered the value '13.0' in field 'asg-sgot']]>
-            </line>
-            <line>
-              <![CDATA[Entered the value '14.0' in field 'alt-sgpt']]>
-            </line>
-            <line>
-              <![CDATA[Clicked the item: add-drug]]>
-            </line>
-            <line>
-              <![CDATA[Entered the value '11-JUL-10-20-PROT' in field 'cat-prot-sear']]>
-            </line>
-            <line>
-              <![CDATA[Clicked the item: cat-prot-sear-ok]]>
-            </line>
-            <line>
-              <![CDATA[Entered the value 'a1234' in field 'catalog-esign']]>
-            </line>
-            <line>
-              <![CDATA[Clicked the item: catalog-submit]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- addCatalog -->
-        <test-method status="PASS" signature="addPatient(java.util.Hashtable)[pri:6, instance:NostGroup.NostArtifact.TestCases.UbarloginCase@17c386de]" name="addPatient" duration-ms="22589" started-at="2020-07-11T17:09:28 IST" data-provider="getData" depends-on-methods="NostGroup.NostArtifact.TestCases.UbarloginCase.addProtocol, NostGroup.NostArtifact.TestCases.UbarloginCase.addCatalog" finished-at="2020-07-11T17:09:50 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{Patient_Study_ID=11-JUL-10-20-PAT1-STY, Gender=Female, Protocol_ID=11-JUL-10-20-PROT, Patient_Status=Active, Patient_Stop_Date=, Country=India, Patient_Start_Date=, Zip/Postal_Code=123456.0, Assigned_Drug=, esignature=a1234, Home_Phone(s)=098-098-978765, State=Tamil Nadu, Drug_Name=11-JUL-10-20-Drg, Patient_MRN=11-JUL-10-20-PAT1-1, Address_2=2nd Street, Address_1=11.0, PID=PID-002, Unit_of_Measure=mEq, Strength/Concentration=22.22, Patient_First_Name=11-JUL-10-20-FN, Patient_Last_Name=11-JUL-10-20-LN, Patient_DOB=11-10-1999, Cohort/Dose_Level=39.87, Email=ncoup@ncoup.com, Work_Phone(s)=7297932-899, City=Chennai}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Clicked the item: patient-menu]]>
-            </line>
-            <line>
-              <![CDATA[Clicked the item: add-patient-to-protocol]]>
-            </line>
-            <line>
-              <![CDATA[Entered the value '11-JUL-10-20-PAT1-1' in field 'patient-mrn']]>
-            </line>
-            <line>
-              <![CDATA[Entered the value '11-JUL-10-20-FN' in field 'patient-first-name']]>
-            </line>
-            <line>
-              <![CDATA[Entered the value '11-JUL-10-20-LN' in field 'patient-last-name']]>
-            </line>
-            <line>
-              <![CDATA[Selected the value 'Female in field 'patient-gender']]>
-            </line>
-            <line>
-              <![CDATA[Entered the value '11-10-1999' in field 'patient-dob']]>
-            </line>
-            <line>
-              <![CDATA[Selected the value 'Active in field 'patient-status']]>
-            </line>
-            <line>
-              <![CDATA[Entered the value '11-JUL-10-20-PROT' in field 'patient-protocol-id']]>
-            </line>
-            <line>
-              <![CDATA[Entered the value '11-JUL-10-20-PAT1-STY' in field 'patient-study-id']]>
-            </line>
-            <line>
-              <![CDATA[Entered the value '39.87' in field 'cohort-dose-level']]>
-            </line>
-            <line>
-              <![CDATA[Clicked the item: add-contact-info]]>
-            </line>
-            <line>
-              <![CDATA[Entered the value '11.0' in field 'address-1']]>
-            </line>
-            <line>
-              <![CDATA[Entered the value '2nd Street' in field 'address-2']]>
-            </line>
-            <line>
-              <![CDATA[Entered the value 'Chennai' in field 'city']]>
-            </line>
-            <line>
-              <![CDATA[Entered the value 'Tamil Nadu' in field 'state']]>
-            </line>
-            <line>
-              <![CDATA[Entered the value '123456.0' in field 'zip-postal-code']]>
-            </line>
-            <line>
-              <![CDATA[Entered the value 'India' in field 'country']]>
-            </line>
-            <line>
-              <![CDATA[Entered the value '098-098-978765' in field 'home-phone']]>
-            </line>
-            <line>
-              <![CDATA[Entered the value '7297932-899' in field 'work-phone']]>
-            </line>
-            <line>
-              <![CDATA[Entered the value 'ncoup@ncoup.com' in field 'email']]>
-            </line>
-            <line>
-              <![CDATA[Entered the value 'PID-002' in field 'pid']]>
-            </line>
-            <line>
-              <![CDATA[Entered the value 'a1234' in field 'patient-esgin']]>
-            </line>
-            <line>
-              <![CDATA[Clicked the item: patient-submit]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- addPatient -->
-        <test-method status="FAIL" signature="commonReceive(java.util.Hashtable)[pri:7, instance:NostGroup.NostArtifact.TestCases.UbarloginCase@17c386de]" name="commonReceive" duration-ms="69" started-at="2020-07-11T17:09:50 IST" data-provider="getData" depends-on-methods="NostGroup.NostArtifact.TestCases.UbarloginCase.addProtocol" finished-at="2020-07-11T17:09:50 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{Receive_Protocol_ID=11-JUL-10-20-PROT, Receive_Drug_name=wewdw, Lot_#=QWERT-U-02, Formulation=, Range_End=25.0, Unit_Type=, esignature=a1234, Level_of_Accountability=, Receive_Storage_Location=, Drug_Name=11-JUL-10-20-Drg-Unit, Expiration_Date=05-05-2021, Receive_Pharmacy=, Range_Start=10.0, IVRS=, Comment=Receving Drug, Unit_of_Measure=mEq, Total_Qty=209.0, Strength/Concentration=22.22, Patient_Specific_Drug=, Receive_Storage_Condition=, Supplier_Name=, Qty_per_Unit=, Static_ID=ZAP-U1-}]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.UnhandledAlertException">
-            <message>
-              <![CDATA[Dismissed user prompt dialog: Error : 
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'CSEKARAITHENT', ip: '192.168.195.10', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_112'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 78.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200630195452, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 29472, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 63d03fb5-8fd5-4cb1-a40a-5fa5c2df1120
-*** Element info: {Using=css selector, value=#Receive}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.UnhandledAlertException: Dismissed user prompt dialog: Error : 
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'CSEKARAITHENT', ip: '192.168.195.10', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_112'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 78.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200630195452, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 29472, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 63d03fb5-8fd5-4cb1-a40a-5fa5c2df1120
-*** Element info: {Using=css selector, value=#Receive}
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
-at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)
-at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-at NostGroup.NostArtifact.Receive.Receive.receiveCommon(Receive.java:29)
-at NostGroup.NostArtifact.TestCases.UbarloginCase.commonReceive(UbarloginCase.java:75)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(ArrayList.java:1249)
-at org.testng.TestRunner.privateRun(TestRunner.java:766)
-at org.testng.TestRunner.run(TestRunner.java:587)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-at org.testng.TestNG.runSuites(TestNG.java:1039)
-at org.testng.TestNG.run(TestNG.java:1007)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.UnhandledAlertException -->
-          <reporter-output>
-            <line>
-              <![CDATA[<br>commonReceive: Failed]]>
-            </line>
-            <line>
-              <![CDATA[<br>]]>
-            </line>
-            <line>
-              <![CDATA[<a target="_blank" href="D:\Jagan\NostAuto\NostCore\NostArtifact\Screenshots\Screenshot_Sat_Jul_11_17_09_53_IST_2020.jpg">ScreenShot</a>]]>
-            </line>
-            <line>
-              <![CDATA[<br>]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- commonReceive -->
-        <test-method status="SKIP" signature="submitqueueReceive(java.util.Hashtable)[pri:7, instance:NostGroup.NostArtifact.TestCases.UbarloginCase@17c386de]" name="submitqueueReceive" duration-ms="0" started-at="2020-07-11T17:09:54 IST" data-provider="getData" depends-on-methods="NostGroup.NostArtifact.TestCases.UbarloginCase.commonReceive" finished-at="2020-07-11T17:09:54 IST">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method UbarloginCase.submitqueueReceive(java.util.Hashtable)[pri:7, instance:NostGroup.NostArtifact.TestCases.UbarloginCase@17c386de] depends on not successfully finished methods]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method UbarloginCase.submitqueueReceive(java.util.Hashtable)[pri:7, instance:NostGroup.NostArtifact.TestCases.UbarloginCase@17c386de] depends on not successfully finished methods
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:101)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(ArrayList.java:1249)
-at org.testng.TestRunner.privateRun(TestRunner.java:766)
-at org.testng.TestRunner.run(TestRunner.java:587)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-at org.testng.TestNG.runSuites(TestNG.java:1039)
-at org.testng.TestNG.run(TestNG.java:1007)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- submitqueueReceive -->
-        <test-method status="SKIP" signature="commonTransferToPharmacy(java.util.Hashtable)[pri:8, instance:NostGroup.NostArtifact.TestCases.UbarloginCase@17c386de]" name="commonTransferToPharmacy" duration-ms="0" started-at="2020-07-11T17:09:54 IST" data-provider="getData" depends-on-methods="NostGroup.NostArtifact.TestCases.UbarloginCase.commonReceive" finished-at="2020-07-11T17:09:54 IST">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method UbarloginCase.commonTransferToPharmacy(java.util.Hashtable)[pri:8, instance:NostGroup.NostArtifact.TestCases.UbarloginCase@17c386de] depends on not successfully finished methods]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method UbarloginCase.commonTransferToPharmacy(java.util.Hashtable)[pri:8, instance:NostGroup.NostArtifact.TestCases.UbarloginCase@17c386de] depends on not successfully finished methods
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:101)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(ArrayList.java:1249)
-at org.testng.TestRunner.privateRun(TestRunner.java:766)
-at org.testng.TestRunner.run(TestRunner.java:587)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-at org.testng.TestNG.runSuites(TestNG.java:1039)
-at org.testng.TestNG.run(TestNG.java:1007)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- commonTransferToPharmacy -->
-        <test-method status="PASS" signature="ubarLogin(java.util.Hashtable)[pri:8, instance:NostGroup.NostArtifact.TestCases.UbarloginCase@17c386de]" name="ubarLogin" duration-ms="4973" started-at="2020-07-11T17:09:54 IST" data-provider="getData" depends-on-methods="NostGroup.NostArtifact.TestCases.UbarloginCase.addCatalog" finished-at="2020-07-11T17:09:59 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{PassWord=Velos321, rundata=Y, UserName=admin, e-Signature=a1234}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Login Billing starts....]]>
-            </line>
-            <line>
-              <![CDATA[Entered the value 'admin' in field 'username-billing']]>
-            </line>
-            <line>
-              <![CDATA[Entered the value 'Velos321' in field 'password-billing']]>
-            </line>
-            <line>
-              <![CDATA[Clicked the item: login-button-billing]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- ubarLogin -->
-        <test-method status="PASS" signature="verifyServiceMaster(java.util.Hashtable)[pri:9, instance:NostGroup.NostArtifact.TestCases.UbarloginCase@17c386de]" name="verifyServiceMaster" duration-ms="15050" started-at="2020-07-11T17:09:59 IST" data-provider="getData" depends-on-methods="NostGroup.NostArtifact.TestCases.UbarloginCase.addCatalog" finished-at="2020-07-11T17:10:14 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{service-plan-search=11-JUL-10-20-PROT, service-name-search=11-JUL-10-20-Drg-Unit}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Clicked the item: maintenance-billing-menu]]>
-            </line>
-            <line>
-              <![CDATA[Clicked the item: service-master-menu]]>
-            </line>
-            <line>
-              <![CDATA[Entered the value '11-JUL-10-20-PROT' in field 'service-plan-search']]>
-            </line>
-            <line>
-              <![CDATA[Entered the value '11-JUL-10-20-Drg-Unit' in field 'service-name-search']]>
-            </line>
-            <line>
-              <![CDATA[Clicked the item: service-search]]>
-            </line>
-            <line>
-              <![CDATA[Drug '11-JUL-10-20-Drg-Unit' integrated in Service Master successfully]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- verifyServiceMaster -->
-        <test-method status="FAIL" signature="verifyCPP(java.util.Hashtable)[pri:10, instance:NostGroup.NostArtifact.TestCases.UbarloginCase@17c386de]" name="verifyCPP" duration-ms="32843" started-at="2020-07-11T17:10:14 IST" data-provider="getData" depends-on-methods="NostGroup.NostArtifact.TestCases.UbarloginCase.verifyServiceMaster" finished-at="2020-07-11T17:10:47 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{cpp-cdm-price-eff-to=07302020, cpp-cdm-plan-search=, cpp-cdm-service-name=11-JUL-10-20-Drg-Unit, cpp-payer-email=test@ncoup.com, cpp-cdm-service-price=230.0, cpp-cdm-service-results-search-bar=, cpp-cdm-service-frequency=, cpp-cdm-service-frequency-interval=, cpp-cdm-charge-basis=, cpp-attach-payer-search=Class, cpp-account-name=12345Name, cpp-same-payerid=, cpp-account-no=Class88765, cpp-payer-level=Primary, cpp-plan-search=11-JUL-10-20-PROT, cpp-type-code=Study Team, cpp-cdm-price-eff-from=06302020, cpp-payer-id=, cpp-cdm-payer-search=, cpp-cdm-pharmacy=}]]>
+                <![CDATA[{Supplier_Name_3=25-JUL-11-Supplier-3, Supplier_Name_2=25-JUL-11-Supplier-2, Organization=Supplier, Supplier_Name_1=25-JUL-11-Supplier-1, esignature=a1234}]]>
               </value>
             </param>
           </params>
           <exception class="org.openqa.selenium.ElementNotInteractableException">
             <message>
-              <![CDATA[Element <input id="parentPType" name="optradioN" type="radio"> could not be scrolled into view
+              <![CDATA[Element <a href="javascript:menuActionMethod('Manage','loadPharmDetails.action');"> could not be scrolled into view
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'CSEKARAITHENT', ip: '192.168.195.10', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_112'
+System info: host: 'CSEKARAITHENT', ip: '192.168.195.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_112'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 78.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200630195452, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 29472, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 63d03fb5-8fd5-4cb1-a40a-5fa5c2df1120]]>
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 78.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200708170202, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 34620, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 112ed7d2-300c-4b5f-800a-75a09aff3766]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementNotInteractableException: Element <input id="parentPType" name="optradioN" type="radio"> could not be scrolled into view
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: Element <a href="javascript:menuActionMethod('Manage','loadPharmDetails.action');"> could not be scrolled into view
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'CSEKARAITHENT', ip: '192.168.195.10', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_112'
+System info: host: 'CSEKARAITHENT', ip: '192.168.195.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_112'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 78.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200630195452, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 29472, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 63d03fb5-8fd5-4cb1-a40a-5fa5c2df1120
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 78.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200708170202, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 34620, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 112ed7d2-300c-4b5f-800a-75a09aff3766
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -1348,8 +852,8 @@ at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
 at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
 at NostGroup.NostArtifact.Base.CommonMethods.click(CommonMethods.java:81)
-at NostGroup.NostArtifact.Billing.CPP.cppAdd(CPP.java:478)
-at NostGroup.NostArtifact.TestCases.UbarloginCase.verifyCPP(UbarloginCase.java:116)
+at NostGroup.NostArtifact.Manage.Supplier.addSupplier(Supplier.java:30)
+at NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR.addSupplier(IDSFlow_M_R_PR.java:64)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1383,62 +887,26 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
           <reporter-output>
             <line>
-              <![CDATA[Clicked the item: maintenance-billing-menu]]>
-            </line>
-            <line>
-              <![CDATA[Clicked the item: cpp-menu]]>
-            </line>
-            <line>
-              <![CDATA[Entered the value '11-JUL-10-20-PROT' in field 'cpp-plan-search']]>
-            </line>
-            <line>
-              <![CDATA[Clicked the item: cpp-search]]>
-            </line>
-            <line>
-              <![CDATA[Plan '11-JUL-10-20-PROT' integrated to CPP successfully]]>
-            </line>
-            <line>
-              <![CDATA[Clicked the item: cpp-payer-search-icon]]>
-            </line>
-            <line>
-              <![CDATA[Entered the value 'Class' in field 'cpp-attach-payer-search']]>
-            </line>
-            <line>
-              <![CDATA[Clicked the item: cpp-add-new-payer-search]]>
-            </line>
-            <line>
-              <![CDATA[Payer 'Class' selected from existing Payer's list successfully]]>
-            </line>
-            <line>
-              <![CDATA[Clicked the item: cpp-attach-payer]]>
-            </line>
-            <line>
-              <![CDATA[Service '11-JUL-10-20-Drg-Unit' not listed in CPP CDM]]>
-            </line>
-            <line>
-              <![CDATA[Service '11-JUL-10-20-Drg-Unit' found in CPP Services table]]>
-            </line>
-            <line>
-              <![CDATA[<br>verifyCPP: Failed]]>
+              <![CDATA[<br>addSupplier: Failed]]>
             </line>
             <line>
               <![CDATA[<br>]]>
             </line>
             <line>
-              <![CDATA[<a target="_blank" href="D:\Jagan\NostAuto\NostCore\NostArtifact\Screenshots\Screenshot_Sat_Jul_11_17_10_50_IST_2020.jpg">ScreenShot</a>]]>
+              <![CDATA[<a target="_blank" href="D:\Jagan\NostAuto\NostCore\NostArtifact\Screenshots\Screenshot_Sat_Jul_25_09_15_37_IST_2020.jpg">ScreenShot</a>]]>
             </line>
             <line>
               <![CDATA[<br>]]>
             </line>
           </reporter-output>
-        </test-method> <!-- verifyCPP -->
-        <test-method status="SKIP" signature="nostLogin2(java.util.Hashtable)[pri:11, instance:NostGroup.NostArtifact.TestCases.UbarloginCase@17c386de]" name="nostLogin2" duration-ms="0" started-at="2020-07-11T17:10:50 IST" data-provider="getData" depends-on-methods="NostGroup.NostArtifact.TestCases.UbarloginCase.verifyCPP" finished-at="2020-07-11T17:10:50 IST">
+        </test-method> <!-- addSupplier -->
+        <test-method status="SKIP" signature="verifySupplier(java.util.Hashtable)[pri:7, instance:NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR@17c386de]" name="verifySupplier" duration-ms="0" started-at="2020-07-25T09:15:37 IST" data-provider="getData" depends-on-methods="NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR.addSupplier" finished-at="2020-07-25T09:15:37 IST">
           <exception class="java.lang.Throwable">
             <message>
-              <![CDATA[Method UbarloginCase.nostLogin2(java.util.Hashtable)[pri:11, instance:NostGroup.NostArtifact.TestCases.UbarloginCase@17c386de] depends on not successfully finished methods]]>
+              <![CDATA[Method IDSFlow_M_R_PR.verifySupplier(java.util.Hashtable)[pri:7, instance:NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR@17c386de] depends on not successfully finished methods]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method UbarloginCase.nostLogin2(java.util.Hashtable)[pri:11, instance:NostGroup.NostArtifact.TestCases.UbarloginCase@17c386de] depends on not successfully finished methods
+              <![CDATA[java.lang.Throwable: Method IDSFlow_M_R_PR.verifySupplier(java.util.Hashtable)[pri:7, instance:NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR@17c386de] depends on not successfully finished methods
 at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:101)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
@@ -1463,14 +931,400 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- nostLogin2 -->
-        <test-method status="SKIP" signature="addDispense(java.util.Hashtable)[pri:12, instance:NostGroup.NostArtifact.TestCases.UbarloginCase@17c386de]" name="addDispense" duration-ms="0" started-at="2020-07-11T17:10:50 IST" data-provider="getData" depends-on-methods="NostGroup.NostArtifact.TestCases.UbarloginCase.verifyCPP" finished-at="2020-07-11T17:10:50 IST">
-          <exception class="java.lang.Throwable">
+        </test-method> <!-- verifySupplier -->
+        <test-method status="PASS" signature="addCatalog(java.util.Hashtable)[pri:8, instance:NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR@17c386de]" name="addCatalog" duration-ms="16970" started-at="2020-07-25T09:15:37 IST" data-provider="getData" depends-on-methods="NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR.addProtocol" finished-at="2020-07-25T09:15:54 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Aux_Label_6=, Aux_Label_5=, Aux_Label_4=Chemotherapy Drug, Drug_ID_#=25-JUL-11-20-Drg-id1, Aux_Label_3=Refrigerate, Status=, Aux_Label_2=Shake Well, Aux_Label_1=Take With Food, Storage_Location=Location 1, Max=, UPC_Ratio=7.0, Hemoglobin=4.0, Strength/Concentration=22.22, Reorder_Point=, Formulation=Enema, Other3=Other 3, Other2=Other 2, Other1=Other 1, ANC=2.0, Pharmacy_Drug=25-JUL-11-20-Pharm1-C, Bilirubin:_T-Bili=12.0, IVRS=Yes, Level_of_Accountability=Lot, Qty_per_Unit=48.0, Frequency=twice daily, Patient_Specific_Drug=No, Drug_Proto_SPID=25-JUL-11-20-PROT-SPID, Day_Supply=10.0, esignature=a1234, Drug_Name=25-JUL-11-20-Drg-Unit, Compounded_Med_Label=Sterile Compounded Medication, NSC_#=25-JUL-11-20-Drg-nsc1, ALT/SGPT=14.0, PLT's=3.0, Drug_Label_Name=25-JUL-11-20-Drg-dl1, Min=, Route=, 24-hour_Collection=6.0, Serum_Creatinine=11.0, Dose_on_Label=Take with water of 8oz, before food, Storage_Condition=Refrigerator, Unit_Type=Tube, Label_Template=Standard (w/ Lab), Drug_Protocol=25-JUL-11-20-PROT, Supplier_Name=25-JUL-11-Supplier-1, Unit_of_Measure=mEq, Track_By=Strength, Dipstick=5.0, Alternative_Drug_Name=25-JUL-11-20-Drg-adn1, To_Be_Linked=Yes, AST/SGOT=13.0}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Clicked the item: add-drug]]>
+            </line>
+            <line>
+              <![CDATA[Entered the value '25-JUL-11-20-Drg-Unit' in field 'drug-name']]>
+            </line>
+            <line>
+              <![CDATA[Selected the value 'Strength in field 'track-by']]>
+            </line>
+            <line>
+              <![CDATA[Entered the value '22.22' in field 'strength-concentration']]>
+            </line>
+            <line>
+              <![CDATA[Selected the value 'mEq in field 'unit-of-measure']]>
+            </line>
+            <line>
+              <![CDATA[Selected the value 'Enema in field 'formulation']]>
+            </line>
+            <line>
+              <![CDATA[Entered the value '25-JUL-11-20-Drg-dl1' in field 'drug-label-name']]>
+            </line>
+            <line>
+              <![CDATA[Entered the value '25-JUL-11-20-Drg-id1' in field 'drug-id']]>
+            </line>
+            <line>
+              <![CDATA[Entered the value '25-JUL-11-20-Drg-nsc1' in field 'drug-nsc']]>
+            </line>
+            <line>
+              <![CDATA[Entered the value '25-JUL-11-20-Drg-adn1' in field 'alternative-drug-name']]>
+            </line>
+            <line>
+              <![CDATA[Clicked the item: set-defaults]]>
+            </line>
+            <line>
+              <![CDATA['patient-specific-drug' is checked/ticked by default]]>
+            </line>
+            <line>
+              <![CDATA[ Input is Yes for the field 'ivrs' and Checkbox is unchecked by default, now checked/ticked successfully]]>
+            </line>
+            <line>
+              <![CDATA[Selected the value 'Yes in field 'to-be-linked']]>
+            </line>
+            <line>
+              <![CDATA[Selected the value 'Lot in field 'level-of-accountability']]>
+            </line>
+            <line>
+              <![CDATA[Selected the value 'Tube in field 'unit-type']]>
+            </line>
+            <line>
+              <![CDATA[Entered the value '48.0' in field 'qty-per-unit']]>
+            </line>
+            <line>
+              <![CDATA[Entered the value '25-JUL-11-Supplier-1' in field 'catalog-supplier-name']]>
+            </line>
+            <line>
+              <![CDATA[Selected the value 'Refrigerator in field 'storage-condition']]>
+            </line>
+            <line>
+              <![CDATA[Selected the value '25-JUL-11-20-Pharm1-C in field 'pharmacy']]>
+            </line>
+            <line>
+              <![CDATA[Selected the value 'Location 1 in field 'storage-location']]>
+            </line>
+            <line>
+              <![CDATA[Selected the value 'twice daily in field 'frequency']]>
+            </line>
+            <line>
+              <![CDATA[Entered the value 'Take with water of 8oz, before food' in field 'dose-on-label']]>
+            </line>
+            <line>
+              <![CDATA[Selected the value 'Standard (w/ Lab) in field 'label-template']]>
+            </line>
+            <line>
+              <![CDATA[Entered the value '10.0' in field 'day-supply']]>
+            </line>
+            <line>
+              <![CDATA[Selected the value 'Take With Food in field 'aux-label1']]>
+            </line>
+            <line>
+              <![CDATA[Selected the value 'Shake Well in field 'aux-label2']]>
+            </line>
+            <line>
+              <![CDATA[Selected the value 'Refrigerate in field 'aux-label3']]>
+            </line>
+            <line>
+              <![CDATA[Selected the value 'Chemotherapy Drug in field 'aux-label4']]>
+            </line>
+            <line>
+              <![CDATA[Clicked the item: add-drug]]>
+            </line>
+            <line>
+              <![CDATA[Entered the value '25-JUL-11-20-PROT' in field 'cat-prot-sear']]>
+            </line>
+            <line>
+              <![CDATA[Clicked the item: cat-prot-sear-ok]]>
+            </line>
+            <line>
+              <![CDATA[Entered the value 'a1234' in field 'catalog-esign']]>
+            </line>
+            <line>
+              <![CDATA[Clicked the item: catalog-submit]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- addCatalog -->
+        <test-method status="PASS" signature="verifyCatalog(java.util.Hashtable)[pri:9, instance:NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR@17c386de]" name="verifyCatalog" duration-ms="10886" started-at="2020-07-25T09:15:54 IST" data-provider="getData" depends-on-methods="NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR.addCatalog" finished-at="2020-07-25T09:16:05 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Aux_Label_6=, Aux_Label_5=, Aux_Label_4=Chemotherapy Drug, Drug_ID_#=25-JUL-11-20-Drg-id1, Aux_Label_3=Refrigerate, Status=, Aux_Label_2=Shake Well, Aux_Label_1=Take With Food, Storage_Location=Location 1, Max=, UPC_Ratio=7.0, Hemoglobin=4.0, Strength/Concentration=22.22, Reorder_Point=, Formulation=Enema, Other3=Other 3, Other2=Other 2, Other1=Other 1, ANC=2.0, Pharmacy_Drug=25-JUL-11-20-Pharm1-C, Bilirubin:_T-Bili=12.0, IVRS=Yes, Level_of_Accountability=Lot, Qty_per_Unit=48.0, Frequency=twice daily, Patient_Specific_Drug=No, Drug_Proto_SPID=25-JUL-11-20-PROT-SPID, Day_Supply=10.0, esignature=a1234, Drug_Name=25-JUL-11-20-Drg-Unit, Compounded_Med_Label=Sterile Compounded Medication, NSC_#=25-JUL-11-20-Drg-nsc1, ALT/SGPT=14.0, PLT's=3.0, Drug_Label_Name=25-JUL-11-20-Drg-dl1, Min=, Route=, 24-hour_Collection=6.0, Serum_Creatinine=11.0, Dose_on_Label=Take with water of 8oz, before food, Storage_Condition=Refrigerator, Unit_Type=Tube, Label_Template=Standard (w/ Lab), Drug_Protocol=25-JUL-11-20-PROT, Supplier_Name=25-JUL-11-Supplier-1, Unit_of_Measure=mEq, Track_By=Strength, Dipstick=5.0, Alternative_Drug_Name=25-JUL-11-20-Drg-adn1, To_Be_Linked=Yes, AST/SGOT=13.0}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Entered the value '25-JUL-11-20-Drg-Unit' in field 'catalog-tab-search']]>
+            </line>
+            <line>
+              <![CDATA[Catalog '25-JUL-11-20-Drg-Unit' found in the Catalog table]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyCatalog -->
+        <test-method status="FAIL" signature="addPatient(java.util.Hashtable)[pri:10, instance:NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR@17c386de]" name="addPatient" duration-ms="3194" started-at="2020-07-25T09:16:05 IST" data-provider="getData" depends-on-methods="NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR.addProtocol, NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR.addCatalog" finished-at="2020-07-25T09:16:08 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Patient_Study_ID=25-JUL-11-20-PAT1-STY, Gender=Female, Protocol_ID=25-JUL-11-20-PROT, Patient_Status=Active, Patient_Stop_Date=, Country=India, Patient_Start_Date=, Zip/Postal_Code=123456.0, Assigned_Drug=, esignature=a1234, Home_Phone(s)=098-098-978765, State=Tamil Nadu, Drug_Name=25-JUL-11-20-Drg, Patient_MRN=25-JUL-11-20-PAT1-1, Address_2=2nd Street, Address_1=11.0, PID=PID-002, Unit_of_Measure=mEq, Strength/Concentration=22.22, Patient_First_Name=25-JUL-11-20-FN, Patient_Last_Name=25-JUL-11-20-LN, Patient_DOB=11-10-1999, Cohort/Dose_Level=39.87, Email=ncoup@ncoup.com, Work_Phone(s)=7297932-899, City=Chennai}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
             <message>
-              <![CDATA[Method UbarloginCase.addDispense(java.util.Hashtable)[pri:12, instance:NostGroup.NostArtifact.TestCases.UbarloginCase@17c386de] depends on not successfully finished methods]]>
+              <![CDATA[Element <a href="javascript:menuMethod('Manage','pages/jsp/manage/Manage_Patient.jsp');"> could not be scrolled into view
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'CSEKARAITHENT', ip: '192.168.195.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_112'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 78.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200708170202, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 34620, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 112ed7d2-300c-4b5f-800a-75a09aff3766]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method UbarloginCase.addDispense(java.util.Hashtable)[pri:12, instance:NostGroup.NostArtifact.TestCases.UbarloginCase@17c386de] depends on not successfully finished methods
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: Element <a href="javascript:menuMethod('Manage','pages/jsp/manage/Manage_Patient.jsp');"> could not be scrolled into view
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'CSEKARAITHENT', ip: '192.168.195.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_112'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 78.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200708170202, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 34620, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 112ed7d2-300c-4b5f-800a-75a09aff3766
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at NostGroup.NostArtifact.Base.CommonMethods.click(CommonMethods.java:81)
+at NostGroup.NostArtifact.Manage.Patient.addPatient(Patient.java:33)
+at NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR.addPatient(IDSFlow_M_R_PR.java:90)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1249)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          <reporter-output>
+            <line>
+              <![CDATA[<br>addPatient: Failed]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href="D:\Jagan\NostAuto\NostCore\NostArtifact\Screenshots\Screenshot_Sat_Jul_25_09_16_11_IST_2020.jpg">ScreenShot</a>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- addPatient -->
+        <test-method status="SKIP" signature="verifyPatient(java.util.Hashtable)[pri:11, instance:NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR@17c386de]" name="verifyPatient" duration-ms="0" started-at="2020-07-25T09:16:11 IST" data-provider="getData" depends-on-methods="NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR.addPatient" finished-at="2020-07-25T09:16:11 IST">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method IDSFlow_M_R_PR.verifyPatient(java.util.Hashtable)[pri:11, instance:NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR@17c386de] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method IDSFlow_M_R_PR.verifyPatient(java.util.Hashtable)[pri:11, instance:NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR@17c386de] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:101)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1249)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPatient -->
+        <test-method status="PASS" signature="commonReceive(java.util.Hashtable)[pri:12, instance:NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR@17c386de]" name="commonReceive" duration-ms="20492" started-at="2020-07-25T09:16:11 IST" data-provider="getData" depends-on-methods="NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR.addProtocol" finished-at="2020-07-25T09:16:32 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Receive_Protocol_ID=25-JUL-11-20-PROT, Receive_Drug_name=wewdw, Lot_#=QWERT-LT-01, Formulation=, Range_End=25.0, Unit_Type=, esignature=a1234, Level_of_Accountability=, Receive_Storage_Location=, Drug_Name=25-JUL-11-20-Drg-Unit, Expiration_Date=05-05-2021, Receive_Pharmacy=, Range_Start=10.0, IVRS=, Comment=Receving Drug, Unit_of_Measure=mEq, Total_Qty=209.0, Strength/Concentration=22.22, Patient_Specific_Drug=, Receive_Storage_Condition=, Supplier_Name=, Qty_per_Unit=25.0, Static_ID=ZAP-U1-}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Clicked the item: receive-add]]>
+            </line>
+            <line>
+              <![CDATA[Entered the value '25-JUL-11-20-PROT' in field 'receive-protocol-id']]>
+            </line>
+            <line>
+              <![CDATA[Entered the value 'QWERT-LT-01' in field 'receive-lot']]>
+            </line>
+            <line>
+              <![CDATA[Entered the value '05-05-2021' in field 'receive-expiration-date']]>
+            </line>
+            <line>
+              <![CDATA[Entered the value '209.0' in field 'receive-total-qty']]>
+            </line>
+            <line>
+              <![CDATA[Entered the value 'Receving Drug' in field 'receive-comment']]>
+            </line>
+            <line>
+              <![CDATA[Clicked the item: receive-save]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- commonReceive -->
+        <test-method status="PASS" signature="submitqueueReceive(java.util.Hashtable)[pri:13, instance:NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR@17c386de]" name="submitqueueReceive" duration-ms="19063" started-at="2020-07-25T09:16:32 IST" data-provider="getData" depends-on-methods="NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR.commonReceive" finished-at="2020-07-25T09:16:51 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Receive_Protocol_ID=25-JUL-11-20-PROT, Receive_Drug_name=wewdw, Lot_#=QWERT-LT-01, Formulation=, Range_End=25.0, Unit_Type=, esignature=a1234, Level_of_Accountability=, Receive_Storage_Location=, Drug_Name=25-JUL-11-20-Drg-Unit, Expiration_Date=05-05-2021, Receive_Pharmacy=, Range_Start=10.0, IVRS=, Comment=Receving Drug, Unit_of_Measure=mEq, Total_Qty=209.0, Strength/Concentration=22.22, Patient_Specific_Drug=, Receive_Storage_Condition=, Supplier_Name=, Qty_per_Unit=25.0, Static_ID=ZAP-U1-}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Clicked the item: receive-menu]]>
+            </line>
+            <line>
+              <![CDATA[Entered the value '25-JUL-11-20-PROT' in field 'rec-tab-search']]>
+            </line>
+            <line>
+              <![CDATA[Entered the value 'a1234' in field 'receive-edit']]>
+            </line>
+            <line>
+              <![CDATA[Clicked the item: receive-submit]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- submitqueueReceive -->
+        <test-method status="FAIL" signature="commonTransferToPharmacy(java.util.Hashtable)[pri:14, instance:NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR@17c386de]" name="commonTransferToPharmacy" duration-ms="38194" started-at="2020-07-25T09:16:51 IST" data-provider="getData" depends-on-methods="NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR.commonReceive" finished-at="2020-07-25T09:17:29 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Total_Qty_to_Drug_Transfer-Lot=10.0, esignature=a1234, Trans_from_Pharmacy=25-JUL-11-20-Pharm1-C, Drug_Name=25-JUL-11-20-Drg-Unit, Trans_To_Pharmacy=25-JUL-9-20-Pharm1-C, Transfer_Lot_#=QWERT-LT-01, Unit_of_Measure=mEq, Strength/Concentration=22.22, Unit#4=, Unit#3=, From_Storage_location=Location 1, Transfer_Protocol_ID=25-JUL-11-20-PROT, Unit#2=, Unit#1=ZAP-U1-0018, Number_of_units_to_be_transferred=, To_Storage_Location=Location 1, Transfer_comment=Transfer comments, Transfer_Drug_ID=23232.0}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Cannot locate element with text: 25-JUL-9-20-Pharm1-C
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'CSEKARAITHENT', ip: '192.168.195.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_112'
+Driver info: driver.version: unknown]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate element with text: 25-JUL-9-20-Pharm1-C
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'CSEKARAITHENT', ip: '192.168.195.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_112'
+Driver info: driver.version: unknown
+at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:147)
+at NostGroup.NostArtifact.Base.CommonMethods.selectText(CommonMethods.java:132)
+at NostGroup.NostArtifact.Transfer.TransferToPharmacy.transferCommon(TransferToPharmacy.java:66)
+at NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR.commonTransferToPharmacy(IDSFlow_M_R_PR.java:121)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1249)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+            <line>
+              <![CDATA[Clicked the item: trans-to-pharm]]>
+            </line>
+            <line>
+              <![CDATA[Entered the value '25-JUL-11-20-PROT' in field 'trans-protocol-id']]>
+            </line>
+            <line>
+              <![CDATA[Selected the value '25-JUL-11-20-Pharm1-C in field 'trans-fro-pharmacy']]>
+            </line>
+            <line>
+              <![CDATA[Selected the value 'Location 1 in field 'trans-from-sto-location']]>
+            </line>
+            <line>
+              <![CDATA[<br>commonTransferToPharmacy: Failed]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href="D:\Jagan\NostAuto\NostCore\NostArtifact\Screenshots\Screenshot_Sat_Jul_25_09_17_32_IST_2020.jpg">ScreenShot</a>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- commonTransferToPharmacy -->
+        <test-method status="SKIP" signature="addDispense(java.util.Hashtable)[pri:15, instance:NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR@17c386de]" name="addDispense" duration-ms="0" started-at="2020-07-25T09:17:32 IST" data-provider="getData" depends-on-methods="NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR.commonTransferToPharmacy" finished-at="2020-07-25T09:17:32 IST">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method IDSFlow_M_R_PR.addDispense(java.util.Hashtable)[pri:15, instance:NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR@17c386de] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method IDSFlow_M_R_PR.addDispense(java.util.Hashtable)[pri:15, instance:NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR@17c386de] depends on not successfully finished methods
 at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:101)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
@@ -1496,103 +1350,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addDispense -->
-        <test-method status="SKIP" signature="ubarLogin2(java.util.Hashtable)[pri:13, instance:NostGroup.NostArtifact.TestCases.UbarloginCase@17c386de]" name="ubarLogin2" duration-ms="0" started-at="2020-07-11T17:10:50 IST" data-provider="getData" depends-on-methods="NostGroup.NostArtifact.TestCases.UbarloginCase.addDispense" finished-at="2020-07-11T17:10:50 IST">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method UbarloginCase.ubarLogin2(java.util.Hashtable)[pri:13, instance:NostGroup.NostArtifact.TestCases.UbarloginCase@17c386de] depends on not successfully finished methods]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method UbarloginCase.ubarLogin2(java.util.Hashtable)[pri:13, instance:NostGroup.NostArtifact.TestCases.UbarloginCase@17c386de] depends on not successfully finished methods
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:101)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(ArrayList.java:1249)
-at org.testng.TestRunner.privateRun(TestRunner.java:766)
-at org.testng.TestRunner.run(TestRunner.java:587)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-at org.testng.TestNG.runSuites(TestNG.java:1039)
-at org.testng.TestNG.run(TestNG.java:1007)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ubarLogin2 -->
-        <test-method status="SKIP" signature="verifyServicedEntity(java.util.Hashtable)[pri:14, instance:NostGroup.NostArtifact.TestCases.UbarloginCase@17c386de]" name="verifyServicedEntity" duration-ms="0" started-at="2020-07-11T17:10:50 IST" data-provider="getData" depends-on-methods="NostGroup.NostArtifact.TestCases.UbarloginCase.addDispense" finished-at="2020-07-11T17:10:50 IST">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method UbarloginCase.verifyServicedEntity(java.util.Hashtable)[pri:14, instance:NostGroup.NostArtifact.TestCases.UbarloginCase@17c386de] depends on not successfully finished methods]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method UbarloginCase.verifyServicedEntity(java.util.Hashtable)[pri:14, instance:NostGroup.NostArtifact.TestCases.UbarloginCase@17c386de] depends on not successfully finished methods
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:101)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(ArrayList.java:1249)
-at org.testng.TestRunner.privateRun(TestRunner.java:766)
-at org.testng.TestRunner.run(TestRunner.java:587)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-at org.testng.TestNG.runSuites(TestNG.java:1039)
-at org.testng.TestNG.run(TestNG.java:1007)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyServicedEntity -->
-        <test-method status="SKIP" signature="verifyReviewCharges(java.util.Hashtable)[pri:15, instance:NostGroup.NostArtifact.TestCases.UbarloginCase@17c386de]" name="verifyReviewCharges" duration-ms="0" started-at="2020-07-11T17:10:50 IST" data-provider="getData" depends-on-methods="NostGroup.NostArtifact.TestCases.UbarloginCase.addDispense" finished-at="2020-07-11T17:10:50 IST">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method UbarloginCase.verifyReviewCharges(java.util.Hashtable)[pri:15, instance:NostGroup.NostArtifact.TestCases.UbarloginCase@17c386de] depends on not successfully finished methods]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method UbarloginCase.verifyReviewCharges(java.util.Hashtable)[pri:15, instance:NostGroup.NostArtifact.TestCases.UbarloginCase@17c386de] depends on not successfully finished methods
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:101)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(ArrayList.java:1249)
-at org.testng.TestRunner.privateRun(TestRunner.java:766)
-at org.testng.TestRunner.run(TestRunner.java:587)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-at org.testng.TestNG.runSuites(TestNG.java:1039)
-at org.testng.TestNG.run(TestNG.java:1007)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyReviewCharges -->
-      </class> <!-- NostGroup.NostArtifact.TestCases.UbarloginCase -->
-    </test> <!-- IDS UBAR Integration -->
-  </suite> <!-- Nostradamus Suite -->
+      </class> <!-- NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR -->
+    </test> <!-- dispense Creation -->
+  </suite> <!-- Suite -->
 </testng-results>

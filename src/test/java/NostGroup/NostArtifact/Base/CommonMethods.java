@@ -283,8 +283,73 @@ public class CommonMethods {
 		
 		System.out.println(findelement_out);
 		return findelement_out;
-	}	
+	}
+	
+	public static void tableCommon(String tab_loc_ref,String table_id,String entity_type,String entity_value,int col_text,int col_click,String action) {
+		
+		WebElement table_ref=find_element(tab_loc_ref,"id");
+		
+		List<WebElement> tab_row=Driver.findElements(By.xpath(("//table[@id='"+table_id+"']/tbody/tr")));
+		System.out.println(tab_row.size());
+		
+		List<WebElement> tab_col=Driver.findElements(By.xpath(("//table[@id='"+table_id+"']/tbody/tr[1]/td")));
+		System.out.println(tab_col.size());
+		//String entity_item=data.get(entity_value);
+		
+		if(table_ref.isDisplayed() && tab_col.size()>1) {
+		
+		if(tab_row.size()>=1)
+		{
+			System.out.println("Inside Tabular row If");
+		
+		for(int row=1;row<=tab_row.size();row++) {
+			
+				System.out.println("Inside Tabular row For loop");
+				String tab_comp_value=Driver.findElement(By.xpath("//table[@id='"+table_id+"']/tbody/tr["+row+"]/td["+col_text+"]")).getText();
+				if(tab_comp_value.equalsIgnoreCase(entity_value)) {	
+						if(action.equalsIgnoreCase("verify")) {
+					//Driver.findElement(By.xpath("//table[@id='"+element_ref+"']/tbody/tr["+row+"]/td["+col_click+"]")).click();
+					System.out.println(entity_type+" "+entity_value+" found");
+					extest.log(LogStatus.PASS,entity_type+" '"+entity_value+"' found in the "+entity_type+" table");
+					log.info(entity_type+" '"+entity_value+"' found in the "+entity_type+" table");
+					Reporter.log(entity_type+" '"+entity_value+"' found in the "+entity_type+" table");
+						} else if(action.equalsIgnoreCase("click")) {
+							
+							Driver.findElement(By.xpath("//table[@id='"+table_id+"']/tbody/tr["+row+"]/td["+col_click+"]")).click();
+							System.out.println(entity_type+" "+entity_value+" found in the table to click");
+							extest.log(LogStatus.PASS,entity_type+" '"+entity_value+"' found in the "+entity_type+" table to click");
+							log.info(entity_type+" '"+entity_value+"' found in the "+entity_type+" table to click");
+							Reporter.log(entity_type+" '"+entity_value+"' found in the "+entity_type+" table to click");
+						}
+					break;
+				} else if(tab_comp_value.contains(entity_value))	{
+					
+					System.out.println("Partial match found");
+					extest.log(LogStatus.WARNING,"One of the "+entity_type+" '"+tab_comp_value+"' contains '"+entity_value+"' found,but not the exact match");
+					log.info("One of the "+entity_type+" '"+tab_comp_value+"' contains '"+entity_value+"' found,but not the exact match");
+					Reporter.log("One of the "+entity_type+" '"+tab_comp_value+"' contains '"+entity_value+"' found,but not the exact match");
+				}
+	}
 
+	} else {
+		System.out.println("Tabular entity not found, Wrong Search");
+		extest.log(LogStatus.FAIL,entity_type+" '"+entity_value+"' not found in "+entity_type+" table");
+		log.info(entity_type+" '"+entity_value+"' not found in "+entity_type+" table");
+		Reporter.log(entity_type+" '"+entity_value+"' not found in "+entity_type+" table");
+		Assert.fail(entity_type+" '"+entity_value+"' not found in "+entity_type+" table");
+	}
+		
+		}else {
+			
+			System.out.println(entity_type+" '"+entity_value+"' not found, Table not Displayed");
+			extest.log(LogStatus.FAIL,entity_type+" '"+entity_value+"' not found in "+entity_type+" table");
+			log.info(entity_type+" '"+entity_value+"' not found in "+entity_type+" table");
+			Reporter.log(entity_type+" '"+entity_value+"' not found in "+entity_type+" table");
+			Assert.fail(entity_type+" '"+entity_value+"' not found in "+entity_type+" table");
+		}
+
+	}
+	
 	
 	public String getSign(Hashtable<String,String> data) {
 
