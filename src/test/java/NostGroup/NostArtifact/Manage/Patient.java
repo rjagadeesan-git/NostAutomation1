@@ -102,11 +102,11 @@ public class Patient extends CommonMethods{
 	
 	public void patientVerifyTable(Hashtable<String,String> data) throws InterruptedException, AWTException {
 			
-		ex_wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id='Manage']")));
-		action.moveToElement(find_element("manage-menu","xpath")).perform();	
-		Thread.sleep(3000);
-		click("patient-menu","csssele");
-		Thread.sleep(2000);	
+//		ex_wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id='Manage']")));
+//		action.moveToElement(find_element("manage-menu","xpath")).perform();	
+//		Thread.sleep(3000);
+//		click("patient-menu","csssele");
+//		Thread.sleep(2000);	
 		
 		Robot robo1=new Robot();
 		Thread.sleep(3000);

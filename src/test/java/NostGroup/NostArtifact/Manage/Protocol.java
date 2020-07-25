@@ -124,12 +124,12 @@ public class Protocol extends CommonMethods{
 	public void protocolVerify(Hashtable<String,String> data) throws AWTException, InterruptedException {
 		
 		
-		ex_wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id='Manage']")));
-		action.moveToElement(Driver.findElement(By.xpath("//*[@id='Manage']"))).perform();
-		
-		ex_wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("/html/body/div[1]/section[1]/div/div/table/tbody/tr/td/div[2]/div[3]/table/tbody/tr/th/table/tbody/tr[2]/td/ul/li/a")));
-		click("protocol","csssele");
-		Thread.sleep(2000);
+//		ex_wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id='Manage']")));
+//		action.moveToElement(Driver.findElement(By.xpath("//*[@id='Manage']"))).perform();
+//		
+//		ex_wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("/html/body/div[1]/section[1]/div/div/table/tbody/tr/td/div[2]/div[3]/table/tbody/tr/th/table/tbody/tr[2]/td/ul/li/a")));
+//		click("protocol","csssele");
+//		Thread.sleep(2000);
 		
 		Robot robo1=new Robot();
 		Thread.sleep(3000);

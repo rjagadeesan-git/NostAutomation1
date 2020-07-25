@@ -40,6 +40,7 @@ public class IDSFlow_M_R_PR extends BrowserAct{
 	public void verifyProtocol(Hashtable<String,String> data) throws InterruptedException, IOException, AWTException {
 		Protocol prot=new Protocol();
 		prot.protocolVerify(data);
+		
 	
 		}
 

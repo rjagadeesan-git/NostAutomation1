@@ -60,11 +60,11 @@ public class Supplier extends CommonMethods{
 	
 	public void supplierVerifyTable(Hashtable<String,String> data) throws InterruptedException, AWTException {
 		
-		ex_wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id='Manage']")));
-		action.moveToElement(find_element("manage-menu","xpath")).perform();
-		Thread.sleep(2000);
-		click("organization","csssele");
-		System.out.println("Page loaded");
+//		ex_wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id='Manage']")));
+//		action.moveToElement(find_element("manage-menu","xpath")).perform();
+//		Thread.sleep(2000);
+//		click("organization","csssele");
+//		System.out.println("Page loaded");
 		Thread.sleep(2000);
 		selectText("organization-selection","id",data.get("Organization"));
 		Thread.sleep(3000);
