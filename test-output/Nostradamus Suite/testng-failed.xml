@@ -8,20 +8,12 @@
   </listeners>
   <test thread-count="5" name="IDS UBAR Integration(failed)">
     <classes>
-      <class name="NostGroup.NostArtifact.TestCases.UbarloginCase">
+      <class name="NostGroup.NostArtifact.TestCases.UbarTest">
         <methods>
-          <include name="addDispense"/>
-          <include name="addProtocol"/>
-          <include name="verifyReviewCharges" invocation-numbers="0"/>
-          <include name="addPatient"/>
           <include name="browserLaunch"/>
-          <include name="addCatalog"/>
-          <include name="verifyServiceMaster"/>
-          <include name="nostLogin"/>
-          <include name="verifyServicedEntity" invocation-numbers="0"/>
-          <include name="verifyCPP"/>
+          <include name="verifyCPP" invocation-numbers="0"/>
         </methods>
-      </class> <!-- NostGroup.NostArtifact.TestCases.UbarloginCase -->
+      </class> <!-- NostGroup.NostArtifact.TestCases.UbarTest -->
     </classes>
   </test> <!-- IDS UBAR Integration(failed) -->
 </suite> <!-- Failed suite [Nostradamus Suite] -->

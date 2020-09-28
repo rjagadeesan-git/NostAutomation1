@@ -1,24 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Nostradamus Suite]">
   <listeners>
     <listener class-name="NostGroup.NostArtifact.Base.Listeners"/>
     <listener class-name="org.uncommons.reportng.HTMLReporter"/>
     <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
   </listeners>
-  <test thread-count="5" name="dispense Creation(failed)">
+  <test thread-count="5" name="IDS UBAR Integration(failed)">
     <classes>
-      <class name="NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR">
+      <class name="NostGroup.NostArtifact.TestCases.UbarTest">
         <methods>
-          <include name="addDispense"/>
-          <include name="commonReceive"/>
           <include name="browserLaunch"/>
-          <include name="nostLogin"/>
-          <include name="addProtocol"/>
-          <include name="submitqueueReceive"/>
-          <include name="commonTransferToPharmacy" invocation-numbers="0"/>
+          <include name="verifyCPP" invocation-numbers="0"/>
         </methods>
-      </class> <!-- NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR -->
+      </class> <!-- NostGroup.NostArtifact.TestCases.UbarTest -->
     </classes>
-  </test> <!-- dispense Creation(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- IDS UBAR Integration(failed) -->
+</suite> <!-- Failed suite [Nostradamus Suite] -->

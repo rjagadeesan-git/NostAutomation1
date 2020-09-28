@@ -9,6 +9,7 @@ import java.util.List;
 import java.util.Set;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.Reporter;
@@ -107,7 +108,7 @@ if(cpp_plan_tabu.isDisplayed() && cpp_plan_tab_col.size()>1) { //Plan table disp
 								System.out.println(Driver.findElement(By.xpath("//table[@id='attachCppPayerTableData']/tbody/tr["+row1+"]/td[3]")).getTagName());
 								System.out.println(Driver.findElement(By.xpath("//table[@id='attachCppPayerTableData']/tbody/tr["+row1+"]/td[3]")).getText());
 								Driver.findElement(By.xpath("//table[@id='attachCppPayerTableData']/tbody/tr["+row1+"]/td[3]")).click();
-								Thread.sleep(15000);
+								Thread.sleep(15000); //15000
 								 System.out.println("Payer selected from Existing Payer list");
 								 extest.log(LogStatus.PASS,"Payer '"+payer_id+"' selected from existing Payer's list successfully");
 									log.info("Payer '"+payer_id+"' selected from existing Payer's list successfully");
@@ -482,10 +483,12 @@ if(cpp_plan_tabu.isDisplayed() && cpp_plan_tab_col.size()>1) { //Plan table disp
 								click("cpp-cdm-quantity-based","id");
 								type("cpp-cdm-service-price","id",data.get("cpp-cdm-service-price"));
 								//Pending
-								Thread.sleep(15000);
-//								 WebElement cpp_cdm_price_eff_from=find_element("cpp-cdm-price-eff-from","id");
+								Thread.sleep(2000);
+								((JavascriptExecutor)Driver).executeScript ("document.getElementById('effFromDt').removeAttribute('readonly',0);"); // Enables the from date box
+							 WebElement cpp_cdm_price_eff_from=find_element("cpp-cdm-price-eff-from","id");
 //								 WebElement cpp_cdm_price_eff_to=find_element("cpp-cdm-price-eff-to","id");
-//								 cpp_cdm_price_eff_from.sendKeys(data.get("cpp-cdm-price-eff-from"));
+							 cpp_cdm_price_eff_from.clear();
+							 cpp_cdm_price_eff_from.sendKeys(data.get("cpp-cdm-price-eff-from"));
 //								 cpp_cdm_price_eff_to.sendKeys(data.get("cpp-cdm-price-eff-to"));
 								click("cpp-cdm-save","csssele");
 								Thread.sleep(2000);
