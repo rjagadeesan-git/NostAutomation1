@@ -11,12 +11,12 @@
       <class name="NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR">
         <methods>
           <include name="addDispense"/>
-          <include name="commonReceive"/>
+          <include name="commonReceive" invocation-numbers="0"/>
           <include name="browserLaunch"/>
           <include name="nostLogin"/>
           <include name="addProtocol"/>
           <include name="submitqueueReceive"/>
-          <include name="commonTransferToPharmacy" invocation-numbers="0"/>
+          <include name="commonTransferToPharmacy"/>
         </methods>
       </class> <!-- NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR -->
     </classes>

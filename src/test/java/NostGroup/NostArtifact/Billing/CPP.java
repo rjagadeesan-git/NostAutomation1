@@ -77,9 +77,11 @@ if(cpp_plan_tabu.isDisplayed() && cpp_plan_tab_col.size()>1) { //Plan table disp
 				cpp_plan_tab_payer.findElement(By.cssSelector("button.btn:nth-child(3)")).click();
 				click("cpp-payer-search-icon","csssele");
 				Thread.sleep(2000);
-				type("cpp-attach-payer-search","id",data.get("cpp-attach-payer-search"));
 				//type("cpp-attach-payer-search","id",data.get("cpp-attach-payer-search"));
-				click("cpp-add-new-payer-search","csssele");
+				type("cpp-payer-search-result-search-bar","csssele",data.get("cpp-attach-payer-search"));
+				Thread.sleep(2000);
+				//type("cpp-attach-payer-search","id",data.get("cpp-attach-payer-search"));
+				//click("cpp-add-new-payer-search","csssele");
 				
 				Thread.sleep(3000);
 				
@@ -105,10 +107,17 @@ if(cpp_plan_tabu.isDisplayed() && cpp_plan_tab_col.size()>1) { //Plan table disp
 							if(cpp_add_new_payer_tab_com.equalsIgnoreCase(payer_id)) { // CPP Existing Payer present in table search, If start 
 								System.out.println("Inside Payer equals If");	
 								Thread.sleep(2000);
-								System.out.println(Driver.findElement(By.xpath("//table[@id='attachCppPayerTableData']/tbody/tr["+row1+"]/td[3]")).getTagName());
-								System.out.println(Driver.findElement(By.xpath("//table[@id='attachCppPayerTableData']/tbody/tr["+row1+"]/td[3]")).getText());
-								Driver.findElement(By.xpath("//table[@id='attachCppPayerTableData']/tbody/tr["+row1+"]/td[3]")).click();
-								Thread.sleep(15000); //15000
+								System.out.println(Driver.findElement(By.xpath("//table[@id='attachCppPayerTableData']/tbody/tr["+row1+"]/td[2]")).getTagName());
+								System.out.println(Driver.findElement(By.xpath("//table[@id='attachCppPayerTableData']/tbody/tr["+row1+"]/td[2]")).getText());
+//								Driver.switchTo().activeElement().getText();
+//								System.out.println(Driver.switchTo().activeElement().getText());
+								action.moveToElement(Driver.findElement(By.xpath("//table[@id='attachCppPayerTableData']/tbody/tr["+row1+"]/td[2]"))).perform();
+								Driver.switchTo().activeElement().getText();
+								System.out.println(Driver.switchTo().activeElement().getText());
+								Thread.sleep(3000);
+								Driver.findElement(By.xpath("//table[@id='attachCppPayerTableData']/tbody/tr["+row1+"]/td[2]")).click();
+								System.out.println("Select the Payer now");
+								Thread.sleep(10000); //15000
 								 System.out.println("Payer selected from Existing Payer list");
 								 extest.log(LogStatus.PASS,"Payer '"+payer_id+"' selected from existing Payer's list successfully");
 									log.info("Payer '"+payer_id+"' selected from existing Payer's list successfully");
@@ -117,7 +126,6 @@ if(cpp_plan_tabu.isDisplayed() && cpp_plan_tab_col.size()>1) { //Plan table disp
 									click("cpp-attach-payer","csssele");
 									Thread.sleep(2000);
 									robo1.keyPress(KeyEvent.VK_ENTER);
-									
 									Thread.sleep(3000);
 									
 									// Adding CDM 
@@ -209,7 +217,8 @@ if(cpp_plan_tabu.isDisplayed() && cpp_plan_tab_col.size()>1) { //Plan table disp
 												if(cpp_add_new_payer_tab_com1.equalsIgnoreCase(payer_id)) { //New Payer click present check, If- Start
 													
 													Driver.findElement(By.xpath("//table[@id='attachCppPayerTableData']/tbody/tr["+row1+"]/td[2]")).click();
-													Thread.sleep(2000);
+													System.out.println("Select the New Payer added to Proceed");
+													Thread.sleep(10000);
 													 System.out.println("New Payer added and selected from the List");
 													 extest.log(LogStatus.PASS,"New Payer '"+payer_id+"' added and selected from Payer's list successfully");
 														log.info("New Payer '"+payer_id+"' added and selected from Payer's list successfully");
@@ -325,7 +334,8 @@ if(cpp_plan_tabu.isDisplayed() && cpp_plan_tab_col.size()>1) { //Plan table disp
 										
 										Thread.sleep(2000);
 										Driver.findElement(By.xpath("//table[@id='attachCppPayerTableData']/tbody/tr["+row5+"]/td[2]")).click();
-										Thread.sleep(2000);
+										System.out.println("Select the New Payer added to Proceed");
+										Thread.sleep(10000);
 										 System.out.println("New Payer added and selected from the List");
 										 extest.log(LogStatus.PASS,"New Payer '"+payer_id+"' added and selected from Payer's list successfully");
 											log.info("New Payer '"+payer_id+"' added and selected from Payer's list successfully");
@@ -482,13 +492,13 @@ if(cpp_plan_tabu.isDisplayed() && cpp_plan_tab_col.size()>1) { //Plan table disp
 		// Write the CPP CDM addition steps
 								click("cpp-cdm-quantity-based","id");
 								type("cpp-cdm-service-price","id",data.get("cpp-cdm-service-price"));
-								//Pending
-								Thread.sleep(2000);
-								((JavascriptExecutor)Driver).executeScript ("document.getElementById('effFromDt').removeAttribute('readonly',0);"); // Enables the from date box
-							 WebElement cpp_cdm_price_eff_from=find_element("cpp-cdm-price-eff-from","id");
+								System.out.println("Enter the Price manually to proceed adding CDM");
+								Thread.sleep(15000);
+//								((JavascriptExecutor)Driver).executeScript ("document.getElementById('effFromDt').removeAttribute('readonly',0);"); // Enables the from date box
+//							 WebElement cpp_cdm_price_eff_from=find_element("cpp-cdm-price-eff-from","id");
 //								 WebElement cpp_cdm_price_eff_to=find_element("cpp-cdm-price-eff-to","id");
-							 cpp_cdm_price_eff_from.clear();
-							 cpp_cdm_price_eff_from.sendKeys(data.get("cpp-cdm-price-eff-from"));
+//							 cpp_cdm_price_eff_from.clear();
+//							 cpp_cdm_price_eff_from.sendKeys(data.get("cpp-cdm-price-eff-from"));
 //								 cpp_cdm_price_eff_to.sendKeys(data.get("cpp-cdm-price-eff-to"));
 								click("cpp-cdm-save","csssele");
 								Thread.sleep(2000);
