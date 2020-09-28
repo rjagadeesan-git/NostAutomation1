@@ -65,12 +65,12 @@ public class UBARLogin extends CommonMethods{
     
     Robot robo1=new Robot();
 	Thread.sleep(2000);
-	robo1.keyPress(KeyEvent.VK_CONTROL);
-	robo1.keyPress(KeyEvent.VK_MINUS);
-	Thread.sleep(2000);
-	robo1.keyPress(KeyEvent.VK_MINUS);
-	robo1.keyRelease(KeyEvent.VK_CONTROL);
-	Thread.sleep(2000);
+//	robo1.keyPress(KeyEvent.VK_CONTROL);
+//	robo1.keyPress(KeyEvent.VK_MINUS);
+//	Thread.sleep(2000);
+//	robo1.keyPress(KeyEvent.VK_MINUS);
+//	robo1.keyRelease(KeyEvent.VK_CONTROL);
+//	Thread.sleep(2000);
 //    Reporter.log("logged in successfully...");
     //Assert.fail("Failing for Sake");
     

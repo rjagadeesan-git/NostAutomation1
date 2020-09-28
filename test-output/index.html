@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Nostradamus_Suite">
-              <span class="suite-name border-passed">Nostradamus Suite</span>
+              <span class="suite-name border-failed">Nostradamus Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Nostradamus_Suite">
-                    <span>D:\Jagan\NostAuto\NostCore\NostArtifact\TestNG-xmls\testng_UbarTest.xml</span>
+                    <span>D:\Jagan\NostAuto\NostCore\NostArtifact\TestNG-xmls\testng_UbarLogin.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">18 methods, 2 failed,   16 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Nostradamus_Suite" class="hide-methods failed suite-Nostradamus_Suite"> (hide)</a> <!-- hide-methods failed suite-Nostradamus_Suite -->
+                      <a href="#" panel-name="suite-Nostradamus_Suite" class="show-methods failed suite-Nostradamus_Suite"> (show)</a> <!-- show-methods failed suite-Nostradamus_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Nostradamus_Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Nostradamus_Suite" title="NostGroup.NostArtifact.TestCases.UbarloginCase" hash-for-method="verifyReviewCharges({review-charges-drug=28-SEP-08-20-Drg 22.22 mEq(Enema), review-charges-billing-status=Billable, revi...)">verifyReviewCharges({review-charges-drug=28-SEP-08-20-Drg 22.22 mEq(Enema), review-charges-billing-status=Billable, revi...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Nostradamus_Suite" title="NostGroup.NostArtifact.TestCases.UbarloginCase" hash-for-method="verifyServicedEntity({review-charges-billing-status=, review-charges-status=Pending Review, serviced-first-name=28-SEP-08...)">verifyServicedEntity({review-charges-billing-status=, review-charges-status=Pending Review, serviced-first-name=28-SEP-08...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Nostradamus_Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,12 +121,82 @@
                     <div class="method-list-content passed suite-Nostradamus_Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Nostradamus_Suite" title="NostGroup.NostArtifact.TestCases.UbarTest" hash-for-method="ubarLogin({PassWord=aithentchn, rundata=Y, UserName=admin, e-Signature=a1234})">ubarLogin({PassWord=aithentchn, rundata=Y, UserName=admin, e-Signature=a1234})</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Nostradamus_Suite" title="NostGroup.NostArtifact.TestCases.UbarloginCase" hash-for-method="addCatalog({Aux_Label_6=, Aux_Label_5=, Aux_Label_4=Chemotherapy Drug, Drug_ID_#=28-SEP-08-20-Drg-DID1, Aux_Lab...)">addCatalog({Aux_Label_6=, Aux_Label_5=, Aux_Label_4=Chemotherapy Drug, Drug_ID_#=28-SEP-08-20-Drg-DID1, Aux_Lab...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Nostradamus_Suite" title="NostGroup.NostArtifact.TestCases.UbarTest" hash-for-method="verifyCPP({cpp-cdm-price-eff-to=30-Sep-2020, cpp-cdm-plan-search=, cpp-cdm-service-name=14-SEP-11-20-Drg-ed, c...)">verifyCPP({cpp-cdm-price-eff-to=30-Sep-2020, cpp-cdm-plan-search=, cpp-cdm-service-name=14-SEP-11-20-Drg-ed, c...)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Nostradamus_Suite" title="NostGroup.NostArtifact.TestCases.UbarloginCase" hash-for-method="addDispense({label-pharmacy-address=, label-pt-Study-id=, dispense-pharmacy=16-JUN-3-20-Pharm1-C, dispense-unit-...)">addDispense({label-pharmacy-address=, label-pt-Study-id=, dispense-pharmacy=16-JUN-3-20-Pharm1-C, dispense-unit-...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Nostradamus_Suite" title="NostGroup.NostArtifact.TestCases.UbarloginCase" hash-for-method="addPatient({Patient_Study_ID=28-SEP-08-20-PAT1-STY, Gender=Female, Protocol_ID=28-SEP-08-20-PROT, Patient_Statu...)">addPatient({Patient_Study_ID=28-SEP-08-20-PAT1-STY, Gender=Female, Protocol_ID=28-SEP-08-20-PROT, Patient_Statu...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Nostradamus_Suite" title="NostGroup.NostArtifact.TestCases.UbarloginCase" hash-for-method="addPharmacy({NCI_Record=Control, Grant_Control_Rights?=Yes, Disable_Dispensing/Par_Level_4=No, Disable_Dispensin...)">addPharmacy({NCI_Record=Control, Grant_Control_Rights?=Yes, Disable_Dispensing/Par_Level_4=No, Disable_Dispensin...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Nostradamus_Suite" title="NostGroup.NostArtifact.TestCases.UbarloginCase" hash-for-method="addProtocol({Service=Both, OP_Investigator_ID=Op-Inv-ID-02, Protocol_Phase_Start_Date=04-01-2020, Site_Number=ST...)">addProtocol({Service=Both, OP_Investigator_ID=Op-Inv-ID-02, Protocol_Phase_Start_Date=04-01-2020, Site_Number=ST...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Nostradamus_Suite" title="NostGroup.NostArtifact.TestCases.UbarloginCase" hash-for-method="addSupplier({Supplier_Name_3=28-SEP-08-20-Supplier-3, Supplier_Name_2=28-SEP-08-20-Supplier-2, Organization=Supp...)">addSupplier({Supplier_Name_3=28-SEP-08-20-Supplier-3, Supplier_Name_2=28-SEP-08-20-Supplier-2, Organization=Supp...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Nostradamus_Suite" title="NostGroup.NostArtifact.TestCases.UbarloginCase" hash-for-method="commonReceive({Receive_Protocol_ID=28-SEP-08-20-PROT, Receive_Drug_name=wewdw, Lot_#=586.iu45-LT3, Formulation=, R...)">commonReceive({Receive_Protocol_ID=28-SEP-08-20-PROT, Receive_Drug_name=wewdw, Lot_#=586.iu45-LT3, Formulation=, R...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Nostradamus_Suite" title="NostGroup.NostArtifact.TestCases.UbarloginCase" hash-for-method="commonTransferToPharmacy({Total_Qty_to_Drug_Transfer-Lot=10.0, esignature=a1234, Trans_from_Pharmacy=28-SEP-08-20-PHARM-1-C, ...)">commonTransferToPharmacy({Total_Qty_to_Drug_Transfer-Lot=10.0, esignature=a1234, Trans_from_Pharmacy=28-SEP-08-20-PHARM-1-C, ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Nostradamus_Suite" title="NostGroup.NostArtifact.TestCases.UbarloginCase" hash-for-method="nostLogin({PassWord=aithentchn, rundata=Y, UserName=admin, e-Signature=a1234})">nostLogin({PassWord=aithentchn, rundata=Y, UserName=admin, e-Signature=a1234})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Nostradamus_Suite" title="NostGroup.NostArtifact.TestCases.UbarloginCase" hash-for-method="nostLogin2({PassWord=aithentchn, rundata=Y, UserName=admin, e-Signature=a1234})">nostLogin2({PassWord=aithentchn, rundata=Y, UserName=admin, e-Signature=a1234})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Nostradamus_Suite" title="NostGroup.NostArtifact.TestCases.UbarloginCase" hash-for-method="submitqueueReceive({Receive_Protocol_ID=28-SEP-08-20-PROT, Receive_Drug_name=wewdw, Lot_#=586.iu45-LT3, Formulation=, R...)">submitqueueReceive({Receive_Protocol_ID=28-SEP-08-20-PROT, Receive_Drug_name=wewdw, Lot_#=586.iu45-LT3, Formulation=, R...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Nostradamus_Suite" title="NostGroup.NostArtifact.TestCases.UbarloginCase" hash-for-method="ubarLogin({PassWord=aithentchn, rundata=Y, UserName=admin, e-Signature=a1234})">ubarLogin({PassWord=aithentchn, rundata=Y, UserName=admin, e-Signature=a1234})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Nostradamus_Suite" title="NostGroup.NostArtifact.TestCases.UbarloginCase" hash-for-method="ubarLogin2({PassWord=aithentchn, rundata=Y, UserName=admin, e-Signature=a1234})">ubarLogin2({PassWord=aithentchn, rundata=Y, UserName=admin, e-Signature=a1234})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Nostradamus_Suite" title="NostGroup.NostArtifact.TestCases.UbarloginCase" hash-for-method="verifyCPP({cpp-cdm-price-eff-to=30-Sep-2020, cpp-cdm-plan-search=, cpp-cdm-service-name=28-SEP-08-20-Drg, cpp-...)">verifyCPP({cpp-cdm-price-eff-to=30-Sep-2020, cpp-cdm-plan-search=, cpp-cdm-service-name=28-SEP-08-20-Drg, cpp-...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Nostradamus_Suite" title="NostGroup.NostArtifact.TestCases.UbarloginCase" hash-for-method="verifyFacility({facility-name=28-SEP-08-20-PHARM-1-C, facility-result-search-bar=})">verifyFacility({facility-name=28-SEP-08-20-PHARM-1-C, facility-result-search-bar=})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Nostradamus_Suite" title="NostGroup.NostArtifact.TestCases.UbarloginCase" hash-for-method="verifyServiceMaster({service-plan-search=28-SEP-08-20-PROT, service-name-search=28-SEP-08-20-Drg})">verifyServiceMaster({service-plan-search=28-SEP-08-20-PROT, service-name-search=28-SEP-08-20-Drg})</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Nostradamus_Suite -->
@@ -122,12 +211,167 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Nostradamus_Suite" class="panel Nostradamus_Suite">
+          <div class="suite-Nostradamus_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">NostGroup.NostArtifact.TestCases.UbarloginCase</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyReviewCharges({review-charges-drug=28-SEP-08-20-Drg 22.22 mEq(Enema), review-charges-billing-status=Billable, revi...)">
+                  </a> <!-- verifyReviewCharges({review-charges-drug=28-SEP-08-20-Drg 22.22 mEq(Enema), review-charges-billing-status=Billable, revi...) -->
+                  <span class="method-name">verifyReviewCharges</span>
+                  <span class="parameters">({review-charges-drug=28-SEP-08-20-Drg 22.22 mEq(Enema), review-charges-billing-status=Billable, review-charges-status=Pending Review, review-charges-price=20.0, review-charges-plan=28-SEP-08-20-PROT, review-charges-comments=Test comments})</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: //table[@id=&apos;rsliTable&apos;]/tbody/tr[1]/td[6]
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;CSEKARAITHENT&apos;, ip: &apos;192.168.195.3&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_112&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 81.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200917005511, moz:geckodriverVersion: 0.27.0, moz:headless: false, moz:processID: 6180, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 008e5da9-2988-4d52-9e72-503474978c3a
+*** Element info: {Using=xpath, value=//table[@id=&apos;rsliTable&apos;]/tbody/tr[1]/td[6]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at NostGroup.NostArtifact.Billing.ReviewCharges.reviewChargesVerification(ReviewCharges.java:142)
+	at NostGroup.NostArtifact.TestCases.UbarloginCase.verifyReviewCharges(UbarloginCase.java:164)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyServicedEntity({review-charges-billing-status=, review-charges-status=Pending Review, serviced-first-name=28-SEP-08...)">
+                  </a> <!-- verifyServicedEntity({review-charges-billing-status=, review-charges-status=Pending Review, serviced-first-name=28-SEP-08...) -->
+                  <span class="method-name">verifyServicedEntity</span>
+                  <span class="parameters">({review-charges-billing-status=, review-charges-status=Pending Review, serviced-first-name=28-SEP-08-20-FN, review-charges-plan=28-SEP-08-20-PROT, review-charges-comments=Test comments, serviced-mrn=28-SEP-08-20-PAT1-1})</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: Element &lt;button id=&quot;ManageSvcdEntityData&quot; class=&quot;btn btn-primary&quot; type=&quot;button&quot;&gt; could not be scrolled into view
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;CSEKARAITHENT&apos;, ip: &apos;192.168.195.3&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_112&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 81.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200917005511, moz:geckodriverVersion: 0.27.0, moz:headless: false, moz:processID: 6180, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 008e5da9-2988-4d52-9e72-503474978c3a
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at NostGroup.NostArtifact.Base.CommonMethods.click(CommonMethods.java:81)
+	at NostGroup.NostArtifact.Billing.ServicedEntity.servicedEntityVerify(ServicedEntity.java:42)
+	at NostGroup.NostArtifact.TestCases.UbarloginCase.verifyServicedEntity(UbarloginCase.java:155)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Nostradamus_Suite-class-failed -->
           <div class="suite-Nostradamus_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">NostGroup.NostArtifact.TestCases.UbarTest</span>
+              <span class="class-name">NostGroup.NostArtifact.TestCases.UbarloginCase</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addCatalog({Aux_Label_6=, Aux_Label_5=, Aux_Label_4=Chemotherapy Drug, Drug_ID_#=28-SEP-08-20-Drg-DID1, Aux_Lab...)">
+                  </a> <!-- addCatalog({Aux_Label_6=, Aux_Label_5=, Aux_Label_4=Chemotherapy Drug, Drug_ID_#=28-SEP-08-20-Drg-DID1, Aux_Lab...) -->
+                  <span class="method-name">addCatalog</span>
+                  <span class="parameters">({Aux_Label_6=, Aux_Label_5=, Aux_Label_4=Chemotherapy Drug, Drug_ID_#=28-SEP-08-20-Drg-DID1, Aux_Label_3=Refrigerate, Status=, Aux_Label_2=Shake Well, Aux_Label_1=Take With Food, Storage_Location=Location 2, Max=, UPC_Ratio=7.0, Hemoglobin=4.0, Strength/Concentration=22.22, Reorder_Point=, Formulation=Enema, Other3=Other 3, Other2=Other 2, Other1=Other 1, ANC=2.0, Pharmacy_Drug=28-SEP-08-20-PHARM-1-C, Bilirubin:_T-Bili=12.0, IVRS=Yes, Level_of_Accountability=Lot, Qty_per_Unit=48.0, Frequency=twice daily, Patient_Specific_Drug=No, Drug_Proto_SPID=28-SEP-08-20-PROT-SPID, Day_Supply=10.0, esignature=a1234, Drug_Name=28-SEP-08-20-Drg, Compounded_Med_Label=Sterile Compounded Medication, NSC_#=28-SEP-08-20-Drg-nsc1, ALT/SGPT=14.0, PLT's=3.0, Drug_Label_Name=28-SEP-08-20-Drg-dl1, Min=, Route=, 24-hour_Collection=6.0, Serum_Creatinine=11.0, Dose_on_Label=Take with water of 8oz, before food, Storage_Condition=Room Temperature, Unit_Type=Tube, Label_Template=Standard (w/ Lab), Drug_Protocol=28-SEP-08-20-PROT, Supplier_Name=28-SEP-08-20-Supplier-1, Drug_Name_edit=28-SEP-08-20-Drg-Edit, Unit_of_Measure=mEq, Track_By=Strength, Dipstick=5.0, Alternative_Drug_Name=28-SEP-08-20-Drg-adn1, To_Be_Linked=Yes, AST/SGOT=13.0})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addDispense({label-pharmacy-address=, label-pt-Study-id=, dispense-pharmacy=16-JUN-3-20-Pharm1-C, dispense-unit-...)">
+                  </a> <!-- addDispense({label-pharmacy-address=, label-pt-Study-id=, dispense-pharmacy=16-JUN-3-20-Pharm1-C, dispense-unit-...) -->
+                  <span class="method-name">addDispense</span>
+                  <span class="parameters">({label-pharmacy-address=, label-pt-Study-id=, dispense-pharmacy=16-JUN-3-20-Pharm1-C, dispense-unit-type=, label-dob=, label-esign=, label-drug-id=, dispense-expiration-date=, label-address=, label-pharmacy-location=, drugname-on-label=, dose-on-label=, dispense-comments=Dispense 3, label-rx=, label-cohort-level=, Unit1=QWAP-0101, label-name=, disp_unit1=, dispense-storage-location=Location 2, dispense-dispense-esign=a1234, dispense-dose=6 tabs twice a day, dispense-protocol=28-SEP-08-20-PROT, label-compounding-batch=, dispense-storage-condition=Room Temperature, dispense-route=, dispense-formulation=, label-use-by-time=, label-protocol-id=, dispense-pat-mrn=28-SEP-08-20-PAT1-1, dispense-drug-name=28-SEP-08-20-Drg 22.22mEq, dispense-visit=3rd visit, label-prescriber=, dispense-lot=586.iu45-LT3, no-of-labels=, qty-on-label=, dispense-qty-per-unit=, dispense-frequency=, label-institute-name=, label-pharmacy-phone=, total-dispense-qty=9.0, label-mrn=, label-lot=, dispense-loa=, =})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addPatient({Patient_Study_ID=28-SEP-08-20-PAT1-STY, Gender=Female, Protocol_ID=28-SEP-08-20-PROT, Patient_Statu...)">
+                  </a> <!-- addPatient({Patient_Study_ID=28-SEP-08-20-PAT1-STY, Gender=Female, Protocol_ID=28-SEP-08-20-PROT, Patient_Statu...) -->
+                  <span class="method-name">addPatient</span>
+                  <span class="parameters">({Patient_Study_ID=28-SEP-08-20-PAT1-STY, Gender=Female, Protocol_ID=28-SEP-08-20-PROT, Patient_Status=Active, Patient_Stop_Date=, Country=India, Patient_Start_Date=, Zip/Postal_Code=123456.0, Assigned_Drug=, esignature=a1234, Home_Phone(s)=098-098-978765, State=Tamil Nadu, Drug_Name=28-SEP-08-20-Drg, Patient_MRN=28-SEP-08-20-PAT1-1, Address_2=2nd Street, Address_1=11.0, PID=PID-002, Unit_of_Measure=mEq, Strength/Concentration=22.22, Patient_First_Name=28-SEP-08-20-FN, Patient_Last_Name=28-SEP-08-20-LN, Patient_DOB=11-10-1999, Cohort/Dose_Level=39.87, Email=ncoup@ncoup.com, Work_Phone(s)=7297932-899, City=Chennai})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addPharmacy({NCI_Record=Control, Grant_Control_Rights?=Yes, Disable_Dispensing/Par_Level_4=No, Disable_Dispensin...)">
+                  </a> <!-- addPharmacy({NCI_Record=Control, Grant_Control_Rights?=Yes, Disable_Dispensing/Par_Level_4=No, Disable_Dispensin...) -->
+                  <span class="method-name">addPharmacy</span>
+                  <span class="parameters">({NCI_Record=Control, Grant_Control_Rights?=Yes, Disable_Dispensing/Par_Level_4=No, Disable_Dispensing/Par_Level_3=No, Disable_Dispensing/Par_Level_2=No, Disable_Dispensing/Par_Level_1=No, esignature=a1234, Zip/PostalCode=1234567.0, State=nCoup State, Phone=098-098-0987, Address_2=nCoup Street, Address_1=11.0, Storage_Location_4=Location 4, Storage_Location_3=Location 3, Storage_Location_2=Location 2, Pharmacy_Name=28-SEP-08-20-PHARM-1-C, Storage_Location_1=Location 1, Organization=Pharmacy, Storage_Condition_4=Freezer -20, Storage_Condition_3=Refrigerated, Storage_Condition_2=Room Temperature, DEA=DEA234, Pharmacy_Name_Edit=28-SEP-08-20-PHARM-1-C-Edit, Storage_Condition_1=Refrigerator, Pharmacy's_Name_for_Patient_Label=nCoup Control pharmacy QA, City=nCoup City})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addProtocol({Service=Both, OP_Investigator_ID=Op-Inv-ID-02, Protocol_Phase_Start_Date=04-01-2020, Site_Number=ST...)">
+                  </a> <!-- addProtocol({Service=Both, OP_Investigator_ID=Op-Inv-ID-02, Protocol_Phase_Start_Date=04-01-2020, Site_Number=ST...) -->
+                  <span class="method-name">addProtocol</span>
+                  <span class="parameters">({Service=Both, OP_Investigator_ID=Op-Inv-ID-02, Protocol_Phase_Start_Date=04-01-2020, Site_Number=STN002, Investigator_ID=Inv-ID-01, ID_Expiration=10-10-2020, OP_PI_Last_Name=OP-Ins-LN, Closed_to_New_Patients=05-01-2020, Description=TestLink-1, Protocol_Title=28-SEP-08-20-PROT-Title, Protocol_Category=Genetics, Optional_PI_Institution=Opt-Ins-nCoup, Sponsor_Protocol_ID=28-SEP-08-20-PROT-SPID, Protocol_Completion_Date=06-10-2020, Noti_Return=Return Notifications, External_IRB#=EIRB-Z100, PI_First_Name=nCoup-PI-FN, Protocol_Sponsor=28-SEP-08-20-PROT-SP, Protocol_Status=CNPE, esignature=a1234, Noti_Transfer=Transfer Notifications, Noti_Destroy=Destroy Notifications, Drug(s)_and_Kit(s)=, OP_PI_First_Name=Op-Ins-FN, Category=Protocol Data Sheet, Noti_Pat_Return=Patient Returns Notifications, Protocol_Closure_Date=06-01-2020, Noti_Receive=Receive Notifications, Study_Contact=Study contact comments, Protocol_ID=28-SEP-08-20-PROT, Version=v1.1, Internal_IRB#=IRB-Z001, Noti_Dispense=Dispense Notifications, Reason_for_Closure=Protocol Study completed, Disease_Program=Leukemia, Type=Link, Study_Source=Industry, Protocol_Phase=Phase 2, Pharmacy_Status=Active, Protocol_ID_Edit=28-SEP-08-20-PROT-Edit, Protocol_Type=Open label, PI_Last_Name=nCoup-PI-LN})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addSupplier({Supplier_Name_3=28-SEP-08-20-Supplier-3, Supplier_Name_2=28-SEP-08-20-Supplier-2, Organization=Supp...)">
+                  </a> <!-- addSupplier({Supplier_Name_3=28-SEP-08-20-Supplier-3, Supplier_Name_2=28-SEP-08-20-Supplier-2, Organization=Supp...) -->
+                  <span class="method-name">addSupplier</span>
+                  <span class="parameters">({Supplier_Name_3=28-SEP-08-20-Supplier-3, Supplier_Name_2=28-SEP-08-20-Supplier-2, Organization=Supplier, Supplier_Name_1_Edit=28-SEP-08-20-Supplier-1-Edit, Supplier_Name_1=28-SEP-08-20-Supplier-1, esignature=a1234})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="commonReceive({Receive_Protocol_ID=28-SEP-08-20-PROT, Receive_Drug_name=wewdw, Lot_#=586.iu45-LT3, Formulation=, R...)">
+                  </a> <!-- commonReceive({Receive_Protocol_ID=28-SEP-08-20-PROT, Receive_Drug_name=wewdw, Lot_#=586.iu45-LT3, Formulation=, R...) -->
+                  <span class="method-name">commonReceive</span>
+                  <span class="parameters">({Receive_Protocol_ID=28-SEP-08-20-PROT, Receive_Drug_name=wewdw, Lot_#=586.iu45-LT3, Formulation=, Range_End=121.0, Unit_Type=Lot, esignature=a1234, Level_of_Accountability=, Receive_Storage_Location=, Drug_Name=28-SEP-08-20-Drg, Expiration_Date=05-05-2021, Receive_Pharmacy=, Range_Start=99.0, IVRS=, Comment=Receving Drug, Unit_of_Measure=mEq, Total_Qty=250.0, Strength/Concentration=87.23, Patient_Specific_Drug=, Receive_Storage_Condition=, Supplier_Name=, Qty_per_Unit=13.54, Static_ID=QWAP-})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="commonTransferToPharmacy({Total_Qty_to_Drug_Transfer-Lot=10.0, esignature=a1234, Trans_from_Pharmacy=28-SEP-08-20-PHARM-1-C, ...)">
+                  </a> <!-- commonTransferToPharmacy({Total_Qty_to_Drug_Transfer-Lot=10.0, esignature=a1234, Trans_from_Pharmacy=28-SEP-08-20-PHARM-1-C, ...) -->
+                  <span class="method-name">commonTransferToPharmacy</span>
+                  <span class="parameters">({Total_Qty_to_Drug_Transfer-Lot=10.0, esignature=a1234, Trans_from_Pharmacy=28-SEP-08-20-PHARM-1-C, Drug_Name=28-SEP-08-20-Drg, Trans_To_Pharmacy=16-JUN-3-20-Pharm1-C, Transfer_Lot_#=586.iu45-LT3, Unit_of_Measure=mEq, Strength/Concentration=22.22, Unit#4=, Unit#3=, From_Storage_location=Location 2, Transfer_Protocol_ID=28-SEP-08-20-PROT, Unit#2=, Unit#1=QWAP-0101, Number_of_units_to_be_transferred=, To_Storage_Location=Location 2, Transfer_comment=Transfer comments, Transfer_Drug_ID=28-SEP-08-20-Drg})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="nostLogin({PassWord=aithentchn, rundata=Y, UserName=admin, e-Signature=a1234})">
+                  </a> <!-- nostLogin({PassWord=aithentchn, rundata=Y, UserName=admin, e-Signature=a1234}) -->
+                  <span class="method-name">nostLogin</span>
+                  <span class="parameters">({PassWord=aithentchn, rundata=Y, UserName=admin, e-Signature=a1234})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="nostLogin2({PassWord=aithentchn, rundata=Y, UserName=admin, e-Signature=a1234})">
+                  </a> <!-- nostLogin2({PassWord=aithentchn, rundata=Y, UserName=admin, e-Signature=a1234}) -->
+                  <span class="method-name">nostLogin2</span>
+                  <span class="parameters">({PassWord=aithentchn, rundata=Y, UserName=admin, e-Signature=a1234})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="submitqueueReceive({Receive_Protocol_ID=28-SEP-08-20-PROT, Receive_Drug_name=wewdw, Lot_#=586.iu45-LT3, Formulation=, R...)">
+                  </a> <!-- submitqueueReceive({Receive_Protocol_ID=28-SEP-08-20-PROT, Receive_Drug_name=wewdw, Lot_#=586.iu45-LT3, Formulation=, R...) -->
+                  <span class="method-name">submitqueueReceive</span>
+                  <span class="parameters">({Receive_Protocol_ID=28-SEP-08-20-PROT, Receive_Drug_name=wewdw, Lot_#=586.iu45-LT3, Formulation=, Range_End=121.0, Unit_Type=Lot, esignature=a1234, Level_of_Accountability=, Receive_Storage_Location=, Drug_Name=28-SEP-08-20-Drg, Expiration_Date=05-05-2021, Receive_Pharmacy=, Range_Start=99.0, IVRS=, Comment=Receving Drug, Unit_of_Measure=mEq, Total_Qty=250.0, Strength/Concentration=87.23, Patient_Specific_Drug=, Receive_Storage_Condition=, Supplier_Name=, Qty_per_Unit=13.54, Static_ID=QWAP-})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="ubarLogin({PassWord=aithentchn, rundata=Y, UserName=admin, e-Signature=a1234})">
@@ -138,10 +382,34 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyCPP({cpp-cdm-price-eff-to=30-Sep-2020, cpp-cdm-plan-search=, cpp-cdm-service-name=14-SEP-11-20-Drg-ed, c...)">
-                  </a> <!-- verifyCPP({cpp-cdm-price-eff-to=30-Sep-2020, cpp-cdm-plan-search=, cpp-cdm-service-name=14-SEP-11-20-Drg-ed, c...) -->
+                  <a name="ubarLogin2({PassWord=aithentchn, rundata=Y, UserName=admin, e-Signature=a1234})">
+                  </a> <!-- ubarLogin2({PassWord=aithentchn, rundata=Y, UserName=admin, e-Signature=a1234}) -->
+                  <span class="method-name">ubarLogin2</span>
+                  <span class="parameters">({PassWord=aithentchn, rundata=Y, UserName=admin, e-Signature=a1234})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyCPP({cpp-cdm-price-eff-to=30-Sep-2020, cpp-cdm-plan-search=, cpp-cdm-service-name=28-SEP-08-20-Drg, cpp-...)">
+                  </a> <!-- verifyCPP({cpp-cdm-price-eff-to=30-Sep-2020, cpp-cdm-plan-search=, cpp-cdm-service-name=28-SEP-08-20-Drg, cpp-...) -->
                   <span class="method-name">verifyCPP</span>
-                  <span class="parameters">({cpp-cdm-price-eff-to=30-Sep-2020, cpp-cdm-plan-search=, cpp-cdm-service-name=14-SEP-11-20-Drg-ed, cpp-payer-email=test@ncoup.com, cpp-cdm-service-price=230.0, cpp-cdm-service-results-search-bar=, cpp-cdm-service-frequency=, cpp-cdm-service-frequency-interval=, cpp-cdm-charge-basis=, cpp-attach-payer-search=Dummil-Test, cpp-account-name=12345Dummil, cpp-same-payerid=, cpp-account-no=Dummil-Test, cpp-payer-level=Primary, cpp-plan-search=14-SEP-11-20-PROT-ed, cpp-type-code=Study Team, cpp-cdm-price-eff-from=28-Sep-2020, cpp-payer-id=, cpp-cdm-payer-search=, cpp-cdm-pharmacy=})</span>
+                  <span class="parameters">({cpp-cdm-price-eff-to=30-Sep-2020, cpp-cdm-plan-search=, cpp-cdm-service-name=28-SEP-08-20-Drg, cpp-payer-email=test@ncoup.com, cpp-cdm-service-price=230.0, cpp-cdm-service-results-search-bar=, cpp-cdm-service-frequency=, cpp-cdm-service-frequency-interval=, cpp-cdm-charge-basis=, cpp-attach-payer-search=Dummil-Test, cpp-account-name=12345Dummil, cpp-same-payerid=, cpp-account-no=Dummil-Test, cpp-payer-level=Primary, cpp-plan-search=28-SEP-08-20-PROT, cpp-type-code=Study Team, cpp-cdm-price-eff-from=28-Sep-2020, cpp-payer-id=, cpp-cdm-payer-search=, cpp-cdm-pharmacy=})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyFacility({facility-name=28-SEP-08-20-PHARM-1-C, facility-result-search-bar=})">
+                  </a> <!-- verifyFacility({facility-name=28-SEP-08-20-PHARM-1-C, facility-result-search-bar=}) -->
+                  <span class="method-name">verifyFacility</span>
+                  <span class="parameters">({facility-name=28-SEP-08-20-PHARM-1-C, facility-result-search-bar=})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyServiceMaster({service-plan-search=28-SEP-08-20-PROT, service-name-search=28-SEP-08-20-Drg})">
+                  </a> <!-- verifyServiceMaster({service-plan-search=28-SEP-08-20-PROT, service-name-search=28-SEP-08-20-Drg}) -->
+                  <span class="method-name">verifyServiceMaster</span>
+                  <span class="parameters">({service-plan-search=28-SEP-08-20-PROT, service-name-search=28-SEP-08-20-Drg})</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -149,7 +417,7 @@
         </div> <!-- panel Nostradamus_Suite -->
         <div panel-name="test-xml-Nostradamus_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">D:\Jagan\NostAuto\NostCore\NostArtifact\TestNG-xmls\testng_UbarTest.xml</span>
+            <span class="header-content">D:\Jagan\NostAuto\NostCore\NostArtifact\TestNG-xmls\testng_UbarLogin.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -163,7 +431,7 @@
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;IDS UBAR Integration&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;NostGroup.NostArtifact.TestCases.UbarTest&quot;/&gt;
+      &lt;class name=&quot;NostGroup.NostArtifact.TestCases.UbarloginCase&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- IDS UBAR Integration --&gt;
 &lt;/suite&gt; &lt;!-- Nostradamus Suite --&gt;
@@ -203,20 +471,84 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(18);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'verifyCPP')
-data.setCell(0, 2, 'NostGroup.NostArtifact.TestCases.UbarTest')
-data.setCell(0, 3, 70131);
+data.setCell(0, 2, 'NostGroup.NostArtifact.TestCases.UbarloginCase')
+data.setCell(0, 3, 69107);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'ubarLogin')
-data.setCell(1, 2, 'NostGroup.NostArtifact.TestCases.UbarTest')
-data.setCell(1, 3, 12087);
+data.setCell(1, 1, 'commonTransferToPharmacy')
+data.setCell(1, 2, 'NostGroup.NostArtifact.TestCases.UbarloginCase')
+data.setCell(1, 3, 40146);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'verifyReviewCharges')
+data.setCell(2, 2, 'NostGroup.NostArtifact.TestCases.UbarloginCase')
+data.setCell(2, 3, 37542);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'addPatient')
+data.setCell(3, 2, 'NostGroup.NostArtifact.TestCases.UbarloginCase')
+data.setCell(3, 3, 30903);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'addDispense')
+data.setCell(4, 2, 'NostGroup.NostArtifact.TestCases.UbarloginCase')
+data.setCell(4, 3, 28677);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'addSupplier')
+data.setCell(5, 2, 'NostGroup.NostArtifact.TestCases.UbarloginCase')
+data.setCell(5, 3, 26391);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'submitqueueReceive')
+data.setCell(6, 2, 'NostGroup.NostArtifact.TestCases.UbarloginCase')
+data.setCell(6, 3, 22838);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'commonReceive')
+data.setCell(7, 2, 'NostGroup.NostArtifact.TestCases.UbarloginCase')
+data.setCell(7, 3, 21532);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'addProtocol')
+data.setCell(8, 2, 'NostGroup.NostArtifact.TestCases.UbarloginCase')
+data.setCell(8, 3, 21075);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'addCatalog')
+data.setCell(9, 2, 'NostGroup.NostArtifact.TestCases.UbarloginCase')
+data.setCell(9, 3, 20571);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'addPharmacy')
+data.setCell(10, 2, 'NostGroup.NostArtifact.TestCases.UbarloginCase')
+data.setCell(10, 3, 15271);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'ubarLogin')
+data.setCell(11, 2, 'NostGroup.NostArtifact.TestCases.UbarloginCase')
+data.setCell(11, 3, 13539);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'verifyServiceMaster')
+data.setCell(12, 2, 'NostGroup.NostArtifact.TestCases.UbarloginCase')
+data.setCell(12, 3, 11865);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'verifyFacility')
+data.setCell(13, 2, 'NostGroup.NostArtifact.TestCases.UbarloginCase')
+data.setCell(13, 3, 10473);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'ubarLogin2')
+data.setCell(14, 2, 'NostGroup.NostArtifact.TestCases.UbarloginCase')
+data.setCell(14, 3, 9835);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'verifyServicedEntity')
+data.setCell(15, 2, 'NostGroup.NostArtifact.TestCases.UbarloginCase')
+data.setCell(15, 3, 9360);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'nostLogin')
+data.setCell(16, 2, 'NostGroup.NostArtifact.TestCases.UbarloginCase')
+data.setCell(16, 3, 3017);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'nostLogin2')
+data.setCell(17, 2, 'NostGroup.NostArtifact.TestCases.UbarloginCase')
+data.setCell(17, 3, 1930);
 window.suiteTableData['Nostradamus_Suite']= { tableData: data, tableDiv: 'times-div-Nostradamus_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 6 minutes</span>
               <div id="times-div-Nostradamus_Suite">
               </div> <!-- times-div-Nostradamus_Suite -->
             </div> <!-- times-div -->
@@ -228,23 +560,114 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="reporter-method-div">
-              <span class="reporter-method-name">verifyCPP({cpp-cdm-price-eff-to=30-Sep-2020, cpp-cdm-plan-search=, cpp-cdm-service-name=14-SEP-11-20-Drg-ed, c...)</span>
+              <span class="reporter-method-name">commonTransferToPharmacy({Total_Qty_to_Drug_Transfer-Lot=10.0, esignature=a1234, Trans_from_Pharmacy=28-SEP-08-20-PHARM-1-C, ...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Clicked the item: trans-to-pharm</span>
+                <span class="reporter-method-output">Entered the value '28-SEP-08-20-PROT' in field 'trans-protocol-id'</span>
+                <span class="reporter-method-output">Selected the value '28-SEP-08-20-PHARM-1-C in field 'trans-fro-pharmacy'</span>
+                <span class="reporter-method-output">Selected the value 'Location 2 in field 'trans-from-sto-location'</span>
+                <span class="reporter-method-output">Selected the value '16-JUN-3-20-Pharm1-C in field 'trans-to-pharmacy'</span>
+                <span class="reporter-method-output">Selected the value 'Location 2 in field 'trans-to-sto-location'</span>
+                <span class="reporter-method-output">Entered the value 'Transfer comments' in field 'trans-comment'</span>
+                <span class="reporter-method-output">Entered the value '10.0' in field 'trans-tot-qty-lot'</span>
+                <span class="reporter-method-output">Entered the value 'a1234' in field 'trans-esign'</span>
+                <span class="reporter-method-output">Clicked the item: trans-submit</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">addPatient({Patient_Study_ID=28-SEP-08-20-PAT1-STY, Gender=Female, Protocol_ID=28-SEP-08-20-PROT, Patient_Statu...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Clicked the item: patient-menu</span>
+                <span class="reporter-method-output">Clicked the item: add-patient-to-protocol</span>
+                <span class="reporter-method-output">Entered the value '28-SEP-08-20-PAT1-1' in field 'patient-mrn'</span>
+                <span class="reporter-method-output">Entered the value '28-SEP-08-20-FN' in field 'patient-first-name'</span>
+                <span class="reporter-method-output">Entered the value '28-SEP-08-20-LN' in field 'patient-last-name'</span>
+                <span class="reporter-method-output">Selected the value 'Female in field 'patient-gender'</span>
+                <span class="reporter-method-output">Entered the value '11-10-1999' in field 'patient-dob'</span>
+                <span class="reporter-method-output">Selected the value 'Active in field 'patient-status'</span>
+                <span class="reporter-method-output">Entered the value '28-SEP-08-20-PROT' in field 'patient-protocol-id'</span>
+                <span class="reporter-method-output">Entered the value '28-SEP-08-20-PAT1-STY' in field 'patient-study-id'</span>
+                <span class="reporter-method-output">Entered the value '39.87' in field 'cohort-dose-level'</span>
+                <span class="reporter-method-output">Clicked the item: add-contact-info</span>
+                <span class="reporter-method-output">Entered the value '11.0' in field 'address-1'</span>
+                <span class="reporter-method-output">Entered the value '2nd Street' in field 'address-2'</span>
+                <span class="reporter-method-output">Entered the value 'Chennai' in field 'city'</span>
+                <span class="reporter-method-output">Entered the value 'Tamil Nadu' in field 'state'</span>
+                <span class="reporter-method-output">Entered the value '123456.0' in field 'zip-postal-code'</span>
+                <span class="reporter-method-output">Entered the value 'India' in field 'country'</span>
+                <span class="reporter-method-output">Entered the value '098-098-978765' in field 'home-phone'</span>
+                <span class="reporter-method-output">Entered the value '7297932-899' in field 'work-phone'</span>
+                <span class="reporter-method-output">Entered the value 'ncoup@ncoup.com' in field 'email'</span>
+                <span class="reporter-method-output">Entered the value 'PID-002' in field 'pid'</span>
+                <span class="reporter-method-output">Entered the value 'a1234' in field 'patient-esgin'</span>
+                <span class="reporter-method-output">Clicked the item: patient-submit</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyFacility({facility-name=28-SEP-08-20-PHARM-1-C, facility-result-search-bar=})</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">Clicked the item: maintenance-billing-menu</span>
-                <span class="reporter-method-output">Clicked the item: cpp-menu</span>
-                <span class="reporter-method-output">Entered the value '14-SEP-11-20-PROT-ed' in field 'cpp-plan-search'</span>
-                <span class="reporter-method-output">Clicked the item: cpp-search</span>
-                <span class="reporter-method-output">Plan '14-SEP-11-20-PROT-ed' integrated to CPP successfully</span>
-                <span class="reporter-method-output">Clicked the item: cpp-payer-search-icon</span>
-                <span class="reporter-method-output">Entered the value 'Dummil-Test' in field 'cpp-payer-search-result-search-bar'</span>
-                <span class="reporter-method-output">Payer 'Dummil-Test' selected from existing Payer's list successfully</span>
-                <span class="reporter-method-output">Clicked the item: cpp-attach-payer</span>
-                <span class="reporter-method-output">Service '14-SEP-11-20-Drg-ed' not listed in CPP CDM</span>
-                <span class="reporter-method-output">Service '14-SEP-11-20-Drg-ed' found in CPP Services table</span>
-                <span class="reporter-method-output">Clicked the item: cpp-cdm-quantity-based</span>
-                <span class="reporter-method-output">Entered the value '230.0' in field 'cpp-cdm-service-price'</span>
-                <span class="reporter-method-output">Clicked the item: cpp-cdm-save</span>
-                <span class="reporter-method-output">After CDM addition, CDM entry added successfully in CPP CDM</span>
+                <span class="reporter-method-output">Clicked the item: facility-menu</span>
+                <span class="reporter-method-output">Entered the value '28-SEP-08-20-PHARM-1-C' in field 'facility-name'</span>
+                <span class="reporter-method-output">Clicked the item: facility-search</span>
+                <span class="reporter-method-output">Entered the value '28-SEP-08-20-PHARM-1-C' in field 'facility-result-search-bar'</span>
+                <span class="reporter-method-output">Facility '28-SEP-08-20-PHARM-1-C' found in the Facility table</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">nostLogin({PassWord=aithentchn, rundata=Y, UserName=admin, e-Signature=a1234})</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Starting to Login....</span>
+                <span class="reporter-method-output">Entered the value 'admin' in field 'username'</span>
+                <span class="reporter-method-output">Entered the value 'aithentchn' in field 'password'</span>
+                <span class="reporter-method-output">Clicked the item: login-button</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">addProtocol({Service=Both, OP_Investigator_ID=Op-Inv-ID-02, Protocol_Phase_Start_Date=04-01-2020, Site_Number=ST...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Clicked the item: protocol</span>
+                <span class="reporter-method-output">Clicked the item: add-protocol</span>
+                <span class="reporter-method-output">Entered the value '28-SEP-08-20-PROT' in field 'protocol-id'</span>
+                <span class="reporter-method-output">Entered the value '28-SEP-08-20-PROT-Title' in field 'protocol-title'</span>
+                <span class="reporter-method-output">Selected the value 'CNPE in field 'protocol-status'</span>
+                <span class="reporter-method-output">Selected the value 'Active in field 'pharmacy-status'</span>
+                <span class="reporter-method-output">Entered the value '28-SEP-08-20-PROT-SPID' in field 'sponsor-protocol-id'</span>
+                <span class="reporter-method-output">Entered the value '28-SEP-08-20-PROT-SP' in field 'protocol-sponsor'</span>
+                <span class="reporter-method-output">Entered the value 'STN002' in field 'site-number'</span>
+                <span class="reporter-method-output">Selected the value 'Phase 2 in field 'protocol-phase'</span>
+                <span class="reporter-method-output">Selected the value 'Leukemia in field 'disease-program'</span>
+                <span class="reporter-method-output">Selected the value 'Both in field 'service'</span>
+                <span class="reporter-method-output">Selected the value 'Industry in field 'study-source'</span>
+                <span class="reporter-method-output">Selected the value 'Open label in field 'protocol-type'</span>
+                <span class="reporter-method-output">Entered the value 'IRB-Z001' in field 'internal-irb'</span>
+                <span class="reporter-method-output">Entered the value 'EIRB-Z100' in field 'external-irb'</span>
+                <span class="reporter-method-output">Selected the value 'Genetics in field 'protocol-category'</span>
+                <span class="reporter-method-output">Clicked the item: staff</span>
+                <span class="reporter-method-output">Entered the value 'nCoup-PI-FN' in field 'pi-first-name'</span>
+                <span class="reporter-method-output">Entered the value 'nCoup-PI-LN' in field 'pi-last-name'</span>
+                <span class="reporter-method-output">Entered the value 'Inv-ID-01' in field 'investigator-id'</span>
+                <span class="reporter-method-output">Entered the value '10-10-2020' in field 'id-expiration'</span>
+                <span class="reporter-method-output">Entered the value 'Opt-Ins-nCoup' in field 'opt-pi-institution'</span>
+                <span class="reporter-method-output">Entered the value 'Op-Ins-FN' in field 'opt-pi-first-name'</span>
+                <span class="reporter-method-output">Entered the value 'OP-Ins-LN' in field 'opt-pi-last-name'</span>
+                <span class="reporter-method-output">Entered the value 'Op-Inv-ID-02' in field 'opt-investigator-id'</span>
+                <span class="reporter-method-output">Entered the value '10-10-2020' in field 'opt-id-expiration'</span>
+                <span class="reporter-method-output">Entered the value 'Study contact comments' in field 'study-contact'</span>
+                <span class="reporter-method-output">Clicked the item: key-dates</span>
+                <span class="reporter-method-output">Entered the value '04-01-2020' in field 'protocol-phase-start-date'</span>
+                <span class="reporter-method-output">Entered the value '05-01-2020' in field 'closed-to-new-patients'</span>
+                <span class="reporter-method-output">Entered the value '06-01-2020' in field 'protocol-closure-date'</span>
+                <span class="reporter-method-output">Entered the value 'Protocol Study completed' in field 'reason-for-closure'</span>
+                <span class="reporter-method-output">Entered the value '06-10-2020' in field 'protocol-completion-date'</span>
+                <span class="reporter-method-output">Clicked the item: notifications</span>
+                <span class="reporter-method-output">Entered the value 'Receive Notifications' in field 'not-receive'</span>
+                <span class="reporter-method-output">Entered the value 'Transfer Notifications' in field 'not-transfer'</span>
+                <span class="reporter-method-output">Entered the value 'Dispense Notifications' in field 'not-dispense'</span>
+                <span class="reporter-method-output">Entered the value 'Destroy Notifications' in field 'not-destroy'</span>
+                <span class="reporter-method-output">Entered the value 'Return Notifications' in field 'not-return'</span>
+                <span class="reporter-method-output">Entered the value 'a1234' in field 'protocol-esign'</span>
+                <span class="reporter-method-output">Clicked the item: protocol-submit</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
@@ -254,6 +677,212 @@ return data;
                 <span class="reporter-method-output">Entered the value 'admin' in field 'username-billing'</span>
                 <span class="reporter-method-output">Entered the value 'aithentchn' in field 'password-billing'</span>
                 <span class="reporter-method-output">Clicked the item: login-button-billing</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyCPP({cpp-cdm-price-eff-to=30-Sep-2020, cpp-cdm-plan-search=, cpp-cdm-service-name=28-SEP-08-20-Drg, cpp-...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Clicked the item: maintenance-billing-menu</span>
+                <span class="reporter-method-output">Clicked the item: cpp-menu</span>
+                <span class="reporter-method-output">Entered the value '28-SEP-08-20-PROT' in field 'cpp-plan-search'</span>
+                <span class="reporter-method-output">Clicked the item: cpp-search</span>
+                <span class="reporter-method-output">Plan '28-SEP-08-20-PROT' integrated to CPP successfully</span>
+                <span class="reporter-method-output">Clicked the item: cpp-payer-search-icon</span>
+                <span class="reporter-method-output">Entered the value 'Dummil-Test' in field 'cpp-payer-search-result-search-bar'</span>
+                <span class="reporter-method-output">Payer 'Dummil-Test' selected from existing Payer's list successfully</span>
+                <span class="reporter-method-output">Clicked the item: cpp-attach-payer</span>
+                <span class="reporter-method-output">Service '28-SEP-08-20-Drg' not listed in CPP CDM</span>
+                <span class="reporter-method-output">Service '28-SEP-08-20-Drg' found in CPP Services table</span>
+                <span class="reporter-method-output">Clicked the item: cpp-cdm-quantity-based</span>
+                <span class="reporter-method-output">Entered the value '230.0' in field 'cpp-cdm-service-price'</span>
+                <span class="reporter-method-output">Clicked the item: cpp-cdm-save</span>
+                <span class="reporter-method-output">After CDM addition, CDM entry added successfully in CPP CDM</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">addDispense({label-pharmacy-address=, label-pt-Study-id=, dispense-pharmacy=16-JUN-3-20-Pharm1-C, dispense-unit-...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Clicked the item: patient-menu</span>
+                <span class="reporter-method-output">Clicked the item: manage-patient-result-search-bar</span>
+                <span class="reporter-method-output">Entered the value '28-SEP-08-20-PAT1-1' in field 'manage-patient-result-search-bar'</span>
+                <span class="reporter-method-output">Patient '28-SEP-08-20-PAT1-1' present in Patient table</span>
+                <span class="reporter-method-output">Clicked the item: dispense-to-patient-pat</span>
+                <span class="reporter-method-output">Selected the value '28-SEP-08-20-Drg 22.22mEq in field 'dispense-drug-name'</span>
+                <span class="reporter-method-output">Selected the value '586.iu45-LT3 in field 'dispense-lot'</span>
+                <span class="reporter-method-output">Selected the value '16-JUN-3-20-Pharm1-C in field 'dispense-pharmacy'</span>
+                <span class="reporter-method-output">Selected the value 'Location 2 in field 'dispense-storage-location'</span>
+                <span class="reporter-method-output">Entered the value '6 tabs twice a day' in field 'dispense-dose'</span>
+                <span class="reporter-method-output">Entered the value 'Dispense 3' in field 'dispense-comments'</span>
+                <span class="reporter-method-output">Entered the value '3rd visit' in field 'dispense-visit'</span>
+                <span class="reporter-method-output">Entered the value '9.0' in field 'total-dispense-qty'</span>
+                <span class="reporter-method-output">Entered the value 'a1234' in field 'dispense-dispense-esign'</span>
+                <span class="reporter-method-output">Clicked the item: dispense-submit</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">commonReceive({Receive_Protocol_ID=28-SEP-08-20-PROT, Receive_Drug_name=wewdw, Lot_#=586.iu45-LT3, Formulation=, R...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Clicked the item: receive-add</span>
+                <span class="reporter-method-output">Entered the value '28-SEP-08-20-PROT' in field 'receive-protocol-id'</span>
+                <span class="reporter-method-output">Entered the value '586.iu45-LT3' in field 'receive-lot'</span>
+                <span class="reporter-method-output">Entered the value '05-05-2021' in field 'receive-expiration-date'</span>
+                <span class="reporter-method-output">Entered the value '250.0' in field 'receive-total-qty'</span>
+                <span class="reporter-method-output">Entered the value 'Receving Drug' in field 'receive-comment'</span>
+                <span class="reporter-method-output">Clicked the item: receive-save</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">submitqueueReceive({Receive_Protocol_ID=28-SEP-08-20-PROT, Receive_Drug_name=wewdw, Lot_#=586.iu45-LT3, Formulation=, R...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Entered the value '28-SEP-08-20-PROT' in field 'rec-tab-search'</span>
+                <span class="reporter-method-output">Entered the value 'a1234' in field 'receive-edit'</span>
+                <span class="reporter-method-output">Clicked the item: receive-submit</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">ubarLogin2({PassWord=aithentchn, rundata=Y, UserName=admin, e-Signature=a1234})</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Login Billing starts....</span>
+                <span class="reporter-method-output">Entered the value 'admin' in field 'username-billing'</span>
+                <span class="reporter-method-output">Entered the value 'aithentchn' in field 'password-billing'</span>
+                <span class="reporter-method-output">Clicked the item: login-button-billing</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">addPharmacy({NCI_Record=Control, Grant_Control_Rights?=Yes, Disable_Dispensing/Par_Level_4=No, Disable_Dispensin...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Clicked the item: organization</span>
+                <span class="reporter-method-output">Selected the value 'Pharmacy in field 'organization-selection'</span>
+                <span class="reporter-method-output">Clicked the item: add-new-pharmacy</span>
+                <span class="reporter-method-output">Entered the value '28-SEP-08-20-PHARM-1-C' in field 'pharmacy-name'</span>
+                <span class="reporter-method-output"> Input is Yes for the field 'grant-control-rights' and Checkbox is unchecked by default, now checked/ticked successfully</span>
+                <span class="reporter-method-output">Selected the value 'Control in field 'nci-record'</span>
+                <span class="reporter-method-output">Selected the value 'Refrigerator in field 'storage-condition1'</span>
+                <span class="reporter-method-output">Entered the value 'Location 1' in field 'storage-location1'</span>
+                <span class="reporter-method-output">'disable-dispense-par-level1' is checked/ticked by default</span>
+                <span class="reporter-method-output">Selected the value 'Room Temperature in field 'storage-condition2'</span>
+                <span class="reporter-method-output">Entered the value 'Location 2' in field 'storage-location2'</span>
+                <span class="reporter-method-output">'disable-dispense-par-level2' is checked/ticked by default</span>
+                <span class="reporter-method-output">Selected the value 'Refrigerated in field 'storage-condition3'</span>
+                <span class="reporter-method-output">Entered the value 'Location 3' in field 'storage-location3'</span>
+                <span class="reporter-method-output">'disable-dispense-par-level3' is checked/ticked by default</span>
+                <span class="reporter-method-output">Selected the value 'Freezer -20 in field 'storage-condition4'</span>
+                <span class="reporter-method-output">Entered the value 'Location 4' in field 'storage-location4'</span>
+                <span class="reporter-method-output">'disable-dispense-par-level4' is checked/ticked by default</span>
+                <span class="reporter-method-output">Clicked the item: pharmacy-address</span>
+                <span class="reporter-method-output">Entered the value '11.0' in field 'pharmacy-address-1'</span>
+                <span class="reporter-method-output">Entered the value 'nCoup Street' in field 'pharmacy-address-2'</span>
+                <span class="reporter-method-output">Entered the value 'nCoup City' in field 'pharmacy-city'</span>
+                <span class="reporter-method-output">Entered the value 'nCoup State' in field 'pharmacy-state'</span>
+                <span class="reporter-method-output">Entered the value '1234567.0' in field 'pharmacy-zip-postalcode'</span>
+                <span class="reporter-method-output">Entered the value '098-098-0987' in field 'pharmacy-phone'</span>
+                <span class="reporter-method-output">Entered the value 'nCoup Control pharmacy QA' in field 'pharmacy-name-label-name'</span>
+                <span class="reporter-method-output">Entered the value 'DEA234' in field 'pharmacy-dea'</span>
+                <span class="reporter-method-output">Entered the value 'a1234' in field 'pharmacy-esign'</span>
+                <span class="reporter-method-output">Clicked the item: pharmacy-submit</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">addCatalog({Aux_Label_6=, Aux_Label_5=, Aux_Label_4=Chemotherapy Drug, Drug_ID_#=28-SEP-08-20-Drg-DID1, Aux_Lab...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Clicked the item: add-drug</span>
+                <span class="reporter-method-output">Entered the value '28-SEP-08-20-Drg' in field 'drug-name'</span>
+                <span class="reporter-method-output">Selected the value 'Strength in field 'track-by'</span>
+                <span class="reporter-method-output">Entered the value '22.22' in field 'strength-concentration'</span>
+                <span class="reporter-method-output">Selected the value 'mEq in field 'unit-of-measure'</span>
+                <span class="reporter-method-output">Selected the value 'Enema in field 'formulation'</span>
+                <span class="reporter-method-output">Entered the value '28-SEP-08-20-Drg-dl1' in field 'drug-label-name'</span>
+                <span class="reporter-method-output">Entered the value '28-SEP-08-20-Drg-DID1' in field 'drug-id'</span>
+                <span class="reporter-method-output">Entered the value '28-SEP-08-20-Drg-nsc1' in field 'drug-nsc'</span>
+                <span class="reporter-method-output">Entered the value '28-SEP-08-20-Drg-adn1' in field 'alternative-drug-name'</span>
+                <span class="reporter-method-output">Clicked the item: set-defaults</span>
+                <span class="reporter-method-output">'patient-specific-drug' is checked/ticked by default</span>
+                <span class="reporter-method-output"> Input is Yes for the field 'ivrs' and Checkbox is unchecked by default, now checked/ticked successfully</span>
+                <span class="reporter-method-output">Selected the value 'Yes in field 'to-be-linked'</span>
+                <span class="reporter-method-output">Selected the value 'Lot in field 'level-of-accountability'</span>
+                <span class="reporter-method-output">Selected the value 'Tube in field 'unit-type'</span>
+                <span class="reporter-method-output">Entered the value '48.0' in field 'qty-per-unit'</span>
+                <span class="reporter-method-output">Entered the value '28-SEP-08-20-Supplier-1' in field 'catalog-supplier-name'</span>
+                <span class="reporter-method-output">Selected the value 'Room Temperature in field 'storage-condition'</span>
+                <span class="reporter-method-output">Selected the value '28-SEP-08-20-PHARM-1-C in field 'pharmacy'</span>
+                <span class="reporter-method-output">Selected the value 'Location 2 in field 'storage-location'</span>
+                <span class="reporter-method-output">Selected the value 'twice daily in field 'frequency'</span>
+                <span class="reporter-method-output">Entered the value 'Take with water of 8oz, before food' in field 'dose-on-label'</span>
+                <span class="reporter-method-output">Selected the value 'Standard (w/ Lab) in field 'label-template'</span>
+                <span class="reporter-method-output">Entered the value '10.0' in field 'day-supply'</span>
+                <span class="reporter-method-output">Selected the value 'Take With Food in field 'aux-label1'</span>
+                <span class="reporter-method-output">Selected the value 'Shake Well in field 'aux-label2'</span>
+                <span class="reporter-method-output">Selected the value 'Refrigerate in field 'aux-label3'</span>
+                <span class="reporter-method-output">Selected the value 'Chemotherapy Drug in field 'aux-label4'</span>
+                <span class="reporter-method-output">Clicked the item: add-drug</span>
+                <span class="reporter-method-output">Entered the value '28-SEP-08-20-PROT' in field 'cat-prot-sear'</span>
+                <span class="reporter-method-output">Clicked the item: cat-prot-sear-ok</span>
+                <span class="reporter-method-output">Entered the value 'a1234' in field 'catalog-esign'</span>
+                <span class="reporter-method-output">Clicked the item: catalog-submit</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyServiceMaster({service-plan-search=28-SEP-08-20-PROT, service-name-search=28-SEP-08-20-Drg})</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Clicked the item: maintenance-billing-menu</span>
+                <span class="reporter-method-output">Clicked the item: service-master-menu</span>
+                <span class="reporter-method-output">Entered the value '28-SEP-08-20-PROT' in field 'service-plan-search'</span>
+                <span class="reporter-method-output">Entered the value '28-SEP-08-20-Drg' in field 'service-name-search'</span>
+                <span class="reporter-method-output">Clicked the item: service-search</span>
+                <span class="reporter-method-output">Drug '28-SEP-08-20-Drg' integrated in Service Master successfully</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">addSupplier({Supplier_Name_3=28-SEP-08-20-Supplier-3, Supplier_Name_2=28-SEP-08-20-Supplier-2, Organization=Supp...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Clicked the item: organization</span>
+                <span class="reporter-method-output">Selected the value 'Supplier in field 'organization-selection'</span>
+                <span class="reporter-method-output">Clicked the item: supplier-add</span>
+                <span class="reporter-method-output">Entered the value '28-SEP-08-20-Supplier-1' in field 'supplier-name'</span>
+                <span class="reporter-method-output">Clicked the item: add-more-supplier1</span>
+                <span class="reporter-method-output">Entered the value '28-SEP-08-20-Supplier-2' in field 'supplier-name-1'</span>
+                <span class="reporter-method-output">Clicked the item: add-more-supplier2</span>
+                <span class="reporter-method-output">Entered the value '28-SEP-08-20-Supplier-3' in field 'supplier-name-2'</span>
+                <span class="reporter-method-output">Entered the value 'a1234' in field 'supplier-esign'</span>
+                <span class="reporter-method-output">Clicked the item: supplier-submit</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">nostLogin2({PassWord=aithentchn, rundata=Y, UserName=admin, e-Signature=a1234})</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Starting to Login....</span>
+                <span class="reporter-method-output">Entered the value 'admin' in field 'username'</span>
+                <span class="reporter-method-output">Entered the value 'aithentchn' in field 'password'</span>
+                <span class="reporter-method-output">Clicked the item: login-button</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyServicedEntity({review-charges-billing-status=, review-charges-status=Pending Review, serviced-first-name=28-SEP-08...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Clicked the item: maintenance-billing-menu</span>
+                <span class="reporter-method-output">Clicked the item: serviced-entity-menu</span>
+                <span class="reporter-method-output">Entered the value '28-SEP-08-20-FN' in field 'serviced-first-name'</span>
+                <span class="reporter-method-output"><br>verifyServicedEntity: Failed</span>
+                <span class="reporter-method-output"><br></span>
+                <span class="reporter-method-output"><a target="_blank" href="D:\Jagan\NostAuto\NostCore\NostArtifact\Screenshots\Screenshot_Tue_Sep_29_00_46_26_IST_2020.jpg">ScreenShot</a></span>
+                <span class="reporter-method-output"><br></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyReviewCharges({review-charges-drug=28-SEP-08-20-Drg 22.22 mEq(Enema), review-charges-billing-status=Billable, revi...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Clicked the item: billing-review-charges-menu</span>
+                <span class="reporter-method-output">Clicked the item: charges-menu</span>
+                <span class="reporter-method-output">Clicked the item: review-charges-menu</span>
+                <span class="reporter-method-output">Entered the value '28-SEP-08-20-PROT' in field 'review-charges-plan'</span>
+                <span class="reporter-method-output">Selected the value 'Pending Review in field 'review-charges-status'</span>
+                <span class="reporter-method-output">Clicked the item: review-charges-search</span>
+                <span class="reporter-method-output">Charges for Drug '28-SEP-08-20-Drg 22.22 mEq(Enema)' with price '20.0' for Plan '28-SEP-08-20-PROT' not created in Review Charges, Checking in errors page</span>
+                <span class="reporter-method-output">Clicked the item: records-data-error-yes</span>
+                <span class="reporter-method-output"><br>verifyReviewCharges: Failed</span>
+                <span class="reporter-method-output"><br></span>
+                <span class="reporter-method-output"><a target="_blank" href="D:\Jagan\NostAuto\NostCore\NostArtifact\Screenshots\Screenshot_Tue_Sep_29_00_47_07_IST_2020.jpg">ScreenShot</a></span>
+                <span class="reporter-method-output"><br></span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -271,18 +900,86 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">NostGroup.NostArtifact.TestCases.UbarTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">NostGroup.NostArtifact.TestCases.UbarloginCase</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">browserLaunch</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="test-method">
-                <span class="method-name">ubarLogin({PassWord=aithentchn, rundata=Y, UserName=admin, e-Signature=a1234})</span>
-                <span class="method-start">7891 ms</span>
+                <span class="method-name">nostLogin({PassWord=aithentchn, rundata=Y, UserName=admin, e-Signature=a1234})</span>
+                <span class="method-start">7968 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">verifyCPP({cpp-cdm-price-eff-to=30-Sep-2020, cpp-cdm-plan-search=, cpp-cdm-service-name=14-SEP-11-20-Drg-ed, c...)</span>
-                <span class="method-start">20365 ms</span>
+                <span class="method-name">addProtocol({Service=Both, OP_Investigator_ID=Op-Inv-ID-02, Protocol_Phase_Start_Date=04-01-2020, Site_Number=ST...)</span>
+                <span class="method-start">11458 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addPharmacy({NCI_Record=Control, Grant_Control_Rights?=Yes, Disable_Dispensing/Par_Level_4=No, Disable_Dispensin...)</span>
+                <span class="method-start">32674 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addSupplier({Supplier_Name_3=28-SEP-08-20-Supplier-3, Supplier_Name_2=28-SEP-08-20-Supplier-2, Organization=Supp...)</span>
+                <span class="method-start">48042 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addCatalog({Aux_Label_6=, Aux_Label_5=, Aux_Label_4=Chemotherapy Drug, Drug_ID_#=28-SEP-08-20-Drg-DID1, Aux_Lab...)</span>
+                <span class="method-start">74537 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addPatient({Patient_Study_ID=28-SEP-08-20-PAT1-STY, Gender=Female, Protocol_ID=28-SEP-08-20-PROT, Patient_Statu...)</span>
+                <span class="method-start">95231 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">commonReceive({Receive_Protocol_ID=28-SEP-08-20-PROT, Receive_Drug_name=wewdw, Lot_#=586.iu45-LT3, Formulation=, R...)</span>
+                <span class="method-start">126320 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">submitqueueReceive({Receive_Protocol_ID=28-SEP-08-20-PROT, Receive_Drug_name=wewdw, Lot_#=586.iu45-LT3, Formulation=, R...)</span>
+                <span class="method-start">147950 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">commonTransferToPharmacy({Total_Qty_to_Drug_Transfer-Lot=10.0, esignature=a1234, Trans_from_Pharmacy=28-SEP-08-20-PHARM-1-C, ...)</span>
+                <span class="method-start">170912 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">ubarLogin({PassWord=aithentchn, rundata=Y, UserName=admin, e-Signature=a1234})</span>
+                <span class="method-start">211148 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyServiceMaster({service-plan-search=28-SEP-08-20-PROT, service-name-search=28-SEP-08-20-Drg})</span>
+                <span class="method-start">224821 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyFacility({facility-name=28-SEP-08-20-PHARM-1-C, facility-result-search-bar=})</span>
+                <span class="method-start">236827 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyCPP({cpp-cdm-price-eff-to=30-Sep-2020, cpp-cdm-plan-search=, cpp-cdm-service-name=28-SEP-08-20-Drg, cpp-...)</span>
+                <span class="method-start">247386 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">nostLogin2({PassWord=aithentchn, rundata=Y, UserName=admin, e-Signature=a1234})</span>
+                <span class="method-start">316586 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addDispense({label-pharmacy-address=, label-pt-Study-id=, dispense-pharmacy=16-JUN-3-20-Pharm1-C, dispense-unit-...)</span>
+                <span class="method-start">318584 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">ubarLogin2({PassWord=aithentchn, rundata=Y, UserName=admin, e-Signature=a1234})</span>
+                <span class="method-start">347343 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyServicedEntity({review-charges-billing-status=, review-charges-status=Pending Review, serviced-first-name=28-SEP-08...)</span>
+                <span class="method-start">357272 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyReviewCharges({review-charges-drug=28-SEP-08-20-Drg 22.22 mEq(Enema), review-charges-billing-status=Billable, revi...)</span>
+                <span class="method-start">370067 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

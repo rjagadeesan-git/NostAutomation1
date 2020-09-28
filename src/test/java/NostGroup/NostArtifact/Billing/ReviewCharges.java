@@ -29,11 +29,11 @@ public class ReviewCharges extends CommonMethods{
 		
 
 Robot robo1=new Robot();
-robo1.keyPress(KeyEvent.VK_CONTROL);
-robo1.keyPress(KeyEvent.VK_MINUS);
-Thread.sleep(2000);
-robo1.keyPress(KeyEvent.VK_MINUS);
-robo1.keyRelease(KeyEvent.VK_CONTROL);
+//robo1.keyPress(KeyEvent.VK_CONTROL);
+//robo1.keyPress(KeyEvent.VK_MINUS);
+//Thread.sleep(2000);
+//robo1.keyPress(KeyEvent.VK_MINUS);
+//robo1.keyRelease(KeyEvent.VK_CONTROL);
 
 //((JavascriptExecutor)Driver).executeScript("arguments[0].scrollIntoView();", find_element("service-master-menu","csssele"));
 Thread.sleep(2000);

@@ -11554,3 +11554,878 @@
 00:34:52,815 DEBUG freemarker.cache<strong>{1}</strong>:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
 00:34:52,816 DEBUG freemarker.cache<strong>{1}</strong>:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
 00:34:52,816 DEBUG freemarker.cache<strong>{1}</strong>:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/Administrator/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+00:40:24,678  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:17 - Testing started for Nostradamus  nostLogin
+00:40:24,685  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:41 - http://192.168.194.121:9999/Nostradamus/
+00:40:27,085  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:54 - Starting to Login...
+00:40:27,086  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: //*[@id='username']
+00:40:27,112  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: //*[@id='username']
+00:40:27,149  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:93 - Entered the value 'admin' in field 'username'
+00:40:27,150  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: //*[@id='password']
+00:40:27,161  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: //*[@id='password']
+00:40:27,200  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:93 - Entered the value 'aithentchn' in field 'password'
+00:40:27,201  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: /html/body/div/section[2]/div/section/div/div/div/div/form/div[1]/div[4]/input
+00:40:27,223  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: /html/body/div/section[2]/div/section/div/div/div/div/form/div[1]/div[4]/input
+00:40:27,683  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:83 - Clicked the item: login-button
+00:40:27,684  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:60 - logged in successfully...
+00:40:27,690  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:24 - 'On Test Success' invoked for nostLogin
+00:40:27,741 DEBUG freemarker.cache<strong>{1}</strong>:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+00:40:27,743 DEBUG freemarker.cache<strong>{1}</strong>:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+00:40:27,747 DEBUG freemarker.cache<strong>{1}</strong>:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+00:40:27,750 DEBUG freemarker.cache<strong>{1}</strong>:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+00:40:27,754 DEBUG freemarker.cache<strong>{1}</strong>:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/Administrator/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+00:40:28,159  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:17 - Testing started for Nostradamus  addProtocol
+00:40:28,843  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: #MegaMenu > div:nth-child(4) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > th:nth-child(1) > table:nth-child(2) > tbody:nth-child(1) > tr:nth-child(2) > td:nth-child(1) > ul:nth-child(1) > li:nth-child(1) > a:nth-child(1)
+00:40:28,856  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: #MegaMenu > div:nth-child(4) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > th:nth-child(1) > table:nth-child(2) > tbody:nth-child(1) > tr:nth-child(2) > td:nth-child(1) > ul:nth-child(1) > li:nth-child(1) > a:nth-child(1)
+00:40:29,101  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:83 - Clicked the item: protocol
+00:40:31,120  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: .cataloghead_bg > form:nth-child(1) > input:nth-child(1)
+00:40:31,131  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: .cataloghead_bg > form:nth-child(1) > input:nth-child(1)
+00:40:32,155  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:83 - Clicked the item: add-protocol
+00:40:32,155  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: studyNumber
+00:40:32,177  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: studyNumber
+00:40:32,244  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:93 - Entered the value '28-SEP-08-20-PROT' in field 'protocol-id'
+00:40:32,245  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: protocolTitle
+00:40:32,261  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: protocolTitle
+00:40:32,355  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:93 - Entered the value '28-SEP-08-20-PROT-Title' in field 'protocol-title'
+00:40:32,355  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: status1
+00:40:32,376  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: status1
+00:40:32,692  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:134 - Selected the value 'CNPE' in field 'protocol-status'
+00:40:32,693  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: pharmStatus
+00:40:32,781  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: pharmStatus
+00:40:33,096  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:134 - Selected the value 'Active' in field 'pharmacy-status'
+00:40:33,097  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: sponsor
+00:40:33,126  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: sponsor
+00:40:33,268  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:93 - Entered the value '28-SEP-08-20-PROT-SPID' in field 'sponsor-protocol-id'
+00:40:33,268  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: sponsorId2
+00:40:33,281  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: sponsorId2
+00:40:33,334  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:93 - Entered the value '28-SEP-08-20-PROT-SP' in field 'protocol-sponsor'
+00:40:33,334  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: siteNumber
+00:40:33,346  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: siteNumber
+00:40:33,377  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:93 - Entered the value 'STN002' in field 'site-number'
+00:40:33,378  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: phase
+00:40:33,392  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: phase
+00:40:33,664  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:134 - Selected the value 'Phase 2' in field 'protocol-phase'
+00:40:33,665  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: diseaseSite
+00:40:33,688  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: diseaseSite
+00:40:34,046  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:134 - Selected the value 'Leukemia' in field 'disease-program'
+00:40:34,047  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: protService
+00:40:34,069  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: protService
+00:40:34,437  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:134 - Selected the value 'Both' in field 'service'
+00:40:34,438  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: protSource
+00:40:34,465  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: protSource
+00:40:34,794  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:134 - Selected the value 'Industry' in field 'study-source'
+00:40:34,795  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: type
+00:40:34,822  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: type
+00:40:35,209  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:134 - Selected the value 'Open label' in field 'protocol-type'
+00:40:35,210  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: studyIcdCode1
+00:40:35,251  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: studyIcdCode1
+00:40:35,320  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:93 - Entered the value 'IRB-Z001' in field 'internal-irb'
+00:40:35,320  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: studyIcdCode2
+00:40:35,336  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: studyIcdCode2
+00:40:35,377  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:93 - Entered the value 'EIRB-Z100' in field 'external-irb'
+00:40:35,377  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: protCategory
+00:40:35,392  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: protCategory
+00:40:35,661  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:134 - Selected the value 'Genetics' in field 'protocol-category'
+00:40:35,662  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: li.ui-state-default:nth-child(2) > a:nth-child(1)
+00:40:35,691  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: li.ui-state-default:nth-child(2) > a:nth-child(1)
+00:40:36,042  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:83 - Clicked the item: staff
+00:40:36,042  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: piFirstName
+00:40:36,060  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: piFirstName
+00:40:36,143  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:93 - Entered the value 'nCoup-PI-FN' in field 'pi-first-name'
+00:40:36,143  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: piLastName
+00:40:36,158  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: piLastName
+00:40:36,201  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:93 - Entered the value 'nCoup-PI-LN' in field 'pi-last-name'
+00:40:36,202  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: investigatorId
+00:40:36,214  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: investigatorId
+00:40:36,250  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:93 - Entered the value 'Inv-ID-01' in field 'investigator-id'
+00:40:36,250  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: invIdExpDate
+00:40:36,261  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: invIdExpDate
+00:40:36,337  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:93 - Entered the value '10-10-2020' in field 'id-expiration'
+00:40:36,338  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: otherInstitution
+00:40:36,348  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: otherInstitution
+00:40:36,401  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:93 - Entered the value 'Opt-Ins-nCoup' in field 'opt-pi-institution'
+00:40:36,401  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: otherPIFirstName
+00:40:36,413  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: otherPIFirstName
+00:40:36,454  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:93 - Entered the value 'Op-Ins-FN' in field 'opt-pi-first-name'
+00:40:36,454  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: otherPILastName
+00:40:36,471  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: otherPILastName
+00:40:36,511  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:93 - Entered the value 'OP-Ins-LN' in field 'opt-pi-last-name'
+00:40:36,512  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: otherPIInvestId
+00:40:36,524  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: otherPIInvestId
+00:40:36,573  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:93 - Entered the value 'Op-Inv-ID-02' in field 'opt-investigator-id'
+00:40:36,574  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: otherinvIdExpDate
+00:40:36,588  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: otherinvIdExpDate
+00:40:36,658  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:93 - Entered the value '10-10-2020' in field 'opt-id-expiration'
+00:40:36,658  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: contacts
+00:40:36,667  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: contacts
+00:40:36,720  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:93 - Entered the value 'Study contact comments' in field 'study-contact'
+00:40:36,720  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: li.ui-state-default:nth-child(3) > a:nth-child(1)
+00:40:36,741  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: li.ui-state-default:nth-child(3) > a:nth-child(1)
+00:40:37,019  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:83 - Clicked the item: key-dates
+00:40:37,019  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: startDate
+00:40:37,045  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: startDate
+00:40:37,176  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:93 - Entered the value '04-01-2020' in field 'protocol-phase-start-date'
+00:40:37,176  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: patientCloseDate
+00:40:37,200  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: patientCloseDate
+00:40:37,266  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:93 - Entered the value '05-01-2020' in field 'closed-to-new-patients'
+00:40:37,267  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: closeDate
+00:40:37,277  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: closeDate
+00:40:37,341  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:93 - Entered the value '06-01-2020' in field 'protocol-closure-date'
+00:40:37,342  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: closeReason
+00:40:37,356  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: closeReason
+00:40:37,419  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:93 - Entered the value 'Protocol Study completed' in field 'reason-for-closure'
+00:40:37,419  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: endDate
+00:40:37,443  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: endDate
+00:40:37,502  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:93 - Entered the value '06-10-2020' in field 'protocol-completion-date'
+00:40:37,502  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: li.ui-state-default:nth-child(4) > a:nth-child(1)
+00:40:37,517  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: li.ui-state-default:nth-child(4) > a:nth-child(1)
+00:40:37,763  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:83 - Clicked the item: notifications
+00:40:37,763  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: #notifications > tbody:nth-child(1) > tr:nth-child(2) > td:nth-child(1) > textarea:nth-child(1)
+00:40:37,780  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: #notifications > tbody:nth-child(1) > tr:nth-child(2) > td:nth-child(1) > textarea:nth-child(1)
+00:40:37,869  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:93 - Entered the value 'Receive Notifications' in field 'not-receive'
+00:40:37,870  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: #notifications > tbody:nth-child(1) > tr:nth-child(2) > td:nth-child(2) > textarea:nth-child(1)
+00:40:37,888  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: #notifications > tbody:nth-child(1) > tr:nth-child(2) > td:nth-child(2) > textarea:nth-child(1)
+00:40:37,941  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:93 - Entered the value 'Transfer Notifications' in field 'not-transfer'
+00:40:37,942  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: #notifications > tbody:nth-child(1) > tr:nth-child(2) > td:nth-child(3) > textarea:nth-child(1)
+00:40:37,960  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: #notifications > tbody:nth-child(1) > tr:nth-child(2) > td:nth-child(3) > textarea:nth-child(1)
+00:40:38,014  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:93 - Entered the value 'Dispense Notifications' in field 'not-dispense'
+00:40:38,014  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: #notifications > tbody:nth-child(1) > tr:nth-child(5) > td:nth-child(2) > textarea:nth-child(1)
+00:40:38,029  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: #notifications > tbody:nth-child(1) > tr:nth-child(5) > td:nth-child(2) > textarea:nth-child(1)
+00:40:38,102  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:93 - Entered the value 'Destroy Notifications' in field 'not-destroy'
+00:40:38,102  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: #notifications > tbody:nth-child(1) > tr:nth-child(5) > td:nth-child(1) > textarea:nth-child(1)
+00:40:38,113  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: #notifications > tbody:nth-child(1) > tr:nth-child(5) > td:nth-child(1) > textarea:nth-child(1)
+00:40:38,175  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:93 - Entered the value 'Return Notifications' in field 'not-return'
+00:40:38,175  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: eSignKit
+00:40:38,191  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: eSignKit
+00:40:38,220  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:93 - Entered the value 'a1234' in field 'protocol-esign'
+00:40:38,220  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: addProt
+00:40:38,244  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: addProt
+00:40:39,171  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:83 - Clicked the item: protocol-submit
+00:40:44,171  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: //*[@id='Manage']
+00:40:44,197  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: //*[@id='Manage']
+00:40:49,239  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:24 - 'On Test Success' invoked for addProtocol
+00:40:49,241 DEBUG freemarker.cache<strong>{1}</strong>:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+00:40:49,243 DEBUG freemarker.cache<strong>{1}</strong>:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+00:40:49,245 DEBUG freemarker.cache<strong>{1}</strong>:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+00:40:49,246 DEBUG freemarker.cache<strong>{1}</strong>:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+00:40:49,246 DEBUG freemarker.cache<strong>{1}</strong>:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/Administrator/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+00:40:49,376  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:17 - Testing started for Nostradamus  addPharmacy
+00:40:49,387  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: //*[@id='Manage']
+00:40:49,397  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: //*[@id='Manage']
+00:40:52,541  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: #MegaMenu > div:nth-child(4) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > th:nth-child(1) > table:nth-child(2) > tbody:nth-child(1) > tr:nth-child(4) > td:nth-child(1) > ul:nth-child(1) > li:nth-child(1) > a:nth-child(1)
+00:40:52,568  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: #MegaMenu > div:nth-child(4) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > th:nth-child(1) > table:nth-child(2) > tbody:nth-child(1) > tr:nth-child(4) > td:nth-child(1) > ul:nth-child(1) > li:nth-child(1) > a:nth-child(1)
+00:40:52,853  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:83 - Clicked the item: organization
+00:40:52,854  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: orgEntityType
+00:40:53,613  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: orgEntityType
+00:40:53,764  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:134 - Selected the value 'Pharmacy' in field 'organization-selection'
+00:40:53,764  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: .moduleContent > form:nth-child(5) > input:nth-child(5)
+00:40:53,773  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: .moduleContent > form:nth-child(5) > input:nth-child(5)
+00:40:55,786  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: .moduleContent > form:nth-child(5) > input:nth-child(5)
+00:40:55,811  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: .moduleContent > form:nth-child(5) > input:nth-child(5)
+00:40:57,677  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:83 - Clicked the item: add-new-pharmacy
+00:40:57,678  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: .pharmSupplName
+00:40:57,735  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: .pharmSupplName
+00:40:57,824  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:93 - Entered the value '28-SEP-08-20-PHARM-1-C' in field 'pharmacy-name'
+00:40:57,824  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: isControl
+00:40:57,850  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: isControl
+00:40:57,857  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:100 - grant-control-rights selection is false
+00:40:58,099  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:104 -  Input is Yes for the field 'grant-control-rights' and Checkbox is unchecked by default, now checked/ticked successfully
+00:40:58,100  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: nci_record
+00:40:58,122  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: nci_record
+00:40:58,485  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:134 - Selected the value 'Control' in field 'nci-record'
+00:40:58,485  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: storeCondId-1
+00:40:58,511  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: storeCondId-1
+00:40:58,875  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:134 - Selected the value 'Refrigerator' in field 'storage-condition1'
+00:40:58,876  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: description-1
+00:40:58,901  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: description-1
+00:40:58,961  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: description-1
+00:40:58,980  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: description-1
+00:40:59,040  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:93 - Entered the value 'Location 1' in field 'storage-location1'
+00:40:59,041  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: dispDisable-1
+00:40:59,054  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: dispDisable-1
+00:40:59,065  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:100 - disable-dispense-par-level1 selection is false
+00:40:59,073  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:119 - 'disable-dispense-par-level1' is checked/ticked by default
+00:40:59,073  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: storeCondId-2
+00:40:59,081  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: storeCondId-2
+00:40:59,575  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:134 - Selected the value 'Room Temperature' in field 'storage-condition2'
+00:40:59,575  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: description-2
+00:40:59,584  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: description-2
+00:40:59,602  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: description-2
+00:40:59,612  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: description-2
+00:40:59,648  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:93 - Entered the value 'Location 2' in field 'storage-location2'
+00:40:59,648  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: dispDisable-2
+00:40:59,658  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: dispDisable-2
+00:40:59,665  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:100 - disable-dispense-par-level2 selection is false
+00:40:59,673  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:119 - 'disable-dispense-par-level2' is checked/ticked by default
+00:40:59,673  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: storeCondId-3
+00:40:59,681  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: storeCondId-3
+00:41:00,385  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:134 - Selected the value 'Refrigerated' in field 'storage-condition3'
+00:41:00,386  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: description-3
+00:41:00,394  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: description-3
+00:41:00,416  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: description-3
+00:41:00,428  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: description-3
+00:41:00,476  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:93 - Entered the value 'Location 3' in field 'storage-location3'
+00:41:00,476  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: dispDisable-3
+00:41:00,491  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: dispDisable-3
+00:41:00,501  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:100 - disable-dispense-par-level3 selection is false
+00:41:00,511  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:119 - 'disable-dispense-par-level3' is checked/ticked by default
+00:41:00,511  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: #tabs-1 > a:nth-child(4)
+00:41:00,520  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: #tabs-1 > a:nth-child(4)
+00:41:00,533  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: storeCondId-4
+00:41:00,546  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: storeCondId-4
+00:41:01,239  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:134 - Selected the value 'Freezer -20' in field 'storage-condition4'
+00:41:01,239  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: description-4
+00:41:01,246  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: description-4
+00:41:01,266  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: description-4
+00:41:01,278  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: description-4
+00:41:01,315  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:93 - Entered the value 'Location 4' in field 'storage-location4'
+00:41:01,315  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: dispDisable-4
+00:41:01,331  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: dispDisable-4
+00:41:01,342  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:100 - disable-dispense-par-level4 selection is false
+00:41:01,350  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:119 - 'disable-dispense-par-level4' is checked/ticked by default
+00:41:01,350  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: li.ui-state-default:nth-child(2) > a:nth-child(1)
+00:41:01,362  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: li.ui-state-default:nth-child(2) > a:nth-child(1)
+00:41:02,027  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:83 - Clicked the item: pharmacy-address
+00:41:02,028  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: address1
+00:41:02,060  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: address1
+00:41:02,111  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:93 - Entered the value '11.0' in field 'pharmacy-address-1'
+00:41:02,111  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: address2
+00:41:02,124  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: address2
+00:41:02,168  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:93 - Entered the value 'nCoup Street' in field 'pharmacy-address-2'
+00:41:02,168  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: phar_city
+00:41:02,181  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: phar_city
+00:41:02,215  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:93 - Entered the value 'nCoup City' in field 'pharmacy-city'
+00:41:02,215  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: phar_state
+00:41:02,226  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: phar_state
+00:41:02,262  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:93 - Entered the value 'nCoup State' in field 'pharmacy-state'
+00:41:02,262  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: postalCode
+00:41:02,277  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: postalCode
+00:41:02,314  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:93 - Entered the value '1234567.0' in field 'pharmacy-zip-postalcode'
+00:41:02,315  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: phonenum
+00:41:02,327  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: phonenum
+00:41:02,388  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:93 - Entered the value '098-098-0987' in field 'pharmacy-phone'
+00:41:02,389  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: pharforPatLabel
+00:41:02,403  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: pharforPatLabel
+00:41:02,474  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:93 - Entered the value 'nCoup Control pharmacy QA' in field 'pharmacy-name-label-name'
+00:41:02,474  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: deanum
+00:41:02,485  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: deanum
+00:41:02,516  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:93 - Entered the value 'DEA234' in field 'pharmacy-dea'
+00:41:02,517  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: pharmAddeSign
+00:41:02,530  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: pharmAddeSign
+00:41:02,557  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:93 - Entered the value 'a1234' in field 'pharmacy-esign'
+00:41:02,557  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: #addPhar
+00:41:02,569  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: #addPhar
+00:41:04,643  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:83 - Clicked the item: pharmacy-submit
+00:41:04,648  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:24 - 'On Test Success' invoked for addPharmacy
+00:41:04,654 DEBUG freemarker.cache<strong>{1}</strong>:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+00:41:04,656 DEBUG freemarker.cache<strong>{1}</strong>:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+00:41:04,657 DEBUG freemarker.cache<strong>{1}</strong>:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+00:41:04,659 DEBUG freemarker.cache<strong>{1}</strong>:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+00:41:04,659 DEBUG freemarker.cache<strong>{1}</strong>:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/Administrator/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+00:41:04,742  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:17 - Testing started for Nostradamus  addSupplier
+00:41:06,769  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: //*[@id='Manage']
+00:41:06,790  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: //*[@id='Manage']
+00:41:08,937  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: #MegaMenu > div:nth-child(4) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > th:nth-child(1) > table:nth-child(2) > tbody:nth-child(1) > tr:nth-child(4) > td:nth-child(1) > ul:nth-child(1) > li:nth-child(1) > a:nth-child(1)
+00:41:08,959  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: #MegaMenu > div:nth-child(4) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > th:nth-child(1) > table:nth-child(2) > tbody:nth-child(1) > tr:nth-child(4) > td:nth-child(1) > ul:nth-child(1) > li:nth-child(1) > a:nth-child(1)
+00:41:09,210  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:83 - Clicked the item: organization
+00:41:11,210  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: orgEntityType
+00:41:11,233  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: orgEntityType
+00:41:12,938  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:134 - Selected the value 'Supplier' in field 'organization-selection'
+00:41:17,943  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: .moduleContent > form:nth-child(5) > input:nth-child(4)
+00:41:17,966  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: .moduleContent > form:nth-child(5) > input:nth-child(4)
+00:41:17,992  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: .moduleContent > form:nth-child(5) > input:nth-child(4)
+00:41:18,029  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: .moduleContent > form:nth-child(5) > input:nth-child(4)
+00:41:18,293  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:83 - Clicked the item: supplier-add
+00:41:18,294  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: #row-1 > td:nth-child(1) > input:nth-child(1)
+00:41:18,867  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: #row-1 > td:nth-child(1) > input:nth-child(1)
+00:41:18,915  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:93 - Entered the value '28-SEP-08-20-Supplier-1' in field 'supplier-name'
+00:41:18,915  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: #addMoreSup > a:nth-child(2)
+00:41:18,925  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: #addMoreSup > a:nth-child(2)
+00:41:18,964  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:83 - Clicked the item: add-more-supplier1
+00:41:18,964  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: #row-2 > td:nth-child(1) > input:nth-child(1)
+00:41:18,976  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: #row-2 > td:nth-child(1) > input:nth-child(1)
+00:41:19,044  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:93 - Entered the value '28-SEP-08-20-Supplier-2' in field 'supplier-name-1'
+00:41:19,044  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: #addMoreSup > a:nth-child(2)
+00:41:19,055  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: #addMoreSup > a:nth-child(2)
+00:41:19,290  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:83 - Clicked the item: add-more-supplier2
+00:41:19,291  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: #row-3 > td:nth-child(1) > input:nth-child(1)
+00:41:19,308  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: #row-3 > td:nth-child(1) > input:nth-child(1)
+00:41:19,366  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:93 - Entered the value '28-SEP-08-20-Supplier-3' in field 'supplier-name-2'
+00:41:19,367  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: supplAddeSign
+00:41:19,378  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: supplAddeSign
+00:41:19,402  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:93 - Entered the value 'a1234' in field 'supplier-esign'
+00:41:19,403  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: supSave
+00:41:19,415  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: supSave
+00:41:23,075  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:83 - Clicked the item: supplier-submit
+00:41:27,075  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: //*[@id='Manage']
+00:41:27,100  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: //*[@id='Manage']
+00:41:31,137  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:24 - 'On Test Success' invoked for addSupplier
+00:41:31,139 DEBUG freemarker.cache<strong>{1}</strong>:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+00:41:31,140 DEBUG freemarker.cache<strong>{1}</strong>:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+00:41:31,141 DEBUG freemarker.cache<strong>{1}</strong>:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+00:41:31,141 DEBUG freemarker.cache<strong>{1}</strong>:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+00:41:31,142 DEBUG freemarker.cache<strong>{1}</strong>:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/Administrator/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+00:41:31,238  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:17 - Testing started for Nostradamus  addCatalog
+00:41:34,269  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: //*[@id='Manage']
+00:41:34,292  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: //*[@id='Manage']
+00:41:37,288  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: li.ui-state-default:nth-child(1) > a:nth-child(1)
+00:41:37,453  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: li.ui-state-default:nth-child(1) > a:nth-child(1)
+00:41:37,699  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:83 - Clicked the item: add-drug
+00:41:37,700  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: //*[@id='drugKitName-0#']
+00:41:37,732  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: //*[@id='drugKitName-0#']
+00:41:37,846  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:93 - Entered the value '28-SEP-08-20-Drg' in field 'drug-name'
+00:41:37,847  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: //*[@id='stengthType-0#']
+00:41:37,865  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: //*[@id='stengthType-0#']
+00:41:37,906  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:134 - Selected the value 'Strength' in field 'track-by'
+00:41:37,907  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: //*[@id='strgConcen-0#']
+00:41:37,914  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: //*[@id='strgConcen-0#']
+00:41:37,945  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:93 - Entered the value '22.22' in field 'strength-concentration'
+00:41:37,945  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: //*[@id='measureType-0#']
+00:41:37,959  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: //*[@id='measureType-0#']
+00:41:38,224  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:134 - Selected the value 'mEq' in field 'unit-of-measure'
+00:41:38,224  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: //*[@id='formulaType-0#']
+00:41:38,232  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: //*[@id='formulaType-0#']
+00:41:38,684  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:134 - Selected the value 'Enema' in field 'formulation'
+00:41:38,685  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: //*[@id='drugLabelName']
+00:41:38,709  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: //*[@id='drugLabelName']
+00:41:38,820  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:93 - Entered the value '28-SEP-08-20-Drg-dl1' in field 'drug-label-name'
+00:41:38,821  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: //*[@id='DrugIdNo']
+00:41:38,831  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: //*[@id='DrugIdNo']
+00:41:38,888  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:93 - Entered the value '28-SEP-08-20-Drg-DID1' in field 'drug-id'
+00:41:38,888  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: //*[@id='DrugNSC']
+00:41:38,898  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: //*[@id='DrugNSC']
+00:41:38,954  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:93 - Entered the value '28-SEP-08-20-Drg-nsc1' in field 'drug-nsc'
+00:41:38,955  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: //*[@id='aliasName-0-1']
+00:41:38,966  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: //*[@id='aliasName-0-1']
+00:41:39,029  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:93 - Entered the value '28-SEP-08-20-Drg-adn1' in field 'alternative-drug-name'
+00:41:39,029  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: li.ui-state-default:nth-child(2) > a:nth-child(1)
+00:41:39,041  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: li.ui-state-default:nth-child(2) > a:nth-child(1)
+00:41:39,301  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:83 - Clicked the item: set-defaults
+00:41:39,301  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: //*[@id='default_Pat']
+00:41:39,324  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: //*[@id='default_Pat']
+00:41:39,345  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:100 - patient-specific-drug selection is false
+00:41:39,374  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:119 - 'patient-specific-drug' is checked/ticked by default
+00:41:39,375  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: //*[@id='default_Ivrs']
+00:41:39,398  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: //*[@id='default_Ivrs']
+00:41:39,412  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:100 - ivrs selection is false
+00:41:39,674  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:104 -  Input is Yes for the field 'ivrs' and Checkbox is unchecked by default, now checked/ticked successfully
+00:41:39,675  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: //*[@id='default_tobeLink']
+00:41:39,698  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: //*[@id='default_tobeLink']
+00:41:40,075  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:134 - Selected the value 'Yes' in field 'to-be-linked'
+00:41:40,076  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: //*[@id='defaultAccountability']
+00:41:40,098  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: //*[@id='defaultAccountability']
+00:41:40,178  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:134 - Selected the value 'Lot' in field 'level-of-accountability'
+00:41:40,179  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: //*[@id='defaultAccountability']
+00:41:40,188  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: //*[@id='defaultAccountability']
+00:41:40,254  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: //*[@id='defaultUnitType']
+00:41:40,262  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: //*[@id='defaultUnitType']
+00:41:40,516  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:134 - Selected the value 'Tube' in field 'unit-type'
+00:41:40,516  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: //*[@id='defaultQtyPerUnit']
+00:41:40,545  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: //*[@id='defaultQtyPerUnit']
+00:41:40,617  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:93 - Entered the value '48.0' in field 'qty-per-unit'
+00:41:40,620  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: //*[@id='def_Supplier']
+00:41:40,632  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: //*[@id='def_Supplier']
+00:41:40,698  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:93 - Entered the value '28-SEP-08-20-Supplier-1' in field 'catalog-supplier-name'
+00:41:40,698  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: //*[@id='defaultStoreCond']
+00:41:40,710  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: //*[@id='defaultStoreCond']
+00:41:40,971  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:134 - Selected the value 'Room Temperature' in field 'storage-condition'
+00:41:40,972  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: //*[@id='defalutPharm']
+00:41:41,002  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: //*[@id='defalutPharm']
+00:41:41,637  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:134 - Selected the value '28-SEP-08-20-PHARM-1-C' in field 'pharmacy'
+00:41:41,638  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: //*[@id='defalutStorageLocName']
+00:41:41,664  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: //*[@id='defalutStorageLocName']
+00:41:42,034  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:134 - Selected the value 'Location 2' in field 'storage-location'
+00:41:42,035  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: //*[@id='defaultFrequency']
+00:41:42,064  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: //*[@id='defaultFrequency']
+00:41:42,400  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:134 - Selected the value 'twice daily' in field 'frequency'
+00:41:42,401  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: //*[@id='DISPENSEDOSE']
+00:41:42,428  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: //*[@id='DISPENSEDOSE']
+00:41:42,573  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:93 - Entered the value 'Take with water of 8oz, before food' in field 'dose-on-label'
+00:41:42,573  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: //*[@id='defaultLblTemplate']
+00:41:42,592  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: //*[@id='defaultLblTemplate']
+00:41:42,851  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:134 - Selected the value 'Standard (w/ Lab)' in field 'label-template'
+00:41:42,852  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: //*[@id='defaultdaySupply']
+00:41:42,876  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: //*[@id='defaultdaySupply']
+00:41:42,957  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:93 - Entered the value '10.0' in field 'day-supply'
+00:41:42,958  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: //*[@id='aliasType-1']
+00:41:42,973  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: //*[@id='aliasType-1']
+00:41:43,234  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:134 - Selected the value 'Take With Food' in field 'aux-label1'
+00:41:43,235  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: //*[@id='aliasType-2']
+00:41:43,261  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: //*[@id='aliasType-2']
+00:41:43,610  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:134 - Selected the value 'Shake Well' in field 'aux-label2'
+00:41:43,610  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: //*[@id='aliasType-3']
+00:41:43,634  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: //*[@id='aliasType-3']
+00:41:43,979  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:134 - Selected the value 'Refrigerate' in field 'aux-label3'
+00:41:43,980  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: //*[@id='aliasType-4']
+00:41:44,003  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: //*[@id='aliasType-4']
+00:41:44,354  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:134 - Selected the value 'Chemotherapy Drug' in field 'aux-label4'
+00:41:44,355  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: li.ui-state-default:nth-child(1) > a:nth-child(1)
+00:41:44,375  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: li.ui-state-default:nth-child(1) > a:nth-child(1)
+00:41:44,693  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:83 - Clicked the item: add-drug
+00:41:44,694  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: #assToPrt
+00:41:44,718  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: #assToPrt
+00:41:44,850  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:93 - Entered the value '28-SEP-08-20-PROT' in field 'cat-prot-sear'
+00:41:46,384  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: #listPopUp1 > input:nth-child(3)
+00:41:46,410  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: #listPopUp1 > input:nth-child(3)
+00:41:46,700  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:83 - Clicked the item: cat-prot-sear-ok
+00:41:46,701  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: //*[@id='eSignKit']  
+00:41:46,726  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: //*[@id='eSignKit']  
+00:41:46,810  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:93 - Entered the value 'a1234' in field 'catalog-esign'
+00:41:46,810  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: //*[@id='addCatlg']
+00:41:46,837  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: //*[@id='addCatlg']
+00:41:49,806  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:83 - Clicked the item: catalog-submit
+00:41:51,814  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:24 - 'On Test Success' invoked for addCatalog
+00:41:51,816 DEBUG freemarker.cache<strong>{1}</strong>:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+00:41:51,818 DEBUG freemarker.cache<strong>{1}</strong>:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+00:41:51,819 DEBUG freemarker.cache<strong>{1}</strong>:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+00:41:51,820 DEBUG freemarker.cache<strong>{1}</strong>:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+00:41:51,821 DEBUG freemarker.cache<strong>{1}</strong>:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/Administrator/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+00:41:51,933  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:17 - Testing started for Nostradamus  addPatient
+00:41:54,962  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: //*[@id='Manage']
+00:41:54,990  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: //*[@id='Manage']
+00:41:58,310  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: #MegaMenu > div:nth-child(4) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > th:nth-child(1) > table:nth-child(2) > tbody:nth-child(1) > tr:nth-child(3) > td:nth-child(1) > ul:nth-child(1) > li:nth-child(1) > a:nth-child(1)
+00:41:58,317  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: #MegaMenu > div:nth-child(4) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > th:nth-child(1) > table:nth-child(2) > tbody:nth-child(1) > tr:nth-child(3) > td:nth-child(1) > ul:nth-child(1) > li:nth-child(1) > a:nth-child(1)
+00:41:58,544  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:83 - Clicked the item: patient-menu
+00:42:00,546  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: .cataloghead_bg > form:nth-child(1) > input:nth-child(1)
+00:42:00,573  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: .cataloghead_bg > form:nth-child(1) > input:nth-child(1)
+00:42:01,515  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:83 - Clicked the item: add-patient-to-protocol
+00:42:03,544  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: mrn
+00:42:03,567  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: mrn
+00:42:03,716  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:93 - Entered the value '28-SEP-08-20-PAT1-1' in field 'patient-mrn'
+00:42:05,718  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: firstName
+00:42:05,726  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: firstName
+00:42:06,091  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:93 - Entered the value '28-SEP-08-20-FN' in field 'patient-first-name'
+00:42:06,091  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: lastName
+00:42:06,104  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: lastName
+00:42:06,144  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:93 - Entered the value '28-SEP-08-20-LN' in field 'patient-last-name'
+00:42:06,144  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: gender
+00:42:06,155  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: gender
+00:42:06,188  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:134 - Selected the value 'Female' in field 'patient-gender'
+00:42:06,188  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: dob
+00:42:06,195  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: dob
+00:42:06,255  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:93 - Entered the value '11-10-1999' in field 'patient-dob'
+00:42:06,255  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: personStatus
+00:42:06,268  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: personStatus
+00:42:06,303  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:134 - Selected the value 'Active' in field 'patient-status'
+00:42:06,304  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: searchprotvalue
+00:42:06,312  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: searchprotvalue
+00:42:06,378  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:93 - Entered the value '28-SEP-08-20-PROT' in field 'patient-protocol-id'
+00:42:11,578  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: accessionNumber
+00:42:11,600  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: accessionNumber
+00:42:11,747  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:93 - Entered the value '28-SEP-08-20-PAT1-STY' in field 'patient-study-id'
+00:42:12,195  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: cohort
+00:42:12,217  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: cohort
+00:42:12,286  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:93 - Entered the value '39.87' in field 'cohort-dose-level'
+00:42:12,287  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: li.customhide > a:nth-child(1)
+00:42:12,310  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: li.customhide > a:nth-child(1)
+00:42:12,555  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:83 - Clicked the item: add-contact-info
+00:42:12,556  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: address1
+00:42:12,584  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: address1
+00:42:12,671  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:93 - Entered the value '11.0' in field 'address-1'
+00:42:12,672  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: address2
+00:42:12,696  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: address2
+00:42:12,740  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:93 - Entered the value '2nd Street' in field 'address-2'
+00:42:12,740  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: city
+00:42:12,751  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: city
+00:42:12,778  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:93 - Entered the value 'Chennai' in field 'city'
+00:42:12,778  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: state
+00:42:12,789  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: state
+00:42:12,828  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:93 - Entered the value 'Tamil Nadu' in field 'state'
+00:42:12,828  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: zip
+00:42:12,837  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: zip
+00:42:12,870  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:93 - Entered the value '123456.0' in field 'zip-postal-code'
+00:42:12,871  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: country
+00:42:12,885  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: country
+00:42:12,918  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:93 - Entered the value 'India' in field 'country'
+00:42:12,918  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: homePhone
+00:42:12,931  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: homePhone
+00:42:12,978  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:93 - Entered the value '098-098-978765' in field 'home-phone'
+00:42:12,979  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: businessPhone
+00:42:12,993  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: businessPhone
+00:42:13,027  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:93 - Entered the value '7297932-899' in field 'work-phone'
+00:42:13,028  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: email
+00:42:13,039  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: email
+00:42:13,082  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:93 - Entered the value 'ncoup@ncoup.com' in field 'email'
+00:42:13,083  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: person_PID
+00:42:13,096  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: person_PID
+00:42:13,126  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:93 - Entered the value 'PID-002' in field 'pid'
+00:42:13,127  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: eSignKit
+00:42:13,138  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: eSignKit
+00:42:13,163  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:93 - Entered the value 'a1234' in field 'patient-esgin'
+00:42:13,164  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: addPat
+00:42:13,188  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: addPat
+00:42:14,786  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:83 - Clicked the item: patient-submit
+00:42:18,787  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: //*[@id='Manage']
+00:42:18,808  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: //*[@id='Manage']
+00:42:22,838  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:24 - 'On Test Success' invoked for addPatient
+00:42:22,839 DEBUG freemarker.cache<strong>{1}</strong>:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+00:42:22,841 DEBUG freemarker.cache<strong>{1}</strong>:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+00:42:22,842 DEBUG freemarker.cache<strong>{1}</strong>:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+00:42:22,843 DEBUG freemarker.cache<strong>{1}</strong>:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+00:42:22,844 DEBUG freemarker.cache<strong>{1}</strong>:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/Administrator/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+00:42:23,048  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:17 - Testing started for Nostradamus  commonReceive
+00:42:23,066  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: #Receive
+00:42:23,078  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: #Receive
+00:42:27,374  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: plusDrugRc
+00:42:27,404  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: plusDrugRc
+00:42:29,160  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:83 - Clicked the item: receive-add
+00:42:32,162  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: searchprotvalue
+00:42:32,185  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: searchprotvalue
+00:42:32,339  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:93 - Entered the value '28-SEP-08-20-PROT' in field 'receive-protocol-id'
+00:42:43,111  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: accountablity
+00:42:43,122  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: accountablity
+00:42:43,195  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: lotNumber
+00:42:43,203  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: lotNumber
+00:42:43,254  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:93 - Entered the value '586.iu45-LT3' in field 'receive-lot'
+00:42:43,254  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: expDate
+00:42:43,265  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: expDate
+00:42:43,682  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:93 - Entered the value '05-05-2021' in field 'receive-expiration-date'
+00:42:43,682  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: totalQty
+00:42:43,695  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: totalQty
+00:42:43,727  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:93 - Entered the value '250.0' in field 'receive-total-qty'
+00:42:43,728  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: comments
+00:42:43,737  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: comments
+00:42:43,780  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:93 - Entered the value 'Receving Drug' in field 'receive-comment'
+00:42:43,780  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: btnRecSave
+00:42:43,798  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: btnRecSave
+00:42:44,550  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:83 - Clicked the item: receive-save
+00:42:44,554  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:24 - 'On Test Success' invoked for commonReceive
+00:42:44,555 DEBUG freemarker.cache<strong>{1}</strong>:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+00:42:44,556 DEBUG freemarker.cache<strong>{1}</strong>:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+00:42:44,557 DEBUG freemarker.cache<strong>{1}</strong>:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+00:42:44,558 DEBUG freemarker.cache<strong>{1}</strong>:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+00:42:44,558 DEBUG freemarker.cache<strong>{1}</strong>:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/Administrator/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+00:42:44,652  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:17 - Testing started for Nostradamus  submitqueueReceive
+00:42:44,663  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: #Receive
+00:42:44,672  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: #Receive
+00:42:52,871  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: button.ui-button:nth-child(1) > span:nth-child(1)
+00:42:52,905  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: button.ui-button:nth-child(1) > span:nth-child(1)
+00:42:52,994  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: button.ui-button:nth-child(1) > span:nth-child(1)
+00:42:53,009  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: button.ui-button:nth-child(1) > span:nth-child(1)
+00:42:56,421  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: #receiveDrug_filter > label:nth-child(1) > input:nth-child(1)
+00:42:56,443  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: #receiveDrug_filter > label:nth-child(1) > input:nth-child(1)
+00:42:56,554  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:93 - Entered the value '28-SEP-08-20-PROT' in field 'rec-tab-search'
+00:43:05,331  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: rcDrgSave
+00:43:05,355  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: rcDrgSave
+00:43:05,383  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: eSignKit
+00:43:05,413  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: eSignKit
+00:43:05,484  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:93 - Entered the value 'a1234' in field 'receive-edit'
+00:43:05,487  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: rcDrgSave
+00:43:05,526  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: rcDrgSave
+00:43:07,487  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:83 - Clicked the item: receive-submit
+00:43:07,492  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:24 - 'On Test Success' invoked for submitqueueReceive
+00:43:07,494 DEBUG freemarker.cache<strong>{1}</strong>:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+00:43:07,495 DEBUG freemarker.cache<strong>{1}</strong>:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+00:43:07,497 DEBUG freemarker.cache<strong>{1}</strong>:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+00:43:07,498 DEBUG freemarker.cache<strong>{1}</strong>:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+00:43:07,498 DEBUG freemarker.cache<strong>{1}</strong>:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/Administrator/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+00:43:07,619  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:17 - Testing started for Nostradamus  commonTransferToPharmacy
+00:43:07,653  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: Transfer
+00:43:07,665  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: Transfer
+00:43:09,806  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: #MegaMenu > div:nth-child(4) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > th:nth-child(1) > table:nth-child(2) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(1) > ul:nth-child(1) > li:nth-child(1) > a:nth-child(1)
+00:43:09,828  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: #MegaMenu > div:nth-child(4) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > th:nth-child(1) > table:nth-child(2) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(1) > ul:nth-child(1) > li:nth-child(1) > a:nth-child(1)
+00:43:10,080  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:83 - Clicked the item: trans-to-pharm
+00:43:10,081  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: button.ui-button:nth-child(1) > span:nth-child(1)
+00:43:10,098  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: button.ui-button:nth-child(1) > span:nth-child(1)
+00:43:10,174  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: button.ui-button:nth-child(1) > span:nth-child(1)
+00:43:10,190  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: button.ui-button:nth-child(1) > span:nth-child(1)
+00:43:17,633  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: searchprotvalue
+00:43:17,656  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: searchprotvalue
+00:43:17,815  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:93 - Entered the value '28-SEP-08-20-PROT' in field 'trans-protocol-id'
+00:43:37,251  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: pharmSupplId
+00:43:37,273  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: pharmSupplId
+00:43:37,380  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:134 - Selected the value '28-SEP-08-20-PHARM-1-C' in field 'trans-fro-pharmacy'
+00:43:37,380  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: storeLocId
+00:43:37,406  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: storeLocId
+00:43:37,508  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:134 - Selected the value 'Location 2' in field 'trans-from-sto-location'
+00:43:40,509  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: toPharm
+00:43:40,538  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: toPharm
+00:43:41,503  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:134 - Selected the value '16-JUN-3-20-Pharm1-C' in field 'trans-to-pharmacy'
+00:43:41,504  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: tolocation
+00:43:41,530  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: tolocation
+00:43:41,877  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:134 - Selected the value 'Location 2' in field 'trans-to-sto-location'
+00:43:41,878  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: transComments
+00:43:41,902  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: transComments
+00:43:42,015  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:93 - Entered the value 'Transfer comments' in field 'trans-comment'
+00:43:46,017  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: leveldis
+00:43:46,088  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: leveldis
+00:43:46,154  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: availQty1
+00:43:46,185  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: availQty1
+00:43:46,286  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:93 - Entered the value '10.0' in field 'trans-tot-qty-lot'
+00:43:46,286  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: eSignKit
+00:43:46,303  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: eSignKit
+00:43:46,330  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:93 - Entered the value 'a1234' in field 'trans-esign'
+00:43:46,331  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: transPhar
+00:43:46,345  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: transPhar
+00:43:47,756  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:83 - Clicked the item: trans-submit
+00:43:47,769  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:24 - 'On Test Success' invoked for commonTransferToPharmacy
+00:43:47,770 DEBUG freemarker.cache<strong>{1}</strong>:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+00:43:47,771 DEBUG freemarker.cache<strong>{1}</strong>:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+00:43:47,773 DEBUG freemarker.cache<strong>{1}</strong>:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+00:43:47,775 DEBUG freemarker.cache<strong>{1}</strong>:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+00:43:47,775 DEBUG freemarker.cache<strong>{1}</strong>:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/Administrator/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+00:43:47,852  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:17 - Testing started for Nostradamus  ubarLogin
+00:43:47,853  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:44 - http://192.168.194.121:9999/UBAR
+00:43:49,755  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:57 - Login Billing starts...
+00:43:49,755  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: username
+00:43:49,769  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: username
+00:43:49,807  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:93 - Entered the value 'admin' in field 'username-billing'
+00:43:49,807  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: password
+00:43:49,825  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: password
+00:43:49,880  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:93 - Entered the value 'aithentchn' in field 'password-billing'
+00:43:49,880  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: .btn
+00:43:49,910  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: .btn
+00:43:55,375  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:83 - Clicked the item: login-button-billing
+00:43:55,375  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:63 - logged in successfully...
+00:44:01,390  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:24 - 'On Test Success' invoked for ubarLogin
+00:44:01,391 DEBUG freemarker.cache<strong>{1}</strong>:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+00:44:01,393 DEBUG freemarker.cache<strong>{1}</strong>:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+00:44:01,394 DEBUG freemarker.cache<strong>{1}</strong>:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+00:44:01,396 DEBUG freemarker.cache<strong>{1}</strong>:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+00:44:01,397 DEBUG freemarker.cache<strong>{1}</strong>:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/Administrator/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+00:44:01,525  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:17 - Testing started for Nostradamus  verifyServiceMaster
+00:44:01,559  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: #menu-primary-menu-1 > li:nth-child(5) > a:nth-child(1)
+00:44:01,578  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: #menu-primary-menu-1 > li:nth-child(5) > a:nth-child(1)
+00:44:01,662  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:83 - Clicked the item: maintenance-billing-menu
+00:44:03,662  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: #menu-primary-menu-1 > li:nth-child(5) > ul:nth-child(2) > li:nth-child(14) > a:nth-child(1)
+00:44:03,684  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: #menu-primary-menu-1 > li:nth-child(5) > ul:nth-child(2) > li:nth-child(14) > a:nth-child(1)
+00:44:05,920  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:83 - Clicked the item: service-master-menu
+00:44:05,920  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: sMPlan
+00:44:05,950  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: sMPlan
+00:44:06,014  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:93 - Entered the value '28-SEP-08-20-PROT' in field 'service-plan-search'
+00:44:10,020  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: sMServiceName
+00:44:10,042  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: sMServiceName
+00:44:10,164  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:93 - Entered the value '28-SEP-08-20-Drg' in field 'service-name-search'
+00:44:10,164  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: div.col-lg-1:nth-child(3) > div:nth-child(1) > button:nth-child(1)
+00:44:10,181  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: div.col-lg-1:nth-child(3) > div:nth-child(1) > button:nth-child(1)
+00:44:11,117  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:83 - Clicked the item: service-search
+00:44:13,118  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: svcMasterTable
+00:44:13,140  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: svcMasterTable
+00:44:13,385  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:66 - Drug '28-SEP-08-20-Drg' integrated in Service Master successfully
+00:44:13,390  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:24 - 'On Test Success' invoked for verifyServiceMaster
+00:44:13,391 DEBUG freemarker.cache<strong>{1}</strong>:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+00:44:13,393 DEBUG freemarker.cache<strong>{1}</strong>:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+00:44:13,394 DEBUG freemarker.cache<strong>{1}</strong>:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+00:44:13,395 DEBUG freemarker.cache<strong>{1}</strong>:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+00:44:13,396 DEBUG freemarker.cache<strong>{1}</strong>:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/Administrator/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+00:44:13,530  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:17 - Testing started for Nostradamus  verifyFacility
+00:44:13,564  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: #menu-primary-menu-1 > li:nth-child(5) > a:nth-child(1)
+00:44:13,584  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: #menu-primary-menu-1 > li:nth-child(5) > a:nth-child(1)
+00:44:13,728  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:83 - Clicked the item: maintenance-billing-menu
+00:44:15,729  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: #menu-primary-menu-1 > li:nth-child(5) > ul:nth-child(2) > li:nth-child(6) > a:nth-child(1)
+00:44:15,752  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: #menu-primary-menu-1 > li:nth-child(5) > ul:nth-child(2) > li:nth-child(6) > a:nth-child(1)
+00:44:16,709  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:83 - Clicked the item: facility-menu
+00:44:16,710  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: sFacName
+00:44:16,745  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: sFacName
+00:44:16,814  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:93 - Entered the value '28-SEP-08-20-PHARM-1-C' in field 'facility-name'
+00:44:20,821  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: ManageFacilityData
+00:44:20,848  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: ManageFacilityData
+00:44:21,598  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:83 - Clicked the item: facility-search
+00:44:21,599  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: input.form-control:nth-child(1)
+00:44:21,641  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: input.form-control:nth-child(1)
+00:44:21,791  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:93 - Entered the value '28-SEP-08-20-PHARM-1-C' in field 'facility-result-search-bar'
+00:44:23,792  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: mngFacilityTable
+00:44:23,820  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: mngFacilityTable
+00:44:23,998  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:314 - Facility '28-SEP-08-20-PHARM-1-C' found in the Facility table
+00:44:24,001  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:24 - 'On Test Success' invoked for verifyFacility
+00:44:24,002 DEBUG freemarker.cache<strong>{1}</strong>:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+00:44:24,003 DEBUG freemarker.cache<strong>{1}</strong>:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+00:44:24,004 DEBUG freemarker.cache<strong>{1}</strong>:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+00:44:24,005 DEBUG freemarker.cache<strong>{1}</strong>:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+00:44:24,005 DEBUG freemarker.cache<strong>{1}</strong>:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/Administrator/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+00:44:24,086  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:17 - Testing started for Nostradamus  verifyCPP
+00:44:26,089  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: #menu-primary-menu-1 > li:nth-child(5) > a:nth-child(1)
+00:44:26,114  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: #menu-primary-menu-1 > li:nth-child(5) > a:nth-child(1)
+00:44:26,268  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:83 - Clicked the item: maintenance-billing-menu
+00:44:28,268  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: #menu-primary-menu-1 > li:nth-child(5) > ul:nth-child(2) > li:nth-child(7) > a:nth-child(1)
+00:44:28,292  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: #menu-primary-menu-1 > li:nth-child(5) > ul:nth-child(2) > li:nth-child(7) > a:nth-child(1)
+00:44:30,620  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:83 - Clicked the item: cpp-menu
+00:44:30,621  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: planId
+00:44:30,654  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: planId
+00:44:30,714  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:93 - Entered the value '28-SEP-08-20-PROT' in field 'cpp-plan-search'
+00:44:32,716  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: cppTableSearch
+00:44:32,738  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: cppTableSearch
+00:44:33,254  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:83 - Clicked the item: cpp-search
+00:44:36,255  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: cppTable
+00:44:36,276  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: cppTable
+00:44:36,428  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:71 - Plan '28-SEP-08-20-PROT' integrated to CPP successfully
+00:44:37,028  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: div.panel-body:nth-child(4) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > label:nth-child(1) > a:nth-child(1) > span:nth-child(1)
+00:44:37,050  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: div.panel-body:nth-child(4) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > label:nth-child(1) > a:nth-child(1) > span:nth-child(1)
+00:44:37,461  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:83 - Clicked the item: cpp-payer-search-icon
+00:44:39,463  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: #attachCppPayerTableData_filter > label:nth-child(1) > input:nth-child(1)
+00:44:39,485  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: #attachCppPayerTableData_filter > label:nth-child(1) > input:nth-child(1)
+00:44:39,632  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:93 - Entered the value 'Dummil-Test' in field 'cpp-payer-search-result-search-bar'
+00:44:44,633  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: attachCppPayerTableData
+00:44:44,661  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: attachCppPayerTableData
+00:45:00,664  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:123 - Payer 'Dummil-Test' selected from existing Payer's list successfully
+00:45:00,665  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: div.col-md-2:nth-child(3) > div:nth-child(1) > button:nth-child(1)
+00:45:00,690  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: div.col-md-2:nth-child(3) > div:nth-child(1) > button:nth-child(1)
+00:45:01,001  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:83 - Clicked the item: cpp-attach-payer
+00:45:06,945  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: cppServicesTable
+00:45:06,967  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: cppServicesTable
+00:45:07,054  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:458 - Service '28-SEP-08-20-Drg' not listed in CPP CDM
+00:45:07,055  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: cppServicesTable1
+00:45:07,101  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: cppServicesTable1
+00:45:09,052  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:487 - Service '28-SEP-08-20-Drg' found in CPP Services table
+00:45:12,053  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: parentPType
+00:45:12,073  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: parentPType
+00:45:12,505  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:83 - Clicked the item: cpp-cdm-quantity-based
+00:45:12,506  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: svcPrice
+00:45:12,524  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: svcPrice
+00:45:12,650  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:93 - Entered the value '230.0' in field 'cpp-cdm-service-price'
+00:45:27,652  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: div.row:nth-child(16) > div:nth-child(3) > div:nth-child(1) > button:nth-child(1)
+00:45:27,676  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: div.row:nth-child(16) > div:nth-child(3) > div:nth-child(1) > button:nth-child(1)
+00:45:28,026  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:83 - Clicked the item: cpp-cdm-save
+00:45:33,028  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: cppServicesTable
+00:45:33,048  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: cppServicesTable
+00:45:33,191  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:537 - After CDM addition, CDM entry added successfully in CPP CDM
+00:45:33,195  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:24 - 'On Test Success' invoked for verifyCPP
+00:45:33,196 DEBUG freemarker.cache<strong>{1}</strong>:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+00:45:33,196 DEBUG freemarker.cache<strong>{1}</strong>:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+00:45:33,197 DEBUG freemarker.cache<strong>{1}</strong>:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+00:45:33,197 DEBUG freemarker.cache<strong>{1}</strong>:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+00:45:33,198 DEBUG freemarker.cache<strong>{1}</strong>:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/Administrator/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+00:45:33,286  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:17 - Testing started for Nostradamus  nostLogin2
+00:45:33,287  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:41 - http://192.168.194.121:9999/Nostradamus/
+00:45:34,543  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:54 - Starting to Login...
+00:45:34,543  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: //*[@id='username']
+00:45:34,560  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: //*[@id='username']
+00:45:34,605  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:93 - Entered the value 'admin' in field 'username'
+00:45:34,606  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: //*[@id='password']
+00:45:34,620  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: //*[@id='password']
+00:45:34,682  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:93 - Entered the value 'aithentchn' in field 'password'
+00:45:34,683  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: /html/body/div/section[2]/div/section/div/div/div/div/form/div[1]/div[4]/input
+00:45:34,690  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: /html/body/div/section[2]/div/section/div/div/div/div/form/div[1]/div[4]/input
+00:45:35,215  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:83 - Clicked the item: login-button
+00:45:35,215  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:60 - logged in successfully...
+00:45:35,217  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:24 - 'On Test Success' invoked for nostLogin2
+00:45:35,217 DEBUG freemarker.cache<strong>{1}</strong>:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+00:45:35,218 DEBUG freemarker.cache<strong>{1}</strong>:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+00:45:35,218 DEBUG freemarker.cache<strong>{1}</strong>:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+00:45:35,218 DEBUG freemarker.cache<strong>{1}</strong>:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+00:45:35,218 DEBUG freemarker.cache<strong>{1}</strong>:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/Administrator/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+00:45:35,286  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:17 - Testing started for Nostradamus  addDispense
+00:45:35,330  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: //*[@id='Manage']
+00:45:35,339  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: //*[@id='Manage']
+00:45:38,585  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: #MegaMenu > div:nth-child(4) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > th:nth-child(1) > table:nth-child(2) > tbody:nth-child(1) > tr:nth-child(3) > td:nth-child(1) > ul:nth-child(1) > li:nth-child(1) > a:nth-child(1)
+00:45:38,598  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: #MegaMenu > div:nth-child(4) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > th:nth-child(1) > table:nth-child(2) > tbody:nth-child(1) > tr:nth-child(3) > td:nth-child(1) > ul:nth-child(1) > li:nth-child(1) > a:nth-child(1)
+00:45:38,852  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:83 - Clicked the item: patient-menu
+00:45:41,853  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: #managePatient_filter > label:nth-child(1) > input:nth-child(1)
+00:45:41,876  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: #managePatient_filter > label:nth-child(1) > input:nth-child(1)
+00:45:42,143  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:83 - Clicked the item: manage-patient-result-search-bar
+00:45:42,144  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: #managePatient_filter > label:nth-child(1) > input:nth-child(1)
+00:45:42,166  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: #managePatient_filter > label:nth-child(1) > input:nth-child(1)
+00:45:42,291  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:93 - Entered the value '28-SEP-08-20-PAT1-1' in field 'manage-patient-result-search-bar'
+00:45:47,297  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: managePatient
+00:45:47,319  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: managePatient
+00:45:47,745  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:75 - Patient '28-SEP-08-20-PAT1-1' present in Patient table
+00:45:47,746  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: .cataloghead_bg > form:nth-child(1) > input:nth-child(3)
+00:45:47,753  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: .cataloghead_bg > form:nth-child(1) > input:nth-child(3)
+00:45:50,296  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:83 - Clicked the item: dispense-to-patient-pat
+00:45:52,298  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: drugKitId
+00:45:52,320  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: drugKitId
+00:45:52,435  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:134 - Selected the value '28-SEP-08-20-Drg 22.22mEq' in field 'dispense-drug-name'
+00:45:52,435  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: lotnum
+00:45:52,456  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: lotnum
+00:45:54,862  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:134 - Selected the value '586.iu45-LT3' in field 'dispense-lot'
+00:45:54,863  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: pharmSupplId
+00:45:54,885  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: pharmSupplId
+00:45:55,004  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:134 - Selected the value '16-JUN-3-20-Pharm1-C' in field 'dispense-pharmacy'
+00:45:55,005  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: storeLocId
+00:45:55,028  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: storeLocId
+00:45:55,137  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:134 - Selected the value 'Location 2' in field 'dispense-storage-location'
+00:45:55,138  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: dose
+00:45:55,172  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: dose
+00:45:55,264  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:93 - Entered the value '6 tabs twice a day' in field 'dispense-dose'
+00:45:55,264  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: transComments
+00:45:55,276  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: transComments
+00:45:55,320  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:93 - Entered the value 'Dispense 3' in field 'dispense-comments'
+00:45:55,321  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: visit
+00:45:55,337  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: visit
+00:45:55,373  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:93 - Entered the value '3rd visit' in field 'dispense-visit'
+00:45:59,374  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: leveldis
+00:45:59,395  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: leveldis
+00:45:59,462  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: disQty
+00:45:59,484  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: disQty
+00:45:59,569  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:93 - Entered the value '9.0' in field 'total-dispense-qty'
+00:45:59,570  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: eSignKit
+00:45:59,589  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: eSignKit
+00:45:59,618  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:93 - Entered the value 'a1234' in field 'dispense-dispense-esign'
+00:45:59,618  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: adDis
+00:45:59,628  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: adDis
+00:46:03,960  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:83 - Clicked the item: dispense-submit
+00:46:03,965  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:24 - 'On Test Success' invoked for addDispense
+00:46:03,966 DEBUG freemarker.cache<strong>{1}</strong>:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+00:46:03,968 DEBUG freemarker.cache<strong>{1}</strong>:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+00:46:03,969 DEBUG freemarker.cache<strong>{1}</strong>:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+00:46:03,970 DEBUG freemarker.cache<strong>{1}</strong>:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+00:46:03,971 DEBUG freemarker.cache<strong>{1}</strong>:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/Administrator/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+00:46:04,044  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:17 - Testing started for Nostradamus  ubarLogin2
+00:46:04,044  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:44 - http://192.168.194.121:9999/UBAR
+00:46:04,708  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:57 - Login Billing starts...
+00:46:04,709  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: username
+00:46:04,751  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: username
+00:46:04,789  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:93 - Entered the value 'admin' in field 'username-billing'
+00:46:04,789  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: password
+00:46:04,802  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: password
+00:46:04,841  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:93 - Entered the value 'aithentchn' in field 'password-billing'
+00:46:04,841  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: .btn
+00:46:04,854  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: .btn
+00:46:07,869  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:83 - Clicked the item: login-button-billing
+00:46:07,869  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:63 - logged in successfully...
+00:46:13,881  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:24 - 'On Test Success' invoked for ubarLogin2
+00:46:13,882 DEBUG freemarker.cache<strong>{1}</strong>:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+00:46:13,884 DEBUG freemarker.cache<strong>{1}</strong>:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+00:46:13,885 DEBUG freemarker.cache<strong>{1}</strong>:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+00:46:13,886 DEBUG freemarker.cache<strong>{1}</strong>:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+00:46:13,887 DEBUG freemarker.cache<strong>{1}</strong>:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/Administrator/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+00:46:13,972  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:17 - Testing started for Nostradamus  verifyServicedEntity
+00:46:15,984  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: #menu-primary-menu-1 > li:nth-child(5) > a:nth-child(1)
+00:46:16,011  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: #menu-primary-menu-1 > li:nth-child(5) > a:nth-child(1)
+00:46:16,153  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:83 - Clicked the item: maintenance-billing-menu
+00:46:18,154  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: #menu-primary-menu-1 > li:nth-child(5) > ul:nth-child(2) > li:nth-child(3) > a:nth-child(1)
+00:46:18,177  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: #menu-primary-menu-1 > li:nth-child(5) > ul:nth-child(2) > li:nth-child(3) > a:nth-child(1)
+00:46:19,163  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:83 - Clicked the item: serviced-entity-menu
+00:46:19,164  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: sSEFName
+00:46:19,191  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: sSEFName
+00:46:19,245  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:93 - Entered the value '28-SEP-08-20-FN' in field 'serviced-first-name'
+00:46:23,247  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: ManageSvcdEntityData
+00:46:23,269  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: ManageSvcdEntityData
+00:46:23,339  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:33 - 'On Test Failure' invoked for verifyServicedEntity
+00:46:26,340  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:41 - Test failed  verifyServicedEntity
+00:46:26,727 DEBUG freemarker.cache<strong>{1}</strong>:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+00:46:26,727 DEBUG freemarker.cache<strong>{1}</strong>:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+00:46:26,728 DEBUG freemarker.cache<strong>{1}</strong>:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+00:46:26,728 DEBUG freemarker.cache<strong>{1}</strong>:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+00:46:26,728 DEBUG freemarker.cache<strong>{1}</strong>:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/Administrator/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+00:46:26,767  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:17 - Testing started for Nostradamus  verifyReviewCharges
+00:46:30,795  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: #menu-primary-menu-1 > li:nth-child(2) > a:nth-child(1)
+00:46:30,817  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: #menu-primary-menu-1 > li:nth-child(2) > a:nth-child(1)
+00:46:30,917  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:83 - Clicked the item: billing-review-charges-menu
+00:46:32,918  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: #menu-primary-menu-1 > li:nth-child(2) > ul:nth-child(2) > li:nth-child(1) > a:nth-child(1)
+00:46:32,939  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: #menu-primary-menu-1 > li:nth-child(2) > ul:nth-child(2) > li:nth-child(1) > a:nth-child(1)
+00:46:33,215  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:83 - Clicked the item: charges-menu
+00:46:35,217  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: #menu-primary-menu-1 > li:nth-child(2) > ul:nth-child(2) > li:nth-child(1) > ul:nth-child(2) > li:nth-child(1) > a:nth-child(1)
+00:46:35,239  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: #menu-primary-menu-1 > li:nth-child(2) > ul:nth-child(2) > li:nth-child(1) > ul:nth-child(2) > li:nth-child(1) > a:nth-child(1)
+00:46:37,469  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:83 - Clicked the item: review-charges-menu
+00:46:39,471  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: planIdTA
+00:46:39,498  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: planIdTA
+00:46:39,617  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:93 - Entered the value '28-SEP-08-20-PROT' in field 'review-charges-plan'
+00:46:43,622  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: statusId
+00:46:43,694  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: statusId
+00:46:43,773  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:134 - Selected the value 'Pending Review' in field 'review-charges-status'
+00:46:45,774  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: showRsliData1
+00:46:45,794  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: showRsliData1
+00:46:46,632  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:83 - Clicked the item: review-charges-search
+00:46:50,632  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: rsliTable
+00:46:50,653  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: rsliTable
+00:46:50,891  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:129 - Charges for Drug '28-SEP-08-20-Drg 22.22 mEq(Enema)' with price '20.0' for Plan '28-SEP-08-20-PROT' not created in Review Charges, Checking in errors page
+00:46:50,891  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:196 - Finding Element: notResolved
+00:46:50,905  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:235 - Found Element: notResolved
+00:46:51,172  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:83 - Clicked the item: records-data-error-yes
+00:47:04,315  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:33 - 'On Test Failure' invoked for verifyReviewCharges
+00:47:07,316  INFO NostGroup.NostArtifact.Base.BrowserAct<strong>{1}</strong>:41 - Test failed  verifyReviewCharges
+00:47:08,092 DEBUG freemarker.cache<strong>{1}</strong>:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+00:47:08,093 DEBUG freemarker.cache<strong>{1}</strong>:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+00:47:08,093 DEBUG freemarker.cache<strong>{1}</strong>:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+00:47:08,093 DEBUG freemarker.cache<strong>{1}</strong>:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+00:47:08,093 DEBUG freemarker.cache<strong>{1}</strong>:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/Administrator/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
