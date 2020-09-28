@@ -26,11 +26,11 @@ public class Dispense extends CommonMethods {
 	
 	public void dispPatientSearch(Hashtable<String,String> data) throws InterruptedException, AWTException {
 		
-		
 		ex_wait= new WebDriverWait(Driver,20);
 		ex_wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id='Manage']")));
 		action.moveToElement(find_element("manage-menu","xpath")).perform();	
 		Thread.sleep(3000);
+		ex_wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#MegaMenu > div:nth-child(4) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > th:nth-child(1) > table:nth-child(2) > tbody:nth-child(1) > tr:nth-child(3) > td:nth-child(1) > ul:nth-child(1) > li:nth-child(1) > a:nth-child(1)")));
 		click("patient-menu","csssele");
 //		WebElement rec_proceed=find_element("receive-proceed","csssele");
 //		if(rec_proceed.isDisplayed()) {
