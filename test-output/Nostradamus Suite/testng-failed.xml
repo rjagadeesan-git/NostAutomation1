@@ -12,16 +12,14 @@
         <methods>
           <include name="addDispense"/>
           <include name="addProtocol"/>
-          <include name="verifyReviewCharges"/>
+          <include name="verifyReviewCharges" invocation-numbers="0"/>
           <include name="addPatient"/>
           <include name="browserLaunch"/>
           <include name="addCatalog"/>
           <include name="verifyServiceMaster"/>
-          <include name="nostLogin2"/>
           <include name="nostLogin"/>
-          <include name="verifyServicedEntity"/>
-          <include name="verifyCPP" invocation-numbers="0"/>
-          <include name="ubarLogin2"/>
+          <include name="verifyServicedEntity" invocation-numbers="0"/>
+          <include name="verifyCPP"/>
         </methods>
       </class> <!-- NostGroup.NostArtifact.TestCases.UbarloginCase -->
     </classes>

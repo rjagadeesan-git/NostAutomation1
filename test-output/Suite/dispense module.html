@@ -1,0 +1,120 @@
+<html>
+<head>
+<title>TestNG:  dispense module</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>dispense module</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>2/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Sep 16 07:06:35 IST 2020</td>
+</tr>
+<tr><td>Total time:</td><td>39 seconds (39017 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='NostGroup.NostArtifact.TestCases.DispenseCase.nostLogin()'><b>nostLogin</b><br>Test class: NostGroup.NostArtifact.TestCases.DispenseCase<br>Parameters: {PassWord=ncoup, rundata=Y, UserName=admin, e-Signature=a1234}<br/>
+<a href="#Output-742672280" onClick='toggleBox("Output-742672280", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-742672280" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-742672280">
+Starting to Login....<br/>
+Entered the value 'admin' in field 'username'<br/>
+Entered the value 'ncoup' in field 'password'<br/>
+Clicked the item: login-button<br/>
+</div>
+</td>
+<td></td>
+<td>7</td>
+<td>NostGroup.NostArtifact.TestCases.DispenseCase@548a102f</td></tr>
+<tr>
+<td title='NostGroup.NostArtifact.TestCases.DispenseCase.saveQueueDispense()'><b>saveQueueDispense</b><br>Test class: NostGroup.NostArtifact.TestCases.DispenseCase<br>Parameters: {label-pharmacy-address=, label-pt-Study-id=, dispense-pharmacy=16-SEP-01-20-PHARM-1-C, dispense-unit-type=, label-dob=, label-esign=, label-drug-id=, dispense-expiration-date=, label-address=, label-pharmacy-location=, drugname-on-label=, dose-on-label=, dispense-comments=Dispense 3, label-rx=, label-cohort-level=, Unit1=QWAP-101, label-name=, disp_unit1=, dispense-storage-location=Location 2, dispense-dispense-esign=a1234, dispense-dose=6 tabs twice a day, dispense-protocol=16-SEP-01-20-PROT, label-compounding-batch=, dispense-storage-condition=Room Temperature, dispense-route=, dispense-formulation=, label-use-by-time=, label-protocol-id=, dispense-pat-mrn=16-SEP-01-20-PAT1-1, dispense-drug-name=16-SEP-01-20-Drg 22.22mEq, dispense-visit=3rd visit, label-prescriber=, dispense-lot=586.iu45-LT2, no-of-labels=, qty-on-label=, dispense-qty-per-unit=, dispense-frequency=, label-institute-name=, label-pharmacy-phone=, total-dispense-qty=9.0, label-mrn=, label-lot=, dispense-loa=, =}<br/>
+<a href="#Output-1773336805" onClick='toggleBox("Output-1773336805", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1773336805" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1773336805">
+Clicked the item: patient-menu<br/>
+Clicked the item: manage-patient-result-search-bar<br/>
+Entered the value '16-SEP-01-20-PAT1-1' in field 'manage-patient-result-search-bar'<br/>
+Patient '16-SEP-01-20-PAT1-1' present in Patient table<br/>
+Clicked the item: dispense-to-patient-pat<br/>
+Selected the value '16-SEP-01-20-Drg 22.22mEq in field 'dispense-drug-name'<br/>
+Selected the value '586.iu45-LT2 in field 'dispense-lot'<br/>
+Selected the value '16-SEP-01-20-PHARM-1-C in field 'dispense-pharmacy'<br/>
+Selected the value 'Location 2 in field 'dispense-storage-location'<br/>
+Entered the value '6 tabs twice a day' in field 'dispense-dose'<br/>
+Entered the value 'Dispense 3' in field 'dispense-comments'<br/>
+Entered the value '3rd visit' in field 'dispense-visit'<br/>
+Entered the value '9.0' in field 'total-dispense-qty'<br/>
+Entered the value 'a1234' in field 'dispense-dispense-esign'<br/>
+Clicked the item: dispense-save-queue<br/>
+</div>
+</td>
+<td></td>
+<td>28</td>
+<td>NostGroup.NostArtifact.TestCases.DispenseCase@548a102f</td></tr>
+</table><p>
+</body>
+</html>

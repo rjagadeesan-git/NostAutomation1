@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Maintenance Creation"
+           tests="3"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="40.557">
+  <properties />
+  
+  
+            <testcase name="nostLogin" time="3.796" classname="NostGroup.NostArtifact.TestCases.ReceiveCase" />
+                <testcase name="submitqueueReceive" time="15.567" classname="NostGroup.NostArtifact.TestCases.ReceiveCase" />
+                <testcase name="commonReceive" time="21.194" classname="NostGroup.NostArtifact.TestCases.ReceiveCase" />
+      
+</testsuite>

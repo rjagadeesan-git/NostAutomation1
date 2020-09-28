@@ -3,6 +3,7 @@ package NostGroup.NostArtifact.Base;
 import java.lang.reflect.Method;
 import java.util.Hashtable;
 
+import org.apache.poi.ss.usermodel.DataFormatter;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Parameters;
 
@@ -36,6 +37,7 @@ public static Object[][] getData(Method m){
 		Object[][] data = new Object[rows-1][1];
 		
 		Hashtable<String,String> table = null;
+		//DataFormatter formatter=new DataFormatter();
 		
 		for(int rowNum=2; rowNum<=rows; rowNum++){
 			
@@ -44,8 +46,10 @@ public static Object[][] getData(Method m){
 			for(int colNum=0; colNum<cols; colNum++){
 				
 		//	data[rowNum-2][colNum]=	excel.getCellData(sheetName, colNum, rowNum);
-		
-			table.put(helper.getCellData(sheetName,1,colNum), helper.getCellData(sheetName,rowNum,colNum));	
+			String picker1=helper.getCellData(sheetName,1,colNum);
+			String picker2=helper.getCellData(sheetName,rowNum,colNum);
+			//table.put(helper.getCellData(sheetName,1,colNum), helper.getCellData(sheetName,rowNum,colNum));
+				table.put(picker1, picker2);
 			data[rowNum-2][0]=table;	
 				
 			}

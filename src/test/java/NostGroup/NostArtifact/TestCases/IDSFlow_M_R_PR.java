@@ -112,23 +112,26 @@ public class IDSFlow_M_R_PR extends BrowserAct{
 		Receive rec=new Receive();
 		rec.receiveSubmitQueue(data);
 	}
-//	@Test(dataProvider="getData",dataProviderClass = CellDataProvider.class,priority=8)
-//	public void verifyReceive() {}
 	
-	@Test(dataProvider="getData",dataProviderClass = CellDataProvider.class,priority=14,dependsOnMethods= {"commonReceive"})
+////	@Test(dataProvider="getData",dataProviderClass = CellDataProvider.class,priority=8)
+////	public void verifyReceive() {}
+//	
+	@Test(dataProvider="getData",dataProviderClass = CellDataProvider.class,priority=14,dependsOnMethods= {"submitqueueReceive"})
 	public void commonTransferToPharmacy(Hashtable<String,String> data) throws IOException, InterruptedException, AWTException {
 		
 		TransferToPharmacy transGen=new TransferToPharmacy();
 		transGen.transferCommon(data);
 	}
-	
-//	@Test(dataProvider="getData",dataProviderClass = CellDataProvider.class,priority=10)
-//	public void verifyTranstoPharm() {}
-	
+//	
+////	@Test(dataProvider="getData",dataProviderClass = CellDataProvider.class,priority=10)
+////	public void verifyTranstoPharm() {}
+//	
 	@Test(dataProvider="getData",dataProviderClass = CellDataProvider.class,priority=15,dependsOnMethods= {"commonTransferToPharmacy"})
 	public void addDispense(Hashtable<String,String> data) throws IOException, InterruptedException, AWTException {
 		Dispense disp=new Dispense();
 		disp.dispPatientSearch(data);
+		
+	}
 	
 //	@Test(dataProvider="getData",dataProviderClass = CellDataProvider.class,priority=12)
 //	public void verifyDispense() {}
@@ -139,5 +142,5 @@ public class IDSFlow_M_R_PR extends BrowserAct{
 //	@Test(dataProvider="getData",dataProviderClass = CellDataProvider.class,priority=14)
 //	public void verifyPatReturn() {}
 		
-	}
+	
 }

@@ -117,11 +117,43 @@ public class Catalog extends CommonMethods{
 		click("catalog-submit","xpath");
 		//click("catalog-cancel","xpath");
 
+			
 		Thread.sleep(2000);
+//		((JavascriptExecutor)Driver).executeScript("arguments[0].scrollIntoView();",find_element("manage-menu","xpath"));		
+//		Thread.sleep(4000);
 		
 	}
 	
-	public void editCatalog() {}
+	public void catalogEdit(Hashtable<String,String> data) throws InterruptedException, AWTException {
+		
+		Robot robo1=new Robot();
+		Thread.sleep(3000);
+		ex_wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id='Manage']")));
+		action.moveToElement(find_element("manage-menu","xpath")).perform();
+		((JavascriptExecutor)Driver).executeScript("menuActionMethod('Manage','catalogDrug.action');");
+		//((JavascriptExecutor)Driver).executeScript("addDrugCodLists();");
+		
+		Thread.sleep(3000);
+		type("catalog-tab-search","csssele",data.get("Drug_Name"));
+		Thread.sleep(2000);
+		robo1.keyPress(KeyEvent.VK_ENTER);
+		robo1.keyRelease(KeyEvent.VK_ENTER);
+		Thread.sleep(2000);
+		
+		String drug_id=data.get("Drug_Name");
+		String drug_tab_id=prop.getProperty("drug-result-search-tabu");
+		tableCommon("drug-result-search-tabu",drug_tab_id,"Catalog",drug_id,2,2,"checkbox_click");
+		click("edit-catalog-button","csssele");
+		Thread.sleep(2000);
+		find_element("drug-name","xpath").clear();
+		Thread.sleep(2000);
+		type("drug-name","xpath",data.get("Drug_Name_edit"));
+		
+		//Catalog submission
+			type("catalog-esign","xpath",data.get("esignature"));
+			click("catalog-submit","xpath");
+	
+	}
 	
 	public void catalogVerify(Hashtable<String,String> data) throws InterruptedException, AWTException {
 		
@@ -144,7 +176,37 @@ public class Catalog extends CommonMethods{
 		//String tab_loc_ref,String table_id,String entity_type,String entity_value,int col_text,int col_click,String action
 		tableCommon("drug-result-search-tabu",drug_tab_id,"Catalog",drug_id,2,2,"verify");
 		
+		Thread.sleep(2000);
+		((JavascriptExecutor)Driver).executeScript("arguments[0].scrollIntoView();",find_element("manage-menu","xpath"));		
+		Thread.sleep(4000);
 	}
+	
+public void catalogEditVerify(Hashtable<String,String> data) throws InterruptedException, AWTException {
+		
+		Robot robo1=new Robot();
+		Thread.sleep(3000);
+		ex_wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id='Manage']")));
+		action.moveToElement(find_element("manage-menu","xpath")).perform();
+		((JavascriptExecutor)Driver).executeScript("menuActionMethod('Manage','catalogDrug.action');");
+		//((JavascriptExecutor)Driver).executeScript("addDrugCodLists();");
+		
+		Thread.sleep(3000);
+		type("catalog-tab-search","csssele",data.get("Drug_Name_edit"));
+		Thread.sleep(2000);
+		robo1.keyPress(KeyEvent.VK_ENTER);
+		robo1.keyRelease(KeyEvent.VK_ENTER);
+		Thread.sleep(2000);
+		
+		String drug_id=data.get("Drug_Name_edit");
+		String drug_tab_id=prop.getProperty("drug-result-search-tabu");
+		//String tab_loc_ref,String table_id,String entity_type,String entity_value,int col_text,int col_click,String action
+		tableCommon("drug-result-search-tabu",drug_tab_id,"Catalog",drug_id,2,2,"verify");
+		
+		Thread.sleep(2000);
+		((JavascriptExecutor)Driver).executeScript("arguments[0].scrollIntoView();",find_element("manage-menu","xpath"));		
+		Thread.sleep(4000);
+	}
+	
 	
 	public void cat_Prot_Asso() {}
 	

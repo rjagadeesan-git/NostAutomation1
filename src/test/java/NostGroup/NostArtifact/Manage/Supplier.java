@@ -24,6 +24,7 @@ public class Supplier extends CommonMethods{
 //		Actions action=new Actions(Driver);
 //		WebDriverWait ex_wait= new WebDriverWait(Driver,20);
 //		Driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
+		Thread.sleep(2000);
 		ex_wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id='Manage']")));
 		action.moveToElement(find_element("manage-menu","xpath")).perform();
 		Thread.sleep(2000);
@@ -52,9 +53,40 @@ public class Supplier extends CommonMethods{
 		Thread.sleep(4000);
 		((JavascriptExecutor)Driver).executeScript("arguments[0].scrollIntoView();",find_element("manage-menu","xpath"));
 		Thread.sleep(4000);
+		
 	}
 
-	public void supplierEdit() {}
+	public void supplierEdit(Hashtable<String,String> data) throws InterruptedException, AWTException {
+		
+		Thread.sleep(2000);
+		ex_wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id='Manage']")));
+		action.moveToElement(find_element("manage-menu","xpath")).perform();
+		Thread.sleep(2000);
+		click("organization","csssele");
+		//System.out.println("Page loaded");
+		Thread.sleep(2000);
+		selectText("organization-selection","id",data.get("Organization"));
+		Thread.sleep(3000);
+		
+		Robot robo1=new Robot();
+		Thread.sleep(2000);
+		type("supplier-search-bar","csssele",data.get("Supplier_Name_1"));
+		Thread.sleep(2000);
+		robo1.keyPress(KeyEvent.VK_ENTER);
+		robo1.keyRelease(KeyEvent.VK_ENTER);
+		Thread.sleep(2000);
+		
+		String supplier_name=data.get("Supplier_Name_1");
+		String supplier_tab_id=prop.getProperty("supplier-search-result-tabu");
+		//String tab_loc_ref,String table_id,String entity_type,String entity_value,int col_text,int col_click,String action
+		tableCommon("supplier-search-result-tabu",supplier_tab_id,"Supplier",supplier_name,2,2,"checkbox_click");
+		
+		Thread.sleep(2000);
+		find_element("supplier-name","csssele").clear();
+		type("supplier-name","csssele",data.get("Supplier_Name_1_Edit"));
+		type("supplier-esign","id",data.get("esignature"));
+		click("supplier-submit","id");
+	}
 	
 	public void supplierDelete() {}
 	
@@ -85,10 +117,34 @@ public class Supplier extends CommonMethods{
 		
 	}
 	
-	public void supplierEditVerify() {}
+	public void supplierEditVerify(Hashtable<String,String> data) throws InterruptedException, AWTException {
+		
+//		ex_wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id='Manage']")));
+//		action.moveToElement(find_element("manage-menu","xpath")).perform();
+//		Thread.sleep(2000);
+//		click("organization","csssele");
+//		System.out.println("Page loaded");
+		Thread.sleep(2000);
+		selectText("organization-selection","id",data.get("Organization"));
+		Thread.sleep(3000);
+		System.out.println("Organization selected "+data.get("Organization"));
+		
+		Robot robo1=new Robot();
+		Thread.sleep(2000);
+		type("supplier-search-bar","csssele",data.get("Supplier_Name_1_Edit"));
+		Thread.sleep(2000);
+		robo1.keyPress(KeyEvent.VK_ENTER);
+		robo1.keyRelease(KeyEvent.VK_ENTER);
+		Thread.sleep(2000);
+		
+		String supplier_name=data.get("Supplier_Name_1_Edit");
+		String supplier_tab_id=prop.getProperty("supplier-search-result-tabu");
+		//String tab_loc_ref,String table_id,String entity_type,String entity_value,int col_text,int col_click,String action
+		tableCommon("supplier-search-result-tabu",supplier_tab_id,"Supplier",supplier_name,2,2,"verify");
+	
+	}
 	
 	public void supplierDeleteVerify() {}
-	
 	
 	
 }

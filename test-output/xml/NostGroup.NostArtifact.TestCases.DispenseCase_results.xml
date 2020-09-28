@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="dispense Creation"
+<testsuite name="dispense module"
            tests="2"
            failures="0"
            errors="0"
            skipped="0"
-           time="19.397">
+           time="35.882">
   <properties />
   
   
-            <testcase name="addDispense" time="12.608" classname="NostGroup.NostArtifact.TestCases.DispenseCase" />
-                <testcase name="nostLogin" time="6.789" classname="NostGroup.NostArtifact.TestCases.DispenseCase" />
+            <testcase name="saveQueueDispense" time="28.479" classname="NostGroup.NostArtifact.TestCases.DispenseCase" />
+                <testcase name="nostLogin" time="7.403" classname="NostGroup.NostArtifact.TestCases.DispenseCase" />
       
 </testsuite>

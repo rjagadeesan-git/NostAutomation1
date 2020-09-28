@@ -119,7 +119,40 @@ public class Protocol extends CommonMethods{
 	Thread.sleep(5000);
 	}
 	
-	public void protocolEdit() {}
+	public void protocolEdit(Hashtable<String,String> data) throws InterruptedException, AWTException {
+		
+		ex_wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id='Manage']")));
+		action.moveToElement(Driver.findElement(By.xpath("//*[@id='Manage']"))).perform();
+		ex_wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("/html/body/div[1]/section[1]/div/div/table/tbody/tr/td/div[2]/div[3]/table/tbody/tr/th/table/tbody/tr[2]/td/ul/li/a")));
+		click("protocol","csssele");
+		Thread.sleep(2000);
+		
+		Robot robo1=new Robot();
+		Thread.sleep(3000);
+		type("protocol-tab-search","csssele",data.get("Protocol_ID"));
+		Thread.sleep(2000);
+		robo1.keyPress(KeyEvent.VK_ENTER);
+		robo1.keyRelease(KeyEvent.VK_ENTER);
+		Thread.sleep(2000);
+		
+		String protocol_id=data.get("Protocol_ID");
+		String protocol_tab_id=prop.getProperty("protocol-result-search-tabu");
+		//String tab_loc_ref,String table_id,String entity_type,String entity_value,int col_text,int col_click,String action
+		tableCommon("protocol-result-search-tabu",protocol_tab_id,"Protocol",protocol_id,2,2,"checkbox_click");
+		
+		click("edit-pharmacy","csssele");
+		Thread.sleep(2000);
+		find_element("protocol-id","id").clear();
+		type("protocol-id","id",data.get("Protocol_ID_Edit"));
+		//Protocol submission
+		type("protocol-esign","id",data.get("esignature"));
+		click("protocol-submit","id");
+		
+		Thread.sleep(5000);
+		((JavascriptExecutor)Driver).executeScript("arguments[0].scrollIntoView();",find_element("manage-menu","xpath"));
+		Thread.sleep(5000);
+		
+	}
 	
 	public void protocolVerify(Hashtable<String,String> data) throws AWTException, InterruptedException {
 		
@@ -143,10 +176,25 @@ public class Protocol extends CommonMethods{
 		String protocol_tab_id=prop.getProperty("protocol-result-search-tabu");
 		//String tab_loc_ref,String table_id,String entity_type,String entity_value,int col_text,int col_click,String action
 		tableCommon("protocol-result-search-tabu",protocol_tab_id,"Protocol",protocol_id,2,2,"verify");
-	
 		
 	}
 	
-	public void protocolVerifyTable() {}
+	public void protocolEditVerify(Hashtable<String,String> data) throws AWTException, InterruptedException {
+		
+		Robot robo1=new Robot();
+		Thread.sleep(3000);
+		type("protocol-tab-search","csssele",data.get("Protocol_ID_Edit"));
+		Thread.sleep(2000);
+		robo1.keyPress(KeyEvent.VK_ENTER);
+		robo1.keyRelease(KeyEvent.VK_ENTER);
+		Thread.sleep(2000);
+		
+		String protocol_id=data.get("Protocol_ID_Edit");
+		String protocol_tab_id=prop.getProperty("protocol-result-search-tabu");
+		//String tab_loc_ref,String table_id,String entity_type,String entity_value,int col_text,int col_click,String action
+		tableCommon("protocol-result-search-tabu",protocol_tab_id,"Protocol",protocol_id,2,2,"verify");
+		
+		
+	}
 
 }

@@ -314,12 +314,19 @@ public class CommonMethods {
 					log.info(entity_type+" '"+entity_value+"' found in the "+entity_type+" table");
 					Reporter.log(entity_type+" '"+entity_value+"' found in the "+entity_type+" table");
 						} else if(action.equalsIgnoreCase("click")) {
-							
 							Driver.findElement(By.xpath("//table[@id='"+table_id+"']/tbody/tr["+row+"]/td["+col_click+"]")).click();
 							System.out.println(entity_type+" "+entity_value+" found in the table to click");
 							extest.log(LogStatus.PASS,entity_type+" '"+entity_value+"' found in the "+entity_type+" table to click");
 							log.info(entity_type+" '"+entity_value+"' found in the "+entity_type+" table to click");
 							Reporter.log(entity_type+" '"+entity_value+"' found in the "+entity_type+" table to click");
+						} else if(action.equalsIgnoreCase("checkbox_click")) {
+							
+							Driver.findElement(By.xpath("//table[@id='"+table_id+"']/tbody/tr["+row+"]/td[1]")).click();
+							System.out.println(entity_type+" "+entity_value+" found in the table to be checked");
+							extest.log(LogStatus.PASS,entity_type+" '"+entity_value+"' found in the "+entity_type+" table to be checked");
+							log.info(entity_type+" '"+entity_value+"' found in the "+entity_type+" table to be checked");
+							Reporter.log(entity_type+" '"+entity_value+"' found in the "+entity_type+" table to be checked");
+							
 						}
 					break;
 				} else if(tab_comp_value.contains(entity_value))	{

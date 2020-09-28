@@ -1,26 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="dispense Creation"
            tests="15"
-           failures="3"
+           failures="1"
            errors="0"
-           skipped="2"
-           time="173.584">
+           skipped="1"
+           time="254.275">
   <properties />
-            <testcase name="verifyProtocol" time="0.288" classname="NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR">
-                <failure type="org.openqa.selenium.ElementNotInteractableException"
-                  message="Element &lt;a href=&quot;javascript:menuMethod(&apos;Manage&apos;,&apos;pages/jsp/ManProtocol.jsp&apos;);&quot;&gt; could not be scrolled into view
+            <testcase name="commonTransferToPharmacy" time="36.554" classname="NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR">
+                <failure type="org.openqa.selenium.NoSuchElementException"
+                  message="Unable to locate element: #pharmSupplId
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;CSEKARAITHENT&apos;, ip: &apos;192.168.195.19&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_112&apos;
+System info: host: &apos;CSEKARAITHENT&apos;, ip: &apos;192.168.195.48&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_112&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 78.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200708170202, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 10544, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 11ac783b-52b2-4c0c-aa81-31e2ff51b7eb"
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 81.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200917005511, moz:geckodriverVersion: 0.27.0, moz:headless: false, moz:processID: 19096, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 8fcb554e-c521-4272-89e1-70dfab6ec55f
+*** Element info: {Using=id, value=pharmSupplId}"
               >
-<![CDATA[org.openqa.selenium.ElementNotInteractableException: Element <a href="javascript:menuMethod('Manage','pages/jsp/ManProtocol.jsp');"> could not be scrolled into view
+<![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: #pharmSupplId
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'CSEKARAITHENT', ip: '192.168.195.19', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_112'
+System info: host: 'CSEKARAITHENT', ip: '192.168.195.48', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_112'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 78.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200708170202, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 10544, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 11ac783b-52b2-4c0c-aa81-31e2ff51b7eb
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 81.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200917005511, moz:geckodriverVersion: 0.27.0, moz:headless: false, moz:processID: 19096, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 8fcb554e-c521-4272-89e1-70dfab6ec55f
+*** Element info: {Using=id, value=pharmSupplId}
   sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
   sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
   sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -31,135 +35,14 @@ Session ID: 11ac783b-52b2-4c0c-aa81-31e2ff51b7eb
   org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
   org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
   org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-  org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-  org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-  NostGroup.NostArtifact.Base.CommonMethods.click(CommonMethods.java:81)
-  NostGroup.NostArtifact.Manage.Protocol.protocolVerify(Protocol.java:131)
-  NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR.verifyProtocol(IDSFlow_M_R_PR.java:42)
-  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-  java.lang.reflect.Method.invoke(Method.java:498)
-  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-  org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-  org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-  org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-  org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-  org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-  java.util.ArrayList.forEach(ArrayList.java:1249)
-  org.testng.TestRunner.privateRun(TestRunner.java:766)
-  org.testng.TestRunner.run(TestRunner.java:587)
-  org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-  org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-  org.testng.SuiteRunner.run(SuiteRunner.java:286)
-  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-  org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-  org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-  org.testng.TestNG.runSuites(TestNG.java:1039)
-  org.testng.TestNG.run(TestNG.java:1007)
-  org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-  org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-  org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-      </failure>
-
-          </testcase>
-            <testcase name="addPatient" time="3.237" classname="NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR">
-                <failure type="org.openqa.selenium.ElementNotInteractableException"
-                  message="Element &lt;a href=&quot;javascript:menuMethod(&apos;Manage&apos;,&apos;pages/jsp/manage/Manage_Patient.jsp&apos;);&quot;&gt; could not be scrolled into view
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;CSEKARAITHENT&apos;, ip: &apos;192.168.195.19&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_112&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 78.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200708170202, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 10544, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 11ac783b-52b2-4c0c-aa81-31e2ff51b7eb"
-              >
-<![CDATA[org.openqa.selenium.ElementNotInteractableException: Element <a href="javascript:menuMethod('Manage','pages/jsp/manage/Manage_Patient.jsp');"> could not be scrolled into view
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'CSEKARAITHENT', ip: '192.168.195.19', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_112'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 78.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200708170202, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 10544, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 11ac783b-52b2-4c0c-aa81-31e2ff51b7eb
-  sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-  sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-  sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-  java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-  org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-  org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-  org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-  org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-  org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-  org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-  NostGroup.NostArtifact.Base.CommonMethods.click(CommonMethods.java:81)
-  NostGroup.NostArtifact.Manage.Patient.addPatient(Patient.java:33)
-  NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR.addPatient(IDSFlow_M_R_PR.java:90)
-  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-  java.lang.reflect.Method.invoke(Method.java:498)
-  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-  org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-  org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-  org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-  org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-  org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-  java.util.ArrayList.forEach(ArrayList.java:1249)
-  org.testng.TestRunner.privateRun(TestRunner.java:766)
-  org.testng.TestRunner.run(TestRunner.java:587)
-  org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-  org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-  org.testng.SuiteRunner.run(SuiteRunner.java:286)
-  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-  org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-  org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-  org.testng.TestNG.runSuites(TestNG.java:1039)
-  org.testng.TestNG.run(TestNG.java:1007)
-  org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-  org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-  org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-      </failure>
-
-          </testcase>
-            <testcase name="addSupplier" time="2.248" classname="NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR">
-                <failure type="org.openqa.selenium.ElementNotInteractableException"
-                  message="Element &lt;a href=&quot;javascript:menuActionMethod(&apos;Manage&apos;,&apos;loadPharmDetails.action&apos;);&quot;&gt; could not be scrolled into view
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;CSEKARAITHENT&apos;, ip: &apos;192.168.195.19&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_112&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 78.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200708170202, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 10544, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 11ac783b-52b2-4c0c-aa81-31e2ff51b7eb"
-              >
-<![CDATA[org.openqa.selenium.ElementNotInteractableException: Element <a href="javascript:menuActionMethod('Manage','loadPharmDetails.action');"> could not be scrolled into view
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'CSEKARAITHENT', ip: '192.168.195.19', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_112'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 78.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200708170202, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 10544, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 11ac783b-52b2-4c0c-aa81-31e2ff51b7eb
-  sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-  sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-  sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-  java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-  org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-  org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-  org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-  org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-  org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-  org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-  NostGroup.NostArtifact.Base.CommonMethods.click(CommonMethods.java:81)
-  NostGroup.NostArtifact.Manage.Supplier.addSupplier(Supplier.java:30)
-  NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR.addSupplier(IDSFlow_M_R_PR.java:64)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+  org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+  org.openqa.selenium.By$ById.findElement(By.java:188)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+  NostGroup.NostArtifact.Base.CommonMethods.find_element(CommonMethods.java:205)
+  NostGroup.NostArtifact.Base.CommonMethods.selectText(CommonMethods.java:129)
+  NostGroup.NostArtifact.Transfer.TransferToPharmacy.transferCommon(TransferToPharmacy.java:72)
+  NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR.commonTransferToPharmacy(IDSFlow_M_R_PR.java:123)
   sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
   sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
   sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -193,22 +76,22 @@ Session ID: 11ac783b-52b2-4c0c-aa81-31e2ff51b7eb
 
           </testcase>
   
-            <testcase name="verifyPatient" time="0.0" classname="NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR">
-          <skipped />
-    </testcase>
-            <testcase name="verifySupplier" time="0.0" classname="NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR">
+            <testcase name="addDispense" time="0.0" classname="NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR">
           <skipped />
     </testcase>
   
-            <testcase name="addDispense" time="12.169" classname="NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR" />
-                <testcase name="commonTransferToPharmacy" time="35.515" classname="NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR" />
-                <testcase name="commonReceive" time="20.945" classname="NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR" />
-                <testcase name="verifyCatalog" time="11.017" classname="NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR" />
-                <testcase name="addPharmacy" time="13.019" classname="NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR" />
-                <testcase name="submitqueueReceive" time="16.374" classname="NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR" />
-                <testcase name="nostLogin" time="4.698" classname="NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR" />
-                <testcase name="addProtocol" time="21.878" classname="NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR" />
-                <testcase name="addCatalog" time="18.741" classname="NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR" />
-                <testcase name="verifyPharmacy" time="13.455" classname="NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR" />
+            <testcase name="addPatient" time="30.391" classname="NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR" />
+                <testcase name="addCatalog" time="19.575" classname="NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR" />
+                <testcase name="submitqueueReceive" time="20.612" classname="NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR" />
+                <testcase name="verifyCatalog" time="17.322" classname="NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR" />
+                <testcase name="verifySupplier" time="11.508" classname="NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR" />
+                <testcase name="addPharmacy" time="14.037" classname="NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR" />
+                <testcase name="addSupplier" time="24.303" classname="NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR" />
+                <testcase name="addProtocol" time="22.299" classname="NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR" />
+                <testcase name="verifyPatient" time="7.314" classname="NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR" />
+                <testcase name="commonReceive" time="21.745" classname="NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR" />
+                <testcase name="nostLogin" time="9.264" classname="NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR" />
+                <testcase name="verifyProtocol" time="7.376" classname="NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR" />
+                <testcase name="verifyPharmacy" time="11.975" classname="NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR" />
       
 </testsuite>

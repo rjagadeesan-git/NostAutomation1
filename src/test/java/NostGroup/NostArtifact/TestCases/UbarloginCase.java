@@ -63,6 +63,7 @@ public class UbarloginCase extends BrowserAct{
 		Catalog drug=new Catalog();
 		drug.addDrug(data);
 	}
+	
 	@Test(dataProvider="getData",dataProviderClass = CellDataProvider.class,priority=6,dependsOnMethods= {"addProtocol","addCatalog"})
 	public void addPatient(Hashtable<String,String> data) throws IOException, InterruptedException, AWTException {
 		Patient patient=new Patient();
@@ -110,7 +111,7 @@ public class UbarloginCase extends BrowserAct{
 	
 // Verify Facility
 	
-	@Test(dataProvider="getData",dataProviderClass = CellDataProvider.class,priority=9,dependsOnMethods={"ubarLogin","addPharmacy"})
+	@Test(dataProvider="getData",dataProviderClass = CellDataProvider.class,priority=10,dependsOnMethods={"ubarLogin","addPharmacy"})
 	public void verifyFacility(Hashtable<String,String> data) throws IOException, InterruptedException, AWTException {
 		Facility facility=new Facility();
 		facility.facilityVerify(data);
@@ -118,7 +119,7 @@ public class UbarloginCase extends BrowserAct{
 	
 // Verify CPP, Add Payer, Add CDM
 	
-	@Test(dataProvider="getData",dataProviderClass = CellDataProvider.class,priority=10,dependsOnMethods= {"verifyServiceMaster"})
+	@Test(dataProvider="getData",dataProviderClass = CellDataProvider.class,priority=11,dependsOnMethods= {"verifyServiceMaster"})
 	public void verifyCPP(Hashtable<String,String> data) throws IOException, InterruptedException, AWTException {
 		CPP cpp=new CPP();
 		cpp.cppAdd(data);
@@ -126,14 +127,14 @@ public class UbarloginCase extends BrowserAct{
 	
 // Dispense for Patient in IDS
 
-	@Test(dataProvider="getData",dataProviderClass = CellDataProvider.class,priority=11,dependsOnMethods= {"verifyCPP"})
+	@Test(dataProvider="getData",dataProviderClass = CellDataProvider.class,priority=12,dependsOnMethods= {"verifyCPP"})
 	public void nostLogin2(Hashtable<String,String> data) throws IOException, InterruptedException, AWTException {
 		NostLogin login=new NostLogin();
 		login.nost_Login(data);
 	}
 
 	
-	@Test(dataProvider="getData",dataProviderClass = CellDataProvider.class,priority=12,dependsOnMethods= {"verifyCPP"})
+	@Test(dataProvider="getData",dataProviderClass = CellDataProvider.class,priority=13,dependsOnMethods= {"verifyCPP"})
 	public void addDispense(Hashtable<String,String> data) throws IOException, InterruptedException, AWTException {
 		Dispense disp=new Dispense();
 		disp.dispPatientSearch(data);
@@ -142,13 +143,13 @@ public class UbarloginCase extends BrowserAct{
 	
 // Verify Patient in ServicedEntity
 	
-	@Test(dataProvider="getData",dataProviderClass = CellDataProvider.class,priority=13,dependsOnMethods= {"addDispense"})
+	@Test(dataProvider="getData",dataProviderClass = CellDataProvider.class,priority=14,dependsOnMethods= {"addDispense"})
 	public void ubarLogin2(Hashtable<String,String> data) throws IOException, InterruptedException, AWTException {
 		UBARLogin login=new UBARLogin();
 		login.ubarLogin(data);
 	}
 	
-	@Test(dataProvider="getData",dataProviderClass = CellDataProvider.class,priority=14,dependsOnMethods= {"addPatient","addDispense"})
+	@Test(dataProvider="getData",dataProviderClass = CellDataProvider.class,priority=15,dependsOnMethods= {"addPatient","addDispense"})
 	public void verifyServicedEntity(Hashtable<String,String> data) throws IOException, InterruptedException, AWTException {
 		ServicedEntity servicedent=new ServicedEntity();
 		servicedent.servicedEntityVerify(data);
@@ -157,7 +158,7 @@ public class UbarloginCase extends BrowserAct{
 	
 // Verify review charges, change billing status
 	
-	@Test(dataProvider="getData",dataProviderClass = CellDataProvider.class,priority=15,dependsOnMethods= {"addDispense"})
+	@Test(dataProvider="getData",dataProviderClass = CellDataProvider.class,priority=16,dependsOnMethods= {"addDispense"})
 	public void verifyReviewCharges(Hashtable<String,String> data) throws IOException, InterruptedException, AWTException {
 		ReviewCharges reviewcharges=new ReviewCharges();
 		reviewcharges.reviewChargesVerification(data);

@@ -12,7 +12,7 @@ public class Facility extends CommonMethods{
 	public void facilityVerify(Hashtable<String,String> data) throws InterruptedException, AWTException {
 		
 		Robot robo1=new Robot();
-		Thread.sleep(2000);
+		
 		click("maintenance-billing-menu","csssele");
 		Thread.sleep(2000);
 		click("facility-menu","csssele");
@@ -30,7 +30,7 @@ public class Facility extends CommonMethods{
 		String facility_tab_id=prop.getProperty("facility-result-search-tabu");
 		//(String element_ref,String entity_type,String entity_value,String col_text,String col_click,String action)
 		tableCommon("facility-result-search-tabu",facility_tab_id, "Facility", facility_name, 2, 2,"verify");
-
 	}
+	
 	
 }

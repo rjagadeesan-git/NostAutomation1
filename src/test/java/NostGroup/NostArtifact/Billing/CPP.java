@@ -443,7 +443,7 @@ if(cpp_plan_tabu.isDisplayed() && cpp_plan_tab_col.size()>1) { //Plan table disp
 				else { // CPP CDM table displayed, Col size, Else- Start
 					
 					System.out.println("Service name in CDM table not found, Table not Displayed");
-					extest.log(LogStatus.FAIL,"Service '"+cpp_service_name+"' not listed in CPP CDM");
+					extest.log(LogStatus.WARNING,"Service '"+cpp_service_name+"' not listed in CPP CDM");
 					log.info("Service '"+cpp_service_name+"' not listed in CPP CDM");
 					Reporter.log("Service '"+cpp_service_name+"' not listed in CPP CDM");
 					

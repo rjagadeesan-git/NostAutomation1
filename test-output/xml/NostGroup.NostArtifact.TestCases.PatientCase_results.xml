@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Maintenance Creation"
+           tests="2"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="35.699">
+  <properties />
+  
+  
+            <testcase name="nostLogin" time="4.423" classname="NostGroup.NostArtifact.TestCases.PatientCase" />
+                <testcase name="addPatient" time="31.276" classname="NostGroup.NostArtifact.TestCases.PatientCase" />
+      
+</testsuite>

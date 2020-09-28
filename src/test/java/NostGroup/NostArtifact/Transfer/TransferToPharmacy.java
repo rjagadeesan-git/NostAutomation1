@@ -20,12 +20,21 @@ public class TransferToPharmacy extends CommonMethods{
 
 	public void transferCommon(Hashtable<String,String> data) throws IOException, InterruptedException, AWTException {
 		
+		Robot robo1=new Robot();
 		ex_wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#Transfer")));
 		action.moveToElement(find_element("transfer-menu","id")).perform(); //MouseOver Transfer menu
 				//click("transfer-menu","csssele");		
 		ex_wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#MegaMenu > div:nth-child(4) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > th:nth-child(1) > table:nth-child(2) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(1) > ul:nth-child(1) > li:nth-child(1) > a:nth-child(1)")));
 		Thread.sleep(2000);
 		click("trans-to-pharm","csssele");//Click Transfer to Pharmacy module menu
+		System.out.println("Before-- Checking the Prompt presence");
+		WebElement rec_proceed=find_element("receive-proceed","csssele");
+		if(rec_proceed.isDisplayed()) {
+		ex_wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("button.ui-button:nth-child(1) > span:nth-child(1)")));
+		find_element("receive-proceed","csssele").click(); 
+		robo1.keyPress(KeyEvent.VK_ENTER);
+		}
+		Thread.sleep(3000);
 //		WebElement rec_proceed=find_element("receive-proceed","csssele");
 //		if(rec_proceed.isDisplayed()) {
 //		ex_wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("button.ui-button:nth-child(1) > span:nth-child(1)")));

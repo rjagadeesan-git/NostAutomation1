@@ -105,17 +105,30 @@ public class Receive extends CommonMethods{
 	public void receiveSubmitQueue(Hashtable<String,String> data) throws InterruptedException, IOException, AWTException {
 		
 		Robot robo1=new Robot();
+		System.out.println("Receive start");
 		ex_wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#Receive")));
+		System.out.println("Receive start1");
 		action.moveToElement(find_element("receive","csssele")).perform(); //MouseOver Receive menu
 				//click("receive","csssele");		
+		System.out.println("Receive start2");
 		ex_wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#MegaMenu > div:nth-child(4) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > th:nth-child(1) > table:nth-child(2) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(1) > ul:nth-child(1) > li:nth-child(1) > a:nth-child(1)")));
+		//Thread.sleep(2000);
+		System.out.println("Receive start4");
+		//((JavascriptExecutor)Driver).executeScript("arguments[0].scrollIntoView();", find_element("receive-menu","csssele"));
+		System.out.println("Receive start5");
+		//click("receive-menu","csssele");	
+		System.out.println("Receive start6");//Click Receive module menu
+		((JavascriptExecutor)Driver).executeScript("menuMethod('Receive','pages/jsp/Receive_Drug.jsp');");
+		//Thread.sleep(4000);
 		Thread.sleep(2000);
-		click("receive-menu","csssele");
+		//click("receive-menu","csssele");
 		Thread.sleep(3000);
-		Driver.getTitle();
+		System.out.println(Driver.getTitle());
 //		Alert alert=ex_wait.until(ExpectedConditions.alertIsPresent());
 //		System.out.println(alert.getText());
 //		alert.accept();
+		System.out.println("Before-- Checking the Prompt presence");
+		Thread.sleep(3000);
 		WebElement rec_proceed=find_element("receive-proceed","csssele");
 		if(rec_proceed.isDisplayed()) {
 		ex_wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("button.ui-button:nth-child(1) > span:nth-child(1)")));

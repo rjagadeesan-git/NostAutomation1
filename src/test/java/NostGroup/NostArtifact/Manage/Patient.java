@@ -24,18 +24,26 @@ public class Patient extends CommonMethods{
 	
 	public void addPatient(Hashtable<String,String> data) throws IOException, InterruptedException, AWTException {
 		
+		
 //		WebDriverWait ex_wait= new WebDriverWait(Driver,20);
 //		Driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
 //		Actions action=new Actions(Driver);
+		//ex_wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id='Manage']")));
+		Thread.sleep(3000);
 		ex_wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id='Manage']")));
+		//action.moveToElement(Driver.findElement(By.xpath("//*[@id='Manage']"))).perform();
 		action.moveToElement(find_element("manage-menu","xpath")).perform();	
 		Thread.sleep(3000);
+		//((JavascriptExecutor)Driver).executeScript("arguments[0].scrollIntoView();", find_element("patient-menu","csssele"));
+		ex_wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#MegaMenu > div:nth-child(4) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > th:nth-child(1) > table:nth-child(2) > tbody:nth-child(1) > tr:nth-child(3) > td:nth-child(1) > ul:nth-child(1) > li:nth-child(1) > a:nth-child(1)")));
 		click("patient-menu","csssele");
-				//((JavascriptExecutor)Driver).executeScript("loadPatientCodelst();");
+//		((JavascriptExecutor)Driver).executeScript("loadPatientCodelst();");
+//		javascript:menuMethod('Manage','pages/jsp/manage/Manage_Patient.jsp');
+		
 		Thread.sleep(2000);	
 		click("add-patient-to-protocol","csssele");
-//	click("patient-edit","csssele");
-//	click("dispense-to-patient","csssele");
+//		click("patient-edit","csssele");
+//		click("dispense-to-patient","csssele");
 	
 	// Add Patient
 	//click("add-patient","csssele");
@@ -93,8 +101,8 @@ public class Patient extends CommonMethods{
 //		}
    }
 	Thread.sleep(4000);
-//	((JavascriptExecutor)Driver).executeScript("arguments[0].scrollIntoView();",find_element("manage-menu","xpath"));
-//	Thread.sleep(4000);
+	((JavascriptExecutor)Driver).executeScript("arguments[0].scrollIntoView();",find_element("manage-menu","xpath"));
+	Thread.sleep(4000);
    
 	}
 	

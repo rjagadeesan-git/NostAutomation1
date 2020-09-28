@@ -22,12 +22,6 @@ public class ServiceMaster extends CommonMethods{
 	public void serviceMasterVerification(Hashtable<String,String> data) throws InterruptedException, AWTException {
 	
 	Robot robo1=new Robot();
-	robo1.keyPress(KeyEvent.VK_CONTROL);
-	robo1.keyPress(KeyEvent.VK_MINUS);
-	Thread.sleep(2000);
-	robo1.keyPress(KeyEvent.VK_MINUS);
-	robo1.keyRelease(KeyEvent.VK_CONTROL);
-	Thread.sleep(2000);
 	click("maintenance-billing-menu","csssele");
 	Thread.sleep(2000);
 	//((JavascriptExecutor)Driver).executeScript("arguments[0].scrollIntoView();", find_element("service-master-menu","csssele"));

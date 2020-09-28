@@ -25,12 +25,19 @@ public class ReceiveCase extends BrowserAct{
 		login.nost_Login(data);
 	}
 	
-	@Test(dataProvider="getData",dataProviderClass = CellDataProvider.class,priority=2)
+	@Test(dataProvider="getData",dataProviderClass = CellDataProvider.class,priority=2,dependsOnMethods= {"nostLogin"})
 	public void commonReceive(Hashtable<String,String> data) throws IOException, InterruptedException, AWTException {
+		
 		Receive rec=new Receive();
 		rec.receiveCommon(data);
+		
+	}
+	
+	@Test(dataProvider="getData",dataProviderClass = CellDataProvider.class,priority=3,dependsOnMethods= {"commonReceive"})
+	public void submitqueueReceive(Hashtable<String,String> data) throws IOException, InterruptedException, AWTException {
+		
+		Receive rec=new Receive();
 		rec.receiveSubmitQueue(data);
-//		rec.rec_SubmitQueueAlone();
 	}
 
 }

@@ -2,6 +2,9 @@ package NostGroup.NostArtifact.Base;
 
 import static org.testng.Assert.fail;
 
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.lang.reflect.Method;
@@ -30,7 +33,7 @@ public class UBARLogin extends CommonMethods{
 //	
 //	}
 
-	public void ubarLogin(Hashtable<String,String> data) throws IOException {
+	public void ubarLogin(Hashtable<String,String> data) throws IOException, AWTException, InterruptedException {
 		
 //		WebDriverManager.firefoxdriver().setup();
 //		Driver=new FirefoxDriver();
@@ -59,7 +62,15 @@ public class UBARLogin extends CommonMethods{
     click("login-button-billing","csssele");
     log.info("logged in successfully...");
     System.out.println("logged in successfully...");
-
+    
+    Robot robo1=new Robot();
+	Thread.sleep(2000);
+	robo1.keyPress(KeyEvent.VK_CONTROL);
+	robo1.keyPress(KeyEvent.VK_MINUS);
+	Thread.sleep(2000);
+	robo1.keyPress(KeyEvent.VK_MINUS);
+	robo1.keyRelease(KeyEvent.VK_CONTROL);
+	Thread.sleep(2000);
 //    Reporter.log("logged in successfully...");
     //Assert.fail("Failing for Sake");
     
