@@ -4,104 +4,16 @@
            failures="2"
            errors="0"
            skipped="0"
-           time="394.072">
+           time="366.297">
   <properties />
-            <testcase name="verifyServicedEntity" time="9.360" classname="NostGroup.NostArtifact.TestCases.UbarloginCase">
-                <failure type="org.openqa.selenium.ElementNotInteractableException"
-                  message="Element &lt;button id=&quot;ManageSvcdEntityData&quot; class=&quot;btn btn-primary&quot; type=&quot;button&quot;&gt; could not be scrolled into view
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;CSEKARAITHENT&apos;, ip: &apos;192.168.195.3&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_112&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 81.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200917005511, moz:geckodriverVersion: 0.27.0, moz:headless: false, moz:processID: 6180, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 008e5da9-2988-4d52-9e72-503474978c3a"
+            <testcase name="verifyReviewCharges" time="25.525" classname="NostGroup.NostArtifact.TestCases.UbarloginCase">
+                <failure type="java.lang.AssertionError"
+                  message="null"
               >
-<![CDATA[org.openqa.selenium.ElementNotInteractableException: Element <button id="ManageSvcdEntityData" class="btn btn-primary" type="button"> could not be scrolled into view
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'CSEKARAITHENT', ip: '192.168.195.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_112'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 81.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200917005511, moz:geckodriverVersion: 0.27.0, moz:headless: false, moz:processID: 6180, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 008e5da9-2988-4d52-9e72-503474978c3a
-  sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-  sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-  sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-  java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-  org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-  org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-  org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-  org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-  org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-  org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-  NostGroup.NostArtifact.Base.CommonMethods.click(CommonMethods.java:81)
-  NostGroup.NostArtifact.Billing.ServicedEntity.servicedEntityVerify(ServicedEntity.java:42)
-  NostGroup.NostArtifact.TestCases.UbarloginCase.verifyServicedEntity(UbarloginCase.java:155)
-  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-  java.lang.reflect.Method.invoke(Method.java:498)
-  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-  org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-  org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-  org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-  org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-  org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-  java.util.ArrayList.forEach(ArrayList.java:1249)
-  org.testng.TestRunner.privateRun(TestRunner.java:766)
-  org.testng.TestRunner.run(TestRunner.java:587)
-  org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-  org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-  org.testng.SuiteRunner.run(SuiteRunner.java:286)
-  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-  org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-  org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-  org.testng.TestNG.runSuites(TestNG.java:1039)
-  org.testng.TestNG.run(TestNG.java:1007)
-  org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-  org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-  org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-      </failure>
-
-          </testcase>
-            <testcase name="verifyReviewCharges" time="37.542" classname="NostGroup.NostArtifact.TestCases.UbarloginCase">
-                <failure type="org.openqa.selenium.NoSuchElementException"
-                  message="Unable to locate element: //table[@id=&apos;rsliTable&apos;]/tbody/tr[1]/td[6]
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;CSEKARAITHENT&apos;, ip: &apos;192.168.195.3&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_112&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 81.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200917005511, moz:geckodriverVersion: 0.27.0, moz:headless: false, moz:processID: 6180, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 008e5da9-2988-4d52-9e72-503474978c3a
-*** Element info: {Using=xpath, value=//table[@id=&apos;rsliTable&apos;]/tbody/tr[1]/td[6]}"
-              >
-<![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: //table[@id='rsliTable']/tbody/tr[1]/td[6]
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'CSEKARAITHENT', ip: '192.168.195.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_112'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 81.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200917005511, moz:geckodriverVersion: 0.27.0, moz:headless: false, moz:processID: 6180, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 008e5da9-2988-4d52-9e72-503474978c3a
-*** Element info: {Using=xpath, value=//table[@id='rsliTable']/tbody/tr[1]/td[6]}
-  sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-  sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-  sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-  java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-  org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-  org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-  org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-  org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-  org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-  org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-  NostGroup.NostArtifact.Billing.ReviewCharges.reviewChargesVerification(ReviewCharges.java:142)
+<![CDATA[java.lang.AssertionError: null
+  org.testng.Assert.fail(Assert.java:97)
+  org.testng.Assert.fail(Assert.java:102)
+  NostGroup.NostArtifact.Billing.ReviewCharges.reviewChargesVerification(ReviewCharges.java:125)
   NostGroup.NostArtifact.TestCases.UbarloginCase.verifyReviewCharges(UbarloginCase.java:164)
   sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
   sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -135,23 +47,85 @@ Session ID: 008e5da9-2988-4d52-9e72-503474978c3a
       </failure>
 
           </testcase>
+            <testcase name="verifyServicedEntity" time="9.089" classname="NostGroup.NostArtifact.TestCases.UbarloginCase">
+                <failure type="org.openqa.selenium.ElementNotInteractableException"
+                  message="Element &lt;button id=&quot;ManageSvcdEntityData&quot; class=&quot;btn btn-primary&quot; type=&quot;button&quot;&gt; could not be scrolled into view
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;CSEKARAITHENT&apos;, ip: &apos;192.168.195.4&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_112&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 81.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200917005511, moz:geckodriverVersion: 0.27.0, moz:headless: false, moz:processID: 15036, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 073fc451-220c-47d5-8f08-2e5c782f4c94"
+              >
+<![CDATA[org.openqa.selenium.ElementNotInteractableException: Element <button id="ManageSvcdEntityData" class="btn btn-primary" type="button"> could not be scrolled into view
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'CSEKARAITHENT', ip: '192.168.195.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_112'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 81.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200917005511, moz:geckodriverVersion: 0.27.0, moz:headless: false, moz:processID: 15036, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 073fc451-220c-47d5-8f08-2e5c782f4c94
+  sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+  sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+  sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+  java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+  org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+  org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+  org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+  NostGroup.NostArtifact.Base.CommonMethods.click(CommonMethods.java:81)
+  NostGroup.NostArtifact.Billing.ServicedEntity.servicedEntityVerify(ServicedEntity.java:45)
+  NostGroup.NostArtifact.TestCases.UbarloginCase.verifyServicedEntity(UbarloginCase.java:155)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:498)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+  org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+  org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+  org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+  org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+  org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+  java.util.ArrayList.forEach(ArrayList.java:1249)
+  org.testng.TestRunner.privateRun(TestRunner.java:766)
+  org.testng.TestRunner.run(TestRunner.java:587)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+  org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+  org.testng.SuiteRunner.run(SuiteRunner.java:286)
+  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+  org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+  org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+  org.testng.TestNG.runSuites(TestNG.java:1039)
+  org.testng.TestNG.run(TestNG.java:1007)
+  org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+  org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+  org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+      </failure>
+
+          </testcase>
   
   
-            <testcase name="commonTransferToPharmacy" time="40.146" classname="NostGroup.NostArtifact.TestCases.UbarloginCase" />
-                <testcase name="addPatient" time="30.903" classname="NostGroup.NostArtifact.TestCases.UbarloginCase" />
-                <testcase name="verifyFacility" time="10.473" classname="NostGroup.NostArtifact.TestCases.UbarloginCase" />
-                <testcase name="nostLogin" time="3.017" classname="NostGroup.NostArtifact.TestCases.UbarloginCase" />
-                <testcase name="addProtocol" time="21.075" classname="NostGroup.NostArtifact.TestCases.UbarloginCase" />
-                <testcase name="ubarLogin" time="13.539" classname="NostGroup.NostArtifact.TestCases.UbarloginCase" />
-                <testcase name="verifyCPP" time="69.107" classname="NostGroup.NostArtifact.TestCases.UbarloginCase" />
-                <testcase name="addDispense" time="28.677" classname="NostGroup.NostArtifact.TestCases.UbarloginCase" />
-                <testcase name="commonReceive" time="21.532" classname="NostGroup.NostArtifact.TestCases.UbarloginCase" />
-                <testcase name="submitqueueReceive" time="22.838" classname="NostGroup.NostArtifact.TestCases.UbarloginCase" />
-                <testcase name="ubarLogin2" time="9.835" classname="NostGroup.NostArtifact.TestCases.UbarloginCase" />
-                <testcase name="addPharmacy" time="15.271" classname="NostGroup.NostArtifact.TestCases.UbarloginCase" />
-                <testcase name="addCatalog" time="20.571" classname="NostGroup.NostArtifact.TestCases.UbarloginCase" />
-                <testcase name="verifyServiceMaster" time="11.865" classname="NostGroup.NostArtifact.TestCases.UbarloginCase" />
-                <testcase name="addSupplier" time="26.391" classname="NostGroup.NostArtifact.TestCases.UbarloginCase" />
-                <testcase name="nostLogin2" time="1.930" classname="NostGroup.NostArtifact.TestCases.UbarloginCase" />
+            <testcase name="addSupplier" time="22.584" classname="NostGroup.NostArtifact.TestCases.UbarloginCase" />
+                <testcase name="addCatalog" time="17.062" classname="NostGroup.NostArtifact.TestCases.UbarloginCase" />
+                <testcase name="addProtocol" time="22.165" classname="NostGroup.NostArtifact.TestCases.UbarloginCase" />
+                <testcase name="ubarLogin" time="8.725" classname="NostGroup.NostArtifact.TestCases.UbarloginCase" />
+                <testcase name="addPharmacy" time="13.387" classname="NostGroup.NostArtifact.TestCases.UbarloginCase" />
+                <testcase name="addDispense" time="29.183" classname="NostGroup.NostArtifact.TestCases.UbarloginCase" />
+                <testcase name="commonTransferToPharmacy" time="42.184" classname="NostGroup.NostArtifact.TestCases.UbarloginCase" />
+                <testcase name="addPatient" time="30.071" classname="NostGroup.NostArtifact.TestCases.UbarloginCase" />
+                <testcase name="verifyServiceMaster" time="9.987" classname="NostGroup.NostArtifact.TestCases.UbarloginCase" />
+                <testcase name="verifyCPP" time="70.493" classname="NostGroup.NostArtifact.TestCases.UbarloginCase" />
+                <testcase name="commonReceive" time="24.046" classname="NostGroup.NostArtifact.TestCases.UbarloginCase" />
+                <testcase name="verifyFacility" time="10.024" classname="NostGroup.NostArtifact.TestCases.UbarloginCase" />
+                <testcase name="nostLogin" time="3.974" classname="NostGroup.NostArtifact.TestCases.UbarloginCase" />
+                <testcase name="nostLogin2" time="2.026" classname="NostGroup.NostArtifact.TestCases.UbarloginCase" />
+                <testcase name="submitqueueReceive" time="19.806" classname="NostGroup.NostArtifact.TestCases.UbarloginCase" />
+                <testcase name="ubarLogin2" time="5.966" classname="NostGroup.NostArtifact.TestCases.UbarloginCase" />
       
 </testsuite>

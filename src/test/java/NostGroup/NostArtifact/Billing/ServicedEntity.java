@@ -8,6 +8,8 @@ import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Reporter;
 
 import com.relevantcodes.extentreports.LogStatus;
@@ -20,6 +22,7 @@ public class ServicedEntity extends CommonMethods{
 	
 	public void servicedEntityVerify(Hashtable<String,String> data) throws InterruptedException, AWTException {
 		
+		WebDriverWait ex_wait= new WebDriverWait(Driver,20);
 		Robot robo1=new Robot();
 //		robo1.keyPress(KeyEvent.VK_CONTROL);
 //		robo1.keyPress(KeyEvent.VK_MINUS);
@@ -37,7 +40,7 @@ public class ServicedEntity extends CommonMethods{
 		robo1.keyPress(KeyEvent.VK_DOWN);
 		robo1.keyPress(KeyEvent.VK_ENTER);
 		Thread.sleep(2000);
-		//ex_wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#Receive")));
+		ex_wait.until(ExpectedConditions.presenceOfElementLocated(By.id("ManageSvcdEntityData")));
 		//type("service-name-search","id",data.get("service-name-search"));
 		click("serviced-search","id");
 		Thread.sleep(2000);

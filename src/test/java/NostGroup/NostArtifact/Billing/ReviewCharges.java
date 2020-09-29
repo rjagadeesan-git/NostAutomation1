@@ -78,12 +78,15 @@ if(reviewcharges_tab_row.size()>=1)
 for(int row=1;row<=reviewcharges_tab_row.size();row++) {
 	
 		System.out.println("Inside row loop");
-		String reviewcharges_tab_com=Driver.findElement(By.xpath("//table[@id='rsliTable']/tbody/tr["+row+"]/td[6]")).getText();
+		String reviewcharges_tab_com=Driver.findElement(By.xpath("//table[@id='rsliTable']/tbody/tr["+row+"]/td[3]")).getText();
 		System.out.println("RowNum "+row+" reviewcharges_tab_com "+reviewcharges_tab_com);
-		String reviewcharges_tab_drg=Driver.findElement(By.xpath("//table[@id='rsliTable']/tbody/tr["+row+"]/td[7]")).getText();
+		System.out.println(reviewcharges_plan);
+		String reviewcharges_tab_drg=Driver.findElement(By.xpath("//table[@id='rsliTable']/tbody/tr["+row+"]/td[6]")).getText();
 		System.out.println("RowNum "+row+" reviewcharges_tab_com "+reviewcharges_tab_drg);
+		System.out.println(reviewcharges_drug);
 		String reviewcharges_tab_price=Driver.findElement(By.xpath("//table[@id='rsliTable']/tbody/tr["+row+"]/td[10]")).getText();
 		System.out.println("RowNum "+row+" reviewcharges_tab_com "+reviewcharges_tab_price);
+		System.out.println(reviewcharges_price);
 		
 		if(reviewcharges_tab_com.contains(reviewcharges_plan)) {
 			
@@ -103,18 +106,22 @@ for(int row=1;row<=reviewcharges_tab_row.size();row++) {
 			type("review-charges-comments","id",data.get("review-charges-comments"));
 			selectText("review-charges-billing-status","id",data.get("review-charges-billing-status"));
 			click("review-charges-update","id");
-			String alerttext=Driver.switchTo().alert().getText();
-			if(alerttext.contains("Information has been updated successfully")) {
-				Driver.switchTo().alert().accept();
+			String alerttext=Driver.findElement(By.cssSelector(".alertify-message")).getText();
+			//String alerttext=Driver.switchTo().alert().getText();
+			//Driver.switchTo().alert();
+			if(alerttext.contains("out of")) {
+				robo1.keyPress(KeyEvent.VK_ENTER);
 				System.out.println("Charges for Drug '"+reviewcharges_drug+ "' with price '"+reviewcharges_price+"' for Plan '"+reviewcharges_plan+"' created in Review Charges");
 				extest.log(LogStatus.PASS,"Charges for Drug '"+reviewcharges_drug+ "' with price '"+reviewcharges_price+ "' for Plan '"+reviewcharges_plan+"' created in Review Charges");
 				log.info("Charges for Drug '"+reviewcharges_drug+ "' with price '"+reviewcharges_price+ "' for Plan '"+reviewcharges_plan+"' created in Review Charges");
 				Reporter.log("Charges for Drug '"+reviewcharges_drug+ "' with price '"+reviewcharges_price+ "' for Plan '"+reviewcharges_plan+"' created in Review Charges");
 			} else {
-				System.out.println(Driver.switchTo().alert().getText());
-				extest.log(LogStatus.WARNING,Driver.switchTo().alert().getText());
-				log.info(Driver.switchTo().alert().getText());
-				Reporter.log(Driver.switchTo().alert().getText());
+//				System.out.println(Driver.switchTo().alert().getText());
+				extest.log(LogStatus.WARNING,alerttext);
+				log.info(alerttext);
+				Reporter.log(alerttext);
+				//Driver.switchTo().alert().accept();
+				robo1.keyPress(KeyEvent.VK_ENTER);
 				Assert.fail();
 			}
 			break;

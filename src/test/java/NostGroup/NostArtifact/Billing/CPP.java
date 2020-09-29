@@ -27,11 +27,11 @@ public class CPP extends CommonMethods{
 public void cppAdd(Hashtable<String,String> data) throws AWTException, InterruptedException {
 
 	Robot robo1=new Robot();
-//	robo1.keyPress(KeyEvent.VK_CONTROL);
-//	robo1.keyPress(KeyEvent.VK_MINUS);
-//	Thread.sleep(2000);
-//	robo1.keyPress(KeyEvent.VK_MINUS);
-//	robo1.keyRelease(KeyEvent.VK_CONTROL);
+	robo1.keyPress(KeyEvent.VK_CONTROL);
+	robo1.keyPress(KeyEvent.VK_MINUS);
+	Thread.sleep(2000);
+	robo1.keyPress(KeyEvent.VK_MINUS);
+	robo1.keyRelease(KeyEvent.VK_CONTROL);
 	Thread.sleep(2000);
 click("maintenance-billing-menu","csssele");
 Thread.sleep(2000);

@@ -38,11 +38,11 @@ public class UbarTest extends BrowserAct{
 //	
 //// Verify CPP, Add Payer, Add CDM
 //	
-	@Test(dataProvider="getData",dataProviderClass = CellDataProvider.class,priority=3)
-	public void verifyCPP(Hashtable<String,String> data) throws IOException, InterruptedException, AWTException {
-		CPP cpp=new CPP();
-		cpp.cppAdd(data);
-	}
+//	@Test(dataProvider="getData",dataProviderClass = CellDataProvider.class,priority=3)
+//	public void verifyCPP(Hashtable<String,String> data) throws IOException, InterruptedException, AWTException {
+//		CPP cpp=new CPP();
+//		cpp.cppAdd(data);
+//	}
 	
 	//Verify Facility
 	
@@ -52,6 +52,13 @@ public class UbarTest extends BrowserAct{
 //		facility.facilityVerify(data);
 //	}
 //	
+	
+	@Test(dataProvider="getData",dataProviderClass = CellDataProvider.class,priority=2)
+	public void verifyReviewCharges(Hashtable<String,String> data) throws IOException, InterruptedException, AWTException {
+		ReviewCharges reviewcharges=new ReviewCharges();
+		reviewcharges.reviewChargesVerification(data);
+	
+	}
 	
 }
 
