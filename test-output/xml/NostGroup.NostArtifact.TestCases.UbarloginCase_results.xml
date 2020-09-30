@@ -4,9 +4,9 @@
            failures="2"
            errors="0"
            skipped="0"
-           time="366.297">
+           time="375.675">
   <properties />
-            <testcase name="verifyReviewCharges" time="25.525" classname="NostGroup.NostArtifact.TestCases.UbarloginCase">
+            <testcase name="verifyReviewCharges" time="25.580" classname="NostGroup.NostArtifact.TestCases.UbarloginCase">
                 <failure type="java.lang.AssertionError"
                   message="null"
               >
@@ -47,21 +47,21 @@
       </failure>
 
           </testcase>
-            <testcase name="verifyServicedEntity" time="9.089" classname="NostGroup.NostArtifact.TestCases.UbarloginCase">
+            <testcase name="verifyServicedEntity" time="9.684" classname="NostGroup.NostArtifact.TestCases.UbarloginCase">
                 <failure type="org.openqa.selenium.ElementNotInteractableException"
                   message="Element &lt;button id=&quot;ManageSvcdEntityData&quot; class=&quot;btn btn-primary&quot; type=&quot;button&quot;&gt; could not be scrolled into view
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;CSEKARAITHENT&apos;, ip: &apos;192.168.195.4&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_112&apos;
+System info: host: &apos;CSEKARAITHENT&apos;, ip: &apos;192.168.195.41&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_112&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 81.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200917005511, moz:geckodriverVersion: 0.27.0, moz:headless: false, moz:processID: 15036, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 073fc451-220c-47d5-8f08-2e5c782f4c94"
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 81.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200917005511, moz:geckodriverVersion: 0.27.0, moz:headless: false, moz:processID: 17556, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 06f39d9b-c098-4665-89c1-027b2b146233"
               >
 <![CDATA[org.openqa.selenium.ElementNotInteractableException: Element <button id="ManageSvcdEntityData" class="btn btn-primary" type="button"> could not be scrolled into view
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'CSEKARAITHENT', ip: '192.168.195.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_112'
+System info: host: 'CSEKARAITHENT', ip: '192.168.195.41', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_112'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 81.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200917005511, moz:geckodriverVersion: 0.27.0, moz:headless: false, moz:processID: 15036, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 073fc451-220c-47d5-8f08-2e5c782f4c94
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 81.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200917005511, moz:geckodriverVersion: 0.27.0, moz:headless: false, moz:processID: 17556, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 06f39d9b-c098-4665-89c1-027b2b146233
   sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
   sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
   sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -111,21 +111,21 @@ Session ID: 073fc451-220c-47d5-8f08-2e5c782f4c94
           </testcase>
   
   
-            <testcase name="addSupplier" time="22.584" classname="NostGroup.NostArtifact.TestCases.UbarloginCase" />
-                <testcase name="addCatalog" time="17.062" classname="NostGroup.NostArtifact.TestCases.UbarloginCase" />
-                <testcase name="addProtocol" time="22.165" classname="NostGroup.NostArtifact.TestCases.UbarloginCase" />
-                <testcase name="ubarLogin" time="8.725" classname="NostGroup.NostArtifact.TestCases.UbarloginCase" />
-                <testcase name="addPharmacy" time="13.387" classname="NostGroup.NostArtifact.TestCases.UbarloginCase" />
-                <testcase name="addDispense" time="29.183" classname="NostGroup.NostArtifact.TestCases.UbarloginCase" />
-                <testcase name="commonTransferToPharmacy" time="42.184" classname="NostGroup.NostArtifact.TestCases.UbarloginCase" />
-                <testcase name="addPatient" time="30.071" classname="NostGroup.NostArtifact.TestCases.UbarloginCase" />
-                <testcase name="verifyServiceMaster" time="9.987" classname="NostGroup.NostArtifact.TestCases.UbarloginCase" />
-                <testcase name="verifyCPP" time="70.493" classname="NostGroup.NostArtifact.TestCases.UbarloginCase" />
-                <testcase name="commonReceive" time="24.046" classname="NostGroup.NostArtifact.TestCases.UbarloginCase" />
-                <testcase name="verifyFacility" time="10.024" classname="NostGroup.NostArtifact.TestCases.UbarloginCase" />
-                <testcase name="nostLogin" time="3.974" classname="NostGroup.NostArtifact.TestCases.UbarloginCase" />
-                <testcase name="nostLogin2" time="2.026" classname="NostGroup.NostArtifact.TestCases.UbarloginCase" />
-                <testcase name="submitqueueReceive" time="19.806" classname="NostGroup.NostArtifact.TestCases.UbarloginCase" />
-                <testcase name="ubarLogin2" time="5.966" classname="NostGroup.NostArtifact.TestCases.UbarloginCase" />
+            <testcase name="commonTransferToPharmacy" time="43.306" classname="NostGroup.NostArtifact.TestCases.UbarloginCase" />
+                <testcase name="verifyFacility" time="10.309" classname="NostGroup.NostArtifact.TestCases.UbarloginCase" />
+                <testcase name="nostLogin" time="5.206" classname="NostGroup.NostArtifact.TestCases.UbarloginCase" />
+                <testcase name="ubarLogin2" time="4.729" classname="NostGroup.NostArtifact.TestCases.UbarloginCase" />
+                <testcase name="addPatient" time="31.415" classname="NostGroup.NostArtifact.TestCases.UbarloginCase" />
+                <testcase name="addDispense" time="28.422" classname="NostGroup.NostArtifact.TestCases.UbarloginCase" />
+                <testcase name="addProtocol" time="24.088" classname="NostGroup.NostArtifact.TestCases.UbarloginCase" />
+                <testcase name="addSupplier" time="24.088" classname="NostGroup.NostArtifact.TestCases.UbarloginCase" />
+                <testcase name="verifyCPP" time="69.045" classname="NostGroup.NostArtifact.TestCases.UbarloginCase" />
+                <testcase name="submitqueueReceive" time="21.472" classname="NostGroup.NostArtifact.TestCases.UbarloginCase" />
+                <testcase name="commonReceive" time="24.531" classname="NostGroup.NostArtifact.TestCases.UbarloginCase" />
+                <testcase name="addCatalog" time="18.290" classname="NostGroup.NostArtifact.TestCases.UbarloginCase" />
+                <testcase name="addPharmacy" time="14.299" classname="NostGroup.NostArtifact.TestCases.UbarloginCase" />
+                <testcase name="verifyServiceMaster" time="10.408" classname="NostGroup.NostArtifact.TestCases.UbarloginCase" />
+                <testcase name="ubarLogin" time="8.192" classname="NostGroup.NostArtifact.TestCases.UbarloginCase" />
+                <testcase name="nostLogin2" time="2.611" classname="NostGroup.NostArtifact.TestCases.UbarloginCase" />
       
 </testsuite>
