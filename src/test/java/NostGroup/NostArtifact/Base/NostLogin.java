@@ -38,18 +38,19 @@ public class NostLogin extends CommonMethods{
 //		Driver=new FirefoxDriver();
 //		FileInputStream propin= new FileInputStream("D:\\Jagan\\NostAuto\\NostCore\\NostArtifact\\src\\test\\java\\Otherfiles\\locators.properties");
 //		prop.load(propin);
-		
-			if(System.getenv("AUT-URL")!=null && !System.getenv("AUT-URL").isEmpty()) {
+		System.out.println("AUT_URL is "+ System.getenv("AUT_URL"));
+			if(System.getenv("AUT_URL")!=null && !System.getenv("AUT_URL").isEmpty()) {
 				
-				app_url=System.getenv("AUT-URL");
-				System.out.println("AUT-URL is "+app_url);
-			} else {
+				app_url=System.getenv("AUT_URL");
+				System.out.println("AUT_URL is "+app_url);
+				
+			}else {
 				
 				app_url=CommonMethods.prop.getProperty("siteurl");
 				System.out.println("Default Site-URL is "+app_url);
 			}
 			
-			CommonMethods.prop.setProperty("siteurl", app_url);
+			CommonMethods.prop.setProperty("siteurl",app_url);
 			
 	    System.out.println(Driver.getTitle());
 	    
