@@ -52,6 +52,7 @@ public class NostLogin extends CommonMethods{
 			
 			CommonMethods.prop.setProperty("siteurl",app_url);
 			
+			Driver.get(app_url);
 	    System.out.println(Driver.getTitle());
 	    
 		if(!data.get("rundata").equalsIgnoreCase("Y")) {
