@@ -573,5 +573,6 @@ Reporter.log("Patient '"+pat_mrn+"' not present in Patient table");
 	
 	public void dispReprintLabel() {}
 	
+	public void dispVerification() {} 
 
 }

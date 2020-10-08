@@ -29,6 +29,8 @@ public class NostLogin extends CommonMethods{
 //		super(filepath);
 //	
 //	}
+	
+	String appURL;
 
 	public void nost_Login(Hashtable<String,String> data) throws IOException {
 		

@@ -81,6 +81,7 @@ public class CommonMethods {
 		clickelement.click();
 		extest.log(LogStatus.INFO,"Clicked the item: "+locator);
 		log.info("Clicked the item: "+locator);
+		
 		Reporter.log("Clicked the item: "+locator);
 	
 	}

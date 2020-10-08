@@ -22,6 +22,7 @@ import NostGroup.NostArtifact.Transfer.TransferToPharmacy;
 
 public class IDSFlow_M_R_PR extends BrowserAct{
 	
+	
 	public static SpreadSheetHelper helper=null;
 	
 	@Test(dataProvider="getData",dataProviderClass = CellDataProvider.class,priority=1)

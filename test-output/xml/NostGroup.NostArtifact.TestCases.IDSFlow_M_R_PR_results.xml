@@ -3,24 +3,26 @@
            tests="15"
            failures="1"
            errors="0"
-           skipped="3"
-           time="152.494">
+           skipped="13"
+           time="22.115">
   <properties />
-            <testcase name="commonReceive" time="4.232" classname="NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR">
-                <failure type="org.openqa.selenium.ElementClickInterceptedException"
-                  message="Element &lt;input id=&quot;plusDrugRc&quot; type=&quot;button&quot;&gt; is not clickable at point (1169,69) because another element &lt;div class=&quot;ui-widget-overlay&quot;&gt; obscures it
+            <testcase name="addProtocol" time="19.747" classname="NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR">
+                <failure type="org.openqa.selenium.ElementNotInteractableException"
+                  message="element not interactable
+  (Session info: chrome=85.0.4183.102)
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;CSEKARAITHENT&apos;, ip: &apos;192.168.192.168&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_112&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 81.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200917005511, moz:geckodriverVersion: 0.27.0, moz:headless: false, moz:processID: 12388, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 4f88e77d-d129-42cb-8cd0-1d8ada1b7f80"
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.102, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62781}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: e27def6fffba82248da21f1b35305485"
               >
-<![CDATA[org.openqa.selenium.ElementClickInterceptedException: Element <input id="plusDrugRc" type="button"> is not clickable at point (1169,69) because another element <div class="ui-widget-overlay"> obscures it
+<![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=85.0.4183.102)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'CSEKARAITHENT', ip: '192.168.192.168', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_112'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 81.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200917005511, moz:geckodriverVersion: 0.27.0, moz:headless: false, moz:processID: 12388, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 4f88e77d-d129-42cb-8cd0-1d8ada1b7f80
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.102, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62781}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: e27def6fffba82248da21f1b35305485
   sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
   sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
   sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -32,10 +34,10 @@ Session ID: 4f88e77d-d129-42cb-8cd0-1d8ada1b7f80
   org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
   org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
   org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-  org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-  NostGroup.NostArtifact.Base.CommonMethods.click(CommonMethods.java:81)
-  NostGroup.NostArtifact.Receive.Receive.receiveCommon(Receive.java:44)
-  NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR.commonReceive(IDSFlow_M_R_PR.java:105)
+  org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
+  NostGroup.NostArtifact.Base.CommonMethods.type(CommonMethods.java:92)
+  NostGroup.NostArtifact.Manage.Protocol.addProtocol(Protocol.java:65)
+  NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR.addProtocol(IDSFlow_M_R_PR.java:37)
   sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
   sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
   sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -69,26 +71,46 @@ Session ID: 4f88e77d-d129-42cb-8cd0-1d8ada1b7f80
 
           </testcase>
   
-            <testcase name="submitqueueReceive" time="0.0" classname="NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR">
+            <testcase name="commonTransferToPharmacy" time="0.0" classname="NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR">
           <skipped />
     </testcase>
-            <testcase name="commonTransferToPharmacy" time="0.0" classname="NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR">
+            <testcase name="addCatalog" time="0.0" classname="NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR">
+          <skipped />
+    </testcase>
+            <testcase name="commonReceive" time="0.0" classname="NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR">
+          <skipped />
+    </testcase>
+            <testcase name="verifyPatient" time="0.0" classname="NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR">
           <skipped />
     </testcase>
             <testcase name="addDispense" time="0.0" classname="NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR">
           <skipped />
     </testcase>
+            <testcase name="addPatient" time="0.0" classname="NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR">
+          <skipped />
+    </testcase>
+            <testcase name="verifyCatalog" time="0.0" classname="NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR">
+          <skipped />
+    </testcase>
+            <testcase name="verifyProtocol" time="0.0" classname="NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR">
+          <skipped />
+    </testcase>
+            <testcase name="addPharmacy" time="0.0" classname="NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR">
+          <skipped />
+    </testcase>
+            <testcase name="verifyPharmacy" time="0.0" classname="NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR">
+          <skipped />
+    </testcase>
+            <testcase name="verifySupplier" time="0.0" classname="NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR">
+          <skipped />
+    </testcase>
+            <testcase name="submitqueueReceive" time="0.0" classname="NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR">
+          <skipped />
+    </testcase>
+            <testcase name="addSupplier" time="0.0" classname="NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR">
+          <skipped />
+    </testcase>
   
-            <testcase name="addCatalog" time="15.855" classname="NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR" />
-                <testcase name="addPatient" time="26.874" classname="NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR" />
-                <testcase name="verifyPatient" time="7.438" classname="NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR" />
-                <testcase name="addPharmacy" time="10.429" classname="NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR" />
-                <testcase name="nostLogin" time="2.568" classname="NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR" />
-                <testcase name="verifyPharmacy" time="8.927" classname="NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR" />
-                <testcase name="verifySupplier" time="11.241" classname="NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR" />
-                <testcase name="addSupplier" time="21.598" classname="NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR" />
-                <testcase name="addProtocol" time="19.587" classname="NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR" />
-                <testcase name="verifyCatalog" time="16.418" classname="NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR" />
-                <testcase name="verifyProtocol" time="7.327" classname="NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR" />
+            <testcase name="nostLogin" time="2.368" classname="NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR" />
       
 </testsuite>
