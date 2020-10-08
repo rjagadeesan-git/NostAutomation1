@@ -61,9 +61,11 @@ public class BrowserAct{
 		if(System.getenv("browser")!=null && !System.getenv("browser").isEmpty()) {
 			
 			browsertype=System.getenv("browser");
+			System.out.println("Browser Type selected is "+ browsertype);
 		} else {
 			
 			browsertype=CommonMethods.prop.getProperty("browser");
+			System.out.println(" Default Browser Type is "+ browsertype);
 		}
 		
 		CommonMethods.prop.setProperty("browser", browsertype);
@@ -87,6 +89,8 @@ public class BrowserAct{
 		}
 		
 		System.out.println("Ending Browser setup ");
+		
+		
 	}
 
 		

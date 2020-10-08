@@ -30,7 +30,7 @@ public class NostLogin extends CommonMethods{
 //	
 //	}
 	
-	String appURL;
+	String app_url;
 
 	public void nost_Login(Hashtable<String,String> data) throws IOException {
 		
@@ -39,9 +39,18 @@ public class NostLogin extends CommonMethods{
 //		FileInputStream propin= new FileInputStream("D:\\Jagan\\NostAuto\\NostCore\\NostArtifact\\src\\test\\java\\Otherfiles\\locators.properties");
 //		prop.load(propin);
 		
-		System.out.println(prop.getProperty("url"));
-		log.info(prop.getProperty("url"));
-		Driver.get(prop.getProperty("url"));
+			if(System.getenv("AUT-URL")!=null && !System.getenv("AUT-URL").isEmpty()) {
+				
+				app_url=System.getenv("AUT-URL");
+				System.out.println("AUT-URL is "+app_url);
+			} else {
+				
+				app_url=CommonMethods.prop.getProperty("siteurl");
+				System.out.println("Default Site-URL is "+app_url);
+			}
+			
+			CommonMethods.prop.setProperty("siteurl", app_url);
+			
 	    System.out.println(Driver.getTitle());
 	    
 		if(!data.get("rundata").equalsIgnoreCase("Y")) {
