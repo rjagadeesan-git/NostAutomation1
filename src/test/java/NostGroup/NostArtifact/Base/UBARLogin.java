@@ -32,6 +32,8 @@ public class UBARLogin extends CommonMethods{
 //		super(filepath);
 //	
 //	}
+	
+	String app_url_billing;
 
 	public void ubarLogin(Hashtable<String,String> data) throws IOException, AWTException, InterruptedException {
 		
@@ -40,9 +42,24 @@ public class UBARLogin extends CommonMethods{
 //		FileInputStream propin= new FileInputStream("D:\\Jagan\\NostAuto\\NostCore\\NostArtifact\\src\\test\\java\\Otherfiles\\locators.properties");
 //		prop.load(propin);
 		
-		System.out.println(prop.getProperty("url-billing"));
-		log.info(prop.getProperty("url-billing"));
-		Driver.get(prop.getProperty("url-billing"));
+		System.out.println("AUT_URL_Billing is "+ System.getenv("AUT_URL_Billing"));
+		if(System.getenv("AUT_URL_Billing")!=null && !System.getenv("AUT_URL_Billing").isEmpty()) {
+			
+			app_url_billing=System.getenv("AUT_URL_Billing");
+			System.out.println("AUT_URL_Billing is "+app_url_billing);
+			
+		}else {
+			
+			app_url_billing=CommonMethods.prop.getProperty("siteurl-billing");
+			System.out.println("Default Site-URL is "+app_url_billing);
+		}
+		
+		CommonMethods.prop.setProperty("siteurl-billing",app_url_billing);
+		
+//		System.out.println(prop.getProperty("url-billing"));
+//		log.info(prop.getProperty("url-billing"));
+//		Driver.get(prop.getProperty("siteurl-billing"));
+		Driver.get("siteurl-billing");
 	    System.out.println(Driver.getTitle());
 	    
 		if(!data.get("rundata").equalsIgnoreCase("Y")) {
