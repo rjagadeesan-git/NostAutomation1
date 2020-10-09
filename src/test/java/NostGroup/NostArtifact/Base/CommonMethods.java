@@ -153,7 +153,7 @@ public class CommonMethods {
 		String DateString=new Date().toString().replace(":","_").replace(" ", "_");
 		imagename=("Screenshot_"+DateString+".jpg");
 		File screenshot=((TakesScreenshot) Driver).getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(screenshot, new File(".//Screenshots//"+imagename));
+		FileUtils.copyFile(screenshot, new File(System.getProperty("user.dir")+"//Screenshots//"+imagename));
 	}
 
 	public static void snapShot() throws IOException {
