@@ -41,7 +41,7 @@ public class UBARLogin extends CommonMethods{
 //		Driver=new FirefoxDriver();
 //		FileInputStream propin= new FileInputStream("D:\\Jagan\\NostAuto\\NostCore\\NostArtifact\\src\\test\\java\\Otherfiles\\locators.properties");
 //		prop.load(propin);
-		
+
 		System.out.println("AUT_URL_Billing is "+ System.getenv("AUT_URL_Billing"));
 		if(System.getenv("AUT_URL_Billing")!=null && !System.getenv("AUT_URL_Billing").isEmpty()) {
 			
