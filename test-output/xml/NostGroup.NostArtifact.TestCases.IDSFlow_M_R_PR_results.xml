@@ -4,24 +4,24 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="261.195">
+           time="260.578">
   <properties />
   
   
-            <testcase name="addProtocol" time="19.702" classname="NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR" />
-                <testcase name="verifyCatalog" time="16.583" classname="NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR" />
-                <testcase name="addPharmacy" time="12.518" classname="NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR" />
-                <testcase name="commonReceive" time="19.306" classname="NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR" />
-                <testcase name="commonTransferToPharmacy" time="36.899" classname="NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR" />
-                <testcase name="addSupplier" time="23.451" classname="NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR" />
-                <testcase name="addPatient" time="29.134" classname="NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR" />
-                <testcase name="nostLogin" time="8.931" classname="NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR" />
-                <testcase name="verifySupplier" time="11.298" classname="NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR" />
-                <testcase name="verifyPharmacy" time="11.643" classname="NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR" />
-                <testcase name="addCatalog" time="15.420" classname="NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR" />
-                <testcase name="addDispense" time="24.120" classname="NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR" />
-                <testcase name="verifyProtocol" time="7.338" classname="NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR" />
-                <testcase name="submitqueueReceive" time="17.635" classname="NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR" />
-                <testcase name="verifyPatient" time="7.217" classname="NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR" />
+            <testcase name="verifyCatalog" time="16.712" classname="NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR" />
+                <testcase name="addDispense" time="23.814" classname="NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR" />
+                <testcase name="addPatient" time="29.207" classname="NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR" />
+                <testcase name="addCatalog" time="15.736" classname="NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR" />
+                <testcase name="commonReceive" time="19.872" classname="NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR" />
+                <testcase name="addPharmacy" time="13.091" classname="NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR" />
+                <testcase name="submitqueueReceive" time="17.804" classname="NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR" />
+                <testcase name="verifyPharmacy" time="10.793" classname="NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR" />
+                <testcase name="verifySupplier" time="11.307" classname="NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR" />
+                <testcase name="nostLogin" time="6.339" classname="NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR" />
+                <testcase name="verifyPatient" time="7.170" classname="NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR" />
+                <testcase name="addSupplier" time="24.010" classname="NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR" />
+                <testcase name="addProtocol" time="20.628" classname="NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR" />
+                <testcase name="commonTransferToPharmacy" time="36.793" classname="NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR" />
+                <testcase name="verifyProtocol" time="7.302" classname="NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR" />
       
 </testsuite>
