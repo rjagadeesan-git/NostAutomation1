@@ -8,9 +8,10 @@
 <listener class-name="org.uncommons.reportng.JUnitXMLReporter"></listener>
 </listeners>
 
-  <test name="Nost Login Test">
+  <test name="Catalog Addition">
     <classes>
-      <class name="NostGroup.NostArtifact.TestCases.NostloginCase">
+      <class name="NostGroup.NostArtifact.TestCases.IDSFlow_Indivi_M">
+      
 	<!-- <methods>
         <include name="nostlogin"/>
          <include name="addProtocol"/>

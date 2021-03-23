@@ -61,6 +61,7 @@ public class TransferToPharmacy extends CommonMethods{
    	    	element.click();
    	    }
       	Thread.sleep(4000);
+      	
       //Select the Lot# from the list generated
         String trans_lot_val=data.get("Transfer_Lot_#");
         List<WebElement> trans_lot=Driver.findElements(By.tagName("Option"));

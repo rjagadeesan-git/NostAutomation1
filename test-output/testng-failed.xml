@@ -10,22 +10,13 @@
     <classes>
       <class name="NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR">
         <methods>
-          <include name="addCatalog"/>
-          <include name="addSupplier"/>
-          <include name="verifyProtocol"/>
+          <include name="addDispense" invocation-numbers="0"/>
           <include name="commonReceive"/>
-          <include name="verifySupplier"/>
           <include name="browserLaunch"/>
           <include name="nostLogin"/>
-          <include name="addProtocol" invocation-numbers="0"/>
-          <include name="addPharmacy"/>
+          <include name="addProtocol"/>
           <include name="submitqueueReceive"/>
           <include name="commonTransferToPharmacy"/>
-          <include name="addPatient"/>
-          <include name="addDispense"/>
-          <include name="verifyCatalog"/>
-          <include name="verifyPatient"/>
-          <include name="verifyPharmacy"/>
         </methods>
       </class> <!-- NostGroup.NostArtifact.TestCases.IDSFlow_M_R_PR -->
     </classes>

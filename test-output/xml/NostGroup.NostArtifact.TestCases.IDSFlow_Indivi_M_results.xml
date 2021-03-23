@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Catalog Addition"
+           tests="3"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="54.430">
+  <properties />
+  
+  
+            <testcase name="addCatalog" time="26.737" classname="NostGroup.NostArtifact.TestCases.IDSFlow_Indivi_M" />
+                <testcase name="nostLogin" time="10.646" classname="NostGroup.NostArtifact.TestCases.IDSFlow_Indivi_M" />
+                <testcase name="verifyCatalog" time="17.047" classname="NostGroup.NostArtifact.TestCases.IDSFlow_Indivi_M" />
+      
+</testsuite>

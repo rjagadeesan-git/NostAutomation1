@@ -1,0 +1,148 @@
+<html>
+<head>
+<title>TestNG:  Catalog Addition</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Catalog Addition</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>3/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Mar 17 16:55:31 IST 2021</td>
+</tr>
+<tr><td>Total time:</td><td>56 seconds (56595 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='NostGroup.NostArtifact.TestCases.IDSFlow_Indivi_M.addCatalog()'><b>addCatalog</b><br>Test class: NostGroup.NostArtifact.TestCases.IDSFlow_Indivi_M<br>Parameters: {Aux_Label_6=, Aux_Label_5=, Aux_Label_4=Chemotherapy Drug, Drug_ID_#=17-Mar-21-04-Drg-02-DID1, Aux_Label_3=Refrigerate, Status=, Aux_Label_2=Shake Well, Aux_Label_1=Take With Food, Storage_Location=Location 2, Max=, UPC_Ratio=7.0, Hemoglobin=4.0, Strength/Concentration=22.22, Reorder_Point=, Formulation=Enema, Other3=Other 3, Other2=Other 2, Other1=Other 1, ANC=2.0, Pharmacy_Drug=17-Mar-21-04-PHARM-1-C, Bilirubin:_T-Bili=12.0, IVRS=Yes, Level_of_Accountability=Lot, Qty_per_Unit=48.0, Frequency=twice daily, Patient_Specific_Drug=No, Drug_Proto_SPID=17-Mar-21-04-PROT-SPID, Day_Supply=10.0, esignature=a1234, Drug_Name=17-Mar-21-04-Drg-02, Compounded_Med_Label=Sterile Compounded Medication, NSC_#=17-Mar-21-04-Drg-02-nsc1, ALT/SGPT=14.0, PLT's=3.0, Drug_Label_Name=17-Mar-21-04-Drg-02-dl1, Min=, Route=, 24-hour_Collection=6.0, Serum_Creatinine=11.0, Dose_on_Label=Take with water of 8oz, before food, Storage_Condition=Room Temperature, Unit_Type=Tube, Label_Template=Standard (w/ Lab), Drug_Protocol=17-Mar-21-04-PROT, Supplier_Name=17-Mar-21-04-Supplier-1, Drug_Name_edit=17-Mar-21-04-Drg-02-Edit, Unit_of_Measure=mEq, Track_By=Strength, Dipstick=5.0, Alternative_Drug_Name=17-Mar-21-04-Drg-02-adn1, To_Be_Linked=Yes, AST/SGOT=13.0}<br/>
+<a href="#Output-1869177530" onClick='toggleBox("Output-1869177530", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1869177530" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1869177530">
+Clicked the item: add-drug<br/>
+Entered the value '17-Mar-21-04-Drg-02' in field 'drug-name'<br/>
+Selected the value 'Strength in field 'track-by'<br/>
+Entered the value '22.22' in field 'strength-concentration'<br/>
+Selected the value 'mEq in field 'unit-of-measure'<br/>
+Selected the value 'Enema in field 'formulation'<br/>
+Entered the value '17-Mar-21-04-Drg-02-dl1' in field 'drug-label-name'<br/>
+Entered the value '17-Mar-21-04-Drg-02-DID1' in field 'drug-id'<br/>
+Entered the value '17-Mar-21-04-Drg-02-nsc1' in field 'drug-nsc'<br/>
+Entered the value '17-Mar-21-04-Drg-02-adn1' in field 'alternative-drug-name'<br/>
+Clicked the item: set-defaults<br/>
+'patient-specific-drug' is checked/ticked by default<br/>
+ Input is Yes for the field 'ivrs' and Checkbox is unchecked by default, now checked/ticked successfully<br/>
+Selected the value 'Yes in field 'to-be-linked'<br/>
+Selected the value 'Lot in field 'level-of-accountability'<br/>
+Selected the value 'Tube in field 'unit-type'<br/>
+Entered the value '48.0' in field 'qty-per-unit'<br/>
+Entered the value '17-Mar-21-04-Supplier-1' in field 'catalog-supplier-name'<br/>
+Selected the value 'Room Temperature in field 'storage-condition'<br/>
+Selected the value '17-Mar-21-04-PHARM-1-C in field 'pharmacy'<br/>
+Selected the value 'Location 2 in field 'storage-location'<br/>
+Selected the value 'twice daily in field 'frequency'<br/>
+Entered the value 'Take with water of 8oz, before food' in field 'dose-on-label'<br/>
+Selected the value 'Standard (w/ Lab) in field 'label-template'<br/>
+Entered the value '10.0' in field 'day-supply'<br/>
+Clicked the item: add-drug<br/>
+Entered the value '17-Mar-21-04-PROT' in field 'cat-prot-sear'<br/>
+Clicked the item: cat-prot-sear-ok<br/>
+Entered the value 'a1234' in field 'catalog-esign'<br/>
+Clicked the item: catalog-submit<br/>
+</div>
+</td>
+<td></td>
+<td>26</td>
+<td>NostGroup.NostArtifact.TestCases.IDSFlow_Indivi_M@5ef60048</td></tr>
+<tr>
+<td title='NostGroup.NostArtifact.TestCases.IDSFlow_Indivi_M.nostLogin()'><b>nostLogin</b><br>Test class: NostGroup.NostArtifact.TestCases.IDSFlow_Indivi_M<br>Parameters: {PassWord=aithentchn, rundata=Y, UserName=admin, e-Signature=a1234}<br/>
+<a href="#Output-1760401098" onClick='toggleBox("Output-1760401098", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1760401098" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1760401098">
+Starting to Login....<br/>
+Entered the value 'admin' in field 'username'<br/>
+Entered the value 'aithentchn' in field 'password'<br/>
+Clicked the item: login-button<br/>
+</div>
+</td>
+<td></td>
+<td>10</td>
+<td>NostGroup.NostArtifact.TestCases.IDSFlow_Indivi_M@5ef60048</td></tr>
+<tr>
+<td title='NostGroup.NostArtifact.TestCases.IDSFlow_Indivi_M.verifyCatalog()'><b>verifyCatalog</b><br>Test class: NostGroup.NostArtifact.TestCases.IDSFlow_Indivi_M<br>Parameters: {Aux_Label_6=, Aux_Label_5=, Aux_Label_4=Chemotherapy Drug, Drug_ID_#=17-Mar-21-04-Drg-02-DID1, Aux_Label_3=Refrigerate, Status=, Aux_Label_2=Shake Well, Aux_Label_1=Take With Food, Storage_Location=Location 2, Max=, UPC_Ratio=7.0, Hemoglobin=4.0, Strength/Concentration=22.22, Reorder_Point=, Formulation=Enema, Other3=Other 3, Other2=Other 2, Other1=Other 1, ANC=2.0, Pharmacy_Drug=17-Mar-21-04-PHARM-1-C, Bilirubin:_T-Bili=12.0, IVRS=Yes, Level_of_Accountability=Lot, Qty_per_Unit=48.0, Frequency=twice daily, Patient_Specific_Drug=No, Drug_Proto_SPID=17-Mar-21-04-PROT-SPID, Day_Supply=10.0, esignature=a1234, Drug_Name=17-Mar-21-04-Drg-02, Compounded_Med_Label=Sterile Compounded Medication, NSC_#=17-Mar-21-04-Drg-02-nsc1, ALT/SGPT=14.0, PLT's=3.0, Drug_Label_Name=17-Mar-21-04-Drg-02-dl1, Min=, Route=, 24-hour_Collection=6.0, Serum_Creatinine=11.0, Dose_on_Label=Take with water of 8oz, before food, Storage_Condition=Room Temperature, Unit_Type=Tube, Label_Template=Standard (w/ Lab), Drug_Protocol=17-Mar-21-04-PROT, Supplier_Name=17-Mar-21-04-Supplier-1, Drug_Name_edit=17-Mar-21-04-Drg-02-Edit, Unit_of_Measure=mEq, Track_By=Strength, Dipstick=5.0, Alternative_Drug_Name=17-Mar-21-04-Drg-02-adn1, To_Be_Linked=Yes, AST/SGOT=13.0}<br/>
+<a href="#Output-952288009" onClick='toggleBox("Output-952288009", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-952288009" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-952288009">
+Entered the value '17-Mar-21-04-Drg-02' in field 'catalog-tab-search'<br/>
+Catalog '17-Mar-21-04-Drg-02' found in the Catalog table<br/>
+</div>
+</td>
+<td></td>
+<td>17</td>
+<td>NostGroup.NostArtifact.TestCases.IDSFlow_Indivi_M@5ef60048</td></tr>
+</table><p>
+</body>
+</html>

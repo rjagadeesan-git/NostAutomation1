@@ -4,15 +4,15 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="114.972">
+           time="122.762">
   <properties />
   
   
-            <testcase name="nostLogin" time="5.869" classname="NostGroup.NostArtifact.TestCases.Mainte_Creation" />
-                <testcase name="addCatalog" time="18.665" classname="NostGroup.NostArtifact.TestCases.Mainte_Creation" />
-                <testcase name="addProtocol" time="22.105" classname="NostGroup.NostArtifact.TestCases.Mainte_Creation" />
-                <testcase name="addSupplier" time="23.612" classname="NostGroup.NostArtifact.TestCases.Mainte_Creation" />
-                <testcase name="addPatient" time="30.321" classname="NostGroup.NostArtifact.TestCases.Mainte_Creation" />
-                <testcase name="addPharmacy" time="14.400" classname="NostGroup.NostArtifact.TestCases.Mainte_Creation" />
+            <testcase name="addSupplier" time="24.079" classname="NostGroup.NostArtifact.TestCases.Mainte_Creation" />
+                <testcase name="nostLogin" time="5.853" classname="NostGroup.NostArtifact.TestCases.Mainte_Creation" />
+                <testcase name="addPatient" time="29.567" classname="NostGroup.NostArtifact.TestCases.Mainte_Creation" />
+                <testcase name="addPharmacy" time="13.998" classname="NostGroup.NostArtifact.TestCases.Mainte_Creation" />
+                <testcase name="addCatalog" time="26.188" classname="NostGroup.NostArtifact.TestCases.Mainte_Creation" />
+                <testcase name="addProtocol" time="23.077" classname="NostGroup.NostArtifact.TestCases.Mainte_Creation" />
       
 </testsuite>

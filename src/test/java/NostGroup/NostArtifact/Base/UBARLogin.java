@@ -58,8 +58,8 @@ public class UBARLogin extends CommonMethods{
 		
 //		System.out.println(prop.getProperty("url-billing"));
 //		log.info(prop.getProperty("url-billing"));
-//		Driver.get(prop.getProperty("siteurl-billing"));
-		Driver.get("siteurl-billing");
+		Driver.get(prop.getProperty("siteurl-billing"));
+//		Driver.get("siteurl-billing");
 	    System.out.println(Driver.getTitle());
 	    
 		if(!data.get("rundata").equalsIgnoreCase("Y")) {

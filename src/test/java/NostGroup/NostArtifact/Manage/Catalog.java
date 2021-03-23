@@ -72,10 +72,10 @@ public class Catalog extends CommonMethods{
 		type("dose-on-label","xpath",data.get("Dose_on_Label"));
 		selectText("label-template","xpath",data.get("Label_Template"));
 		type("day-supply","xpath",data.get("Day_Supply"));
-		selectText("aux-label1","xpath",data.get("Aux_Label_1"));
-		selectText("aux-label2","xpath",data.get("Aux_Label_2"));
-		selectText("aux-label3","xpath",data.get("Aux_Label_3"));
-		selectText("aux-label4","xpath",data.get("Aux_Label_4"));
+//		selectText("aux-label1","xpath",data.get("Aux_Label_1"));
+//		selectText("aux-label2","xpath",data.get("Aux_Label_2"));
+//		selectText("aux-label3","xpath",data.get("Aux_Label_3"));
+//		selectText("aux-label4","xpath",data.get("Aux_Label_4"));
 //		selectText("aux-label5","xpath",data.get("Aux_Label_5"));
 //		selectText("aux-label6","xpath",data.get("Aux_Label_6"));
 		
@@ -111,6 +111,8 @@ public class Catalog extends CommonMethods{
 		type("cat-prot-sear","csssele",data.get("Drug_Protocol"));
         Driver.findElement(By.className(data.get("Drug_Proto_SPID"))).click();
         click("cat-prot-sear-ok","csssele");
+        
+        Thread.sleep(10000);
 		
 		//Catalog submission
 		type("catalog-esign","xpath",data.get("esignature"));
